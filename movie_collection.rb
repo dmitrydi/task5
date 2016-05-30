@@ -4,22 +4,22 @@ require_relative 'movie'
 class MovieCollection
 
   def initialize(movie_array = nil)
-	  if movie_array 
-      @collection = movie_array
-      @existing_genres = @collection.each.map {|a| a.genre}.flatten.uniq
-    end
-    @existing_genres = []
+    @collection = movie_array
   end
 
   attr_reader :collection
 
   def read(filename = "movies.txt")
 	  @collection = CSV.read(filename, col_sep: "|").map {|a| Movie.new(a, self)}
-    @existing_genres = @collection.each.map {|a| a.genre}.flatten.uniq
 	  self
   end
 
+  def existing_genres
+    @existing_genres = @collection.each.map {|a| a.genre}.flatten.uniq
+  end
+
   def genre_exists?(genre)
+    existing_genres if !@existing_genres
     @existing_genres.include?(genre)
   end
 
@@ -54,8 +54,6 @@ class MovieCollection
   end
 
   def stats(key)
-    hash = {}
-    @collection.group_by {|a| a.send(key)}.each{|key, val| hash[key] = val.count}
-    hash
+    @collection.group_by {|a| a.send(key)}.map{|key, val| [key,val.count]}.to_h
   end
 end

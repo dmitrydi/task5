@@ -14,12 +14,7 @@ class Movie
     @rating = record[7]
     @producer = record[8]
     @actors = record[9].split(",")
-
-    if @date.count("-") == 0
-      @month = nil
-    else
-      @month = Date::ABBR_MONTHNAMES[@date.split("-")[1].to_i]
-    end
+    @month = Date::ABBR_MONTHNAMES[@date.split("-")[1].to_i]
   end
 
   attr_reader :webaddr, :title, :year, :country, :date, :genre, :duration, :rating, :producer, :actors, :month
