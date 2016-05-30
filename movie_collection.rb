@@ -1,66 +1,56 @@
+require 'csv'
+require_relative 'movie'
+
 class MovieCollection
- require 'csv'
- require_relative 'movie.rb'
 
- def initialize(parsedlist = nil)
-  if parsedlist == nil
-   @collection
-  else
-   @collection = parsedlist
+  def initialize(movie_array = nil)
+	  if movie_array != nil
+	    @collection = movie_array
+	  end
   end
- end
 
- def read(filename = "movies.txt")
-  self.collection = CSV.read(filename, col_sep: "|").map {|a| Movie.new(a, self)}
-  self
- end
+  attr_reader :collection
 
- attr_accessor :collection
-
- def to_s
-  @collection
- end
-
- def first(n = nil)
-  if n == nil 
-   @collection[0]
-  else
-   dum = MovieCollection.new
-   dum.collection = @collection.first(n)
-   dum
+  def read(filename = "movies.txt")
+	  @collection = CSV.read(filename, col_sep: "|").map {|a| Movie.new(a, self)}
+	  self
   end
- end
 
- def [] (n)
-  dum = MovieCollection.new
-  dum.collection = @collection[n]
-  dum
- end
+  def genre_exists?(genre)
+	  @collection.each.map {|a| a.genre}.flatten.uniq.include?(genre)
+  end
 
- def all
-  @collection
- end
+  alias :to_s :collection
 
- def sort_by(key)
-  dum = MovieCollection.new
-  dum.collection = @collection.sort_by {|a| a.send(key)}
-  dum
- end
+  def first(n = nil)
+	  if n == nil 
+	    @collection[0]
+	  else
+	    MovieCollection.new(@collection.first(n))
+	  end
+  end
 
- def filter(filt)
-  dum = MovieCollection.new
-  dum.collection = @collection.find_all {
-    |a|
-    flag = true 
-    filt.each {|key, val| flag &= (a.send(key).include?(val))}
-    flag
-  }
-  dum
- end
+  def [] (n)
+	  MovieCollection.new(@collection[n])
+  end
 
- def stats(key)
-  uvals = @collection.each.map {|a| a.send(key)}.flatten.uniq
-  nstat = uvals.each.map {|val| @collection.count {|b| b.send(key).include?(val)}}
-  Hash[uvals.zip(nstat)]
- end
+  alias :all :collection  
+
+  def sort_by(key)
+	  MovieCollection.new(@collection.sort_by {|a| a.send(key)})
+  end
+
+  def filter(filt)
+	  MovieCollection.new(@collection.find_all {
+	    |a|
+	    filt.inject(true) {|memo, ary| memo && a.send(ary[0]).include?(ary[1]) }
+	    }
+	  )
+  end
+
+  def stats(key)
+	  uvals = @collection.each.map {|a| a.send(key)}.flatten.uniq
+	  nstat = uvals.each.map {|val| @collection.count {|b| b.send(key).include?(val)}}
+	  Hash[uvals.zip(nstat)]
+  end
 end
