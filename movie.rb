@@ -1,31 +1,22 @@
 require 'date'
+require_relative 'movie_collection'
 
 class Movie
   def initialize(record, host = nil)
     @host = host
-
     @webaddr = record[0]
-
     @title = record[1]
-
     @year = record[2]
-
     @country = record[3]
-
     @date = record[4]
-
     @genre = record[5].split(",")
-
     @duration = record[6].to_i
-
     @rating = record[7]
-
     @producer = record[8]
-
     @actors = record[9].split(",")
 
     if @date.count("-") == 0
-      @month = 'nil'
+      @month = nil
     else
       @month = Date::ABBR_MONTHNAMES[@date.split("-")[1].to_i]
     end
@@ -38,14 +29,9 @@ class Movie
   end
 
   def has_genre?(genre)
-    if @host
-      if @host.genre_exists?(genre)
-        @genre.include?(genre)
-      else
-        raise ArgumentError, "Genre: #{genre} does not exist"
-      end
-    else
-      @genre.include?(genre)
+    if @host && !@host.genre_exists?(genre)
+      raise ArgumentError, "Genre: #{genre} does not exist"
     end
+    @genre.include?(genre)
   end
 end

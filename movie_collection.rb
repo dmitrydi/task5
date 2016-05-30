@@ -4,34 +4,39 @@ require_relative 'movie'
 class MovieCollection
 
   def initialize(movie_array = nil)
-	  if movie_array != nil
-	    @collection = movie_array
-	  end
+	  if movie_array 
+      @collection = movie_array
+      @existing_genres = @collection.each.map {|a| a.genre}.flatten.uniq
+    end
+    @existing_genres = []
   end
 
   attr_reader :collection
 
   def read(filename = "movies.txt")
 	  @collection = CSV.read(filename, col_sep: "|").map {|a| Movie.new(a, self)}
+    @existing_genres = @collection.each.map {|a| a.genre}.flatten.uniq
 	  self
   end
 
   def genre_exists?(genre)
-	  @collection.each.map {|a| a.genre}.flatten.uniq.include?(genre)
+    @existing_genres.include?(genre)
   end
 
-  alias :to_s :collection
+  def to_s
+    @collection.join("\n")
+  end
 
   def first(n = nil)
-	  if n == nil 
-	    @collection[0]
+	  if n
+      MovieCollection.new(@collection.first(n))
 	  else
-	    MovieCollection.new(@collection.first(n))
+	    @collection[0]
 	  end
   end
 
   def [] (n)
-	  MovieCollection.new(@collection[n])
+	  MovieCollection.new([@collection[n]])
   end
 
   alias :all :collection  
@@ -43,14 +48,14 @@ class MovieCollection
   def filter(filt)
 	  MovieCollection.new(@collection.find_all {
 	    |a|
-	    filt.inject(true) {|memo, ary| memo && a.send(ary[0]).include?(ary[1]) }
+	    filt.inject(true) {|memo, (key, val)| memo && (a.send(key).include?(val)) }
 	    }
 	  )
   end
 
   def stats(key)
-	  uvals = @collection.each.map {|a| a.send(key)}.flatten.uniq
-	  nstat = uvals.each.map {|val| @collection.count {|b| b.send(key).include?(val)}}
-	  Hash[uvals.zip(nstat)]
+    hash = {}
+    @collection.group_by {|a| a.send(key)}.each{|key, val| hash[key] = val.count}
+    hash
   end
 end
