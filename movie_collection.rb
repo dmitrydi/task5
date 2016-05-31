@@ -11,7 +11,11 @@ class MovieCollection
 
   def read(filename = "movies.txt")
 	  @collection = CSV.read(filename, col_sep: "|").map {|a| Movie.new(a, self)}
-	  self
+    self
+  end
+
+  def self.read(filename = "movies.txt")
+    MovieCollection.new.read(filename)
   end
 
   def existing_genres

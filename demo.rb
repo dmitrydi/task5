@@ -2,7 +2,7 @@ require_relative 'movie'
 require_relative 'movie_collection'
 require 'csv'
 
-movies = MovieCollection.new.read
+movies = MovieCollection.read
 puts movies.all.first(1)
 puts
 puts movies.all.first.actors
