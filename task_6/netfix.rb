@@ -4,15 +4,26 @@ require_relative 'movie_collection'
 class Netfix < MovieCollection
   def initialize(movie_array = nil)
     super(movie_array)
-    @list_to_show
+    @@money = 0
   end
 
-  def self.read
-    Netfix.new(MovieCollection.read.collection)
+  attr_reader :collection
+
+  def read(filename = "movies.txt")
+    @collection = CSV.read(filename, col_sep: "|").map {|a| MovieToShow.new(a, self)}
+    self
+  end
+
+  def self.read(filename = "movies.txt")
+    Netfix.new.read(filename)
+  end
+
+  def pay(amount)
+    @@money += amount
   end
 
   def show(filter = nil)
-    @collection.to_s
+    
   end
 
 end
