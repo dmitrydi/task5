@@ -5,7 +5,7 @@ require_relative '../movie_collection'
 
 describe Netfix do
   before :each do
-    @netfix = Netfix.new
+    @netfix = Netfix.read
   end
 
   describe 'new' do
@@ -19,16 +19,26 @@ describe Netfix do
       netfix = Netfix.read
       expect(netfix.collection).to be_an_instance_of Array
     end
-
-    it 'fills an array @collection' do
-      expect{Netfix.read.show}.to output.to_stdout
-    end
-
   end
 
   describe 'show' do
-    it 'prints a list of films' do
-      expect{@netfix.show}.to output.to_stdout
+    it 'should take a list of filters as a parameter' do
+      expect{@netfix.show(period: 'classic', genre: 'comedy')}.to output.to_stdout
+    end
+
+    it 'may take one argument' do
+      expect(@netfix).to respond_to(:show).with(1).argument
+    end
+
+    it 'may take no arguments' do
+      expect(@netfix).to respond_to(:show).with(0).argument
+    end
+
+    it 'should print different messages for different periods' do
+      expect(@netfix.show(period: 'ancient')).to include("ancient movie")
+      expect(@netfix.show(period: 'classic')).to include("classic movie, producer")
+      expect(@netfix.show(period: 'modern')).to include("contemporary movie, starring")
+      expect(@netfix.show(period: 'new')).to include("new movie")
     end
   end
 

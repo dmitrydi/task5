@@ -12,7 +12,7 @@ class Netfix < MovieCollection
   end
 
   def show(filter = nil)
-    puts @collection.to_s
+    @collection.to_s
   end
 
 end
