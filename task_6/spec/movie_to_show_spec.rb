@@ -1,5 +1,6 @@
 require_relative '../movie'
 require_relative '../movie_to_show'
+require_relative '../netfix'
 require 'csv'
 require 'date'
 
@@ -60,7 +61,7 @@ describe MovieToShow do
                        when 'ancient'
                         "#{@movieshow.title} - old movie (#{@movieshow.year})"
                        when 'classic'
-                        "#{@movieshow.title} - classic movie, producer: #{@movieshow.producer}"
+                        "#{@movieshow.title} - classic movie, producer: #{@movieshow.producer} (...)"
                        when 'modern'
                         "#{@movieshow.title} - modern movie, starring: #{@movieshow.actors.join(', ')}"
                        when 'new'
@@ -68,5 +69,15 @@ describe MovieToShow do
                       end
       expect(@movieshow.to_s).to eq(str_to_compare)
     end
+
+    it 'is expected to return a list of producers for classic period' do
+      netfix = Netfix.read
+      sample = netfix.filter(period: 'classic').collection[0]
+      movie_list = netfix.films_by_producers[sample.producer].join(", ")
+      expect(sample.to_s).to include(movie_list)
+    end
+
+
   end
+
 end
