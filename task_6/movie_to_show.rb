@@ -1,4 +1,4 @@
-require_relative 'movie'
+require_relative 'movie_classes'
 require 'date'
 
 class MovieToShow < Movie
@@ -12,10 +12,10 @@ class MovieToShow < Movie
                   'classic'
                 when 1969..2000
                   'modern'
-                #when 2000..Date.today.year
-                #  'new'
-                else
+                when 2001..Date.today.year
                   'new'
+                else
+                  nil
               end
 
     @price = case @period
@@ -28,27 +28,43 @@ class MovieToShow < Movie
                 when 'new'
                   5
                 else
-                  1
+                  nil
               end 
   end
 
   attr_reader :period, :price
 
-  def to_s
-    case @period
-      when 'ancient'
-        "#{@title} - old movie (#{@year})"
-      when 'classic'
-        list_of_movies = (@host? @host.films_by_producers[@producer].join(", ") : "...")
-        "#{@title} - classic movie, producer: #{@producer} (#{list_of_movies})"
-      when 'modern'
-        "#{@title} - modern movie, starring: #{@actors.join(', ')}"
-      when 'new'
-        years_ago = Date.today.year - @year.to_i
-        "#{@title} - new film, released #{years_ago} years ago!"
+  def self.create(record, host = nil)
+    case record[2].to_i
+      when 1900..1945
+        AncientMovie.new(record, host)
+      when 1946..1968
+        ClassicMovie.new(record, host)
+      when 1969..2000
+        ModernMovie.new(record, host)
+      when 2001..Date.today.year
+        NewMovie.new(record, host)
       else
-        raise RuntimeError, "Unable to classify movie #{title}"
+        MovieToShow.new(record, host)
     end
   end
+
+
+  #def to_s
+  #  case @period
+  #    when 'ancient'
+  #      "#{@title} - old movie (#{@year})"
+  #    when 'classic'
+  #      list_of_movies = (@host? @host.films_by_producers[@producer].join(", ") : "...")
+  #      "#{@title} - classic movie, producer: #{@producer} (#{list_of_movies})"
+  #    when 'modern'
+  #      "#{@title} - modern movie, starring: #{@actors.join(', ')}"
+  #    when 'new'
+  #      years_ago = Date.today.year - @year.to_i
+  #      "#{@title} - new film, released #{years_ago} years ago!"
+  #    else
+  #      raise RuntimeError, "Unable to classify movie #{title}"
+  # end
+  #end
 
 end

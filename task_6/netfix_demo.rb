@@ -35,5 +35,9 @@ rescue RuntimeError => err_run
   puts err_run.message
 end
 
+puts
+
+puts netfix.how_much?('The Cinderella')
+
 
 

@@ -1,6 +1,4 @@
-require_relative 'movie'
-require_relative 'movie_collection'
-require_relative 'movie_to_show'
+require_relative 'movie_classes'
 
 class Netfix < MovieCollection
   def initialize(movie_array = nil)
@@ -11,7 +9,8 @@ class Netfix < MovieCollection
   attr_reader :collection, :money
 
   def read(filename = "movies.txt")
-    @collection = CSV.read(filename, col_sep: "|").map {|a| MovieToShow.new(a, self)}
+    @collection = CSV.read(filename, col_sep: "|").map {|a| MovieToShow.create(a, self)}
+    @collection.delete_if {|a| a.class == MovieToShow }
     self
   end
 
@@ -41,7 +40,10 @@ class Netfix < MovieCollection
   end
 
   def gen_number(shortlist)
-    Random.new.rand(0..shortlist.length)
+    s = 0.0
+    sum_rating_ary = shortlist.map {|a| s += a.rating.to_f}
+    rnd = Random.new.rand(0..sum_rating_ary.last)
+    sum_rating_ary.index {|a| a >= rnd}
   end
 
   def show(filter = nil)
@@ -52,6 +54,14 @@ class Netfix < MovieCollection
       n = gen_number(shortlist)
       @money -= shortlist[n].price
       "Now showing: " + shortlist[n].to_s
+    end
+  end
+
+  def how_much?(name)
+    begin
+      @collection.find{|a| a.title == name}.price
+    rescue
+      raise ArgumentError, "no such movie"
     end
   end
 

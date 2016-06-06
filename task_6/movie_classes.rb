@@ -1,0 +1,6 @@
+require_relative 'movie'
+require_relative 'movie_to_show'
+require_relative 'ancient_movie'
+require_relative 'classic_movie'
+require_relative 'modern_movie'
+require_relative 'new_movie'
