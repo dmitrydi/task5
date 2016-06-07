@@ -10,7 +10,6 @@ class Netfix < MovieCollection
 
   def read(filename = "movies.txt")
     @collection = CSV.read(filename, col_sep: "|").map {|a| MovieToShow.create(a, self)}
-    @collection.delete_if {|a| a.class == MovieToShow }
     self
   end
 
@@ -19,7 +18,12 @@ class Netfix < MovieCollection
   end
 
   def pay(amount)
-    @money += amount
+    if amount < 0
+      raise ArgumentError, "argument should be >=0"
+    else
+      @money += amount
+      self
+    end
   end
 
   def films_by_producers
@@ -27,7 +31,7 @@ class Netfix < MovieCollection
   end
 
   def make_shortlist(filter = nil)
-    list_to_show = if filter
+    list_to_show =  if filter
                       self.filter(filter).collection 
                     else
                       self.collection
@@ -36,6 +40,7 @@ class Netfix < MovieCollection
       raise ArgumentError, "no films found with given parameters"
     else
       list_to_show.find_all {|a| a.price.to_i <= @money}
+      list_to_show
     end
   end
 

@@ -1,12 +1,14 @@
-require_relative 'movie_to_show'
+require_relative 'movie_classes'
 
 class AncientMovie < MovieToShow
   def initialize(record, host = nil)
     super(record, host)
-    if !@year.to_i.between?(1900,1945)
-      raise ArgumentError, "year should be in range 1900..1945"
-    end
+    self.right_year?(1900, 1945)
+    @period = 'ancient'
+    @price = 1
   end
+
+  attr_reader :period, :price
 
   def to_s
     "#{@title} - old movie (#{@year})"
