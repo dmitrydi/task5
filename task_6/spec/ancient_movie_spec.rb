@@ -1,19 +1,13 @@
-require_relative '..\ancient_movie'
-require 'csv'
-
+require_relative 'movies_shared_spec'
 
 describe AncientMovie do
 
-  let(:record) {CSV.read("movies.txt", col_sep: "|").map.find{|a| a[4].to_i.between?(1900,1945)}}
-  let(:bad_record) {CSV.read("movies.txt", col_sep: "|").map.find{|a| a[4].to_i.between?(1946,1968)}}
-  let(:ancient_movie) {AncientMovie.new(record)}
+  it_behaves_like "a movie with limited period and certain price", 1900, 1945, 'ancient', 1
 
-  it{ expect(record[4].to_i).to be_between(1900,1945).inclusive }
-  it{ expect(bad_record[4].to_i).not_to be_between(1900,1945).inclusive }
-
-  it{ expect(AncientMovie.new(record)).to be_an_instance_of AncientMovie }
-  it{ expect{AncientMovie.new(bad_record)}.to raise_error(ArgumentError) }
-
-  it{ expect(ancient_movie.to_s).to include("old movie") }
+  describe '#to_s' do
+    include_examples "prepare an instance", 1900, 1945, :movie
+    it { expect(movie.to_s).to eq("#{movie.title} - old movie (#{movie.year})") }
+  end
 
 end
+  
