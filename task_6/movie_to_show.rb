@@ -6,21 +6,23 @@ class MovieToShow < Movie
     super(record, host)
   end
 
-  def right_year?(min_year, max_year)
-    if !@year.to_i.between?(min_year, max_year)
-      raise ArgumentError, "year should be in range #{min_year}..#{max_year}"
+  PERIOD = nil
+
+  def check_year(year)
+    if self.class::PERIOD && !(self.class::PERIOD.include?(@year.to_i))
+      raise ArgumentError, "year should be in range #{PERIOD}"
     end
   end
 
   def self.create(record, host = nil)
     case record[2].to_i
-      when 1900..1945
+      when AncientMovie::PERIOD
         AncientMovie.new(record, host)
-      when 1946..1968
+      when ClassicMovie::PERIOD
         ClassicMovie.new(record, host)
-      when 1969..2000
+      when ModernMovie::PERIOD
         ModernMovie.new(record, host)
-      when 2001..Date.today.year
+      when NewMovie::PERIOD
         NewMovie.new(record, host)
       else
         raise ArgumentError, "Error in MovieToShow#create: unrecognized value of year"
