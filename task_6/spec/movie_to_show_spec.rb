@@ -11,13 +11,27 @@ describe MovieToShow do
   let(:ancient_record) { CSV.read('../movies.txt', col_sep: '|').map.find{|a| AncientMovie::PERIOD.include?(a[2].to_i)} }
 
   describe '#check_year' do
-    it { expect{movie.check_year(1900)}.not_to raise_error }
+    it 'pass with any year for MovieToShow instance' do
+      expect{movie.check_year(1900)}.not_to raise_error
+      expect{movie.check_year(1600)}.not_to raise_error
+    end
+
+    
+
   end
 
   describe '#create' do
     it 'creates an AncientMovie instance when period is ancient' do
       expect(MovieToShow.create(ancient_record)).to be_instance_of AncientMovie
     end
+
+    it 'raise an error when year value is not recognized' do
+      bad_record = record
+      bad_record[2] = 1600
+      expect{MovieToShow.create(bad_record)}.to raise_error(ArgumentError)
+    end
+
+
   end
 
 
