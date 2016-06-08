@@ -1,14 +1,8 @@
 require_relative 'movie_classes'
 
 class ClassicMovie < MovieToShow
-  def initialize(record, host = nil)
-    super(record, host)
-    self.right_year?(1946, 1968)
-    @period = 'classic'
-    @price = 1.5
-  end
-
-  attr_reader :period, :price
+  PERIOD = 1946..1968
+  PRICE = 1.5
 
   def to_s
     list_of_movies = (@host? @host.films_by_producers[@producer].join(", ") : "really good one")

@@ -2,31 +2,35 @@ require_relative 'movie_classes'
 require 'date'
 
 class MovieToShow < Movie
+  PERIOD = nil
+  PRICE = nil
+
   def initialize(record, host = nil)
-    super(record, host)
+    super
+    check_year(@year)
   end
 
-  PERIOD = nil
+  def price
+    self.class::PRICE
+  end
+
+  def period
+    klass = self.class
+    (klass.to_s.downcase.sub("movie","")) if klass::PERIOD
+  end
+
 
   def check_year(year)
-    if self.class::PERIOD && !(self.class::PERIOD.include?(@year.to_i))
-      raise ArgumentError, "year should be in range #{PERIOD}"
+    period = self.class::PERIOD
+    if period && !(period.include?(@year.to_i))
+      raise ArgumentError, "year should be in range #{period}"
     end
   end
 
   def self.create(record, host = nil)
-    case record[2].to_i
-      when AncientMovie::PERIOD
-        AncientMovie.new(record, host)
-      when ClassicMovie::PERIOD
-        ClassicMovie.new(record, host)
-      when ModernMovie::PERIOD
-        ModernMovie.new(record, host)
-      when NewMovie::PERIOD
-        NewMovie.new(record, host)
-      else
-        raise ArgumentError, "Error in MovieToShow#create: unrecognized value of year"
-    end
+    klass = [AncientMovie, ClassicMovie, ModernMovie, NewMovie].detect {|klass| klass::PERIOD.include?(record[2].to_i)} or
+            raise(ArgumentError, "Error in MovieToShow#create: unrecognized value of year")
+    klass.new(record, host)
   end
 
 end
