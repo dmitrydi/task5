@@ -4,9 +4,7 @@ require 'csv'
 
 describe ClassicMovie do
 
-
   period = ClassicMovie::PERIOD
-
 
   let(:host) {Netfix.read}
   let(:record) {CSV.read('../movies.txt', col_sep: '|').map.find{ |a| period.include?(a[2].to_i)}}
