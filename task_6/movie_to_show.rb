@@ -2,8 +2,6 @@ require_relative 'movie_classes'
 require 'date'
 
 class MovieToShow < Movie
-  PERIOD = nil
-  PRICE = nil
 
   def initialize(record, host = nil)
     super
@@ -15,16 +13,12 @@ class MovieToShow < Movie
   end
 
   def period
-    klass = self.class
-    (klass.to_s.downcase.sub("movie","")) if klass::PERIOD
+    self.class.to_s.downcase.sub("movie","")
   end
 
 
   def check_year(year)
-    period = self.class::PERIOD
-    if period && !(period.include?(@year.to_i))
-      raise ArgumentError, "year should be in range #{period}"
-    end
+    raise ArgumentError, "year should be in range #{period}" if !(self.class::PERIOD.include?(@year.to_i))
   end
 
   def self.create(record, host = nil)
