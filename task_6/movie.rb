@@ -6,7 +6,7 @@ class Movie
     @host = host
     @webaddr = record[0]
     @title = record[1]
-    @year = record[2]
+    @year = record[2].to_i
     @country = record[3]
     @date = record[4]
     @genre = record[5].split(",")

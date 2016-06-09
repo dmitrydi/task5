@@ -2,19 +2,15 @@ require_relative 'movie_classes'
 
 class Netfix < MovieCollection
   def initialize(movie_array = nil)
-    super(movie_array)
+    super
     @money = 0
   end
 
-  attr_reader :collection, :money
+  attr_reader :money
 
   def read(filename = "movies.txt")
     @collection = CSV.read(filename, col_sep: "|").map {|a| MovieToShow.create(a, self)}
     self
-  end
-
-  def self.read(filename = "movies.txt")
-    Netfix.new.read(filename)
   end
 
   def pay(amount)
@@ -26,21 +22,12 @@ class Netfix < MovieCollection
     end
   end
 
-  def films_by_producers
-    @movs_by_producers ? @movs_by_producers : @movs_by_producers = @collection.group_by {|a| a.producer}.map{|key, val| [key,val.map {|a| a.title}]}.to_h
-  end
-
-  def make_shortlist(filter = nil)
-    list_to_show =  if filter
-                      self.filter(filter).collection 
-                    else
-                      self.collection
-                    end
+  def make_shortlist(filt = nil)
+    list_to_show =  filt ? self.filter(filt).collection :  self.collection
     if list_to_show.length == 0
       raise ArgumentError, "no films found with given parameters"
     else
-      list_to_show.find_all {|a| a.price.to_i <= @money}
-      list_to_show
+      list_to_show = list_to_show.find_all {|a| a.price <= @money}
     end
   end
 
@@ -63,10 +50,11 @@ class Netfix < MovieCollection
   end
 
   def how_much?(name)
-    begin
-      @collection.find{|a| a.title == name}.price
-    rescue
+    movie = @collection.find{|a| a.title == name}
+    unless movie
       raise ArgumentError, "no such movie"
+    else
+      movie.price
     end
   end
 

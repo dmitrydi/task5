@@ -15,7 +15,7 @@ class MovieCollection
   end
 
   def self.read(filename = "movies.txt")
-    MovieCollection.new.read(filename)
+    self.new.read(filename)
   end
 
   def existing_genres
@@ -29,6 +29,10 @@ class MovieCollection
 
   def to_s
     @collection.join("\n")
+  end
+
+  def films_by_producers
+    @movs_by_producers ? @movs_by_producers : @movs_by_producers = @collection.group_by {|a| a.producer}.map{|key, val| [key,val.map {|a| a.title}]}.to_h
   end
 
   def first(n = nil)
@@ -50,7 +54,7 @@ class MovieCollection
   end
 
   def filter(filt)
-	  MovieCollection.new(@collection.find_all {
+	  self.class.new(@collection.find_all {
 	    |a|
 	    filt.inject(true) {|memo, (key, val)| memo && (a.send(key).include?(val)) }
 	    }
