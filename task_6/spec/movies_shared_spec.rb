@@ -36,5 +36,11 @@ RSpec.shared_examples "creates a movie of appropriate class" do |year_range, cla
   it { expect(described_class.create(record)).to be_an_instance_of class_name }
 end
 
+def make_movie(movie_class, host = nil)
+  record = CSV.read('..\movies.txt', col_sep: "|").map.find{ |a| movie_class::PERIOD.include?(a[2].to_i) }
+  movie_class.new(record, host)
+end
+
+
 
 

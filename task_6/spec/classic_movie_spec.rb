@@ -7,9 +7,8 @@ describe ClassicMovie do
   period = ClassicMovie::PERIOD
 
   let(:host) {Netfix.read}
-  let(:record) {CSV.read('../movies.txt', col_sep: '|').map.find{ |a| period.include?(a[2].to_i)}}
-  let(:classic_movie) {ClassicMovie.new(record)}
-  let(:movie_with_host) {ClassicMovie.new(record, host)}
+  let(:classic_movie) {make_movie(described_class)}
+  let(:movie_with_host) {make_movie(described_class, host)}
   let(:movie_list) {host.films_by_producers[movie_with_host.producer].join(", ")}
 
   it_behaves_like "a movie with limited period and certain price", period, 'classic', 1.5
