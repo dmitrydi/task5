@@ -7,33 +7,27 @@ require 'date'
 describe MovieToShow do
 
   let(:record) {CSV.read('../movies.txt', col_sep: '|')[0]}
-  let(:movie) { MovieToShow.new(record) }
-  let(:ancient_record) { CSV.read('../movies.txt', col_sep: '|').map.find{|a| AncientMovie::PERIOD.include?(a[2].to_i)} }
 
-  describe '#check_year' do
-    it 'pass with any year for MovieToShow instance' do
-      expect{movie.check_year(1900)}.not_to raise_error
-      expect{movie.check_year(1600)}.not_to raise_error
-    end
-
-    
-
-  end
+  it { expect{MovieToShow.new(record)}.to raise_error }
 
   describe '#create' do
-    it 'creates an AncientMovie instance when period is ancient' do
-      expect(MovieToShow.create(ancient_record)).to be_instance_of AncientMovie
+
+    context 'when AncientMovie required' do
+      include_examples "creates a movie of appropriate class", AncientMovie::PERIOD, AncientMovie 
     end
 
-    it 'raise an error when year value is not recognized' do
-      bad_record = record
-      bad_record[2] = 1600
-      expect{MovieToShow.create(bad_record)}.to raise_error(ArgumentError)
+    context 'when ClassicMovie required' do
+     include_examples "creates a movie of appropriate class", ClassicMovie::PERIOD, ClassicMovie
     end
 
+    context 'when ModernMovie required' do
+     include_examples "creates a movie of appropriate class", ModernMovie::PERIOD, ModernMovie
+    end 
+
+    context 'when NewMovie required' do
+     include_examples "creates a movie of appropriate class", NewMovie::PERIOD, NewMovie
+    end   
 
   end
-
-
 
 end

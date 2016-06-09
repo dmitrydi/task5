@@ -1,31 +1,40 @@
 require_relative '..\movie_classes'
 require 'csv'
 
-RSpec.shared_examples "a movie with limited period and certain price" do |start_year, end_year, expected_period, expected_price|
-  let(:record) {CSV.read('..\movies.txt', col_sep: "|").map.find{|a| a[2].to_i.between?(start_year, end_year)}}
-  let(:bad_record) {CSV.read('..\movies.txt', col_sep: "|").map.find{|a| (a[2].to_i > end_year || a[2].to_i < start_year)}}
+RSpec.shared_examples "a movie with limited period and certain price" do |year_range, expected_period, expected_price|
+  let(:record) {CSV.read('..\movies.txt', col_sep: "|").map.find{|a| year_range.include?(a[2].to_i)}}
+  let(:bad_record) {CSV.read('..\movies.txt', col_sep: "|").map.find{|a| !(year_range.include?(a[2].to_i))}}
   let(:movie) {described_class.new(record)}
 
-  it{ expect(record[2].to_i).to be_between(start_year, end_year).inclusive }
-  it{ expect(bad_record[2].to_i).not_to be_between(start_year, end_year).inclusive }
+  it{ expect(movie).to be_an_instance_of described_class }
 
-  it{ expect{described_class.new(bad_record)}.to raise_error(ArgumentError) }
+  describe "#initialize and #check_year" do 
+    it {expect{described_class.new(bad_record)}.to raise_error(ArgumentError)}
+  end 
 
-  subject {movie}
+  describe '#period' do
+    it "returns appriopriate value" do
+      expect(movie.period).to eq(expected_period)
+    end
+  end
 
-  it{ is_expected.to be_an_instance_of described_class }
-  it{ is_expected.to have_attributes(:period => expected_period, :price => expected_price)}
+  describe '#price' do
+    it "returns right price" do
+      expect(movie.price).to eq(expected_price)
+    end
+  end
+
 end
 
-RSpec.shared_examples "prepare an instance" do |start_year, end_year, instance_ref|
-  let(:record) {CSV.read('..\movies.txt', col_sep: "|").map.find{|a| a[2].to_i.between?(start_year, end_year)}}
-  it{ expect(record[2].to_i).to be_between(start_year, end_year).inclusive }
-  let(instance_ref) {described_class.new(record)}
+RSpec.shared_examples "prepare an instance" do |year_range, instance_ref, host = nil|
+  let(:record) {CSV.read('..\movies.txt', col_sep: "|").map.find{ |a| year_range.include?(a[2].to_i) } }
+  let(instance_ref) {described_class.new(record, host)}
 end
 
-RSpec.shared_examples "creates a movie of appropriate class" do |start_year, end_year, class_name|
-  let(:record) {CSV.read("../movies.txt", col_sep: "|").map.find{|a| a[2].to_i.between?(start_year, end_year)}}
+RSpec.shared_examples "creates a movie of appropriate class" do |year_range, class_name|
+  let(:record) {CSV.read("../movies.txt", col_sep: "|").map.find{|a| year_range.include?(a[2].to_i)}}
   it { expect(described_class.create(record)).to be_an_instance_of class_name }
 end
+
 
 
