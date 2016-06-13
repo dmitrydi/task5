@@ -1,18 +1,31 @@
-require_relative '..\movie_classes'
-require_relative 'movies_spec'
+require_relative 'movies_shared_spec'
+require_relative '../netfix.rb'
 require 'csv'
 
+describe ClassicMovie do
 
-RSpec.describe ClassicMovie do
+  period = ClassicMovie::PERIOD
 
-	it {is_expected.to raise_error_with_period(1969, 2000)}
+  let(:host) {Netfix.read}
+  let(:classic_movie) {make_movie(described_class)}
+  let(:movie_with_host) {make_movie(described_class, host)}
+  let(:movie_list) {host.films_by_producers[movie_with_host.producer].join(", ")}
 
-  #let(:record) {CSV.read("movies.txt", col_sep: "|").map.find{|a| a[4].to_i.between?(1946,1968)}}
-  #let(:bad_record) {CSV.read("movies.txt", col_sep: "|").map.find{|a| a[4].to_i.between?(1969,2000)}}
-  #let(:classicmovie) {ClassicMovie.new(record)}
+  it_behaves_like "a movie with limited period and certain price", period, 'classic', 1.5
 
-  #it{ expect{ClassicMovie.new(bad_record)}.to raise_error(ArgumentError) }
+  describe '#to_s' do
 
-  #it{ expect(classicmovie.to_s).to include("classic movie, producer") }
+  	context 'when initialized without @host' do
+  	  it { expect(classic_movie.to_s).to eq("#{classic_movie.title} - classic movie, producer: #{classic_movie.producer} (really good one)") }
+  	end
+
+    context 'when initialized with @host' do
+      it {expect(movie_list).to be_instance_of String }
+      it {expect(movie_list.length).to be > 0 }
+      it {expect(movie_with_host.to_s).to eq("#{movie_with_host.title} - classic movie, producer: #{movie_with_host.producer} (#{movie_list})")}
+    end
+
+
+  end
 
 end

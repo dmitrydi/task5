@@ -1,19 +1,16 @@
-require_relative '..\movie_classes'
-require 'csv'
-
+require_relative 'movies_shared_spec'
 
 describe AncientMovie do
 
-  let(:record) {CSV.read("movies.txt", col_sep: "|").map.find{|a| a[4].to_i.between?(1900,1945)}}
-  let(:bad_record) {CSV.read("movies.txt", col_sep: "|").map.find{|a| a[4].to_i.between?(1946,1968)}}
-  let(:ancient_movie) {AncientMovie.new(record)}
+  period = AncientMovie::PERIOD
 
-  it{ expect(record[4].to_i).to be_between(1900,1945).inclusive }
-  it{ expect(bad_record[4].to_i).not_to be_between(1900,1945).inclusive }
+  let(:ancient_movie) {make_movie(described_class)}
 
-  it{ expect(AncientMovie.new(record)).to be_an_instance_of AncientMovie }
-  it{ expect{AncientMovie.new(bad_record)}.to raise_error(ArgumentError) }
+  it_behaves_like "a movie with limited period and certain price", period, 'ancient', 1
 
-  it{ expect(ancient_movie.to_s).to include("old movie") }
+  describe '#to_s' do
+  	it { expect(ancient_movie.to_s).to eq("#{ancient_movie.title} - old movie (#{ancient_movie.year})") }
+  end
 
 end
+  

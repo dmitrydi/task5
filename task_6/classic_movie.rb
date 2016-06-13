@@ -1,15 +1,11 @@
-require_relative 'movie_to_show'
+require_relative 'movie_classes'
 
 class ClassicMovie < MovieToShow
-  def initialize(record, host = nil)
-    super(record, host)
-    if !@year.to_i.between?(1946,1968)
-      raise ArgumentError, "year should be in range 1946..1968"
-    end
-  end
+  PERIOD = 1946..1968
+  PRICE = 1.5
 
   def to_s
-    list_of_movies = (@host? @host.films_by_producers[@producer].join(", ") : "...")
+    list_of_movies = (@host? @host.films_by_producers[@producer].join(", ") : "really good one")
     "#{@title} - classic movie, producer: #{@producer} (#{list_of_movies})"
   end
 end

@@ -1,16 +1,12 @@
-require_relative 'movie_to_show'
+require_relative 'movie_classes'
 require 'date'
 
 class NewMovie < MovieToShow
-  def initialize(record, host = nil)
-    super(record, host)
-    if !@year.to_i.between?(2001, Date.today.year)
-      raise ArgumentError, "year should be in range 2001..#{Date.today.year}"
-    end
-  end
+  PERIOD = 2001..Date.today.year
+  PRICE = 5
 
   def to_s
-    years_ago = Date.today.year - @year.to_i
+    years_ago = Date.today.year - @year
     "#{@title} - new film, released #{years_ago} years ago!"
   end
 end

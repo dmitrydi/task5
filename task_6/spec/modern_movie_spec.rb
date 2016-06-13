@@ -1,14 +1,14 @@
-require_relative '..\modern_movie'
-require 'csv'
+require_relative 'movies_shared_spec'
 
 describe ModernMovie do
 
-  let(:record) {CSV.read("movies.txt", col_sep: "|").map.find{|a| a[4].to_i.between?(1968,2000)}}
-  let(:bad_record) {CSV.read("movies.txt", col_sep: "|").map.find{|a| a[4].to_i.between?(1945,1968)}}
-  let(:modern_movie) {ModernMovie.new(record)}
+  period = ModernMovie::PERIOD
 
-  it{ expect{ModernMovie.new(bad_record)}.to raise_error(ArgumentError) }
+  let(:modern_movie) {make_movie(described_class)}
 
-  it{ expect(modern_movie.to_s).to include("modern movie, starring:") }
+  it_behaves_like "a movie with limited period and certain price", period, 'modern', 3
 
+  describe '#to_s' do
+    it { expect(modern_movie.to_s).to eq("#{modern_movie.title} - modern movie, starring: #{modern_movie.actors.join(', ')}") }
+  end
 end
