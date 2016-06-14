@@ -56,7 +56,13 @@ class MovieCollection
   def filter(filt)
 	  self.class.new(@collection.find_all {
 	    |a|
-	    filt.inject(true) {|memo, (key, val)| memo && (a.send(key).include?(val)) }
+	    filt.inject(true) {|memo, (key, val)| memo && 
+          if a.send(key).class == Fixnum || a.send(key).class == Float
+            a.send(key) == val
+          else
+            a.send(key).include?(val)
+          end
+        }
 	    }
 	  )
   end
@@ -64,4 +70,6 @@ class MovieCollection
   def stats(key)
     @collection.group_by {|a| a.send(key)}.map{|key, val| [key,val.count]}.to_h
   end
+
+
 end

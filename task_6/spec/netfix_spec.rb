@@ -63,4 +63,16 @@ describe Netfix do
     it { expect{netfix.how_much?("Santa Barbara")}.to raise_error(ArgumentError)}
   end
 
+  describe '#gen_number' do
+    it 'expect to return nember according to rating' do
+      ary = netfix.pay(10).make_shortlist.max_by(3) {|a| a.rating}.reverse
+      sample = Array.new(3,0)
+      for i in 1..10000
+        n = Netfix.new.gen_number(ary)
+        sample[n] += 1
+      end
+      expect(sample[1]).to be_between(sample[0], sample[2])
+    end
+  end
+
 end

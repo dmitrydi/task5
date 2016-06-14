@@ -28,12 +28,22 @@ class Netfix < MovieCollection
       raise ArgumentError, "no films found with given parameters"
     else
       list_to_show = list_to_show.find_all {|a| a.price <= @money}
+      raise ArgumentError, "you don't have enough money"
     end
   end
 
-  def gen_number(shortlist)
+  def gen_number(shortlist, scale = 2)
     s = 0.0
-    sum_rating_ary = shortlist.map {|a| s += a.rating.to_f}
+    rmin = shortlist.min_by {|a| a.rating}.rating
+    rmax = shortlist.max_by {|a| a.rating}.rating
+    if rmin == rmax
+      k = 0
+      b = 1
+    else
+      k = (scale - 1)/(rmax - rmin)
+      b = 1 - k * rmin
+    end
+    sum_rating_ary = shortlist.map{|a| s += (k*a.rating + b)}
     rnd = Random.new.rand(0..sum_rating_ary.last)
     sum_rating_ary.index {|a| a >= rnd}
   end
@@ -42,8 +52,9 @@ class Netfix < MovieCollection
     shortlist = make_shortlist(filter)
     if shortlist.length == 0
       raise RuntimeError, "you don't have enough money"
-    else
-      n = gen_number(shortlist)
+    elser
+      #n = gen_number(shortlist)
+      mov = shortlist.max_by{|a| rand ** (1/a.rating)}
       @money -= shortlist[n].price
       "Now showing: " + shortlist[n].to_s
     end

@@ -11,7 +11,7 @@ class Movie
     @date = record[4]
     @genre = record[5].split(",")
     @duration = record[6].to_i
-    @rating = record[7]
+    @rating = record[7].to_f
     @producer = record[8]
     @actors = record[9].split(",")
     @month = Date::ABBR_MONTHNAMES[@date.split("-")[1].to_i]
@@ -29,4 +29,5 @@ class Movie
     end
     @genre.include?(genre)
   end
+
 end
