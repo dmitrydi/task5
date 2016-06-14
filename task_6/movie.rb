@@ -30,4 +30,13 @@ class Movie
     @genre.include?(genre)
   end
 
+  def match?(key, val)
+    key_val = self.send(key)
+    if key_val.is_a?(Numeric)
+      key_val == val
+    else
+      key_val.include?(val)
+    end
+  end
+
 end

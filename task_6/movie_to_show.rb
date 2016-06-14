@@ -12,6 +12,14 @@ class MovieToShow < Movie
     self.class::PRICE
   end
 
+  def has_price?(price_range)
+    if price_range.class == Range
+      price_range.include?(self.price)
+    else
+      self.price == price_range
+    end
+  end
+
   def period
     self.class.to_s.downcase.sub("movie","")
   end
