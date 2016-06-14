@@ -10,6 +10,12 @@ describe Movie do
   it {expect(movie.rating).to be_instance_of Float}
   it {expect(movie.duration).to be_instance_of Fixnum}
 
+  describe '#match?' do
+  	it { expect(movie).to respond_to(:match?).with(2).arguments }
+  	it { expect(movie.match?(:year, movie.year)).to be_truthy }
+  	it { expect(movie.match?(:actors, movie.actors[0])).to be_truthy }
+  end
+
 
   
 end
