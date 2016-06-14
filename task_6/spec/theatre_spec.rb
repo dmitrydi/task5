@@ -18,6 +18,7 @@ describe Theatre do
 
   describe '#show' do
     it{ expect{theatre.show}.to raise_error(ArgumentError) }
+    it{ expect{Theatre.read.show('08:30')}.to raise_error(RuntimeError, "you don't have enough money")}
     it {expect{theatre.show('08:30')}.to change{theatre.money}.from(10).to(10 - AncientMovie::PRICE) }
     it{ expect{theatre.show('08:30')}.to output(/Now showing.*old movie/).to_stdout } 
   end
