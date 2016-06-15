@@ -11,8 +11,10 @@ describe Cinema do
     include_examples "creates a collection of diff.movies", Cinema.new.read
   end
 
+  subject{cinema}
+
   describe '#self.read' do
-    it {expect(cinema).to be_instance_of Cinema}
+    it { is_expected.to be_instance_of Cinema }
   end
 
   describe '#pay' do
@@ -21,12 +23,12 @@ describe Cinema do
     it { expect(cinema.pay(10)).to be_instance_of Cinema }
   end
 
-  describe '#how_much?' do
+  describe '#price_for' do
+    let(:price) { cinema.filter(title: "The Terminator").collection.first.price }
     it 'expect to return right price' do
-      price = cinema.filter(title: "The Terminator").collection.first.price
-      expect(cinema.how_much?("The Terminator")).to eq(price) 
+      expect(cinema.price_for("The Terminator")).to eq(price) 
     end
-    it { expect{cinema.how_much?("Santa Barbara")}.to raise_error(ArgumentError)}
+    it { expect{cinema.price_for("Santa Barbara")}.to raise_error(ArgumentError)}
   end
 
   describe '#filter_by_price' do
@@ -34,7 +36,9 @@ describe Cinema do
   end
 
   describe '#inspect' do
-    it {expect(cinema.inspect).to be_instance_of Hash }
+    subject {cinema.inspect}
+    it { is_expected.to be_instance_of String }
+    it { is_expected.to include("ancient", "classic", "new", "modern")}
   end
 
 end

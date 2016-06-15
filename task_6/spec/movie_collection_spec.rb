@@ -1,7 +1,7 @@
 require_relative '../netfix'
 require 'csv'
 
-RSpec::Matchers.define :contain_value do |key, expected|
+RSpec::Matchers.define :include_in_attribute do |key, expected|
   match do |actual|
     actual.send(key).include?(expected)
   end
@@ -26,7 +26,7 @@ describe MovieCollection do
     it {expect(movie_collection.filter(rating: 8.3).collection).to all(have_attributes(:rating => 8.3)) }
 
     let(:filtered_collection) {movie_collection.filter(actors: 'Sharon Stone').collection}
-    it {expect(filtered_collection).to all(contain_value('actors', 'Sharon Stone'))}
+    it {expect(filtered_collection).to all(include_in_attribute(:actors, 'Sharon Stone'))}
     it {expect(filtered_collection.length).to eq(1)}
   end
 

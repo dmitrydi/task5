@@ -22,7 +22,7 @@ class Cinema < MovieCollection
     end
   end
 
-  def how_much?(name)
+  def price_for(name)
     movie = @collection.find{|a| a.title == name}
     unless movie
       raise ArgumentError, "no such movie"
@@ -32,7 +32,7 @@ class Cinema < MovieCollection
   end
 
   def inspect
-    self.stats(:period)
+    self.stats(:period).collect{ |k, v| "#{k} - #{v}"}.join(", ")
   end
 
   def filter_by_price(money)
