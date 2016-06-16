@@ -21,4 +21,23 @@ NIGHT = 0..2
     Theatre.new(list_to_show).pay(@money).filter_by_price(@money).collection.max_by{ |a| rand * a.rating }
   end
 
+
+  def time_for(title)
+    movie = self.filter(title: title).collection.first
+    time = if movie.period == 'ancient'
+             rand(MORNING)  
+           else
+             genre = movie.genre
+           case 
+             when genre.include?('Comedy'), genre.include?('Adventure')
+               rand(NOON)
+             when genre.include?('Drama'), genre.include?('Horror')
+               rand(0..1) == 0 ? rand(EVENING) : rand(NIGHT)
+             else
+               raise ArgumentError, "film is not in the schedule"
+           end
+          end
+    time <= 9 ? ("0%d:00" %time) : ("%d:00" %time)
+  end
+
 end
