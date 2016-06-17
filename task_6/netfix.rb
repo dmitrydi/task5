@@ -2,8 +2,39 @@ require_relative 'cinema'
 
 class Netfix < Cinema
 
-  def select_movie(filter = nil)
-    self.filter(filter).filter_by_price(@money).collection.max_by{ |a| rand * a.rating }
+  def initialize(movie_array = nil)
+    super
+  	@money = 0
+  end
+
+  attr_reader :money
+
+  def pay(amount)
+    if amount < 0
+      raise ArgumentError, "argument should be >=0"
+    else
+      @money += amount
+      self
+    end
+  end
+
+  def price_for(name)
+    movie = @collection.find{|a| a.title == name}
+    raise ArgumentError, "Movie #{name} not found" unless movie
+    movie.price
+  end
+
+  def show(filter = nil)
+    movie = select_movie(filter)
+    @money -= movie.price
+    puts("Now showing: " + movie.to_s)
+  end
+
+  def select_movie(filters = nil)
+    filtered_collection = self.filter(filters).collection
+    filtered_collection.select! { |m| m.price <= @money }
+    raise "You don't have enough money" if filtered_collection.empty?
+    filtered_collection.max_by{ |a| rand * a.rating }
   end
 
 end
