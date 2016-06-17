@@ -3,10 +3,6 @@ require_relative '../theatre'
 describe Theatre do
 
   let(:theatre) { Theatre.read }
-
-  before (:example) do
-    theatre.pay(10)
-  end
   
   describe '#select_movie' do
     it{ expect{Theatre.new.select_movie}.to raise_error(ArgumentError) }
@@ -18,8 +14,6 @@ describe Theatre do
 
   describe '#show' do
     it{ expect{theatre.show}.to raise_error(ArgumentError) }
-    it{ expect{Theatre.read.show('08:30')}.to raise_error(RuntimeError, "you don't have enough money")}
-    it {expect{theatre.show('08:30')}.to change{theatre.money}.from(10).to(10 - AncientMovie::PRICE) }
     it{ expect{theatre.show('08:30')}.to output(/Now showing.*old movie/).to_stdout } 
   end
 
@@ -32,7 +26,7 @@ describe Theatre do
     it{ expect(theatre.time_for(ancient_title)).to be_between("08:00", "11:00") }
     it{ expect(theatre.time_for(comedy_title)).to be_between("12:00", "17:00") }
     it{ expect(theatre.time_for(drama_title)).to be_between("18:00", "23:00").or be_between("00:00", "02:00")}
-    it{ expect{theatre.time_for(bad_title)}.to raise_error(ArgumentError, "film is not in the schedule") }
+    it{ expect{theatre.time_for(bad_title)}.to raise_error(ArgumentError, "Film is not in the schedule") }
   end
   
 end
