@@ -9,13 +9,17 @@ class MovieCollection
 
   attr_reader :collection
 
+  def create_movie(record, host = nil)
+    Movie.new(record, host)
+  end
+
   def read(filename = "movies.txt")
-	  @collection = CSV.read(filename, col_sep: "|").map {|a| Movie.new(a, self)}
+	  @collection = CSV.read(filename, col_sep: "|").map {|a| create_movie(a, self)}
     self
   end
 
   def self.read(filename = "movies.txt")
-    self.new.read(filename)
+    new.read(filename)
   end
 
   def existing_genres
@@ -32,7 +36,7 @@ class MovieCollection
   end
 
   def films_by_producers
-    @movs_by_producers ? @movs_by_producers : @movs_by_producers = @collection.group_by {|a| a.producer}.map{|key, val| [key,val.map {|a| a.title}]}.to_h
+   @movs_by_producers ||= @collection.group_by {|a| a.producer}.map{|key, val| [key,val.map {|a| a.title}]}.to_h
   end
 
   def first(n = nil)
@@ -53,9 +57,9 @@ class MovieCollection
 	  MovieCollection.new(@collection.sort_by {|a| a.send(key)})
   end
 
-  def filter(filt = {})
-    return self if filt.empty?
-    filtered_collection = filt.inject(@collection) { |memo, (k,v)| memo.select{ |m| m.match?(k,v) } }
+  def filter(filt = nil)
+    return self unless filt
+    filtered_collection = filt.inject(@collection) { |memo, (k, v)| memo.select{ |m| m.any_match?(k, v) } }
     raise ArgumentError, "No movies found with filter #{filt}" if filtered_collection.empty?
     self.class.new(filtered_collection)
   end

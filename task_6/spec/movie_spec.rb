@@ -16,6 +16,8 @@ describe Movie do
   	it { expect(movie.match?(:actors, movie.actors[0])).to be_truthy }
   end
 
-
-  
+  describe '#any_match?' do
+    let(:checking_genres) {movie.genre.first(1) << "Bla-bla" }
+    it { expect(movie.any_match?(:genre, checking_genres)).to be_truthy }
+  end
 end

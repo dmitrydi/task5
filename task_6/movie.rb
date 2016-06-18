@@ -39,4 +39,10 @@ class Movie
     end
   end
 
+  def any_match?(key, val)
+    return match?(key, val) unless val.is_a?(Array)
+    key_val = self.send(key)
+    val.inject(false) { |memo, v| memo || key_val.include?(v) }
+  end
+
 end
