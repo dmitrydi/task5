@@ -32,17 +32,8 @@ class Movie
 
   def match?(key, val)
     key_val = self.send(key)
-    if key_val.is_a?(Numeric)
-      key_val == val
-    else
-      key_val.include?(val)
-    end
-  end
-
-  def any_match?(key, val)
-    return match?(key, val) unless val.is_a?(Array)
-    key_val = self.send(key)
-    val.inject(false) { |memo, v| memo || key_val.include?(v) }
+    return val.inject(false) { |memo, v| memo || key_val.include?(v) } if val.is_a?(Array)
+    key_val.is_a?(Numeric) ? (key_val == val) : key_val.include?(val)
   end
 
 end

@@ -59,7 +59,7 @@ class MovieCollection
 
   def filter(filt = nil)
     return self unless filt
-    filtered_collection = filt.inject(@collection) { |memo, (k, v)| memo.select{ |m| m.any_match?(k, v) } }
+    filtered_collection = filt.inject(@collection) { |memo, (k, v)| memo.select{ |m| m.match?(k, v) } }
     raise ArgumentError, "No movies found with filter #{filt}" if filtered_collection.empty?
     self.class.new(filtered_collection)
   end
