@@ -20,9 +20,9 @@ describe MovieCollection do
   end
 
   describe '#filter' do
-
-    it {expect{movie_collection.filter(genre: 'Tragedy')}.to raise_error(ArgumentError, 'no movies found with the filter given')}  	
-  	it {expect(movie_collection.filter(year: 1994).collection).to all(have_attributes(:year => 1994)) }
+    let(:bad_filter) { {genre: 'Tragedy'}}
+    it {expect{movie_collection.filter(bad_filter)}.to raise_error(ArgumentError, "No movies found with filter #{bad_filter}")}  	
+  	it {expect(movie_collection.filter(year: 1994, country: 'USA').collection).to all(have_attributes(:year => 1994, :country => 'USA')) }
     it {expect(movie_collection.filter(rating: 8.3).collection).to all(have_attributes(:rating => 8.3)) }
 
     let(:filtered_collection) {movie_collection.filter(actors: 'Sharon Stone').collection}

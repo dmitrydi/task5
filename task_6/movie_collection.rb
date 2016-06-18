@@ -53,20 +53,11 @@ class MovieCollection
 	  MovieCollection.new(@collection.sort_by {|a| a.send(key)})
   end
 
-  def filter(filt = nil)
-    unless filt
-      self
-    else
-      filtered_collection = @collection.find_all {
-	      |a|
-	      filt.inject(true) {|memo, (key, val)| memo && a.match?(key, val)}
-      }
-	    if filtered_collection.length == 0 
-        raise ArgumentError, 'no movies found with the filter given'
-      else
-        self.class.new(filtered_collection)
-      end
-    end
+  def filter(filt = {})
+    return self if filt.empty?
+    filtered_collection = filt.inject(@collection) { |memo, (k,v)| memo.select{ |m| m.match?(k,v) } }
+    raise ArgumentError, "No movies found with filter #{filt}" if filtered_collection.empty?
+    self.class.new(filtered_collection)
   end
 
   def stats(key)
