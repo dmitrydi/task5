@@ -6,12 +6,12 @@ class Movie
     @host = host
     @webaddr = record[0]
     @title = record[1]
-    @year = record[2]
+    @year = record[2].to_i
     @country = record[3]
     @date = record[4]
     @genre = record[5].split(",")
     @duration = record[6].to_i
-    @rating = record[7]
+    @rating = record[7].to_f
     @producer = record[8]
     @actors = record[9].split(",")
     @month = Date::ABBR_MONTHNAMES[@date.split("-")[1].to_i]
@@ -29,4 +29,11 @@ class Movie
     end
     @genre.include?(genre)
   end
+
+  def match?(key, val)
+    key_val = self.send(key)
+    return val.inject(false) { |memo, v| memo || key_val.include?(v) } if val.is_a?(Array)
+    key_val.is_a?(Numeric) ? (key_val == val) : key_val.include?(val)
+  end
+
 end
