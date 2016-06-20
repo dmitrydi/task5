@@ -37,4 +37,8 @@ describe Netfix do
     it {expect{netfix.show(period: 'ancient')}.to output(/Now showing.*old movie/).to_stdout }
   end
 
+  describe '#take' do
+    it { expect{Netfix.take("Police")}.to raise_error(ArgumentError) }
+  end
+
 end
