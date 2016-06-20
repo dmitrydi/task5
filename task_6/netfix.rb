@@ -20,13 +20,10 @@ class Netfix < Cinema
   end
 
   def pay(amount)
-    if amount < 0
-      raise ArgumentError, "argument should be >=0"
-    else
-      @money += amount
-      @@cinema_cash += @money
-      self
-    end
+    raise ArgumentError, "argument should be >=0" if amount < 0
+    @money += amount
+    @@cinema_cash += @money
+    self
   end
 
   def price_for(name)
@@ -42,7 +39,7 @@ class Netfix < Cinema
   end
 
   def select_movie(filters = nil)
-    filtered_collection = self.filter(filters).collection
+    filtered_collection = filter(filters).collection
     filtered_collection.select! { |m| m.price <= @money }
     raise "You don't have enough money" if filtered_collection.empty?
     filtered_collection.max_by{ |a| rand * a.rating }
