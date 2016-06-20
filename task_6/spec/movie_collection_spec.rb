@@ -12,6 +12,9 @@ describe MovieCollection do
   let(:movie_collection) {MovieCollection.read}
 
   it { expect(movie_collection).to be_instance_of MovieCollection}
+  it { expect(movie_collection.any?{ |m| m.title == 'The Terminator' }).to be_truthy }
+  it { expect(movie_collection.each).to be_instance_of Enumerator }
+  it { expect(movie_collection.each{|m|}).to eq(movie_collection.collection) }
 
   describe '#films_by_producers' do
     subject {movie_collection.films_by_producers}
