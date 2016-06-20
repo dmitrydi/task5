@@ -3,7 +3,7 @@ require_relative '../task_7/cash_desk'
 
 class Netfix < Cinema
 
-  include CashDesk
+  extend CashDesk
 
   def initialize(movie_array = nil)
     super
