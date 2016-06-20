@@ -28,5 +28,14 @@ describe Theatre do
     it{ expect(theatre.time_for(drama_title)).to be_between("18:00", "23:00").or be_between("00:00", "02:00")}
     it{ expect{theatre.time_for(bad_title)}.to raise_error(ArgumentError, "Film is not in the schedule") }
   end
+
+  it { expect(theatre.cash).to eq 0 }
+
+  describe '#buy_ticket' do
+    #before(:example) do
+    #  theatre.buy_ticket("09:30")
+    #end
+    it { expect{theatre.buy_ticket("09:30")}.to change{theatre.cash}.by(AncientMovie::PRICE) }
+  end
   
 end

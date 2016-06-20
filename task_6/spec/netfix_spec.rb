@@ -11,6 +11,7 @@ describe Netfix do
   end
 
   it { expect(Netfix.cash).to eq 20 }
+  it { expect{ Netfix.put_cash(-10) }.to raise_error ArgumentError }
 
   describe '#pay' do
     it { expect{netfix.pay(-1)}.to raise_error(ArgumentError, "argument should be >=0") }
