@@ -1,7 +1,11 @@
 require_relative 'cinema'
 require 'time'
+require_relative '../task_7/cash_desk'
 
 class Theatre < Cinema
+
+include CashDesk
+
 MORNING = 8..11
 NOON = 12..17
 EVENING = 18..23
@@ -12,6 +16,7 @@ FILTERS_FOR_PERIODS = {
   EVENING => {genre: ['Drama', 'Horror']},
   NIGHT =>  {genre: ['Drama', 'Horror']}
 }
+
   def select_movie(time)
     raise ArgumentError, "enter time from 08:00 to 02:59" unless time
     hour = Time.parse(time).hour
@@ -33,6 +38,12 @@ FILTERS_FOR_PERIODS = {
 
   def show(time)
     puts "Now showing: " + select_movie(time).to_s
+  end
+
+  def buy_ticket(time)
+    movie = select_movie(time)
+    puts "You've bought a ticket on #{movie}"
+    put_cash(movie.price)
   end
 
 end
