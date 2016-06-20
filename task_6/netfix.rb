@@ -1,18 +1,32 @@
 require_relative 'cinema'
+require_relative '../task_7/cash_desk'
 
 class Netfix < Cinema
 
+  extend CashDesk
+
+  @@cinema_cash = 0
+
   def initialize(movie_array = nil)
     super
-    @money = 0
+  	@money = 0
   end
 
   attr_reader :money
+  
+
+  def self.cinema_cash
+    @@cinema_cash
+  end
 
   def pay(amount)
-    raise ArgumentError, "argument should be >=0" if (amount < 0)
-    @money += amount
-    self
+    if amount < 0
+      raise ArgumentError, "argument should be >=0"
+    else
+      @money += amount
+      @@cinema_cash += @money
+      self
+    end
   end
 
   def price_for(name)
@@ -28,7 +42,7 @@ class Netfix < Cinema
   end
 
   def select_movie(filters = nil)
-    filtered_collection = filter(filters).collection
+    filtered_collection = self.filter(filters).collection
     filtered_collection.select! { |m| m.price <= @money }
     raise "You don't have enough money" if filtered_collection.empty?
     filtered_collection.max_by{ |a| rand * a.rating }
