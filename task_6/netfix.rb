@@ -1,17 +1,21 @@
 require_relative 'cinema'
+require_relative '../task_7/cash_desk'
 
 class Netfix < Cinema
 
+  extend CashDesk
+
   def initialize(movie_array = nil)
     super
-    @money = 0
+  	@money = 0
   end
 
   attr_reader :money
 
   def pay(amount)
-    raise ArgumentError, "argument should be >=0" if (amount < 0)
+    raise ArgumentError, "argument should be >=0" if amount < 0
     @money += amount
+    Netfix.put_cash(amount)
     self
   end
 
