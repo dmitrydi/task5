@@ -3,9 +3,7 @@ require_relative '../task_7/cash_desk'
 
 class Netfix < Cinema
 
-  extend CashDesk
-
-  @@cinema_cash = 0
+  include CashDesk
 
   def initialize(movie_array = nil)
     super
@@ -13,16 +11,11 @@ class Netfix < Cinema
   end
 
   attr_reader :money
-  
-
-  def self.cinema_cash
-    @@cinema_cash
-  end
 
   def pay(amount)
     raise ArgumentError, "argument should be >=0" if amount < 0
     @money += amount
-    @@cinema_cash += @money
+    Netfix.put_cash(amount)
     self
   end
 
