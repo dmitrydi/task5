@@ -16,3 +16,4 @@ module CashDesk
   end
 
 end
+
