@@ -4,13 +4,12 @@ require_relative '../../task_7/cash_desk'
 describe Netfix do
 
   let(:netfix) {Netfix.read}
-  let(:netfix2) {Netfix.read}
   before (:example) do
     netfix.pay(10)
-    netfix2.pay(10)
   end
-
-  it { expect(Netfix.cash).to eq 20 }
+  
+  it { expect(Netfix.cash).to eq(10) }
+  it { expect{ Netfix.read.pay(10) }.to change{Netfix.cash}.by(10) }
   it { expect{ Netfix.put_cash(-10) }.to raise_error ArgumentError }
 
   describe '#pay' do
