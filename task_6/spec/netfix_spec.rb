@@ -1,11 +1,16 @@
 require_relative '../netfix'
+require_relative '../../task_7/cash_desk'
 
 describe Netfix do
 
   let(:netfix) {Netfix.read}
+  let(:netfix2) {Netfix.read}
   before (:example) do
     netfix.pay(10)
+    netfix2.pay(10)
   end
+
+  it { expect(Netfix.cash).to eq 20 }
 
   describe '#pay' do
     it { expect{netfix.pay(-1)}.to raise_error(ArgumentError, "argument should be >=0") }
