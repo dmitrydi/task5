@@ -3,8 +3,6 @@ require_relative 'movie'
 
 class MovieCollection
 
-  include Enumerable
-
   def initialize(movie_array = nil)
     @collection = movie_array
   end
@@ -61,7 +59,7 @@ class MovieCollection
 
   def filter(filt = nil)
     return self unless filt
-    filtered_collection = filt.inject(@collection) { |memo, (k, v)| memo.select{ |m| m.any_match?(k, v) } }
+    filtered_collection = filt.inject(@collection) { |memo, (k, v)| memo.select{ |m| m.match?(k, v) } }
     raise ArgumentError, "No movies found with filter #{filt}" if filtered_collection.empty?
     self.class.new(filtered_collection)
   end
@@ -70,12 +68,5 @@ class MovieCollection
     @collection.group_by {|a| a.send(key)}.map{|key, val| [key,val.count]}.to_h
   end
 
-  def inspect
-    stats(:genre).collect{ |k, v| "#{k} - #{v}"}.join(", ")
-  end
-
-  def each(&block)
-    @collection.each(&block)
-  end
 
 end
