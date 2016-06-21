@@ -32,9 +32,15 @@ describe Theatre do
   it { expect(theatre.cash).to eq 0 }
 
   describe '#buy_ticket' do
-
     it { expect{theatre.buy_ticket("09:30")}.to change{theatre.cash}.by(AncientMovie::PRICE) }
     it { expect{Theatre.read.buy_ticket("09:30")}.not_to change{theatre.cash} }
+  end
+
+  describe '#take' do
+    before(:example) do
+      theatre.buy_ticket("09:30")
+    end
+    it { expect{ theatre.take('Bank') }.to change{theatre.cash}.from(AncientMovie::PRICE).to(0) }
   end
   
 end
