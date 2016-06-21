@@ -18,7 +18,7 @@ describe CashDesk do
       instance.put_cash(10)
     end
 
-    it{ expect{ instance.take('Not Bank') }.to raise_error EncashmentError }
+    it{ expect{ instance.take('Not Bank') }.to raise_error(EncashmentError).and change{ instance.cash }.by(0) }
     it{ expect{ instance.take('Bank') }.to change{ instance.cash }.from(10).to(0) }
     it{ expect{ instance.take('Bank') }.to output(/Cash collected by Bank, amount taken: #{instance.cash}/).to_stdout }
   end
