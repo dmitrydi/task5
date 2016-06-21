@@ -15,7 +15,7 @@ class Netfix < Cinema
   def pay(amount)
     raise ArgumentError, "argument should be >=0" if amount < 0
     @money += amount
-    Netfix.put_cash(amount)
+    self.class.put_cash(amount)
     self
   end
 

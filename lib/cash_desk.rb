@@ -1,3 +1,5 @@
+require_relative 'error_classes'
+
 module CashDesk
 
   def cash
@@ -10,10 +12,9 @@ module CashDesk
   end
 
   def take(who)
-  	raise ArgumentError, "#{who} is not permitted to take cash" unless who == 'Bank'
+  	raise EncashmentError, "#{who} is not permitted to take cash" unless who == 'Bank'
   	puts "Cash collected by #{who}, amount taken: #{cash}"
-  	@cash = cash - cash
+  	@cash = 0
   end
-
 
 end
