@@ -5,15 +5,12 @@ describe Netfix do
 
   let(:netfix) {Netfix.read}
   before (:example) do
+    Netfix.take('Bank')
     netfix.pay(10)
   end
   
   it { expect(Netfix.cash).to eq(10) }
   it { expect{ Netfix.read.pay(10) }.to change{Netfix.cash}.by(10) }
-  it { expect{ Netfix.put_cash(-10) }.to raise_error ArgumentError }
-  it { expect{ Netfix.take('Not Bank') }.to raise_error ArgumentError }
-  it { expect{ Netfix.take('Bank') }.to change{Netfix.cash}.to(0) }
-  it { expect{ Netfix.take('Bank') }.to output(/Cash collected by Bank, amount taken: #{Netfix.cash}/).to_stdout }
 
   describe '#pay' do
     it { expect{netfix.pay(-1)}.to raise_error(ArgumentError, "argument should be >=0") }
