@@ -29,7 +29,8 @@ module MoviePack
       if @host && !@host.genre_exists?(genre)
         raise ArgumentError, "Genre: #{genre} does not exist"
       end
-      @genre.include?(genre)
+      #@genre.include?(genre)
+      @genre.any?{ |v| genre.include?(v) }
     end
 
     def match?(key, val)
