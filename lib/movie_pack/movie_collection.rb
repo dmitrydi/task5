@@ -5,7 +5,7 @@ module MoviePack
 
 class MovieCollection
 
-  #MOVIEPATH = '..\..\src\movies.txt'
+  include Enumerable
 
   def initialize(movie_array = nil)
     @collection = movie_array
@@ -70,6 +70,10 @@ class MovieCollection
 
   def stats(key)
     @collection.group_by {|a| a.send(key)}.map{|key, val| [key,val.count]}.to_h
+  end
+
+  def each(&block)
+    @collection.each(&block)
   end
 end
 
