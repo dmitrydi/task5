@@ -1,8 +1,6 @@
-require_relative '../../lib/movie_pack'
+require_relative 'spec_helper'
 
 RSpec::Matchers.define_negated_matcher :not_to_change, :change
-
-include MoviePack
 
 describe CashDesk do
 

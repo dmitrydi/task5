@@ -1,7 +1,4 @@
-require_relative '..\..\lib\movie_pack'
-require_relative 'cinema_shared_spec'
-
-include MoviePack
+require_relative 'spec_helper'
 
 describe Cinema do
 

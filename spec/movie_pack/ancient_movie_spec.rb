@@ -1,7 +1,4 @@
-require_relative 'movies_shared_spec'
-require_relative '../../lib/movie_pack'
-
-include MoviePack
+require_relative 'spec_helper'
 
 describe AncientMovie do
 

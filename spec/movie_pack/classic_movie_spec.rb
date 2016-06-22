@@ -1,8 +1,4 @@
-require_relative 'movies_shared_spec'
-require_relative '..\..\lib\movie_pack'
-require 'csv'
-
-include MoviePack
+require_relative 'spec_helper'
 
 describe ClassicMovie do
 

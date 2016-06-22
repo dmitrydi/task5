@@ -1,7 +1,4 @@
-require_relative '..\..\lib\movie_pack'
-require 'csv'
-
-include MoviePack
+require_relative 'spec_helper'
 
 describe Movie do 
   let(:record) {CSV.read(MoviePack::MOVIEFILE, col_sep: '|')[0]}

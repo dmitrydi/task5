@@ -1,6 +1,4 @@
-require_relative '..\..\lib\movie_pack'
-
-include MoviePack
+require_relative 'spec_helper'
 
 describe Netfix do
 

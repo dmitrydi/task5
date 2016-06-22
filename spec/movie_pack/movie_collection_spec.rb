@@ -1,7 +1,4 @@
-require_relative '..\..\lib\movie_pack'
-require 'csv'
-
-include MoviePack
+require_relative 'spec_helper'
 
 RSpec::Matchers.define :include_in_attribute do |key, expected|
   match do |actual|

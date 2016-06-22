@@ -1,9 +1,4 @@
-require_relative '..\..\lib\movie_pack'
-require_relative 'movies_shared_spec'
-require 'csv'
-require 'date'
-
-include MoviePack
+require_relative 'spec_helper'
 
 describe MovieToShow do
 
