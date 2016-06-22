@@ -23,6 +23,13 @@ describe MoviePack do
       end
     end
 
+    describe '#match?' do
+      it{ expect(movie.match?(:webaddr, movie.webaddr)).to be true }
+      it{ expect(movie.match?(:actors, movie.actors)).to be true }
+      it{ expect(movie.match?(:actors, movie.actors[0])).to be true }
+      it{ expect(movie.match?(:actors, movie.actors + ["something"])).to be true }
+      it{ expect(movie.match?(:actors, "something")).to be false }
+    end
   end
   
 end
