@@ -1,6 +1,6 @@
 require_relative 'cinema'
 require 'time'
-require_relative '../task_7/cash_desk'
+require_relative 'cash_desk'
 
 class Theatre < Cinema
 

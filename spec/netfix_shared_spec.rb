@@ -1,5 +1,5 @@
-require_relative '..\netfix'
-require_relative '..\movie_classes'
+require_relative '..\lib\netfix'
+require_relative '..\lib\movie_classes'
 
 RSpec.shared_examples "creates a collection of diff.movies" do |netfix|
   it{ expect(netfix).to be_an_instance_of Netfix }

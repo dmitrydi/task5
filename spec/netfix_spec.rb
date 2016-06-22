@@ -1,16 +1,16 @@
-require_relative '../netfix'
-require_relative '../../task_7/cash_desk'
+require_relative '..\lib\netfix'
+require_relative '..\lib\cash_desk'
 
 describe Netfix do
 
   let(:netfix) {Netfix.read}
   before (:example) do
+    Netfix.take('Bank')
     netfix.pay(10)
   end
   
   it { expect(Netfix.cash).to eq(10) }
   it { expect{ Netfix.read.pay(10) }.to change{Netfix.cash}.by(10) }
-  it { expect{ Netfix.put_cash(-10) }.to raise_error ArgumentError }
 
   describe '#pay' do
     it { expect{netfix.pay(-1)}.to raise_error(ArgumentError, "argument should be >=0") }
@@ -35,10 +35,6 @@ describe Netfix do
   describe '#show' do
     it {expect{netfix.show(period: 'ancient')}.to change{netfix.money}.by(- AncientMovie::PRICE) }
     it {expect{netfix.show(period: 'ancient')}.to output(/Now showing.*old movie/).to_stdout }
-  end
-
-  describe '#take' do
-    it { expect{Netfix.take("Police")}.to raise_error(ArgumentError) }
   end
 
 end

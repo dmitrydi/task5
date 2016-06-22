@@ -1,5 +1,5 @@
 require_relative 'movies_shared_spec'
-require_relative '../netfix.rb'
+require_relative '..\lib\netfix.rb'
 require 'csv'
 
 describe ClassicMovie do

@@ -1,12 +1,12 @@
-require_relative '../movie_classes'
-require_relative '../netfix'
+require_relative '..\lib\movie_classes'
+require_relative '..\lib\netfix'
 require_relative 'movies_shared_spec'
 require 'csv'
 require 'date'
 
 describe MovieToShow do
 
-  let(:record) {CSV.read('../movies.txt', col_sep: '|')[0]}
+  let(:record) {CSV.read('..\src\movies.txt', col_sep: '|')[0]}
 
   it { expect{MovieToShow.new(record)}.to raise_error }
 

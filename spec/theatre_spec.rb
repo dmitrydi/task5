@@ -1,4 +1,4 @@
-require_relative '../theatre'
+require_relative '..\lib\theatre'
 
 describe Theatre do
 
@@ -32,7 +32,6 @@ describe Theatre do
   it { expect(theatre.cash).to eq 0 }
 
   describe '#buy_ticket' do
-
     it { expect{theatre.buy_ticket("09:30")}.to change{theatre.cash}.by(AncientMovie::PRICE) }
     it { expect{Theatre.read.buy_ticket("09:30")}.not_to change{theatre.cash} }
   end

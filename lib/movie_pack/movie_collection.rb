@@ -1,7 +1,11 @@
 require 'csv'
 require_relative 'movie'
 
+module MoviePack
+
 class MovieCollection
+
+  #MOVIEPATH = '..\..\src\movies.txt'
 
   def initialize(movie_array = nil)
     @collection = movie_array
@@ -9,13 +13,17 @@ class MovieCollection
 
   attr_reader :collection
 
-  def read(filename = "movies.txt")
-	  @collection = CSV.read(filename, col_sep: "|").map {|a| Movie.new(a, self)}
+  def create_movie(record, host = nil)
+    Movie.new(record, host)
+  end
+
+  def read(filename = MoviePack::MOVIEFILE)
+	  @collection = CSV.read(filename, col_sep: "|").map {|a| create_movie(a, self)}
     self
   end
 
-  def self.read(filename = "movies.txt")
-    MovieCollection.new.read(filename)
+  def self.read(filename = MoviePack::MOVIEFILE)
+    new.read(filename)
   end
 
   def existing_genres
@@ -29,6 +37,10 @@ class MovieCollection
 
   def to_s
     @collection.join("\n")
+  end
+
+  def films_by_producers
+   @movs_by_producers ||= @collection.group_by {|a| a.producer}.map{|key, val| [key,val.map {|a| a.title}]}.to_h
   end
 
   def first(n = nil)
@@ -49,15 +61,16 @@ class MovieCollection
 	  MovieCollection.new(@collection.sort_by {|a| a.send(key)})
   end
 
-  def filter(filt)
-	  MovieCollection.new(@collection.find_all {
-	    |a|
-	    filt.inject(true) {|memo, (key, val)| memo && (a.send(key).include?(val)) }
-	    }
-	  )
+  def filter(filt = nil)
+    return self unless filt
+    filtered_collection = filt.inject(@collection) { |memo, (k, v)| memo.select{ |m| m.match?(k, v) } }
+    raise ArgumentError, "No movies found with filter #{filt}" if filtered_collection.empty?
+    self.class.new(filtered_collection)
   end
 
   def stats(key)
     @collection.group_by {|a| a.send(key)}.map{|key, val| [key,val.count]}.to_h
   end
+end
+
 end

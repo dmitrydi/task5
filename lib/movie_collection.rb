@@ -3,7 +3,7 @@ require_relative 'movie'
 
 class MovieCollection
 
-  include Enumerable
+  MOVIEPATH = '..\src\movies.txt'
 
   def initialize(movie_array = nil)
     @collection = movie_array
@@ -15,12 +15,12 @@ class MovieCollection
     Movie.new(record, host)
   end
 
-  def read(filename = "movies.txt")
+  def read(filename = MOVIEPATH)
 	  @collection = CSV.read(filename, col_sep: "|").map {|a| create_movie(a, self)}
     self
   end
 
-  def self.read(filename = "movies.txt")
+  def self.read(filename = MOVIEPATH)
     new.read(filename)
   end
 
@@ -70,12 +70,5 @@ class MovieCollection
     @collection.group_by {|a| a.send(key)}.map{|key, val| [key,val.count]}.to_h
   end
 
-  def inspect
-    stats(:genre).collect{ |k, v| "#{k} - #{v}"}.join(", ")
-  end
-
-  def each(&block)
-    @collection.each(&block)
-  end
 
 end

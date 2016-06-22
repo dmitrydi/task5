@@ -1,5 +1,5 @@
 require_relative 'cinema'
-require_relative '../task_7/cash_desk'
+require_relative 'cash_desk'
 
 class Netfix < Cinema
 
@@ -15,7 +15,7 @@ class Netfix < Cinema
   def pay(amount)
     raise ArgumentError, "argument should be >=0" if amount < 0
     @money += amount
-    Netfix.put_cash(amount)
+    self.class.put_cash(amount)
     self
   end
 

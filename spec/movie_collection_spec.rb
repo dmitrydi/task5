@@ -1,4 +1,4 @@
-require_relative '../netfix'
+require_relative '..\lib\netfix'
 require 'csv'
 
 RSpec::Matchers.define :include_in_attribute do |key, expected|

@@ -1,5 +1,5 @@
-require_relative '../cinema'
-require_relative '../movie_classes'
+require_relative '..\lib\cinema'
+require_relative '..\lib\movie_classes'
 require_relative 'cinema_shared_spec'
 
 
