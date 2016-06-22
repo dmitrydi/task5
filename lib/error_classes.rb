@@ -1,2 +1,0 @@
-  class EncashmentError < StandardError
-  end
