@@ -1,0 +1,9 @@
+require_relative '..\..\lib\movie_pack'
+
+RSpec.shared_examples "creates a collection of diff.movies" do |cinema|
+  it{ expect(cinema).to be_an_instance_of Cinema }
+
+  it{ expect(cinema.collection).to be_an_instance_of Array}
+
+  it{ expect(cinema.collection).to all(be_an_instance_of(AncientMovie) | be_an_instance_of(ClassicMovie) | be_an_instance_of(ModernMovie) | be_an_instance_of(NewMovie))}
+end
