@@ -1,11 +1,5 @@
 require_relative 'spec_helper'
 
-RSpec::Matchers.define :include_in_attribute do |key, expected|
-  match do |actual|
-    actual.send(key).include?(expected)
-  end
-end
-
 describe MovieCollection do
 
   let(:movie_collection) {MovieCollection.read}
