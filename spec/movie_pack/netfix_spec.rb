@@ -40,6 +40,17 @@ describe Netfix do
   describe '#show' do
     it {expect{netfix.show(period: 'ancient')}.to change{netfix.money}.by(- AncientMovie::PRICE) }
     it {expect{netfix.show(period: 'ancient')}.to output(/Now showing.*old movie/).to_stdout }
+
+    context 'it works with blocks' do
+      it { expect{ netfix.show { |m| m.period == 'ancient' } }.to output(/Now showing.*old movie/).to_stdout }
+    end
+  end
+
+  describe '#define_filter' do
+    before (:example) do
+      netfix.define_filter(:new_sci_fi) { |m| m.genre.include?('Sci-Fi') && m.period == 'new' }
+    end
+    it { expect(netfix.select_movie(new_sci_fi: true)).to include_in_attribute(:genre, 'Sci-Fi').and include_in_attribute(:period, 'new') }
   end
 
 end
