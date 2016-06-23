@@ -55,7 +55,7 @@ module MoviePack
     end
 
     def define_filter(name, &block) 
-      @filter_store.merge!({name => block})
+      @filter_store.merge!(name => block)
       self
     end
 
