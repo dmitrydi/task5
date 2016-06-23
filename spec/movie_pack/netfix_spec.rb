@@ -25,10 +25,16 @@ describe Netfix do
   end
 
   describe '#select_movie' do
-    it { expect{Netfix.read.select_movie}.to raise_error(RuntimeError, "You don't have enough money") }
-    it { expect{netfix.select_movie(genre: 'Tragedy')}.to raise_error(ArgumentError) }
-    it { expect{netfix.select_movie}.not_to raise_error(RuntimeError, "You don't have enough money") }
-    it { expect(netfix.select_movie(period: 'ancient')).to be_instance_of AncientMovie }
+    context 'it works well without blocks' do
+      it { expect{Netfix.read.select_movie}.to raise_error(RuntimeError, "You don't have enough money") }
+      it { expect{netfix.select_movie(genre: 'Tragedy')}.to raise_error(ArgumentError) }
+      it { expect{netfix.select_movie}.not_to raise_error(RuntimeError, "You don't have enough money") }
+      it { expect(netfix.select_movie(period: 'ancient')).to be_instance_of AncientMovie }
+    end
+
+    context 'it work well with block' do
+      it { expect(netfix.select_movie{ |m| !m.title.include?('Terminator') && m.genre.include?('Action') } ).to not_include_in_attribute(:title, 'Terminator').and include_in_attribute(:genre, 'Action') }
+    end
   end
 
   describe '#show' do
