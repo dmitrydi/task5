@@ -27,14 +27,18 @@ module MoviePack
       movie.price
     end
 
-    def show(filter = nil)
-      movie = select_movie(filter)
-      @money -= movie.price
-      puts("Now showing: " + movie.to_s)
+    def show(filter = nil, &block)
+        movie = select_movie(filter, &block)
+        @money -= movie.price
+        puts("Now showing: " + movie.to_s)
     end
 
-    def select_movie(filters = nil)
-      filtered_collection = filter(filters).collection
+    def select_movie(filters = nil, &block)
+      filtered_collection = if block_given?
+                              @collection.select{ |m| yield m }
+                            else
+                              filter(filters).collection
+                            end
       filtered_collection.select! { |m| m.price <= @money }
       raise "You don't have enough money" if filtered_collection.empty?
       filtered_collection.max_by{ |a| rand * a.rating }
