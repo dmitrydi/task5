@@ -38,10 +38,14 @@ module MoviePack
 
       block_filter = @filter_store[filters.keys.first]
 
-      filtered_collection = if block_given?
-                              @collection.select(&block)
-                            elsif block_filter
-                              @collection.select{ |m| block_filter.call(m) == filters.values.first }
+      ext_block = if block_filter 
+      	            Proc.new{ |m| block_filter.call(m) == filters.values.first }
+      	          else
+      	            block
+      	          end
+
+      filtered_collection = if ext_block
+                              @collection.select(&ext_block)
                             else
                               filter(filters).collection
                             end
