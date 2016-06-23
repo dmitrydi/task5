@@ -10,9 +10,10 @@ module MoviePack
     def initialize(movie_array = nil)
       super
   	  @money = 0
+      @filter_store = []
     end
 
-    attr_reader :money
+    attr_reader :money, :filter_store
 
     def pay(amount)
       raise ArgumentError, "argument should be >=0" if amount < 0
@@ -33,9 +34,20 @@ module MoviePack
         puts("Now showing: " + movie.to_s)
     end
 
+    def exec_block(m, filters)
+      filters.values.first.call(m)
+    end
+
     def select_movie(filters = nil, &block)
+
+      if filters && filters.length == 1
+        block_filter = @filter_store.detect{ |f| f.keys.first == filters.keys.first }
+      end
+
       filtered_collection = if block_given?
                               @collection.select{ |m| yield m }
+                            elsif block_filter
+                              @collection.select{ |m| exec_block(m, block_filter) == filters.values.first }
                             else
                               filter(filters).collection
                             end
@@ -43,6 +55,12 @@ module MoviePack
       raise "You don't have enough money" if filtered_collection.empty?
       filtered_collection.max_by{ |a| rand * a.rating }
     end
+
+    def define_filter(name, &block) 
+      @filter_store << {name => block}
+      self
+    end
+
   end
 
 end
