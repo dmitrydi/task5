@@ -1,5 +1,3 @@
-require_relative 'error_classes'
-
 module MoviePack
 
   module CashDesk

@@ -10,7 +10,7 @@ module MoviePack
     def initialize(movie_array = nil)
       super
   	  @money = 0
-      @filter_store = []
+      @filter_store = {}
     end
 
     attr_reader :money, :filter_store
@@ -28,26 +28,20 @@ module MoviePack
       movie.price
     end
 
-    def show(filter = nil, &block)
+    def show(filter = {}, &block)
         movie = select_movie(filter, &block)
         @money -= movie.price
         puts("Now showing: " + movie.to_s)
     end
 
-    def exec_block(m, filters)
-      filters.values.first.call(m)
-    end
+    def select_movie(filters = {}, &block)
 
-    def select_movie(filters = nil, &block)
-
-      if filters && filters.length == 1
-        block_filter = @filter_store.detect{ |f| f.keys.first == filters.keys.first }
-      end
+      block_filter = @filter_store[filters.keys.first]
 
       filtered_collection = if block_given?
-                              @collection.select{ |m| yield m }
+                              @collection.select(&block)
                             elsif block_filter
-                              @collection.select{ |m| exec_block(m, block_filter) == filters.values.first }
+                              @collection.select{ |m| block_filter.call(m) == filters.values.first }
                             else
                               filter(filters).collection
                             end
@@ -57,7 +51,7 @@ module MoviePack
     end
 
     def define_filter(name, &block) 
-      @filter_store << {name => block}
+      @filter_store.merge!({name => block})
       self
     end
 

@@ -35,6 +35,13 @@ describe Netfix do
     context 'it work well with block' do
       it { expect(netfix.select_movie{ |m| !m.title.include?('Terminator') && m.genre.include?('Action') } ).to not_include_in_attribute(:title, 'Terminator').and include_in_attribute(:genre, 'Action') }
     end
+
+    context 'it works with user-defined block filters' do
+      before(:example) do
+        netfix.define_filter(:new_sci_fi) { |m| m.genre.include?('Sci-Fi') && m.period == 'new' }
+      end
+      it { expect(netfix.select_movie(new_sci_fi: true)).to include_in_attribute(:genre, 'Sci-Fi').and include_in_attribute(:period, 'new') }
+    end
   end
 
   describe '#show' do
@@ -50,7 +57,7 @@ describe Netfix do
     before (:example) do
       netfix.define_filter(:new_sci_fi) { |m| m.genre.include?('Sci-Fi') && m.period == 'new' }
     end
-    it { expect(netfix.select_movie(new_sci_fi: true)).to include_in_attribute(:genre, 'Sci-Fi').and include_in_attribute(:period, 'new') }
+    it { expect(netfix.filter_store).not_to be_empty }
   end
 
 end
