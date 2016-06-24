@@ -36,18 +36,10 @@ module MoviePack
 
     def select_movie(filters = {}, &block)
 
-      block_filter = @filter_store[filters.keys.first]
-
-      ext_block = if block_filter 
-      	            Proc.new{ |m| block_filter.call(m) == filters.values.first }
-      	          else
-      	            block
-      	          end
-
-      filtered_collection = if ext_block
-                              @collection.select(&ext_block)
+      filtered_collection = if block_given?
+                              @collection.select(&block)
                             else
-                              filter(filters).collection
+                              filter(filters, @filter_store).collection
                             end
       filtered_collection.select! { |m| m.price <= @money }
       raise "You don't have enough money" if filtered_collection.empty?
