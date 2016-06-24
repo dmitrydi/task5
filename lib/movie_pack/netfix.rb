@@ -46,10 +46,20 @@ module MoviePack
       filtered_collection.max_by{ |a| rand * a.rating }
     end
 
-    def define_filter(name, &block) 
-      @filter_store.merge!(name => block)
+    def define_filter(name, from: nil, arg: nil, &block)
+      if block
+        @filter_store.merge!(name => block)
+      else
+        raise ArgumentError, "No filter #{from} to define a filter from" unless @filter_store.has_key?(from)
+        @filter_store.merge!( name => swap_parameters(@filter_store[from]).curry[arg] )
+      end
       self
     end
+
+    def swap_parameters(block)
+      proc {|a, b| block.call(b,a) }
+    end
+
 
   end
 
