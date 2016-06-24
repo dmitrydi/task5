@@ -42,6 +42,14 @@ describe Netfix do
       end
       it { expect(netfix.select_movie(new_sci_fi: true)).to include_in_attribute(:genre, 'Sci-Fi').and include_in_attribute(:period, 'new') }
     end
+
+    context 'it works with user-defined blocks with parameters' do
+      before(:example) do
+        netfix.define_filter(:new_sci_fi) { |movie, year| movie.year > year && movie.genre.include?('Sci-Fi') }
+      end
+      it { expect(netfix.select_movie(new_sci_fi: 2003).year).to be > 2003 }
+      it { expect(netfix.select_movie(new_sci_fi: 2003, country: 'USA')).to include_in_attribute(:genre, 'Sci-Fi').and include_in_attribute(:country, 'USA') }
+    end
   end
 
   describe '#show' do
