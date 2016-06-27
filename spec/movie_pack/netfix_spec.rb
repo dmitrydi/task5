@@ -45,7 +45,7 @@ describe Netfix do
 
     context 'it works with user-defined blocks with parameters' do
       before(:example) do
-        netfix.define_filter(:new_sci_fi) { |movie, year| movie.year > year && movie.genre.include?('Sci-Fi') }
+        netfix.define_filter(:new_sci_fi) { |year, movie| movie.year > year && movie.genre.include?('Sci-Fi') }
       end
       it { expect(netfix.select_movie(new_sci_fi: 2003).year).to be > 2003 }
       it { expect(netfix.select_movie(new_sci_fi: 2003, country: 'USA')).to include_in_attribute(:genre, 'Sci-Fi').and include_in_attribute(:country, 'USA') }
@@ -53,10 +53,17 @@ describe Netfix do
 
     context 'it works with user-defined blocks derived from existing blocks' do
       before(:example) do
-        netfix.define_filter(:new_sci_fi) { |movie, year| movie.year > year && movie.genre.include?('Sci-Fi') }
+        netfix.define_filter(:new_sci_fi) { |year, movie| movie.year > year && movie.genre.include?('Sci-Fi') }
         netfix.define_filter(:newest_sci_fi, from: :new_sci_fi, arg: 2010)
       end
       it { expect(netfix.select_movie(newest_sci_fi: true).year).to be > 2010 }
+    end
+
+    context 'it works with array of params' do
+      before(:example) do
+        netfix.define_filter(:new_filter) { |year, genre, movie| movie.year > year && movie.genre.include?(genre) }
+      end
+      it { expect(netfix.select_movie(new_filter: [2003, 'Comedy'])).to include_in_attribute(:genre, 'Comedy') }
     end
 
   end
@@ -73,7 +80,8 @@ describe Netfix do
   describe '#define_filter' do
       before (:example) do
         netfix.define_filter(:new_sci_fi) { |m| m.genre.include?('Sci-Fi') && m.period == 'new' }
-        netfix.define_filter(:newest_sci_fi, from: :new_sci_fi, arg: 2010)
+        netfix.define_filter(:new_sci_fi_2) { |year, movie| movie.year > year && movie.genre.include?('Sci-Fi') }
+        netfix.define_filter(:newest_sci_fi, from: :new_sci_fi_2, arg: 2010)
       end
       it { expect(netfix.filter_store).not_to be_empty }
       it { expect(netfix.filter_store[:newest_sci_fi]).to be_instance_of Proc }
