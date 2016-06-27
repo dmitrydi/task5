@@ -56,11 +56,6 @@ module MoviePack
       self
     end
 
-    def swap_parameters(block)
-      proc {|a, b| block.call(b,a) }
-    end
-
-
   end
 
 end
