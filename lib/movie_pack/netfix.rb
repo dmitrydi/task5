@@ -52,7 +52,6 @@ module MoviePack
         block = @filter_store[from].curry[arg]
       end
       @filter_store.merge!(name => block)
-      else
       self
     end
 
