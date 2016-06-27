@@ -48,9 +48,8 @@ module MoviePack
 
     def define_filter(name, from: nil, arg: nil, &block)
       unless block
-        raise ArgumentError, "Both from: and arg: should be set when no block given" unless from && arg
         raise ArgumentError, "No filter #{from} to define a filter from" unless @filter_store.has_key?(from)
-        block = swap_parameters(@filter_store[from]).curry[arg]
+        block = @filter_store[from].curry[arg]
       end
       @filter_store.merge!(name => block)
       else
