@@ -68,7 +68,7 @@ class MovieCollection
       memo.select{ |m| if block.arity.abs == 1 
                          block.call(m) 
                        else 
-                         block.call(v, m, k)
+                         v.is_a?(Array) ? v.inject(block) { |memo, val| memo.curry[val] }.call(m, k) : block.call(v, m, k)
                        end 
                   }
     end
