@@ -35,11 +35,11 @@ FILTERS_FOR_PERIODS = {
     raise ArgumentError, "Film is not in the schedule" unless period
     period = period[0]
     time = rand(period)
-    ("%02d:00" %time) 
+    ("%02d:00" %time)
   end
 
   def show(time)
-    puts "Now showing: " + select_movie(time).to_s
+    puts 'Now showing: ' + select_movie(time).to_s
   end
 
   def buy_ticket(time)
@@ -48,5 +48,4 @@ FILTERS_FOR_PERIODS = {
     put_cash(movie.price)
   end
 end
-
 end
