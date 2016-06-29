@@ -25,15 +25,16 @@ module MoviePack
                 :producer, :actors, :month
 
     def to_s
-      "#{@title}, #{@year}, #{@country}, #{@genre.join(", ")}, #{duration} min, raitng: #{@rating}, producer: #{@producer}, starring: #{@actors.join(", ")}"
+      "#{@title}, #{@year}, #{@country}, #{@genre.join(', ')},
+       #{duration} min, raitng: #{@rating}, producer: #{@producer},
+       starring: #{@actors.join(', ')}"
     end
 
     def has_genre?(genre)
       if @host && !@host.genre_exists?(genre)
         raise ArgumentError, "Genre: #{genre} does not exist"
       end
-      #@genre.include?(genre)
-      @genre.any?{ |v| genre.include?(v) }
+      @genre.any? { |v| genre.include?(v) }
     end
 
     def match?(key, val)
@@ -42,5 +43,4 @@ module MoviePack
       key_val.is_a?(Numeric) ? (key_val == val) : key_val.include?(val)
     end
   end
-  
 end
