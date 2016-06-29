@@ -25,9 +25,9 @@ module MoviePack
                 :producer, :actors, :month
 
     def to_s
-      "#{@title}, #{@year}, #{@country}, #{@genre.join(', ')},
-       #{duration} min, raitng: #{@rating}, producer: #{@producer},
-       starring: #{@actors.join(', ')}"
+      "#{@title}, #{@year}, #{@country}, #{@genre.join(', ')}, " \
+       "#{duration} min, raitng: #{@rating}, producer: #{@producer}, " \
+       "starring: #{@actors.join(', ')}"
     end
 
     def has_genre?(genre)
