@@ -41,3 +41,11 @@ def make_movie(movie_class, host = nil)
   record = CSV.read(MoviePack::MOVIEFILE, col_sep: "|").map.find{ |a| movie_class::PERIOD.include?(a[2].to_i) }
   movie_class.new(record, host)
 end
+
+RSpec::Matchers.define :include_in_attribute do |key, expected|
+  match do |actual|
+    actual.send(key).include?(expected)
+  end
+end
+
+RSpec::Matchers.define_negated_matcher :not_include_in_attribute, :include_in_attribute

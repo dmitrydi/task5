@@ -1,6 +1,7 @@
 require_relative 'movie_classes'
 
 module MoviePack
+  # class describing movies produced in PERIOD
   class ModernMovie < MovieToShow
     PERIOD = 1969..2000
     PRICE = 3
