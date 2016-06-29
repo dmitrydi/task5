@@ -66,6 +66,10 @@ describe Netfix do
       it { expect(netfix.select_movie(new_filter: [2003, 'Comedy'])).to include_in_attribute(:genre, 'Comedy') }
     end
 
+    context 'it works with arrays in plain filters' do
+      it { expect(netfix.select_movie(genre: ['Comedy', 'Adventure'])).to include_in_attribute(:genre, 'Comedy').or include_in_attribute(:genre, 'Adventure') }
+    end
+
   end
 
   describe '#show' do
