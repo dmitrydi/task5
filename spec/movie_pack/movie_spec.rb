@@ -9,13 +9,28 @@ describe Movie do
   it {expect(movie.duration).to be_instance_of Fixnum}
 
   describe '#match?' do
-  	it { expect(movie).to respond_to(:match?).with(2).arguments }
+  	let(:checking_genres) {movie.genre.first(1) << "Bla-bla" }
+    it { expect(movie).to respond_to(:match?).with(2).arguments }
   	it { expect(movie.match?(:year, movie.year)).to be_truthy }
   	it { expect(movie.match?(:actors, movie.actors[0])).to be_truthy }
+    it { expect(movie.match?(:genre, checking_genres)).to be_truthy }
   end
 
-  describe '#any_match?' do
-    let(:checking_genres) {movie.genre.first(1) << "Bla-bla" }
-    it { expect(movie.match?(:genre, checking_genres)).to be_truthy }
+  describe '#to_s' do
+    it { expect(movie.to_s).to eq("#{movie.title}, #{movie.year}, #{movie.country}, #{movie.genre.join(', ')}, #{movie.duration} min, raitng: #{movie.rating}, producer: #{movie.producer}, starring: #{movie.actors.join(', ')}") }
+  end
+
+  describe '#has_genre?' do
+    context 'when no host' do
+      it { expect(movie.has_genre?(movie.genre)).to be true }
+      it { expect(movie.has_genre?(movie.genre.first)).to be true }
+      it { expect(movie.has_genre?('Tragedy')).to be false }
+    end
+
+    context 'when with host' do
+      let(:host) { MovieCollection.read }
+      let(:movie_with_host) { Movie.new(record, host) }
+      it { expect { movie_with_host.has_genre?('Tragedy') }.to raise_error(ArgumentError) }
+    end
   end
 end

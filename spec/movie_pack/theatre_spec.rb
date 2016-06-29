@@ -7,8 +7,8 @@ describe Theatre do
   describe '#select_movie' do
     it{ expect{Theatre.new.select_movie}.to raise_error(ArgumentError) }
     it{ expect(theatre.select_movie('08:30')).to have_attributes(:period => 'ancient') }
-    it{ expect(theatre.select_movie('12:30').genre).to include('Comedy').or include('Adventure') }
-    it{ expect(theatre.select_movie('18:30').genre).to include('Drama').or include('Horror') }
+    it{ expect(theatre.select_movie('12:30')).to include_in_attribute(:genre, 'Comedy').or include_in_attribute(:genre, 'Adventure') }
+    it{ expect(theatre.select_movie('18:30')).to include_in_attribute(:genre, 'Drama').or include_in_attribute(:genre, 'Horror') }
     it{ expect{theatre.select_movie('03:30')}.to raise_error(ArgumentError)}
   end
 
