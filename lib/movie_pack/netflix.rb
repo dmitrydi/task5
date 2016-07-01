@@ -58,11 +58,18 @@ module MoviePack
     class Container
       def initialize(owner)
         @owner = owner
+        class << self
+          @owner.existing_genres.each do |a_genre|
+            define_method "#{a_genre.downcase}" do
+              @owner.filter(genre: a_genre)
+            end
+          end
+        end
       end
 
-      def comedy
-        @owner.filter(genre: 'Comedy')
-      end
+      #def comedy
+      #  @owner.filter(genre: 'Comedy')
+      #end
 
       def usa
         @owner.filter(country: 'USA')
