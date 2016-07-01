@@ -17,8 +17,11 @@ module MoviePack
     end
 
     def read(filename = MoviePack::MOVIEFILE)
-      @collection = CSV.read(filename, col_sep: '|')
-                       .map { |a| create_movie(a, self) }
+      @collection = CSV.read(
+                             filename, col_sep: '|',
+                             headers: MoviePack::REC_HEADERS
+                            )
+                        .map { |a| create_movie(a, self) }
       self
     end
 

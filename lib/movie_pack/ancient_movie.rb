@@ -7,7 +7,7 @@ module MoviePack
     PRICE = 1
 
     def to_s
-      "#{@title} - old movie (#{@year})"
+      "#{title} - old movie (#{year})"
     end
   end
 end

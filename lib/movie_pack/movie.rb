@@ -1,40 +1,57 @@
 require 'date'
+require 'virtus'
 require_relative 'movie_collection'
 
 module MoviePack
   # class describing Movie object, parent for MovieToShow,
   # AncientMovie, ClassicMovie, ModernMovie, NewMovie
   class Movie
-    def initialize(record, host = nil)
-      @host = host
-      @webaddr = record[0]
-      @title = record[1]
-      @year = record[2].to_i
-      @country = record[3]
-      @date = record[4]
-      @genre = record[5].split(',')
-      @duration = record[6].to_i
-      @rating = record[7].to_f
-      @producer = record[8]
-      @actors = record[9].split(',')
-      @month = Date::ABBR_MONTHNAMES[@date.split('-')[1].to_i]
+    include Virtus.model
+
+     # utility class for splitting a comma-delimited string
+    class SplitString < Virtus::Attribute
+      def coerce(str)
+        str.split(',')
+      end
     end
 
-    attr_reader :webaddr, :title, :year, :country,
-                :date, :genre, :duration, :rating,
-                :producer, :actors, :month
+    class ForcedInt < Virtus::Attribute
+      def coerce(val)
+        val.to_i
+      end
+    end
+
+    attribute :webaddr, String
+    attribute :title, String
+    attribute :year, Integer
+    attribute :country, String
+    attribute :date, String
+    attribute :genre, SplitString
+    attribute :duration, ForcedInt
+    attribute :rating, Float
+    attribute :producer, String
+    attribute :actors, SplitString
+
+    def initialize(args, host = nil)
+      super(args)
+      @host = host
+    end
+
+    def month
+      Date::ABBR_MONTHNAMES[date.split('-')[1].to_i]
+    end
 
     def to_s
-      "#{@title}, #{@year}, #{@country}, #{@genre.join(', ')}, " \
-       "#{duration} min, raitng: #{@rating}, producer: #{@producer}, " \
-       "starring: #{@actors.join(', ')}"
+      "#{title}, #{year}, #{country}, #{genre.join(', ')}, " \
+       "#{duration} min, raitng: #{rating}, producer: #{producer}, " \
+       "starring: #{actors.join(', ')}"
     end
 
-    def has_genre?(genre)
-      if @host && !@host.genre_exists?(genre)
-        raise ArgumentError, "Genre: #{genre} does not exist"
+    def has_genre?(a_genre)
+      if @host && !@host.genre_exists?(a_genre)
+        raise ArgumentError, "Genre: #{a_genre} does not exist"
       end
-      @genre.any? { |v| genre.include?(v) }
+      genre.any? { |v| a_genre.include?(v) }
     end
 
     def match?(key, val)
