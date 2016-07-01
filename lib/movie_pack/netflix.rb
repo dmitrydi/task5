@@ -56,38 +56,25 @@ module MoviePack
     end
 
     class Container
-      def initialize(data_hash)
-        @data_hash = data_hash
+      def initialize(owner)
+        @owner = owner
       end
 
-      attr_reader :data_hash
-
       def comedy
-        @data_hash[:comedy]
+        @owner.filter(genre: 'Comedy')
       end
 
       def usa
-        @data_hash[:usa]
+        @owner.filter(country: 'USA')
       end
     end
 
     def by_genre
-      data_hash =
-        existing_genres.map do |a_genre, data|
-          data = @collection.find_all{ |mov| mov.genre.include?(a_genre) }
-          [a_genre.downcase.to_sym, data]
-        end .to_h
-      Container.new(data_hash)
+      Container.new(self)
     end
 
     def by_country
-      countries = @collection.each.map(&:country).flatten.uniq
-      data_hash = 
-        countries.map do |a_country, data|
-          data = @collection.find_all{ |mov| mov.country.include?(a_country) }
-          [a_country.downcase.to_sym, data]
-        end .to_h
-      Container.new(data_hash)
+      Container.new(self)
     end
   end
 end
