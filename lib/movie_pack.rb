@@ -14,6 +14,10 @@ require_relative 'movie_pack/theatre'
 module MoviePack
   MOVIEFILE = File.expand_path('../../data/movie_pack/movies.txt', __FILE__)
 
+  REC_HEADERS = [:webaddr, :title, :year, :country,
+                 :date, :genre, :duration, :rating,
+                 :producer, :actors]
+
   class EncashmentError < StandardError
   end
 end
