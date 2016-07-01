@@ -1,12 +1,13 @@
 require_relative 'spec_helper'
 
 describe Movie do 
-  let(:record) {CSV.read(MoviePack::MOVIEFILE, col_sep: '|')[0]}
-  let(:movie) {Movie.new(record)}
+  let(:ary) { MoviePack::REC_HEADERS } 
+  let(:hash) { CSV.read(MoviePack::MOVIEFILE, col_sep: '|', headers: ary)[0] }
+  let(:movie) { Movie.new(hash) }
 
-  it {expect(movie.year).to be_instance_of Fixnum}
-  it {expect(movie.rating).to be_instance_of Float}
-  it {expect(movie.duration).to be_instance_of Fixnum}
+  it { expect(movie.year).to be_instance_of Fixnum }
+  it { expect(movie.rating).to be_instance_of Float }
+  it { expect(movie.duration).to be_instance_of Fixnum }
 
   describe '#match?' do
   	let(:checking_genres) {movie.genre.first(1) << "Bla-bla" }
@@ -29,7 +30,7 @@ describe Movie do
 
     context 'when with host' do
       let(:host) { MovieCollection.read }
-      let(:movie_with_host) { Movie.new(record, host) }
+      let(:movie_with_host) { Movie.new(hash, host) }
       it { expect { movie_with_host.has_genre?('Tragedy') }.to raise_error(ArgumentError) }
     end
   end
