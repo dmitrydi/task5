@@ -7,7 +7,7 @@ require_relative 'movie_pack/classic_movie'
 require_relative 'movie_pack/modern_movie'
 require_relative 'movie_pack/movie_classes'
 require_relative 'movie_pack/movie_to_show'
-require_relative 'movie_pack/netfix'
+require_relative 'movie_pack/netflix'
 require_relative 'movie_pack/new_movie'
 require_relative 'movie_pack/theatre'
 
