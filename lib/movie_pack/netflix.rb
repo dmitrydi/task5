@@ -55,7 +55,7 @@ module MoviePack
       self
     end
 
-    class Container
+    class GenreContainer
       def initialize(owner)
         @owner = owner
         @owner.existing_genres.each do |a_genre|
@@ -65,17 +65,31 @@ module MoviePack
         end
       end
 
-      def method_missing(m, *args, &block)
-        @owner.collection.find_all { |mov| mov.country.downcase.include?(m.to_s) }
+      def method_missing(a_genre, *args, &block)
+        raise NoMethodError, "No genre #{a_genre.to_s} to create a method"
+      end
+    end
+
+    class CountryContainer
+      def initialize(owner)
+        @owner = owner
+      end
+
+      def method_missing(a_country, *args, &block)
+        begin
+          @owner.filter(country: a_country.to_s)
+        rescue
+          raise NoMethodError, "No country #{a_country.to_s} to create a method"
+        end
       end
     end
 
     def by_genre
-      Container.new(self)
+      GenreContainer.new(self)
     end
 
     def by_country
-      Container.new(self)
+      CountryContainer.new(self)
     end
   end
 end

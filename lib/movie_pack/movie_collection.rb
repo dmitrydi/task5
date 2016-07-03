@@ -76,8 +76,7 @@ module MoviePack
           memo.select { |m| block ? call_block(block, v, m, k) : m.match?(k, v) }
         end
 
-      raise ArgumentError,
-            "No movies found with filter #{filt}" if filtered_collection.empty?
+      raise ArgumentError, "No movies found with filter #{filt}" if filtered_collection.empty?
 
       self.class.new(filtered_collection)
     end

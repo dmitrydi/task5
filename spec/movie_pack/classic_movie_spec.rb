@@ -4,7 +4,7 @@ describe ClassicMovie do
 
   period = ClassicMovie::PERIOD
 
-  let(:host) {Netfix.read}
+  let(:host) {Netflix.read}
   let(:classic_movie) {make_movie(described_class)}
   let(:movie_with_host) {make_movie(described_class, host)}
   let(:movie_list) {host.films_by_producers[movie_with_host.producer].join(", ")}

@@ -93,15 +93,17 @@ describe Netflix do
   end
 
   describe '#by_genre' do
-    it { expect(netflix.by_genre).to be_instance_of Netflix::Container }
+    it { expect(netflix.by_genre).to be_instance_of Netflix::GenreContainer }
   end
 
   describe 'Netflix::Container#comedy' do
     it { expect(netflix.by_genre.comedy).to all(include_in_attribute(:genre, 'Comedy')) }
     it { expect(netflix.by_genre.drama).to all(include_in_attribute(:genre, 'Drama')) }
+    it { expect { netflix.by_genre.tragedy }.to raise_error(NoMethodError) }
   end
 
   describe 'Netflix::Container#usa' do
     it { expect(netflix.by_country.usa).to all(include_in_attribute(:country, 'USA')) }
+    it { expect { netflix.by_country.bad_country }.to raise_error(NoMethodError) }
   end
 end
