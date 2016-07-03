@@ -6,8 +6,6 @@ module MoviePack
   class Netflix < Cinema
     extend CashDesk
 
-    ATTRIBS = [:genre, :country]
-
     def initialize(movie_array = nil)
       super
       @money = 0
