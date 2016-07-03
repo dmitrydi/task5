@@ -6,15 +6,12 @@ module MoviePack
   class Netflix < Cinema
     extend CashDesk
 
+    ATTRIBS = [:genre, :country]
+
     def initialize(movie_array = nil)
       super
       @money = 0
       @filter_store = {}
-      #@collection[0].instance_variables.each do |atr|
-      #  define_singleton_method "by_#{ atr.to_s.sub('@', '') }" do
-       #   Container.new(self)
-       # end
-      #end
     end
 
     attr_reader :money, :filter_store
