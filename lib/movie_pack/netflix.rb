@@ -10,6 +10,11 @@ module MoviePack
       super
       @money = 0
       @filter_store = {}
+      #@collection[0].instance_variables.each do |atr|
+      #  define_singleton_method "by_#{ atr.to_s.sub('@', '') }" do
+       #   Container.new(self)
+       # end
+      #end
     end
 
     attr_reader :money, :filter_store
@@ -58,21 +63,15 @@ module MoviePack
     class Container
       def initialize(owner)
         @owner = owner
-        class << self
-          @owner.existing_genres.each do |a_genre|
-            define_method "#{a_genre.downcase}" do
-              @owner.filter(genre: a_genre)
-            end
+        @owner.existing_genres.each do |a_genre|
+          define_singleton_method "#{a_genre.downcase}" do
+            @owner.filter(genre: a_genre)
           end
         end
       end
 
-      #def comedy
-      #  @owner.filter(genre: 'Comedy')
-      #end
-
-      def usa
-        @owner.filter(country: 'USA')
+      def method_missing(m, *args, &block)
+        @owner.collection.find_all { |mov| mov.country.downcase.include?(m.to_s) }
       end
     end
 

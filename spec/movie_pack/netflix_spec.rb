@@ -98,10 +98,10 @@ describe Netflix do
 
   describe 'Netflix::Container#comedy' do
     it { expect(netflix.by_genre.comedy).to all(include_in_attribute(:genre, 'Comedy')) }
+    it { expect(netflix.by_genre.drama).to all(include_in_attribute(:genre, 'Drama')) }
   end
 
   describe 'Netflix::Container#usa' do
     it { expect(netflix.by_country.usa).to all(include_in_attribute(:country, 'USA')) }
   end
-
 end
