@@ -1,11 +1,13 @@
 require_relative 'cinema'
 require 'time'
 require_relative 'cash_desk'
+require_relative 'theatre_builder'
 
 module MoviePack
   # class describing off-line cinema theatre
   class Theatre < Cinema
     include CashDesk
+    include TheatreBuilder
 
     MORNING = 8..11
     NOON = 12..17
@@ -28,57 +30,6 @@ module MoviePack
     end
 
     attr_reader :halls, :periods
-
-    def hall(name, places: 0, title: '')
-      @halls.merge!(name => [title, places])
-      self
-    end
-
-    def period(name, &block)
-      container = Container.new
-      container.fill(&block)
-      @periods.merge!(name => container)
-    end
-
-    class Container
-      def initialize
-        @description = ''
-        @filters = {}
-        @price = 0
-        @hall = []
-      end
-
-      attr_reader :description, :filters, :price, :hall
-
-      def fill(&block)
-        instance_eval(&block)
-      end
-
-      def description(a_description = nil)
-        return @description unless a_description
-        @description = a_description
-        self
-      end
-
-      def filters(*some_filters)
-        return @filters if some_filters.empty?
-        some_filters.each { |filt| @filters.merge!(filt) }
-        self
-      end
-
-      def price(amount = nil)
-        return @price unless amount
-        @price = amount
-        self
-      end
-
-      def hall(*list)
-        return @hall if list.empty?
-        list.each { |val| @hall << val }
-        self
-      end
-    end
-
 
     def select_movie(time = nil)
       raise ArgumentError, 'Enter time from 08:00 to 02:59' unless time
