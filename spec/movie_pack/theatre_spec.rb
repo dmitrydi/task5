@@ -3,6 +3,34 @@ require_relative 'spec_helper'
 describe Theatre do
 
   let(:theatre) { Theatre.read }
+
+  describe '#initialize with block' do
+    it { expect(Theatre.new { hall(:red, places: 100, title: 'Red Hall') }.halls.length).to eq(1) }
+    it { expect(Theatre.new { hall(:red, places: 100, title: 'Red Hall')}.halls[:red]).to eq(['Red Hall', 100]) }
+    context '#period check' do
+      let(:theatre) do
+        Theatre.new do
+          period '09:00'..'11:00' do
+            description 'Morning'
+            filters genre: 'Comedy', year: 1900..1950
+            price 10
+            hall :red, :blue
+          end
+        end
+      end
+      
+      it { expect(theatre.periods.length).to eq(1) }
+
+      let(:time_range) { '09:00'..'11:00' }
+      subject { theatre.periods[time_range] }
+      
+      it { expect(subject.description).to eq('Morning') }
+      it { expect(subject.filters).to eq( { genre: 'Comedy', year: 1900..1950 } ) }
+      it { expect(subject.price).to eq(10) }
+      it { expect(subject.hall).to eq([:red, :blue]) }
+    end
+  end
+
   
   describe '#select_movie' do
     it{ expect{Theatre.new.select_movie}.to raise_error(ArgumentError) }
