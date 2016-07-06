@@ -25,6 +25,7 @@ module MoviePack
       @periods = {}
       if block_given?
         TheatreBuilder.new(self, &block)
+        self.read
       end
     end
 
@@ -34,9 +35,20 @@ module MoviePack
       raise ArgumentError, 'Enter time from 08:00 to 02:59' unless time
       hour = Time.parse(time).hour
       filters =
-          FILTERS_FOR_PERIODS.find { |k, _v| k.include?(hour) }
-      raise ArgumentError, "The cinema is closed in #{time}" unless filters
-      list_to_show = filter(filters[1]).collection
+        if @periods.empty?
+          begin
+            FILTERS_FOR_PERIODS.find { |k, _v| k.include?(hour) }[1]
+          rescue
+            raise ArgumentError, "The cinema is closed in #{time}"
+          end
+        else
+          begin
+            @periods.find { |k, _v| k.include?(time) }[1].filters
+          rescue
+            raise ArgumentError, "The theatre is not scheduled for #{time}"
+          end
+        end
+      list_to_show = filter(filters).collection
       Theatre.new(list_to_show).collection.max_by { |a| rand * a.rating }
     end
 
