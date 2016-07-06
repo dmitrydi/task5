@@ -21,4 +21,20 @@ module MoviePack
 
   class EncashmentError < StandardError
   end
+
+  class ScheduleError < StandardError
+  end
+
+  Range.class_eval do
+      def intersect?(b, include_ends = true)
+        if self.first <= b.first
+          left = self
+          right = b
+        else
+          left = b
+          right = self
+        end
+        include_ends ? (right.first <= left.last) : (right.first < left.last )
+      end
+  end
 end
