@@ -25,8 +25,25 @@ module MoviePack
       @periods = {}
       if block_given?
         TheatreBuilder.new(self, &block)
+        check_schedule
         self.read
       end
+    end
+
+    def check_schedule
+      @halls.each do |hall_name, _v|
+          @periods
+            .select { |_k, v| v.hall.any? { |x| x == hall_name } }
+            .keys
+            .combination(2).to_a
+            .each do |ary| 
+              if ary[0].intersect?(ary[1], false)
+                raise ScheduleError,
+                  "Time intersection for #{hall_name}: #{ary[0]} #{ary[1]}"
+              end
+            end
+      end
+      return nil
     end
 
     attr_reader :halls, :periods
