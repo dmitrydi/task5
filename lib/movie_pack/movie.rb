@@ -64,6 +64,8 @@ module MoviePack
     def caseless_include?(val, cmp)
       if val.is_a?(Array)
         val.any? { |x| x.casecmp(cmp) == 0 }
+      elsif val.is_a?(Range)
+        val.include?(cmp)
       else
         val.casecmp(cmp) == 0
       end

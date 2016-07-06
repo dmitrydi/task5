@@ -7,7 +7,6 @@ module MoviePack
   # class describing off-line cinema theatre
   class Theatre < Cinema
     include CashDesk
-    include TheatreBuilder
 
     MORNING = 8..11
     NOON = 12..17
@@ -25,7 +24,7 @@ module MoviePack
       @halls = {}
       @periods = {}
       if block_given?
-        instance_eval(&block)
+        TheatreBuilder.new(self, &block)
       end
     end
 
@@ -34,7 +33,8 @@ module MoviePack
     def select_movie(time = nil)
       raise ArgumentError, 'Enter time from 08:00 to 02:59' unless time
       hour = Time.parse(time).hour
-      filters = FILTERS_FOR_PERIODS.find { |k, _v| k.include?(hour) }
+      filters =
+          FILTERS_FOR_PERIODS.find { |k, _v| k.include?(hour) }
       raise ArgumentError, "The cinema is closed in #{time}" unless filters
       list_to_show = filter(filters[1]).collection
       Theatre.new(list_to_show).collection.max_by { |a| rand * a.rating }

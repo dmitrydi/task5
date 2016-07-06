@@ -1,30 +1,31 @@
 module MoviePack
-  # module for building a theatre
-  module TheatreBuilder
-    def hall(name, places: 0, title: '')
-      @halls.merge!(name => [title, places])
+  # class for building a theatre
+  class TheatreBuilder
+    def initialize(host, &block)
+      @host = host
+      instance_eval(&block)
+      @host
+    end
+
+    def hall(name, places:, title:)
+      @host.halls[name] = [title, places]
       self
     end
 
     def period(name, &block)
-      container = Container.new
-      container.fill(&block)
-      @periods.merge!(name => container)
+      @host.periods[name] = Period.new(&block)
     end
 
-    class Container
-      def initialize
+    class Period
+      def initialize(&block)
         @description = ''
         @filters = {}
         @price = 0
         @hall = []
+        instance_eval(&block)
       end
 
       attr_reader :description, :filters, :price, :hall
-
-      def fill(&block)
-        instance_eval(&block)
-      end
 
       def description(a_description = nil)
         return @description unless a_description
