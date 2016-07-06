@@ -15,6 +15,7 @@ describe Movie do
   	it { expect(movie.match?(:year, movie.year)).to be_truthy }
   	it { expect(movie.match?(:actors, movie.actors[0])).to be_truthy }
     it { expect(movie.match?(:genre, checking_genres)).to be_truthy }
+    it { expect(movie.match?(:year, (movie.year-1)..(movie.year+1))).to be true }
   end
 
   describe '#to_s' do

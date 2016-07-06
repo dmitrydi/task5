@@ -53,6 +53,21 @@ describe Theatre do
     it{ expect(theatre.select_movie('12:30')).to include_in_attribute(:genre, 'Comedy').or include_in_attribute(:genre, 'Adventure') }
     it{ expect(theatre.select_movie('18:30')).to include_in_attribute(:genre, 'Drama').or include_in_attribute(:genre, 'Horror') }
     it{ expect{theatre.select_movie('03:30')}.to raise_error(ArgumentError)}
+
+    context 'when initialized with a block' do
+      let(:theatre) do
+        Theatre.new do
+          period '09:00'..'11:00' do
+            description 'Morning'
+            filters genre: 'Comedy', year: 1900..1980
+            price 10
+            hall :red, :blue
+          end
+        end
+      end
+      it { expect(theatre.select_movie('10:00')).to include_in_attribute(:genre, 'Comedy').and include_in_attribute(:year, 1900..1980) }
+      it { expect { theatre.select_movie('12:00') }.to raise_error(ArgumentError) }
+    end
   end
 
   describe '#show' do
