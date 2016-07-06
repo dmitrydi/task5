@@ -93,5 +93,66 @@ describe Theatre do
     it { expect{theatre.buy_ticket("09:30")}.to change{theatre.cash}.by(AncientMovie::PRICE) }
     it { expect{Theatre.read.buy_ticket("09:30")}.not_to change{theatre.cash} }
   end
-  
+
+  describe 'Range#intersect?' do
+    it { expect((0..1).intersect?(0.5..2)).to be true }
+    it { expect((0.5..2).intersect?(0..1)).to be true }
+    it { expect((0..1).intersect?(1..2)).to be true }
+    it { expect((0..1).intersect?(0..1)).to be true }
+    it { expect((0..1).intersect?(0..1, false)).to be true }
+    it { expect((0..1).intersect?(1..2, false)).to be false }
+    it { expect((0..1).intersect?(-1..1)).to be true }
+    it { expect((0..1).intersect?(2..3)).to be false }
+    it { expect((2..3).intersect?(0..1)).to be false }
+  end
+
+  describe 'check_schedule' do
+    context 'when no crossings' do
+      let(:theatre) do
+        Theatre.new do
+          hall :red, title: 'Red Hall', places: 100
+          hall :blue, title: 'Blue Hall', places: 50
+
+          period '09:00'..'11:00' do
+            description 'Morning'
+            filters genre: 'Comedy', year: 1900..1980
+            price 10
+            hall :red, :blue
+          end
+
+          period '11:00'..'13:00' do
+            description 'Afternoon'
+            filters genre: 'Action'
+            price 30
+            hall :red
+          end
+        end
+      end
+      it { expect(theatre.check_schedule).to be nil }
+    end
+
+    context 'when a crossing in schedule' do
+      let(:theatre) do
+        Theatre.new do
+          hall :red, title: 'Red Hall', places: 100
+          hall :blue, title: 'Blue Hall', places: 50
+
+          period '09:00'..'11:00' do
+            description 'Morning'
+            filters genre: 'Comedy', year: 1900..1980
+            price 10
+            hall :red, :blue
+          end
+
+          period '10:00'..'13:00' do
+            description 'Afternoon'
+            filters genre: 'Action'
+            price 30
+            hall :red
+          end
+        end
+      end
+      it { expect { theatre }.to raise_error(ScheduleError) }
+    end
+  end
 end
