@@ -104,6 +104,6 @@ describe Netflix do
 
   describe 'Netflix::Container#usa' do
     it { expect(netflix.by_country.usa).to all(include_in_attribute(:country, 'USA')) }
-    it { expect { netflix.by_country.bad_country }.to raise_error(NoMethodError) }
+    it { expect(netflix.by_country.bad_country).to eq([]) }
   end
 end

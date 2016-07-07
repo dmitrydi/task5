@@ -64,10 +64,6 @@ module MoviePack
           end
         end
       end
-
-      def method_missing(a_genre, *args, &block)
-        raise NoMethodError, "No genre #{a_genre.to_s} to create a method"
-      end
     end
 
     class CountryContainer
@@ -79,7 +75,7 @@ module MoviePack
         begin
           @owner.filter(country: a_country.to_s)
         rescue
-          raise NoMethodError, "No country #{a_country.to_s} to create a method"
+          []
         end
       end
     end

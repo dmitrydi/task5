@@ -1,6 +1,7 @@
 require_relative 'cinema'
 require 'time'
 require_relative 'cash_desk'
+require_relative 'theatre_builder'
 
 module MoviePack
   # class describing off-line cinema theatre
@@ -18,12 +19,48 @@ module MoviePack
       NIGHT => { genre: %w(Drama Horror) }
     }.freeze
 
-    def select_movie(time = nil)
-      raise ArgumentError, 'Enter time from 08:00 to 02:59' unless time
-      hour = Time.parse(time).hour
-      filters = FILTERS_FOR_PERIODS.find { |k, _v| k.include?(hour) }
-      raise ArgumentError, "The cinema is closed in #{time}" unless filters
-      list_to_show = filter(filters[1]).collection
+    def initialize(movie_array = nil, &block)
+      super(movie_array)
+      @halls = []
+      @periods = []
+      if block_given?
+        TheatreBuilder.new(self, &block)
+        check_schedule
+        self.read
+      end
+    end
+
+    def check_schedule
+      @halls.each do |hall|
+        @periods
+          .select { |p| p.shown_at?(hall.name) }
+          .map { |p| p.interv }
+          .combination(2)
+          .each do |left, right| 
+            if left.intersect?(right)
+              raise ScheduleError,
+                "Time intersection for #{hall.name}: #{left} #{right}"
+            end
+          end
+      end
+      true
+    end
+
+    attr_reader :halls, :periods
+
+    def select_movie(time)
+      filters =
+        if @periods.empty?
+          hour = Time.parse(time).hour
+          f = FILTERS_FOR_PERIODS.find { |k, _v| k.include?(hour) }
+          raise ArgumentError, "The cinema is closed in #{time}" unless f
+          f[1]
+        else
+          f = @periods.find { |p| p.interv.include?(time) }
+          raise ArgumentError, "The theatre is not scheduled for #{time}" unless f
+          f.filters
+        end
+      list_to_show = filter(filters).collection
       Theatre.new(list_to_show).collection.max_by { |a| rand * a.rating }
     end
 

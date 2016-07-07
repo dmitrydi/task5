@@ -63,7 +63,11 @@ end
 
 RSpec::Matchers.define :include_in_attribute do |key, expected|
   match do |actual|
-    actual.send(key).include?(expected)
+    if expected.is_a?(Range)
+      expected.include?(actual.send(key))
+    else
+      actual.send(key).include?(expected)
+    end
   end
 end
 
