@@ -8,16 +8,19 @@ module MoviePack
     end
 
     def hall(name, places:, title:)
-      @host.halls[name] = [title, places]
+      @host.halls << Hall.new(name, title, places)
       self
     end
 
+    Hall = Struct.new(:name, :title, :places)
+
     def period(name, &block)
-      @host.periods[name] = Period.new(&block)
+      @host.periods << Period.new(name, &block)
     end
 
     class Period
-      def initialize(&block)
+      def initialize(interv, &block)
+        @interv = interv
         @description = ''
         @filters = {}
         @price = 0
@@ -25,7 +28,7 @@ module MoviePack
         instance_eval(&block)
       end
 
-      attr_reader :description, :filters, :price, :hall
+      attr_reader :interv, :description, :filters, :price, :hall
 
       def description(a_description = nil)
         return @description unless a_description
@@ -49,6 +52,10 @@ module MoviePack
         return @hall if list.empty?
         list.each { |val| @hall << val }
         self
+      end
+
+      def shown_at?(hall_name)
+        self.hall.any? { |h| h == hall_name }
       end
     end
   end

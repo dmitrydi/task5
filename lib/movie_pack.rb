@@ -26,15 +26,15 @@ module MoviePack
   end
 
   Range.class_eval do
-      def intersect?(b, include_ends = true)
-        if self.first <= b.first
+      def intersect?(other)
+        if self.first <= other.first
           left = self
-          right = b
+          right = other
         else
-          left = b
+          left = other
           right = self
         end
-        include_ends ? (right.first <= left.last) : (right.first < left.last )
+        left.include?(right.first)
       end
   end
 end
