@@ -5,9 +5,8 @@ describe Theatre do
   let(:theatre) { Theatre.read }
 
   describe '#initialize with block' do
-    it { expect(Theatre.new { hall(:red, places: 100, title: 'Red Hall') }.halls[0]).to be_instance_of TheatreBuilder::Hall }
     it { expect(Theatre.new { hall(:red, places: 100, title: 'Red Hall') }.halls.length).to eq(1) }
-    it { expect(Theatre.new { hall(:red, places: 100, title: 'Red Hall') }.halls[0]).to have_attributes(:name => :red, :places => 100, :title => 'Red Hall') }
+    it { expect(Theatre.new { hall(:red, places: 100, title: 'Red Hall') }.halls[:red]).to eq(['Red Hall', 100]) }
 
     context '#period check' do
       let(:theatre) do
@@ -23,7 +22,8 @@ describe Theatre do
       
       it { expect(theatre.periods.length).to eq(1) }
 
-      subject { theatre.periods[0] }
+      let(:time_range) { '09:00'..'11:00' }
+      subject { theatre.periods[time_range] }
 
       it { expect(subject.description).to eq('Morning') }
       it { expect(subject.filters).to eq( { genre: 'Comedy', year: 1900..1950 } ) }
@@ -99,6 +99,8 @@ describe Theatre do
     it { expect((0.5..2).intersect?(0..1)).to be true }
     it { expect((0..1).intersect?(1..2)).to be true }
     it { expect((0..1).intersect?(0..1)).to be true }
+    it { expect((0..1).intersect?(0..1, false)).to be true }
+    it { expect((0..1).intersect?(1..2, false)).to be false }
     it { expect((0..1).intersect?(-1..1)).to be true }
     it { expect((0..1).intersect?(2..3)).to be false }
     it { expect((2..3).intersect?(0..1)).to be false }
@@ -110,15 +112,14 @@ describe Theatre do
         Theatre.new do
           hall :red, title: 'Red Hall', places: 100
           hall :blue, title: 'Blue Hall', places: 50
-
-          period '09:00'...'11:00' do
+          period '09:00'..'11:00' do
             description 'Morning'
             filters genre: 'Comedy', year: 1900..1980
             price 10
             hall :red, :blue
           end
 
-          period '11:00'...'13:00' do
+          period '11:00'..'13:00' do
             description 'Afternoon'
             filters genre: 'Action'
             price 30
@@ -126,7 +127,8 @@ describe Theatre do
           end
         end
       end
-      it { expect(theatre.check_schedule).to be true }
+
+      it { expect(theatre.check_schedule).to be nil }
     end
 
     context 'when a crossing in schedule' do

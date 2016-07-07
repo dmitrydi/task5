@@ -56,16 +56,9 @@ module MoviePack
 
     def match?(key, val)
       key_val = self.send(key)
-      case val
-      when Array
-        val.inject(false) { |memo, v| memo || caseless_include?(key_val, v) }
-      when Range
-        val.include?(key_val)
-      when Numeric
-        key_val == val
-      else
-        caseless_include?(key_val, val)
-      end
+      return val.inject(false) { |memo, v| memo || caseless_include?(key_val, v) } if val.is_a?(Array)
+      return val.include?(key_val) if val.is_a?(Range)
+      key_val.is_a?(Numeric) ? (key_val == val) : caseless_include?(key_val, val)
     end
 
     #private

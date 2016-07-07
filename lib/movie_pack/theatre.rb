@@ -21,8 +21,8 @@ module MoviePack
 
     def initialize(movie_array = nil, &block)
       super(movie_array)
-      @halls = []
-      @periods = []
+      @halls = {}
+      @periods = {}
       if block_given?
         TheatreBuilder.new(self, &block)
         check_schedule
@@ -31,34 +31,39 @@ module MoviePack
     end
 
     def check_schedule
-      @halls.each do |hall|
-        @periods
-          .select { |p| p.shown_at?(hall.name) }
-          .map { |p| p.interv }
-          .combination(2)
-          .each do |left, right| 
-            if left.intersect?(right)
-              raise ScheduleError,
-                "Time intersection for #{hall.name}: #{left} #{right}"
+      @halls.each do |hall_name, _v|
+          @periods
+            .select { |_k, v| v.hall.any? { |x| x == hall_name } }
+            .keys
+            .combination(2).to_a
+            .each do |ary| 
+              if ary[0].intersect?(ary[1], false)
+                raise ScheduleError,
+                  "Time intersection for #{hall_name}: #{ary[0]} #{ary[1]}"
+              end
             end
-          end
       end
-      true
+      return nil
     end
 
     attr_reader :halls, :periods
 
-    def select_movie(time)
+    def select_movie(time = nil)
+      raise ArgumentError, 'Enter time from 08:00 to 02:59' unless time
+      hour = Time.parse(time).hour
       filters =
         if @periods.empty?
-          hour = Time.parse(time).hour
-          f = FILTERS_FOR_PERIODS.find { |k, _v| k.include?(hour) }
-          raise ArgumentError, "The cinema is closed in #{time}" unless f
-          f[1]
+          begin
+            FILTERS_FOR_PERIODS.find { |k, _v| k.include?(hour) }[1]
+          rescue
+            raise ArgumentError, "The cinema is closed in #{time}"
+          end
         else
-          f = @periods.find { |p| p.interv.include?(time) }
-          raise ArgumentError, "The theatre is not scheduled for #{time}" unless f
-          f.filters
+          begin
+            @periods.find { |k, _v| k.include?(time) }[1].filters
+          rescue
+            raise ArgumentError, "The theatre is not scheduled for #{time}"
+          end
         end
       list_to_show = filter(filters).collection
       Theatre.new(list_to_show).collection.max_by { |a| rand * a.rating }
