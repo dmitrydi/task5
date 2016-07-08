@@ -55,7 +55,7 @@ module MoviePack
       end
 
       def shown_at?(hall_name)
-        self.hall.any? { |h| h == hall_name }
+        @hall.include?(hall_name)
       end
     end
   end

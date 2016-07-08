@@ -8,16 +8,26 @@ module MoviePack
   class Theatre < Cinema
     include CashDesk
 
-    MORNING = 8..11
-    NOON = 12..17
-    EVENING = 18..23
-    NIGHT = 0..2
-    FILTERS_FOR_PERIODS = {
-      MORNING => { period: 'ancient' },
-      NOON => { genre: %w(Comedy Adventure) },
-      EVENING => { genre: %w(Drama Horror) },
-      NIGHT => { genre: %w(Drama Horror) }
-    }.freeze
+    MORNING = '08:00'...'11:00'
+    NOON = '12:00'...'17:00'
+    EVENING = '18:00'..'23:00'
+    NIGHT = '00:00'..'02:00'
+
+    class Period
+      def initialize(interv, filters)
+        @interv = interv
+        @filters = filters
+      end
+
+      attr_reader :interv, :filters
+    end
+
+    DEFAULT_PERIODS = [
+      Period.new(MORNING, { period: 'ancient' } ),
+      Period.new(NOON, { genre: %w(Comedy Adventure) } ),
+      Period.new(EVENING, { genre: %w(Drama Horror) } ),
+      Period.new(NIGHT, { genre: %w(Drama Horror) } )
+      ].freeze
 
     def initialize(movie_array = nil, &block)
       super(movie_array)
@@ -34,7 +44,7 @@ module MoviePack
       @halls.each do |hall|
         @periods
           .select { |p| p.shown_at?(hall.name) }
-          .map { |p| p.interv }
+          .map(&:interv)
           .combination(2)
           .each do |left, right| 
             if left.intersect?(right)
@@ -48,29 +58,29 @@ module MoviePack
 
     attr_reader :halls, :periods
 
+    def initialized_periods
+      if @periods.empty?
+        DEFAULT_PERIODS
+      else
+        @periods
+      end
+    end
+
     def select_movie(time)
-      filters =
-        if @periods.empty?
-          hour = Time.parse(time).hour
-          f = FILTERS_FOR_PERIODS.find { |k, _v| k.include?(hour) }
-          raise ArgumentError, "The cinema is closed in #{time}" unless f
-          f[1]
-        else
-          f = @periods.find { |p| p.interv.include?(time) }
-          raise ArgumentError, "The theatre is not scheduled for #{time}" unless f
-          f.filters
-        end
-      list_to_show = filter(filters).collection
+      f = initialized_periods.find { |p| p.interv.include?(time) }
+      raise ScheduleError, "The theatre is not scheduled for #{time}" unless f
+      list_to_show = filter(f.filters).collection
       Theatre.new(list_to_show).collection.max_by { |a| rand * a.rating }
     end
 
     def time_for(title)
       movie = filter(title: title).collection.first
-      period = FILTERS_FOR_PERIODS
-               .find { |_k, v| movie.match?(v.keys.first, v.values.first) }
+      period = 
+        initialized_periods
+        .find { |p| p.filters.map { |k , v| movie.match?(k, v) } .inject(:'&') }
       raise ArgumentError, 'Film is not in the schedule' unless period
-      period = period[0]
-      time = rand(period)
+      period = period.interv
+      time = rand((period.first.to_i)..(period.last.to_i))
       ('%02d:00' % time)
     end
 

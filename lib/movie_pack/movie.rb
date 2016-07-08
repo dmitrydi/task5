@@ -58,7 +58,7 @@ module MoviePack
       key_val = self.send(key)
       case val
       when Array
-        val.inject(false) { |memo, v| memo || caseless_include?(key_val, v) }
+        val.map { |v| caseless_include?(key_val, v) }.inject(:'|')
       when Range
         val.include?(key_val)
       when Numeric
