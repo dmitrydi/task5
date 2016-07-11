@@ -58,7 +58,7 @@ module MoviePack
       key_val = self.send(key)
       case val
       when Array
-        val.map { |v| caseless_include?(key_val, v) }.any?
+        val.any? { |v| caseless_include?(key_val, v) }
       when Range
         val.include?(key_val)
       when Numeric

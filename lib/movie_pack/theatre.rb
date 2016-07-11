@@ -41,11 +41,7 @@ module MoviePack
     end
 
     def periods
-      if @periods
-        @periods
-      else
-        DEFAULT_PERIODS
-      end
+      @periods || DEFAULT_PERIODS
     end
 
     def check_schedule
