@@ -31,43 +31,43 @@ module MoviePack
 
     def initialize(movie_array = nil, &block)
       super(movie_array)
-      @halls = []
-      @periods = []
       if block_given?
+        @halls = []
+        @periods = []
         TheatreBuilder.new(self, &block)
         check_schedule
-        self.read
+        self.read unless movie_array
+      end
+    end
+
+    def periods
+      if @periods
+        @periods
+      else
+        DEFAULT_PERIODS
       end
     end
 
     def check_schedule
       @halls.each do |hall|
-        @periods
-          .select { |p| p.shown_at?(hall.name) }
-          .map(&:interv)
-          .combination(2)
-          .each do |left, right| 
-            if left.intersect?(right)
-              raise ScheduleError,
-                "Time intersection for #{hall.name}: #{left} #{right}"
-            end
+        periods
+        .select { |p| p.shown_at?(hall.name) }
+        .map(&:interv)
+        .combination(2)
+        .each do |left, right| 
+          if left.intersect?(right)
+            raise ScheduleError,
+              "Time intersection for #{hall.name}: #{left} #{right}"
           end
+        end
       end
       true
     end
 
-    attr_reader :halls, :periods
-
-    def initialized_periods
-      if @periods.empty?
-        DEFAULT_PERIODS
-      else
-        @periods
-      end
-    end
+    attr_reader :halls 
 
     def select_movie(time)
-      f = initialized_periods.find { |p| p.interv.include?(time) }
+      f = periods.find { |p| p.interv.include?(time) }
       raise ScheduleError, "The theatre is not scheduled for #{time}" unless f
       list_to_show = filter(f.filters).collection
       Theatre.new(list_to_show).collection.max_by { |a| rand * a.rating }
@@ -76,8 +76,8 @@ module MoviePack
     def time_for(title)
       movie = filter(title: title).collection.first
       period = 
-        initialized_periods
-        .find { |p| p.filters.map { |k , v| movie.match?(k, v) } .inject(:'&') }
+        periods
+        .find { |p| p.filters.map { |k , v| movie.match?(k, v) } .all? }
       raise ArgumentError, 'Film is not in the schedule' unless period
       period = period.interv
       time = rand((period.first.to_i)..(period.last.to_i))

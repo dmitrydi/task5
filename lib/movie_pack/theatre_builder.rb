@@ -3,20 +3,22 @@ module MoviePack
   class TheatreBuilder
     def initialize(host, &block)
       @host = host
-      instance_eval(&block)
+      instance_eval(&block) if block_given?
       @host
     end
+
+    attr_reader :host
 
     def hall(name, places:, title:)
       @host.halls << Hall.new(name, title, places)
       self
     end
 
-    Hall = Struct.new(:name, :title, :places)
-
     def period(name, &block)
       @host.periods << Period.new(name, &block)
     end
+
+    Hall = Struct.new(:name, :title, :places)
 
     class Period
       def initialize(interv, &block)
@@ -25,7 +27,7 @@ module MoviePack
         @filters = {}
         @price = 0
         @hall = []
-        instance_eval(&block)
+        instance_eval(&block) if block_given?
       end
 
       attr_reader :interv, :description, :filters, :price, :hall

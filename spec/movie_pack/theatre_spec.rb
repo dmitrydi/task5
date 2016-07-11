@@ -73,6 +73,11 @@ describe Theatre do
     end
   end
 
+  describe '#periods' do
+    it { expect(Theatre.new.periods).to eq(Theatre::DEFAULT_PERIODS) }
+    it { expect(Theatre.new {}.periods).to eq([]) }
+  end
+
   describe '#show' do
     it{ expect{theatre.show}.to raise_error(ArgumentError) }
     it{ expect{theatre.show('08:30')}.to output(/Now showing.*old movie/).to_stdout } 

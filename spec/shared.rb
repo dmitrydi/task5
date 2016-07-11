@@ -72,3 +72,7 @@ RSpec::Matchers.define :include_in_attribute do |key, expected|
 end
 
 RSpec::Matchers.define_negated_matcher :not_include_in_attribute, :include_in_attribute
+
+RSpec.shared_examples "changes an attribute" do |instance, attribute, value, expected_value|
+  it { expect{ instance.send(attribute, value) }.to change{ instance.send(attribute) }.to(expected_value) }
+end
