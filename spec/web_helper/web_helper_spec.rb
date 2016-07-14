@@ -10,14 +10,14 @@ describe WebHelper do
   let(:file_name) { WebHelper.get_name_for(url) }
   let(:file_contents) { File.read(file_name) }
 
-  describe '#parse_url' do
-    it { expect(WebHelper.parse_url(url)).to eq('title_tt0111161.html') }
-    it { expect(WebHelper.parse_url(url2)).to eq('title_tt0111161.html') }
+  describe '#url_to_filename' do
+    it { expect(WebHelper.url_to_filename(url)).to eq('title_tt0111161.html') }
+    it { expect(WebHelper.url_to_filename(url2)).to eq('title_tt0111161.html') }
   end
 
   describe '#cashed_get' do
     before(:example) do
-      stub_request(:any, url)
+      stub_request(:get, url)
     end
 
     context 'when no file' do
@@ -25,7 +25,7 @@ describe WebHelper do
         File.delete(file_name) if File.exists?(file_name)
       end
 
-      it { expect(WebHelper.cashed_get(url)).to eq(file_contents).and have_requested(:any, url) }
+      it { expect(WebHelper.cashed_get(url)).to eq(file_contents).and have_requested(:get, url) }
     end
 
     context 'when file exists' do
@@ -33,7 +33,7 @@ describe WebHelper do
         File.delete(file_name) if File.exists?(file_name)
       end
 
-      it { expect(WebHelper.cashed_get(url)).to not_have_requested(:any, url).and eq(file_contents) }
+      it { expect(WebHelper.cashed_get(url)).to not_have_requested(:get, url).and eq(file_contents) }
     end
   end
 

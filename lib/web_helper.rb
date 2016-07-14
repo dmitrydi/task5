@@ -1,24 +1,28 @@
 require 'open-uri'
+require 'fileutils'
 
 class WebHelper
 # class for getting and storing web-pages
-BASE_PATH = File.expand_path('../../data/web_pages/', __FILE__)
+BASE_PATH = File.expand_path('../../data/tmp/', __FILE__)
 SITE_STR = "http://www.imdb.com/"
 
   def self.cashed_get(url)
     file_name = self.get_name_for(url)
-    unless File.exists?(file_name)
-      file = open(url)
-      File.write(file_name, file.read)
+    if File.exists?(file_name)
+      File.read(file_name)
+    else
+      url_contents = open(url).read
+      FileUtils.mkdir_p BASE_PATH
+      File.write(file_name, url_contents)
+      url_contents
     end
-    File.read(file_name)
   end
 
   def self.get_name_for(url)
-    BASE_PATH + '/' + self.parse_url(url)
+    File.join(BASE_PATH, self.url_to_filename(url))
   end
 
-  def self.parse_url(url)
+  def self.url_to_filename(url)
     url.gsub(SITE_STR, '')
        .gsub(/(\/\?|\?).*/, '')
        .gsub("/", '_') \
