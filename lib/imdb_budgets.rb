@@ -4,7 +4,7 @@ require 'open-uri'
 require_relative 'web_helper'
 require 'progress-bar'
 
-class WebGet < WebHelper
+module IMDBBudgets
 
   TOP_250_URL = 'http://www.imdb.com/chart/top?ref_=nv_mv_250_6'
 
@@ -19,13 +19,13 @@ class WebGet < WebHelper
     end
   end
 
-  def self.budgets(top_chart_url)
+  def self.fetch(top_chart_url)
     pb = ProgressBar.new 250, "Start getting budgets"
 
-    main_page = Nokogiri::HTML(self.cashed_get(top_chart_url))
+    main_page = Nokogiri::HTML(WebHelper.cashed_get(top_chart_url))
     main_page.css('td.titleColumn a').map do |blok|
       film_url = WebHelper::SITE_STR + blok['href']
-      film_page = Nokogiri::HTML(self.cashed_get(film_url))
+      film_page = Nokogiri::HTML(WebHelper.cashed_get(film_url))
       budget = film_page.get_budget
       [blok.text, budget]
       pb.i += 1

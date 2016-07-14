@@ -1,10 +1,10 @@
-require_relative '../../lib/web_get'
+require_relative '../../lib/imdb_budgets'
 require 'rspec/its'
 
-describe WebGet do
+describe IMDBBudgets do
   describe '#budgets' do
-    let(:url) { WebGet::TOP_250_URL }
-    let(:budget_ary) { WebGet.budgets(url) }
+    let(:url) { IMDBBudgets::TOP_250_URL }
+    let(:budget_ary) { IMDBBudgets.fetch(url) }
 
     subject { budget_ary }
       its("class") { should eq(Array) }

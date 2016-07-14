@@ -1,10 +1,10 @@
 require 'open-uri'
 require 'fileutils'
 
-class WebHelper
-# class for getting and storing web-pages
+module WebHelper
+# module for getting and storing web-pages
 BASE_PATH = File.expand_path('../../data/tmp/', __FILE__)
-SITE_STR = "http://www.imdb.com/"
+SITE_STR = 'http://www.imdb.com/'
 
   def self.cashed_get(url)
     file_name = self.get_name_for(url)
