@@ -6,6 +6,7 @@ require 'progress-bar'
 require 'yaml'
 
 module IMDBBudgets
+# module for gettimg film budgets from top-250 IMDB
 
   TOP_250_URL = 'http://www.imdb.com/chart/top?ref_=nv_mv_250_6'
   BASE_PATH = File.expand_path('../../data/IMDBBudgets/', __FILE__)
