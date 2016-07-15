@@ -23,21 +23,28 @@ module IMDBBudgets
     end
   end
 
+  def self.fetch_id_from(url)
+    url.gsub(WebHelper::DOMAIN + "/title/", '')
+       .gsub(/(\/\?|\?).*/, '')
+  end
+
   def self.fetch(top_chart_url)
-    main_page = Nokogiri::HTML(WebHelper.cashed_get(top_chart_url))
+    main_page = Nokogiri::HTML(WebHelper.cashed_get(top_chart_url), nil, 'UTF-8')
     data_ary = []
 
-    main_page.css('td.titleColumn a').map do |blok|
-      film_url = WebHelper::SITE_STR + blok['href']
+    data_ary = 
+      main_page.css('td.titleColumn a').map do |blok|
+      film_url = WebHelper::DOMAIN + blok['href']
       film_page = Nokogiri::HTML(WebHelper.cashed_get(film_url))
       budget = film_page.fetch_budget
-      data_ary << {name: blok.text, budget: budget}
+      budget = 'N/A' if budget.empty?
+      {imdb_id: fetch_id_from(film_url), name: blok.text, budget: budget}
     end
   end
 
   def self.to_file(top_chart_url, name = nil)
     file_name = File.join(BASE_PATH, name || DEFAULT_NAME)
-    contents = self.fetch(top_chart_url).to_yaml
+    contents = fetch(top_chart_url).to_yaml
     FileUtils.mkdir_p BASE_PATH
     File.write(file_name, contents)
   end

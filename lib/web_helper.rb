@@ -4,10 +4,10 @@ require 'fileutils'
 module WebHelper
 # module for getting and storing web-pages
 BASE_PATH = File.expand_path('../../data/tmp/', __FILE__)
-SITE_STR = 'http://www.imdb.com/'
+DOMAIN = 'http://www.imdb.com'
 
   def self.cashed_get(url)
-    file_name = self.get_name_for(url)
+    file_name = get_name_for(url)
     if File.exists?(file_name)
       File.read(file_name)
     else
@@ -19,11 +19,11 @@ SITE_STR = 'http://www.imdb.com/'
   end
 
   def self.get_name_for(url)
-    File.join(BASE_PATH, self.url_to_filename(url))
+    File.join(BASE_PATH, url_to_filename(url))
   end
 
   def self.url_to_filename(url)
-    url.gsub(SITE_STR, '')
+    url.gsub(DOMAIN, '')
        .gsub(/(\/\?|\?).*/, '')
        .gsub("/", '_') \
        + '.html'
