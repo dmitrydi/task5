@@ -6,7 +6,6 @@ describe TMDBData do
     let(:id_file) { TMDBData::DEFAULT_ID_FILE }
 
     before(:example) { TMDBData.make_id_list(top_chart_url) }
-    #after(:example) { File.delete(id_file) if File.exists?(id_file) }
     
     it { expect(File.exists?(id_file)).to be true }
   end
