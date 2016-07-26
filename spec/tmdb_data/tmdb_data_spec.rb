@@ -10,6 +10,14 @@ describe TMDBData do
     it { expect(File.exists?(id_file)).to be true }
   end
 
+  describe '#fetch_posters' do
+    let(:dir) { TMDBData::POSTERS_PATH }
+
+    before(:example) { TMDBData.fetch_posters(dir) }
+
+    it { expect(Dir[File.join(dir, '**', '*')].count { |file| File.file?(file) } ).to eq(250) }
+  end
+
   describe '#fetch_alt_titles' do
     let(:file_name) { TMDBData::DEFAULT_TITLES_FILE }
 

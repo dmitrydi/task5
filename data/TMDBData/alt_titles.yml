@@ -473,7 +473,6 @@
 - :id: 807
   :imdb_id: tt0114369
   :titles:
-  - 火線追緝令
   - Seven
   - The Seven Deadly Sins
   - Seven - Os Sete Crimes Capitais
@@ -487,6 +486,7 @@
   - Sete Pecados Mortais
   - Seven
   - هفت
+  - 火線追緝令
 - :id: 274
   :imdb_id: tt0102926
   :titles:
@@ -550,8 +550,8 @@
   :imdb_id: tt0110413
   :titles:
   - Leon
-  - The Professional
   - 'Léon - The Professional: Extended Version'
+  - The Professional
   - 'Léon: The Professional'
   - León El Profesional
 - :id: 335
@@ -765,8 +765,8 @@
 - :id: 280
   :imdb_id: tt0103064
   :titles:
-  - Terminator 2 - Judgement Day Director's Cut
   - цЬкф╛ЖцИ░хглч║МщЫЖ
+  - Terminator 2 - Judgement Day Director's Cut
   - Terminator 2 - Judgment Day (Special Edition)
   - Terminator 2 - Judgment Day
   - Terminator 2 - Judgement Day
@@ -1305,8 +1305,6 @@
 - :id: 996
   :imdb_id: tt0036775
   :titles:
-  - 双重赔偿
-  - Gyilkos vagyok
   - Κολασμένη Αγάπη
   - Pacto de sangre
   - Frau ohne Gewissen
@@ -1317,6 +1315,8 @@
   - Dvostruka obmana
   - Shinya no kokuhaku
   - Çifte Tazminat
+  - 双重赔偿
+  - Gyilkos vagyok
 - :id: 10193
   :imdb_id: tt0435761
   :titles:
@@ -1372,6 +1372,7 @@
 - :id: 600
   :imdb_id: tt0093058
   :titles:
+  - Пълно бойно снаряжение
   - Nascido Para Matar
   - 金甲部隊
   - Acéllövedék
@@ -1384,7 +1385,6 @@
   - Olovni kovčeg
   - Stanley Kubrick's Full Metal Jacket
   - Glonţ cu cămaşă metalică
-  - Пълно бойно снаряжение
 - :id: 279
   :imdb_id: tt0086879
   :titles:
@@ -1798,6 +1798,7 @@
 - :id: 613
   :imdb_id: tt0363163
   :titles:
+  - A Queda. As Últimas Horas de Hitler
   - 帝國毀滅
   - La Chute
   - Downfall
@@ -1808,7 +1809,6 @@
   - A Queda! As Últimas Horas de Hitler
   - Pád Tretí ríse
   - Allakäik
-  - A Queda. As Últimas Horas de Hitler
 - :id: 150540
   :imdb_id: tt2096673
   :titles:
@@ -2067,27 +2067,27 @@
   :imdb_id: tt2488496
   :titles:
   - The Force Awakens
+  - 'Star Wars: Sila se probouzi'
   - El despertar de la Fuerza
   - цШЯчРГхдзцИ░я╝ЪхОЯхКЫшж║щЖТ
   - 'Star Wars: Episode VII'
-  - O Despertar da For├зa
   - 'Star Wars: Epis├│dio VII - O Despertar da For├зa'
   - 'Star Wars: Episodio VII'
   - "╨Я╤А╨╛╨▒╤Г╨╢╨┤╨╡╨╜╨╕╨╡ ╤Б╨╕╨╗╤Л"
+  - 'Star Wars: Episode 7 - The Force Awakens'
+  - O Despertar da For├зa
   - 'Star Wars: The Force Awakens'
   - 'La guerra de las galaxias. Episodio VII: El despertar de la fuerza'
-  - "╫Ю╫Ь╫Ч╫Ю╫к ╫Ф╫Ы╫Х╫Ы╫С╫Щ╫Э: ╫Ф╫Ы╫Х╫Ч ╫Ю╫к╫в╫Х╫и╫и"
   - Das Erwachen der Macht
   - 'Star Wars: Le r├йveil de la Force'
   - 'Star Wars: Episode VII - The Force Awakens'
   - 'Star Wars: Episodio VII - Il risveglio della Forza'
   - "╨Ч╨▓╤С╨╖╨┤╨╜╤Л╨╡ ╨▓╨╛╨╣╨╜╤Л: ╨Я╤А╨╛╨▒╤Г╨╢╨┤╨╡╨╜╨╕╨╡ ╨б╨╕╨╗╤Л"
+  - "╫Ю╫Ь╫Ч╫Ю╫к ╫Ф╫Ы╫Х╫Ы╫С╫Щ╫Э: ╫Ф╫Ы╫Х╫Ч ╫Ю╫к╫в╫Х╫и╫и"
   - Star Wars - Episode 7 - Das Erwachen der Macht
   - 'Star Wars: Episodio VII - El Despertar de la Fuerza'
-  - уВ╣уВ┐уГ╝уГ╗уВжуВйуГ╝уВ║я╝ПуГХуВйуГ╝уВ╣уБошжЪщЖТ
   - 'Star Wars: El despertar de la fuerza'
-  - 'Star Wars: Episode 7 - The Force Awakens'
-  - 'Star Wars: Sila se probouzi'
+  - уВ╣уВ┐уГ╝уГ╗уВжуВйуГ╝уВ║я╝ПуГХуВйуГ╝уВ╣уБошжЪщЖТ
 - :id: 614
   :imdb_id: tt0050986
   :titles:
@@ -2187,10 +2187,6 @@
   :imdb_id: tt0434409
   :titles:
   - V for Vendetta
-  - V de Venganza
-  - V字仇杀队
-  - ונדטה
-  - Vフォー・ヴェンデッタ
   - Vendetta üçün V
   - V като Вендета
   - V niin kuin verikosto
@@ -2198,6 +2194,10 @@
   - V mint vérbosszú
   - V kot vroce mascevanje
   - В значит Вендетта
+  - V de Venganza
+  - V字仇杀队
+  - ונדטה
+  - Vフォー・ヴェンデッタ
 - :id: 46738
   :imdb_id: tt1255953
   :titles:
@@ -2390,6 +2390,9 @@
   :titles:
   - Erämaan armoille
   - Ind i vildmarken
+  - Vers l'inconnu
+  - Özgürlük Yolu
+  - Into the Wild - Die Geschichte eines Aussteigers
   - In die Wildnis - Allein nach Alaska
   - Na Natureza Selvagem
   - В диких условиях
@@ -2399,9 +2402,6 @@
   - Wszystko za życie
   - Ταξίδι στην άγρια φύση
   - 荒野伴我心
-  - Vers l'inconnu
-  - Özgürlük Yolu
-  - Into the Wild - Die Geschichte eines Aussteigers
 - :id: 24238
   :imdb_id: tt0978762
   :titles:
@@ -2598,8 +2598,8 @@
   - Mad Max 4
   - Mad Max 4 - Fury Road
   - Mad Max IV - Fury Road
-  - Mad Max Fury Road
   - 瘋狂麥斯：憤怒道
+  - Mad Max Fury Road
 - :id: 642
   :imdb_id: tt0064115
   :titles:
@@ -2952,11 +2952,11 @@
 - :id: 281957
   :imdb_id: tt1663202
   :titles:
-  - 复仇勇者
   - O Regresso
-  - REVENANT Zmrtvýchvstání
   - 神鬼獵人
   - El renacido
+  - 复仇勇者
+  - REVENANT Zmrtvýchvstání
 - :id: 1366
   :imdb_id: tt0075148
   :titles:
