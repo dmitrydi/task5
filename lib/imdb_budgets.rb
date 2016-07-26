@@ -25,13 +25,13 @@ module IMDBBudgets
   end
 
   def self.fetch_id_from(url)
-    url.gsub(WebHelper::DOMAIN + "/title/", '')
+    url.gsub(WebHelper::DOMAIN, '')
+       .gsub("/title/", '')
        .gsub(/(\/\?|\?).*/, '')
   end
 
   def self.fetch(top_chart_url)
     main_page = Nokogiri::HTML(WebHelper.cashed_get(top_chart_url), nil, 'UTF-8')
-    data_ary = []
 
     data_ary = 
       main_page.css('td.titleColumn a').map do |blok|
