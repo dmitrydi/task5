@@ -1,1 +1,5 @@
 data/tmp/
+data/movie_data/posters
+data/movie_data/tmp
+spec/movie_data/vcr_cassettes
+config/tmdb.yml

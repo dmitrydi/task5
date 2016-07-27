@@ -1,8 +1,9 @@
-require_relative '../../lib/tmdb_data'
+require_relative 'spec_helper'
+require 'webmock/rspec'
 
 describe TMDBData do
   describe '#make_id_list' do
-    let(:top_chart_url) { IMDBBudgets::TOP_250_URL }
+    let(:top_chart_url) { TOP_250_URL }
     let(:id_file) { TMDBData::DEFAULT_ID_FILE }
 
     before(:example) { TMDBData.make_id_list(top_chart_url) }
