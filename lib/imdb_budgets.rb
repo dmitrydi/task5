@@ -25,9 +25,7 @@ module IMDBBudgets
   end
 
   def self.fetch_id_from(url)
-    url.gsub(WebHelper::DOMAIN, '')
-       .gsub("/title/", '')
-       .gsub(/(\/\?|\?).*/, '')
+    url.scan(/tt\d{7}/).first
   end
 
   def self.fetch(top_chart_url)
