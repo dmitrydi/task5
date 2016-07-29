@@ -288,47 +288,27 @@ a {
   <dl style="margin-left: 15px;">
   <dt id="example_group_2" class="passed">#make_id_list</dt>
     <script type="text/javascript">moveProgressBar('25.0');</script>
+    <dd class="example passed"><span class="passed_spec_name">uses Tmdb::Find to fetch movie ids</span><span class='duration'>3.88441s</span></dd>
+    <script type="text/javascript">moveProgressBar('50.0');</script>
     <dd class="example passed"><span class="passed_spec_name">should equal true</span><span class='duration'>0.00000s</span></dd>
   </dl>
 </div>
 <div id="div_group_3" class="example_group passed">
   <dl style="margin-left: 30px;">
   <dt id="example_group_3" class="passed">when no top_chart_url file exists</dt>
-    <script type="text/javascript">moveProgressBar('50.0');</script>
-    <dd class="example passed"><span class="passed_spec_name">goes to top_chart_url</span><span class='duration'>3.83761s</span></dd>
-    <script type="text/javascript">makeRed('rspec-header');</script>
-    <script type="text/javascript">makeRed('div_group_3');</script>
-    <script type="text/javascript">makeRed('example_group_3');</script>
     <script type="text/javascript">moveProgressBar('75.0');</script>
-    <dd class="example failed">
-      <span class="failed_spec_name">calls WebHelper to load page</span>
-      <span class="duration">3.02641s</span>
-      <div class="failure" id="failure_1">
-        <div class="message"><pre>Failure/Error: expect(WebHelper).to receive(:cached_get).with(top_chart_url).and_call_original
-
-  (MovieData::WebHelper).cached_get(&quot;http://www.imdb.com/chart/top?ref_=nv_mv_250_6&quot;)
-      expected: 1 time with arguments: (&quot;http://www.imdb.com/chart/top?ref_=nv_mv_250_6&quot;)
-      received: 0 times</pre></div>
-        <div class="backtrace"><pre>./tmdb_data_spec.rb:25:in `block (4 levels) in &lt;top (required)&gt;&#39;</pre></div>
-    <pre class="ruby"><code><span class="linenum">23</span>      it 'calls WebHelper to load page' do
-<span class="linenum">24</span>        TMDBData.make_id_list(top_chart_url)
-<span class="offending"><span class="linenum">25</span>        expect(WebHelper).to receive(:cached_get).with(top_chart_url).and_call_original</span>
-<span class="linenum">26</span>      end
-<span class="linenum">27</span>    end
-<span class="linenum">28</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
-      </div>
-    </dd>
+    <dd class="example passed"><span class="passed_spec_name">goes to top_chart_url using WebHelper and writes page to disk</span><span class='duration'>3.34541s</span></dd>
   </dl>
 </div>
 <div id="div_group_4" class="example_group passed">
   <dl style="margin-left: 30px;">
   <dt id="example_group_4" class="passed">when top_chart_url file exists</dt>
     <script type="text/javascript">moveProgressBar('100.0');</script>
-    <dd class="example passed"><span class="passed_spec_name">should request ANY http://www.imdb.com/chart/top?ref_=nv_mv_250_6 1 time and request GET /.*api.themoviedb.org.*/ 250 times</span><span class='duration'>3.55881s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">takes top_chart_url file from disk</span><span class='duration'>222.00140s</span></dd>
   </dl>
 </div>
-<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>10.46962 seconds</strong>";</script>
-<script type="text/javascript">document.getElementById('totals').innerHTML = "4 examples, 1 failure";</script>
+<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>229.23121 seconds</strong>";</script>
+<script type="text/javascript">document.getElementById('totals').innerHTML = "4 examples, 0 failures";</script>
 </div>
 </div>
 </body>

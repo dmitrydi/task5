@@ -1,5 +1,4 @@
 require_relative 'spec_helper'
-require 'webmock/rspec'
 
 describe TMDBData do
   before(:all) do
@@ -16,18 +15,22 @@ describe TMDBData do
         FileUtils.rm WebHelper.get_name_for(top_chart_url), :force => true
       end
 
-      it 'goes to top_chart_url' do
+      it 'goes to top_chart_url using WebHelper and writes page to disk' do
+        expect(WebHelper).to receive(:open).with(top_chart_url).and_call_original
         expect(id_maker).to have_requested(:get, top_chart_url).times(1)
-      end
-
-      it 'calls WebHelper to load page' do
-        TMDBData.make_id_list(top_chart_url)
-        expect(WebHelper).to receive(:cached_get).with(top_chart_url).and_call_original
       end
     end
 
     context 'when top_chart_url file exists' do
-      it { expect(id_maker).to not_have_requested(:any, top_chart_url).and have_requested(:get, /.*api.themoviedb.org.*/).times(250) }
+      it 'takes top_chart_url file from disk' do
+        expect(File).to receive(:open).with(an_instance_of(String), 'r').and_call_original
+        expect(id_maker).to not_have_requested(:any, top_chart_url) 
+      end
+    end
+
+    it 'uses Tmdb::Find to fetch movie ids' do
+      expect(Tmdb::Find).to receive(:movie).with(/tt\d{7}/,  external_source: 'imdb_id').exactly(250).times.and_call_original
+      expect(id_maker).to have_requested(:get, /.*api.themoviedb.org.*/).times(250)
     end
 
     it { expect(File.exists?(id_file)).to be true }
