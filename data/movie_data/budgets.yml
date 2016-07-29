@@ -167,12 +167,12 @@
 - :imdb_id: tt0095765
   :name: Nuovo Cinema Paradiso
   :budget: "$5,000,000"
-- :imdb_id: tt0050825
-  :name: Тропы славы
-  :budget: "$935,000"
 - :imdb_id: tt1853728
   :name: Джанго освобожденный
   :budget: "$100,000,000"
+- :imdb_id: tt0050825
+  :name: Тропы славы
+  :budget: "$935,000"
 - :imdb_id: tt0081505
   :name: Сияние
   :budget: "$19,000,000"
@@ -626,12 +626,12 @@
 - :imdb_id: tt0353969
   :name: Воспоминания об убийстве
   :budget: "$2,800,000"
-- :imdb_id: tt0046911
-  :name: Les diaboliques
-  :budget: N/A
 - :imdb_id: tt0120382
   :name: Шоу Трумана
   :budget: "$60,000,000"
+- :imdb_id: tt0046911
+  :name: Les diaboliques
+  :budget: N/A
 - :imdb_id: tt0246578
   :name: Донни Дарко
   :budget: "$4,500,000"
@@ -646,7 +646,7 @@
   :budget: "$135,000,000"
 - :imdb_id: tt0032138
   :name: Волшебник страны Оз
-  :budget: "$2,777,000"
+  :budget: "$2,800,000"
 - :imdb_id: tt0198781
   :name: Корпорация монстров
   :budget: "$115,000,000"
@@ -659,12 +659,12 @@
 - :imdb_id: tt0114746
   :name: Двенадцать обезьян
   :budget: "$29,000,001"
-- :imdb_id: tt0036868
-  :name: The Best Years of Our Lives
-  :budget: "$2,100,000"
 - :imdb_id: tt0107048
   :name: День сурка
   :budget: "$14,600,000"
+- :imdb_id: tt0036868
+  :name: The Best Years of Our Lives
+  :budget: "$2,100,000"
 - :imdb_id: tt0044079
   :name: Strangers on a Train
   :budget: "$1,200,000"

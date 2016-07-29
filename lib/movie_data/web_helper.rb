@@ -4,11 +4,11 @@ module MovieData
     def self.cached_get(url)
       file_name = get_name_for(url)
       if File.exists?(file_name)
-        File.read(file_name)
+        File.open(file_name, 'r') { |file| file.read }
       else
         url_contents = open(url).read
         FileUtils.mkdir_p TMP_PATH
-        File.write(file_name, url_contents)
+        File.open(file_name, 'w') { |file| file.write(url_contents) }
         url_contents
       end
     end

@@ -2,13 +2,8 @@
 module MovieData
   module TMDBData
   # module for fetching data using TMDB API
-    POSTERS_PATH = File.join(DATA_PATH, 'posters')
-    DEFAULT_ID_FILE = File.join(DATA_PATH, 'id_list.yml')
-    DEFAULT_TITLES_FILE = File.join(DATA_PATH, 'alt_titles.yml')
-    BASE_IMAGE_URL = 'http://image.tmdb.org/t/p/w185'
-
     def self.make_id_list(top_chart_url, file_name = DEFAULT_ID_FILE)
-      main_page = Nokogiri::HTML(WebHelper.cached_get(top_chart_url), nil, 'UTF-8')
+      main_page = Nokogiri.HTML(WebHelper.cached_get(top_chart_url), nil, 'UTF-8')
 
       id_list =
         main_page
@@ -20,7 +15,7 @@ module MovieData
         end
         .to_yaml
     
-      FileUtils.mkdir_p BASE_PATH
+      FileUtils.mkdir_p DATA_PATH
       File.write(file_name, id_list)
     end
 
@@ -55,7 +50,7 @@ module MovieData
         end
         .to_yaml
 
-      FileUtils.mkdir_p BASE_PATH
+      FileUtils.mkdir_p DATA_PATH
       File.write(file_name, alt_titles)
     end
   end
