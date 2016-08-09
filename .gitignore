@@ -1,5 +1,4 @@
-data/tmp/
-data/movie_data/posters
-data/movie_data/tmp
-spec/movie_data/vcr_cassettes
-config/tmdb.yml
+data/movie_pack/web_fetcher/posters
+data/movie_pack/web_fetcher/tmp
+spec/movie_pack/web_fetcher/vcr_cassettes
+config/web_fetcher/tmdb.yml

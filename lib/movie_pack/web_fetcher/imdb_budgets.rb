@@ -1,4 +1,4 @@
-module MovieData
+module MoviePack::WebFetcher
   module IMDBBudgets
   # module for gettimg film budgets from top-250 IMDB
     DEFAULT_NAME = 'budgets.yml'
@@ -26,7 +26,7 @@ module MovieData
           film_page = Nokogiri::HTML(WebHelper.cached_get(film_url))
           budget = film_page.fetch_budget
           budget = 'N/A' if budget.empty?
-          {imdb_id: MovieData.fetch_id_from(film_url), name: blok.text, budget: budget}
+          {imdb_id: id_from(film_url), name: blok.text, budget: budget}
         end
     end
 

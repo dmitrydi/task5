@@ -11,6 +11,7 @@ require_relative 'movie_pack/netflix'
 require_relative 'movie_pack/new_movie'
 require_relative 'movie_pack/theatre'
 require_relative 'movie_pack/theatre_builder'
+require_relative 'movie_pack/web_fetcher'
 
 module MoviePack
   MOVIEFILE = File.expand_path('../../data/movie_pack/movies.txt', __FILE__)

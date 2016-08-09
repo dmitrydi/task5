@@ -1,4 +1,4 @@
-module MovieData
+module MoviePack::WebFetcher
   module WebHelper
   # module for getting and storing web-pages
     def self.cached_get(url)
@@ -18,7 +18,7 @@ module MovieData
     end
 
     def self.url_to_filename(url)
-      MovieData.fetch_id_from(url) + '.html'
+      MoviePack::WebFetcher.id_from(url) + '.html'
     end
   end
 end

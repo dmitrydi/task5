@@ -1,6 +1,5 @@
 ---
 - :id: 278
-  :imdb_id: tt0111161
   :titles:
   - хИ║ц┐А1995
   - Um Sonho de Liberdade
@@ -36,9 +35,9 @@
   - Le ali della libert├а (1994)
   - "╪▒╪│╪к┌п╪з╪▒█М ╪п╪▒ ╪┤╪з┘И╪┤┘Ж┌й"
 - :id: 238
-  :imdb_id: tt0068646
   :titles:
   - "╨Ъ╤А╤С╤Б╤В╨╜╤Л╨╣ ╨╛╤В╨╡╤Ж 1"
+  - El padrino
   - "╨Ъ╤А╤С╤Б╤В╨╜╤Л╨╣ ╨╛╤В╨╡╤Ж"
   - The Godfather Part I
   - El Padrino I
@@ -61,30 +60,29 @@
   - Godfather, The
   - "╬Я ╬Э╬┐╬╜╧М╧В"
 - :id: 240
-  :imdb_id: tt0071562
   :titles:
-  - Крёстный отец 2
-  - O Poderoso Chefão 2
+  - "╨Ъ╤А╤С╤Б╤В╨╜╤Л╨╣ ╨╛╤В╨╡╤Ж 2"
+  - O Poderoso Chef├гo 2
   - The Godfather - Part II
+  - El padrino parte II
   - The Godfather Part 2
   - Der Pate 2
   - Godfather, The - Part II
   - El Padrino II
   - Il Padrino (1974)
-  - 'O Poderoso Chefão: Parte 2'
-  - O Poderoso Chefão - Parte II
+  - 'O Poderoso Chef├гo: Parte 2'
+  - O Poderoso Chef├гo - Parte II
   - 'Mario Puzo''s The Godfather: Part II'
-  - Kummisetä, osa II
+  - Kummiset├д, osa II
   - Kmotr II
   - Le Parrain 2
   - The Godfather 2
   - Der Pate Vol 2
-  - 教父续集
-  - 教父 II
+  - цХЩчИ╢ч╗нщЫЖ
+  - цХЩчИ╢ II
   - The Godfather, Part II
   - Godfather - Part II, The
 - :id: 155
-  :imdb_id: tt0468569
   :titles:
   - щ╗СцЪЧщиОхгл
   - "╨в╨╡╨╝╨╜╤Л╨╣ ╤А╤Л╤Ж╨░╤А╤М"
@@ -97,7 +95,6 @@
   - Batman - O Cavaleiro das Trevas
   - 'Batman 2: El caballero de la noche'
   - Batman - El caballero de la noche
-  - The Dark Knight
   - "╬Я ╬г╬║╬┐╧Д╬╡╬╣╬╜╧М╧В ╬Щ╧А╧А╧М╧Д╬╖╧В"
   - "╨в╨╡╨╝╨╜╨╕╨╣ ╨╗╨╕╤Ж╨░╤А"
   - El Caballero Oscuro
@@ -107,11 +104,9 @@
   - Batman - Il Cavaliere Oscuro
   - Batman 6 - The Dark Knight
   - Batman 6
-  - Batman II - The Dark Knight
   - Batman 2 - The Dark Knight
   - "╪┤┘И╪з┘Д█М┘З ╪к╪з╪▒█М┌й█М"
 - :id: 424
-  :imdb_id: tt0108052
   :titles:
   - Schindlerův seznam
   - Schindlerov zoznam
@@ -122,7 +117,6 @@
   - シンドラーのリスト
   - Η Λίστα Του Σίντλερ
 - :id: 389
-  :imdb_id: tt0050083
   :titles:
   - 12 разгневени мъже
   - Οι δώδεκα ένορκοι
@@ -139,7 +133,6 @@
   - Douze hommes en colère
   - 12 hombres en pugna
 - :id: 680
-  :imdb_id: tt0110912
   :titles:
   - 黑色追緝令
   - 'Pulp Fiction: Tempo de Violência'
@@ -156,10 +149,11 @@
   - 'Pulp Fiction: Historky z podsvetia'
   - Кримiнальне чтиво
 - :id: 122
-  :imdb_id: tt0167260
   :titles:
+  - The Lord of the Rings - The Return of the King
   - IL SIGNORE DEGLI ANELLI - Il ritorno del Re dvd1
   - IL SIGNORE DEGLI ANELLI - Il ritorno del Re dvd2
+  - Taru Sormusten Herrasta - Kuninkaan Paluu
   - The Return of the King
   - Lord of The Rings III - The Return of The King
   - The Lord of the Rings 3 - The Return of the King
@@ -213,9 +207,9 @@
   - The Lord Of The Rings - The Return Of The King - DC
   - Der Herr der Ringe 3 - Die R├╝ckkehr des K├╢nigs
 - :id: 429
-  :imdb_id: tt0060196
   :titles:
   - 獨行俠決鬥地獄門
+  - The Good, the Ugly, the Bad
   - A Jó, a Rossz és a Csúf
   - Den gode, den onde og den grusomme
   - Geras, blogas ir bjaurus
@@ -230,7 +224,6 @@
   - The Good, the Bad and the Ugly
   - El bueno, el malo y el feo
 - :id: 550
-  :imdb_id: tt0137523
   :titles:
   - Clube da Luta
   - 鬥陣俱樂部
@@ -239,12 +232,13 @@
   - Borilački klub
   - Harcosok Klubbja
 - :id: 120
-  :imdb_id: tt0120737
   :titles:
+  - The Lord of the Rings - The Fellowship of the Ring
   - IL SIGNORE DEGLI ANELLI La compagnia dell'anello dvd1
   - IL SIGNORE DEGLI ANELLI La compagnia dell'anello dvd2
   - цМЗчОпчОЛIя╝ЪцКдцИТф╜┐шАЕ
   - щнФцИТщжЦщГицЫ▓я╝ЪщнФцИТчО░ш║л
+  - Taru Sormusten Herrasta - Sormuksen Ritarit
   - Lord of The Rings I - The Fellowship of The Ring
   - The Lord of the Rings 1 - The Fellowship of the Ring
   - Der Herr der Ringe - Die Gef├дhrten
@@ -294,27 +288,25 @@
   - The Lord Of The Rings - The Fellowship Of The Ring - DC
   - Der Herr der Ringe 1 - Die Gef├дhrten
 - :id: 1891
-  :imdb_id: tt0080684
   :titles:
-  - El imperio contraataca
-  - 'Star Wars: Episode V - Das Imperium schl├дgt zur├╝ck'
-  - 'Star Wars: Episode V - The Empire Strikes Back'
-  - 'Star Wars V: The Empire Strikes Back'
   - 'Star Wars: Episode 5 - Das Imperium schl├дgt zur├╝ck'
-  - 'The Empire Strikes Back: StarWars II'
   - 'Star Wars: Episode V - The Empire Strikes Back'
+  - 'The Empire Strikes Back: StarWars II'
   - 'Star Wars: Episode 5 - The Empire Strikes Back'
   - L'Impero colpisce ancora
   - Guerre stellari - L'Impero colpisce ancora
-  - Star Wars V - L'Impero colpisce ancora
   - L'Imperi Contraataca
   - 'Star wars: Episodio V - El imperio contraataca'
   - Imperiet sl├еr igen
   - "╨Ш╨╝╨┐╨╡╤А╨╕╤П ╨╜╨░╨╜╨╛╤Б╨╕╤В ╨╛╤В╨▓╨╡╤В╨╜╤Л╨╣ ╤Г╨┤╨░╤А"
   - L'empire contre-attaque
   - 'Star Wars: The Empire Strikes Back'
+  - El imperio contraataca
+  - 'Star Wars V: The Empire Strikes Back'
+  - Star Wars V - L'Impero colpisce ancora
+  - 'Star Wars: Episode V - Das Imperium schl├дgt zur├╝ck'
+  - 'Star Wars: Episode V - The Empire Strikes Back'
 - :id: 13
-  :imdb_id: tt0109830
   :titles:
   - 阿甘正傳
   - Forest Gump
@@ -328,18 +320,18 @@
   - Φόρεστ Γκαμπ
   - Forrest Gump (Hanks)
 - :id: 27205
-  :imdb_id: tt1375666
   :titles:
   - Origine
   - El Origen
   - 全面啟動
   - 'Inception: The IMAX Experience'
 - :id: 121
-  :imdb_id: tt0167261
   :titles:
+  - The Lord of the Rings - The Two Towers
   - IL SIGNORE DEGLI ANELLI - Le Due Torri dvd1
   - IL SIGNORE DEGLI ANELLI - Le Due Torri dvd2
   - цМЗчОпчОЛ2я╝ЪхПМхбФхеЗхЕ╡
+  - Taru Sormusten Herrasta - Kaksi Tornia
   - Lord of The Rings II - The Two Towers
   - The Lord of the Rings 2 - The Two Towers
   - 'El Se├▒or de los Anillos: Las Dos Torres'
@@ -386,12 +378,10 @@
   - The Lord Of The Rings - The Two Towers - DC
   - Der Herr der Ringe 2 - Die zwei T├╝rme
 - :id: 510
-  :imdb_id: tt0073486
   :titles:
   - Cuckoo's Nest
   - Vlucht boven een koekoeksnest
 - :id: 769
-  :imdb_id: tt0099685
   :titles:
   - Τα καλά παιδιά
   - Славнi хлопцi
@@ -409,12 +399,10 @@
   - Os Bons Companheiros
   - Les affranchis
 - :id: 603
-  :imdb_id: tt0133093
   :titles:
   - The Matrix 1
   - المتمرد
 - :id: 346
-  :imdb_id: tt0047478
   :titles:
   - 7 Vo Si
   - Οι επτά σαμουράι
@@ -432,30 +420,12 @@
   - Les sept samouraï
   - Os Sete Samurais
 - :id: 11
-  :imdb_id: tt0076759
   :titles:
-  - 'Star Wars: A New Hope'
-  - La guerra de las galaxias
-  - 'The Adventures of Luke Starkiller as Taken from the ''Journal of the Whills'':
-    Saga I - Star Wars'
-  - 'The Star Wars: From the Adventures of Luke Starkiller'
-  - 'Star Wars: Episodio IV - Una nueva esperanza'
-  - 'Star Wars: Episodio IV - Una nuova speranza'
-  - 'Star Wars: Episode IV - Eine neue Hoffnung'
   - 'Star Wars: Episode IV - A New Hope'
-  - 'Star Wars: Episode 4 - A New Hope'
-  - La guerre des ├йtoiles
-  - Gwiezdne wojny
+  - 'Star Wars: Episode 4 - Una nuova speranza'
+  - 'Star Wars: Episodio 4 - Una Nuova Speranza'
   - 'Star Wars: Episode IV - A New Hope'
-  - Csillagok h├бbor├║ja
-  - La guerra de las galaxias
-  - Guerra nas Estrelas
-  - Stjernekrigen
-  - "╨Ч╨▓╤С╨╖╨┤╨╜╤Л╨╡ ╨▓╨╛╨╣╨╜╤Л"
-  - The Star Wars
-  - A New Hope
 - :id: 598
-  :imdb_id: tt0317248
   :titles:
   - Город бога
   - City of God - La città di Dio
@@ -471,7 +441,6 @@
   - Tanrinin Sheheri
   - Mesto bohu
 - :id: 807
-  :imdb_id: tt0114369
   :titles:
   - Seven
   - The Seven Deadly Sins
@@ -488,7 +457,6 @@
   - هفت
   - 火線追緝令
 - :id: 274
-  :imdb_id: tt0102926
   :titles:
   - De schreeuw van het lam
   - Мълчанието на агнетата
@@ -503,7 +471,6 @@
   - El silencio de los inocentes
   - Mlcení jehnátek
 - :id: 1585
-  :imdb_id: tt0038650
   :titles:
   - Эта прекрасная жизнь
   - Qué bello es vivir
@@ -519,7 +486,6 @@
   - Wat een mooi leven
   - Ihmeellinen on elämä
 - :id: 629
-  :imdb_id: tt0114814
   :titles:
   - Підозрілі особи
   - Os Suspeitos do Costume
@@ -531,7 +497,6 @@
   - Usual Suspects, The
   - Подозрительные лица
 - :id: 637
-  :imdb_id: tt0118799
   :titles:
   - Az élet szép
   - La Vida es Bella
@@ -547,15 +512,14 @@
   - Das Leben ist schön
   - Kaunis elämä
 - :id: 101
-  :imdb_id: tt0110413
   :titles:
   - Leon
   - 'Léon - The Professional: Extended Version'
+  - 這個殺手不太冷
   - The Professional
   - 'Léon: The Professional'
   - León El Profesional
 - :id: 335
-  :imdb_id: tt0064116
   :titles:
   - Spiel mir das Lied vom Tod
   - Once upon a Time in the West
@@ -569,7 +533,6 @@
   - Once Upon a Time in the West
   - Vestens hårde halse
 - :id: 129
-  :imdb_id: tt0245429
   :titles:
   - A Viagem de Chihiro
   - Chihiros Reise ins Zauberland
@@ -590,7 +553,6 @@
   - Gariem Līdzi
   - Chihiro og heksene
 - :id: 857
-  :imdb_id: tt0120815
   :titles:
   - 雷霆救兵
   - Rescatando al soldado Ryan
@@ -605,7 +567,6 @@
   - Il faut sauver le soldat Ryan
   - 搶救雷恩大兵
 - :id: 73
-  :imdb_id: tt0120586
   :titles:
   - American History X
   - 美國X檔案
@@ -620,16 +581,7 @@
   - Američka istorija X
   - Generacija X
   - Kult hákového kriza
-- :id: 157336
-  :imdb_id: tt0816692
-  :titles:
-  - Interestelar
-  - 星际启示录
-  - Xing Ji Chuan Yue
-  - Bein kokhavim
-  - 星際效應
 - :id: 289
-  :imdb_id: tt0034583
   :titles:
   - Касабланка
   - 北非諜影
@@ -638,9 +590,17 @@
   - Kasaburanka
   - Kasablanka
   - Kazablanka
-- :id: 539
-  :imdb_id: tt0054215
+- :id: 157336
   :titles:
+  - Interestelar
+  - 星际启示录
+  - Xing Ji Chuan Yue
+  - Bein kokhavim
+  - Интерстеллар
+  - 星際效應
+- :id: 539
+  :titles:
+  - Psicosi
   - Psicosis
   - Psychose
   - Психо
@@ -649,11 +609,8 @@
   - Psichopatas
   - Psychoza
   - Sapik
-  - Psycho
   - Psico
-  - Psicosi
 - :id: 901
-  :imdb_id: tt0021749
   :titles:
   - Les lumières de la ville
   - Luci della città
@@ -666,7 +623,6 @@
   - Svetla velkomesta
   - Byens lys
 - :id: 85
-  :imdb_id: tt0082971
   :titles:
   - Indiana Jones a Dobyvatel├й ztracen├й archy
   - Indiana Jones 1 - J├дger des verlorenen Schatzes
@@ -705,21 +661,7 @@
   - Os Ca├зadores da Arca Perdida
   - "╬Я ╬Щ╬╜╧Д╬╣╬м╬╜╬▒ ╬д╬╢╧М╬┐╧Е╬╜╧В ╬Ъ╬▒╬╣ ╬Я╬╣ ╬Ъ╧Е╬╜╬╖╬│╬┐╬п ╬д╬╖╧В ╬з╬▒╬╝╬н╬╜╬╖╧В
     ╬Ъ╬╣╬▓╧Й╧Д╬┐╧Н"
-- :id: 77338
-  :imdb_id: tt1675434
-  :titles:
-  - 无法触碰
-  - 逆轉人生
-  - Untouchable
-  - The Intouchables
-  - Intocáveis
-  - 最佳拍档
-  - 不可触碰
-  - 不可触摸
-  - Amigos Intocables
-  - Неприкасаемые
 - :id: 3082
-  :imdb_id: tt0027977
   :titles:
   - Нові часи
   - Les Temps modernes
@@ -733,8 +675,19 @@
   - Moderne tijden
   - Модерни времена
   - Tempi moderni (1936)
+- :id: 77338
+  :titles:
+  - 无法触碰
+  - 逆轉人生
+  - Untouchable
+  - The Intouchables
+  - Intocáveis
+  - 最佳拍档
+  - 不可触碰
+  - 不可触摸
+  - Amigos Intocables
+  - Неприкасаемые
 - :id: 497
-  :imdb_id: tt0120689
   :titles:
   - Roheline miil
   - Το πράσινο μίλι
@@ -750,7 +703,6 @@
   - La ligne verte
   - 綠色奇蹟
 - :id: 567
-  :imdb_id: tt0047396
   :titles:
   - Окно во двор
   - Siopilos martis (Σιωπηλός μάρτυς)
@@ -763,10 +715,9 @@
   - Okno do dvora
   - Okno do dvora
 - :id: 280
-  :imdb_id: tt0103064
   :titles:
-  - цЬкф╛ЖцИ░хглч║МщЫЖ
   - Terminator 2 - Judgement Day Director's Cut
+  - цЬкф╛ЖцИ░хглч║МщЫЖ
   - Terminator 2 - Judgment Day (Special Edition)
   - Terminator 2 - Judgment Day
   - Terminator 2 - Judgement Day
@@ -788,7 +739,6 @@
   - "╨в╨╡╤А╨╝╨╕╨╜╨░╤В╨╛╤А 2 ╨б╤Г╨┤╨╜╤Л╨╣ ╨┤╨╡╨╜╤М"
   - "╬Х╬╛╬┐╬╗╬┐╬╕╧Б╬╡╧Е╧Д╬о╧В 2: ╬Ь╬н╧Б╬▒ ╬Ъ╧Б╬п╧Г╬╖╧В"
 - :id: 1422
-  :imdb_id: tt0407887
   :titles:
   - A tégla
   - Departed - Unter Feinden
@@ -805,7 +755,6 @@
   - Parakit hoad faengtua koan chaopho
   - 无间行者
 - :id: 423
-  :imdb_id: tt0253474
   :titles:
   - Пианист
   - El Pianista
@@ -817,7 +766,6 @@
   - The Pianist
   - O Pianista
 - :id: 105
-  :imdb_id: tt0088763
   :titles:
   - De Volta Para o Futuro I
   - Zurück in die Zukunft 1
@@ -831,18 +779,15 @@
   - Back to the Future 1
   - Retour vers le futur 1
 - :id: 244786
-  :imdb_id: tt2582802
   :titles:
   - 'Whiplash: Música y obsesión'
   - Whiplash, Música y Obsesión
   - 進擊的鼓手
 - :id: 98
-  :imdb_id: tt0172495
   :titles:
   - The Gladiators
   - 'Gladiator: 10th Anniversary Extended Remastered Edition'
 - :id: 77
-  :imdb_id: tt0209144
   :titles:
   - Amnésia
   - Mementó
@@ -852,7 +797,6 @@
   - Пам'ятай
   - Μεμέντο
 - :id: 28
-  :imdb_id: tt0078788
   :titles:
   - Ilmestyskirja. Nyt.
   - C'est l'apocalypse
@@ -869,7 +813,6 @@
   - Apocalypse Now (Redux)
   - Dommedag nu
 - :id: 1124
-  :imdb_id: tt0482571
   :titles:
   - Le Prestige
   - 死亡魔法
@@ -886,7 +829,6 @@
   - プレステージ
   - حیثیت
 - :id: 8587
-  :imdb_id: tt0110357
   :titles:
   - The Lion King 3D
   - Lejonkungen 3D
@@ -897,19 +839,10 @@
   - Il Re Leone - I
   - Liūtas karalius
 - :id: 935
-  :imdb_id: tt0057012
   :titles:
   - Dr. Fant├бstico
   - Il Dottor Stranamore
-  - Dr. Seltsam, oder wir ich lernte, die Bombe zu lieben
-  - "╨Ф╨╛╨║╤В╨╛╤А ╨б╤В╤А╨╡╨╣╨╜╨┤╨╢╨╗╨░╨▓, ╨░╨▒╨╛ ╨п╨║ ╤П ╨┐╨╡╤А╨╡╤Б╤В╨░╨▓ ╤Е╨▓╨╕╨╗╤О╨▓╨░╤В╨╕╤Б╤М
-    i ╨┐╨╛╨╗╤О╨▒╨╕╨▓ ╨▒╨╛╨╝╨▒╤Г"
   - Dr. Folamour
-  - Dr Folamour
-  - Docteur Folamour
-  - 'Docteur Folamour ou : comment j''ai appris ├а ne plus m''en faire et ├а aimer
-    la bombe'
-  - 'Dr. Ins├│lito o: Como aprend├н a dejar de preocuparme y amar la bomba'
   - Dr. Strangelove
   - Il dottor Stranamore, ovvero come imparai a non preoccuparmi e ad amare la bomba
   - Dr Strangelove
@@ -929,15 +862,21 @@
   - 'Hakase no ij├┤ na aij├┤: Matawa watashi wa ikani shite shinpai suru no wo yamete
     suibaku wo aisuru you ni natta ka'
   - Garip Doktor
+  - "╨Ф╨╛╨║╤В╨╛╤А ╨б╤В╤А╨╡╨╣╨╜╨┤╨╢╨╗╨░╨▓, ╨░╨▒╨╛ ╨п╨║ ╤П ╨┐╨╡╤А╨╡╤Б╤В╨░╨▓ ╤Е╨▓╨╕╨╗╤О╨▓╨░╤В╨╕╤Б╤М
+    i ╨┐╨╛╨╗╤О╨▒╨╕╨▓ ╨▒╨╛╨╝╨▒╤Г"
+  - Dr. Seltsam, oder wir ich lernte, die Bombe zu lieben
+  - Dr Folamour
+  - Docteur Folamour
+  - 'Docteur Folamour ou : comment j''ai appris ├а ne plus m''en faire et ├а aimer
+    la bombe'
+  - 'Dr. Ins├│lito o: Como aprend├н a dejar de preocuparme y amar la bomba'
 - :id: 599
-  :imdb_id: tt0043014
   :titles:
   - Sunset Blvd.
   - 日落大道
   - 红楼金粉
   - Η Λεωφόρος της Δύσης
 - :id: 348
-  :imdb_id: tt0078748
   :titles:
   - Alien, le huitième passager
   - Alien 1
@@ -946,7 +885,6 @@
   - Star Beast
   - 'Alien: The Director''s Cut'
 - :id: 914
-  :imdb_id: tt0032553
   :titles:
   - Dokusaisha
   - Charlie Chaplin - The Great Dictator
@@ -961,7 +899,6 @@
   - Ο μεγάλος δικτάτωρ
   - Ha-Dictator Ha-Gadol
 - :id: 582
-  :imdb_id: tt0405094
   :titles:
   - 竊聽風暴
   - A mások élete
@@ -975,7 +912,6 @@
   - Teiste elu
   - Das Leben der Anderen - Die Sonate vom guten Menschen
 - :id: 11216
-  :imdb_id: tt0095765
   :titles:
   - 新天堂樂園
   - Mine aftener i paradis
@@ -987,8 +923,8 @@
   - Новый кинотеатр Парадизо
   - Cennet Sinemasi
   - Le Cinema Paradis
+  - 星光伴我心
 - :id: 975
-  :imdb_id: tt0050825
   :titles:
   - Wege zum Ruhm
   - Op de paden van de roem
@@ -1004,7 +940,6 @@
   - Σταυροί στο Μέτωπο
   - Senderos de gloria
 - :id: 68718
-  :imdb_id: tt1853728
   :titles:
   - 黑殺令
   - Zencirsiz Canqo
@@ -1013,21 +948,19 @@
   - Django
   - Django Livre
   - Django, Ο Τιμωρός
-  - Zincirsiz
   - Джанго освобожденный
   - Nespoutaný Django
   - Hành Trình Django
   - Đangova osveta
   - 決殺令
+  - Zincirsiz
 - :id: 694
-  :imdb_id: tt0081505
   :titles:
-  - The Shining - Stephen King
-  - Stanley Kubrick's 'The Shining'
   - 'The Shining: US Cut'
   - 'The Shining: Director''s Cut'
+  - The Shining - Stephen King
+  - Stanley Kubrick's 'The Shining'
 - :id: 12477
-  :imdb_id: tt0095327
   :titles:
   - Hotaru no haka
   - Die letzten Glühwürmchen
@@ -1040,19 +973,18 @@
   - 반딧불의 묘
   - 반딧불이의 묘
   - La tomba delle lucciole
+  - 再見螢火蟲
 - :id: 10681
-  :imdb_id: tt0910970
   :titles:
+  - Wall-E
+  - WALL•E
+  - WALL·E. Batallón de limpieza
   - 瓦力
   - Wall.E
   - 월-E
   - ВАЛЛ-И
   - 太空奇兵
-  - Wall-E
-  - WALL•E
-  - WALL·E. Batallón de limpieza
 - :id: 49026
-  :imdb_id: tt1345836
   :titles:
   - Batman The Dark Knight Rises
   - Batman 3 - The Dark Knight Rises
@@ -1074,7 +1006,6 @@
   - O Cavaleiro das Trevas Renasce
   - "╨в╨╡╨╝╨╜╤Л╨╣ ╤А╤Л╤Ж╨░╤А╤М: ╨Т╨╛╨╖╤А╨╛╨╢╨┤╨╡╨╜╨╕╨╡ ╨╗╨╡╨│╨╡╨╜╨┤╤Л"
 - :id: 14
-  :imdb_id: tt0169547
   :titles:
   - 美國心玫瑰情
   - Belleza Americana
@@ -1087,17 +1018,15 @@
   - Americká krása
   - Ve Dep My
 - :id: 679
-  :imdb_id: tt0090605
   :titles:
-  - 'Aliens: Director''s Cut'
-  - 'Aliens: Special Edition'
   - Alien 2
   - 'Alien 2: Aliens'
   - Aliens, O Resgate
   - Alien II
   - 異形2
+  - 'Aliens: Director''s Cut'
+  - 'Aliens: Special Edition'
 - :id: 128
-  :imdb_id: tt0119698
   :titles:
   - La princesa Mononoke
   - Ksiezniczka Mononoke
@@ -1110,7 +1039,6 @@
   - Mononoke Hime
   - 원령공주
 - :id: 670
-  :imdb_id: tt0364569
   :titles:
   - Oldboy
   - Oldboy
@@ -1120,7 +1048,6 @@
   - Vengeance Trilogy 2 - Oldboy
   - Old Boy
 - :id: 15
-  :imdb_id: tt0033467
   :titles:
   - Aranypolgár
   - Obywatel Kane
@@ -1131,7 +1058,6 @@
   - Obcan Kane
   - Cidadão Kane
 - :id: 311
-  :imdb_id: tt0087843
   :titles:
   - C'era una volta in America
   - Однажды в Америке
@@ -1140,23 +1066,7 @@
   - 美國往事
   - 원스 어폰 어 타임 인 아메리카
   - C'era una volta in America (1984)
-- :id: 213
-  :imdb_id: tt0053125
-  :titles:
-  - Der unsichtbare Dritte
-  - De dood op de hielen
-  - Север-северозапад
-  - La mort aux trousses
-  - Na sever severozápadní linkou
-  - Menneskejagt
-  - Con la muerte en los talones
-  - Vaarallinen romanssi
-  - Στη σκιά των τεσσάρων γιγάντων
-  - Sjever-sjeverozapad
-  - Észak, északnyugat
-  - Intriga Internacional
 - :id: 387
-  :imdb_id: tt0082096
   :titles:
   - The Boat
   - Подводницата
@@ -1171,8 +1081,21 @@
   - Ubåten
   - U・ボート
   - Das Boot
+- :id: 213
+  :titles:
+  - Der unsichtbare Dritte
+  - De dood op de hielen
+  - Север-северозапад
+  - La mort aux trousses
+  - Na sever severozápadní linkou
+  - Menneskejagt
+  - Con la muerte en los talones
+  - Vaarallinen romanssi
+  - Στη σκιά των τεσσάρων γιγάντων
+  - Sjever-sjeverozapad
+  - Észak, északnyugat
+  - Intriga Internacional
 - :id: 426
-  :imdb_id: tt0052357
   :titles:
   - Vértigo
   - Δεσμώτης του ιλίγγου
@@ -1185,7 +1108,6 @@
   - Alfred Hitchcock's Vertigo
   - Vertigo (de entre los muertos)
 - :id: 37257
-  :imdb_id: tt0051201
   :titles:
   - Testimone d'accusa
   - Testigo de cargo
@@ -1198,33 +1120,30 @@
   - Свидетел на обвинението
   - Anklagerens vidne
 - :id: 1892
-  :imdb_id: tt0086190
   :titles:
-  - Revenge of the Jedi
-  - 'Star Wars: Episode 6 - Return of the Jedi'
-  - El retorno del Jedi
-  - 'Star wars: Episodio VI - El retorno del Jedi'
-  - 'Star Wars: Return of the Jedi'
-  - 'Star Wars: Episode VI - Die R├╝ckkehr der Jedi-Ritter'
-  - 'Star Wars: Episode VI - Return of the Jedi'
-  - 'Star Wars: Episode VI - Return of the Jedi'
   - El Retorn del Jedi
-  - Star Wars Epis├│dio VI - O Retorno de Jedi
   - Le retour du Jedi
   - Il ritorno dello Jedi
   - O Regresso de Jedi
   - Star Wars VI - Il ritorno dello Jedi
   - "╨Я╨╛╨▓╨╡╤А╨╜╨╡╨╜╨╜╤П ╨Ф╨╢╨╡╨┤╨░╤П"
+  - El retorno del Jedi
+  - 'Star Wars: Episode VI - Return of the Jedi'
+  - Revenge of the Jedi
+  - 'Star Wars: Episode 6 - Return of the Jedi'
+  - Star Wars Epis├│dio VI - O Retorno de Jedi
+  - 'Star wars: Episodio VI - El retorno del Jedi'
+  - 'Star Wars: Return of the Jedi'
+  - 'Star Wars: Episode VI - Die R├╝ckkehr der Jedi-Ritter'
+  - 'Star Wars: Episode VI - Return of the Jedi'
   - 'Star Wars: Episode VI - Return of the Jedi'
 - :id: 832
-  :imdb_id: tt0022100
   :titles:
   - Fritz Lang's M
   - M el vampiro de Düsseldorf
+  - M - Eine Stadt sucht einen Mörder
 - :id: 500
-  :imdb_id: tt0105236
   :titles:
-  - 霸道橫行
   - Le iene - Cani da rapina
   - Perros de la calle
   - Rengli Itler
@@ -1238,11 +1157,9 @@
   - Profesionistii crimei
   - Ulični psi
   - Stekli psi
+  - 霸道橫行
 - :id: 197
-  :imdb_id: tt0112573
   :titles:
-  - Храброе сердце
-  - Хоробре серце
   - Cuore impavido
   - Hrabro srce
   - Taipumaton
@@ -1253,10 +1170,11 @@
   - Coeur vaillant
   - Statecné srdce
   - Rettenthetetlen
+  - Храброе сердце
+  - Хоробре серце
   - 梅爾吉勃遜之英雄本色
   - Corazón Valiente
 - :id: 194
-  :imdb_id: tt0211915
   :titles:
   - The Fabulous Destiny of Amelie Poulain
   - Den fabelaktige Amélie fra Montmartre
@@ -1273,7 +1191,6 @@
   - Amélie Poulain
   - Die fabelhafte Welt der Amélie
 - :id: 641
-  :imdb_id: tt0180093
   :titles:
   - Réquiem por un sueño
   - Rekviem egy álomért
@@ -1283,13 +1200,11 @@
   - 梦的挽歌
   - Ρέκβιεμ Για Ένα Όνειρο
 - :id: 185
-  :imdb_id: tt0066921
   :titles:
   - A Clockwork Orange
   - Laranja Mecânica
   - 發條橘子
 - :id: 103
-  :imdb_id: tt0075314
   :titles:
   - נהג מונית
   - Taksówkarz
@@ -1303,7 +1218,6 @@
   - Taksist
   - Taxisofőr
 - :id: 996
-  :imdb_id: tt0036775
   :titles:
   - Κολασμένη Αγάπη
   - Pacto de sangre
@@ -1317,9 +1231,23 @@
   - Çifte Tazminat
   - 双重赔偿
   - Gyilkos vagyok
-- :id: 10193
-  :imdb_id: tt0435761
+- :id: 947
   :titles:
+  - Лорънс Арабски
+  - Lawrence od Arabije
+  - Arabia no Rorensu
+  - Lawrence al Arabiei
+  - Lawrence z Arabii
+  - Lawrence da Arábia
+  - 阿拉伯的勞倫斯
+  - Lawrence de Arabia
+  - Lawrence Ish Arav
+  - Lawrence von Arabien
+  - Arabistanli Lawrence
+  - Ο Λόρενς της Αραβίας
+- :id: 10193
+  :titles:
+  - Příběh hraček 3
   - 反斗奇兵3
   - Toy Story III
   - 玩具總動員3
@@ -1330,23 +1258,7 @@
   - Toy Story 3
   - Toy Story 3
   - 토이 스토리 3
-- :id: 947
-  :imdb_id: tt0056172
-  :titles:
-  - Лорънс Арабски
-  - Arabistanli Lawrence
-  - Lawrence od Arabije
-  - Lawrence von Arabien
-  - Lawrence Ish Arav
-  - Ο Λόρενς της Αραβίας
-  - Arabia no Rorensu
-  - Lawrence al Arabiei
-  - Lawrence z Arabii
-  - Lawrence da Arábia
-  - 阿拉伯的勞倫斯
-  - Lawrence de Arabia
 - :id: 595
-  :imdb_id: tt0056592
   :titles:
   - 梅崗城故事
   - Skuggor över Södern
@@ -1359,7 +1271,6 @@
   - Dræb ikke en sangfugl
   - Kuin surmaisi satakielen
 - :id: 38
-  :imdb_id: tt0338013
   :titles:
   - 王牌冤家
   - Evigt solskin i et pletfrit sind
@@ -1369,8 +1280,12 @@
   - Eterno Resplandor de una Mente Sin Recuerdos
   - Brilho Eterno De Uma Mente Sem Lembranças
   - Tahraton mieli
+- :id: 279
+  :titles:
+  - Amadeus
+  - 阿瑪迪斯
+  - Amadeus - Director's Cut
 - :id: 600
-  :imdb_id: tt0093058
   :titles:
   - Пълно бойно снаряжение
   - Nascido Para Matar
@@ -1385,14 +1300,7 @@
   - Olovni kovčeg
   - Stanley Kubrick's Full Metal Jacket
   - Glonţ cu cămaşă metalică
-- :id: 279
-  :imdb_id: tt0086879
-  :titles:
-  - Amadeus
-  - 阿瑪迪斯
-  - Amadeus - Director's Cut
 - :id: 9277
-  :imdb_id: tt0070735
   :titles:
   - Blåsningen
   - Афера
@@ -1405,7 +1313,6 @@
   - Ужилването
   - L'arnaque
 - :id: 62
-  :imdb_id: tt0062622
   :titles:
   - How the Solar System Was Won
   - Journey Beyond the Stars
@@ -1416,24 +1323,34 @@
   - Odyssee im Weltraum
   - '2001 год: Космическая одиссея'
 - :id: 5156
-  :imdb_id: tt0040522
   :titles:
-  - Крадії велосипедів
   - The Bicycle Thieves
   - 單車失竊記
   - 偷自行车的人
   - Bicycle Thieves
   - The Bicycle Thief
+  - Крадії велосипедів
 - :id: 872
-  :imdb_id: tt0045152
   :titles:
   - Singin in the Rain
   - 雨に唄えば
   - Singin in the Rain
   - Singing in the Rain
 - :id: 862
-  :imdb_id: tt0114709
   :titles:
+  - Toy Story - leluel├дm├д├д
+  - Toy Story 1
+  - 'Toy Story: Os Rivais'
+  - чОйхЕ╖ч╕╜хЛХхУб
+  - Toy Story - 3D
+  - 1995 Toy Story 1
+  - Lelulugu
+  - Toy Story - Um Mundo de Aventuras
+  - Toy Story
+  - Toy Story 1
+  - хПНцЦЧхеЗхЕ╡
+  - "╨Ш╤Б╤В╨╛╤А╨╕╤П ╨╕╨│╤А╤Г╤И╨╡╨║ 1"
+  - P┼Щ├нb─Ыh hra─Нek
   - "╨Ш╨│╤А╨░╤В╨░ ╨╜╨░ ╨╕╨│╤А╨░╤З╨║╨╕╤В╨╡"
   - Toy Story - leksaksliv
   - "╬Ч ╬╣╧Г╧Д╬┐╧Б╬п╬▒ ╧Д╧Й╬╜ ╧А╬▒╬╣╧З╬╜╬╣╬┤╬╣╧О╬╜"
@@ -1449,35 +1366,13 @@
   - I╤Б╤В╨╛╤Аi╤П i╨│╤А╨░╤И╨╛╨║
   - Cau Chuyen Do Choi
   - Toy Story 1
-  - Toy Story - leluel├дm├д├д
-  - Toy Story 1
-  - 'Toy Story: Os Rivais'
-  - чОйхЕ╖ч╕╜хЛХхУб
-  - Toy Story - 3D
-  - 1995 Toy Story 1
-  - Lelulugu
-  - Toy Story - Um Mundo de Aventuras
-  - Toy Story
-  - Toy Story 1
-  - хПНцЦЧхеЗхЕ╡
-  - "╨Ш╤Б╤В╨╛╤А╨╕╤П ╨╕╨│╤А╤Г╤И╨╡╨║ 1"
 - :id: 107
-  :imdb_id: tt0208092
   :titles:
   - Diamonds
   - Спиздили
   - Snatch'd
   - Cerdos y Diamantes
-- :id: 762
-  :imdb_id: tt0071853
-  :titles:
-  - Monty Python's The Holy Grail
-  - 圣杯传奇
-  - Die Ritter der Kokosnuss
-  - Monty Python Die Ritter der Kokosnuss
-  - Los caballeros de la mesa cuadrada y sus locos seguidores
 - :id: 16869
-  :imdb_id: tt0361748
   :titles:
   - Malditos Bastardos
   - 恶棍特工
@@ -1497,8 +1392,14 @@
   - Безславнi виродки
   - besslavnyye ublyudki
   - Bastardos sin gloria
+- :id: 762
+  :titles:
+  - Monty Python Die Ritter der Kokosnuss
+  - Los caballeros de la mesa cuadrada y sus locos seguidores
+  - Monty Python's The Holy Grail
+  - 圣杯传奇
+  - Die Ritter der Kokosnuss
 - :id: 10098
-  :imdb_id: tt0012349
   :titles:
   - Le Kid
   - Le gosse
@@ -1513,8 +1414,9 @@
   - Chaplinin poika
   - Το χαμίνι
   - Mališan
+  - Charlie Chaplin - Der Vagabund und das Kind
+  - The Kid - Der Vagabund und das Kind
 - :id: 2118
-  :imdb_id: tt0119488
   :titles:
   - L A  Confidential
   - LA Confidential - Jeder hat seinen Preis (1997)
@@ -1529,7 +1431,6 @@
   - L.A. - Utajené skutocnosti
   - 'Λος Αντζελες: Εμπιστευτικό'
 - :id: 938
-  :imdb_id: tt0059578
   :titles:
   - Pár dollárral többért
   - För några få dollar mer
@@ -1547,7 +1448,6 @@
   - Birkaç Dolar Için
   - Por unos pocos dólares más
 - :id: 548
-  :imdb_id: tt0042876
   :titles:
   - Rashômon
   - Рашомон
@@ -1560,14 +1460,12 @@
   - Das Lustwäldchen
   - El bosque ensangrentado
 - :id: 284
-  :imdb_id: tt0053604
   :titles:
   - Das Appartement
   - Piso de soltero
   - Das Appartement
   - A legénylakás
 - :id: 111
-  :imdb_id: tt0086250
   :titles:
   - Scarface - UC
   - El precio del poder
@@ -1581,7 +1479,6 @@
   - Ο σημαδεμένος
   - Lice s ožiljkom
 - :id: 89
-  :imdb_id: tt0097576
   :titles:
   - Indiana Jones a Posledn├н k┼Щ├н┼╛ov├б v├╜prava
   - Indiana Jones og Det Siste Korstog
@@ -1600,7 +1497,6 @@
   - Indiana Jones y La Ultima Cruzada
   - "╬Я ╬Щ╬╜╧Д╬╣╬м╬╜╬▒ ╬д╬╢╧М╬┐╧Е╬╜╧В ╬Ъ╬▒╬╣ ╬Ч ╬д╬╡╬╗╬╡╧Е╧Д╬▒╬п╬▒ ╬г╧Д╬▒╧Е╧Б╬┐╧Ж╬┐╧Б╬п╬▒"
 - :id: 60243
-  :imdb_id: tt1832382
   :titles:
   - A Separation
   - Nader y Simin, una separación
@@ -1614,7 +1510,6 @@
   - جدایی نادر از سیمین
   - Jodái-e Náder az Simin
 - :id: 19
-  :imdb_id: tt0017136
   :titles:
   - Metropolis - restaurierte Fassung
   - 大都會
@@ -1622,24 +1517,7 @@
   - Metoroporisu
   - The Complete Metropolis
   - Μητρόπολις
-- :id: 705
-  :imdb_id: tt0042192
-  :titles:
-  - La malvada
-  - Eva contro Eva
-  - Ola gia tin Eva
-  - Tot sobre Eva
-  - Wszystko o Ewie
-  - A Malvada
-  - Eva al desnudo
-  - 彗星美人
-  - 关于伊芙的一切
-  - Eve
-  - Alles über Eva
-  - Всичко за Ева
-  - Alt om Eva
 - :id: 20453
-  :imdb_id: tt1187043
   :titles:
   - 3 Idiots
   - 3 Idiots
@@ -1656,8 +1534,25 @@
   - Trzej idioci
   - Tri budale
   - 3 Ahmak
+- :id: 705
+  :titles:
+  - La malvada
+  - Eva contro Eva
+  - Ola gia tin Eva
+  - Tot sobre Eva
+  - Wszystko o Ewie
+  - A Malvada
+  - Eva al desnudo
+  - 彗星美人
+  - 关于伊芙的一切
+  - Eve
+  - Alles über Eva
+  - Всичко за Ева
+  - Alt om Eva
+- :id: 103663
+  :titles:
+  - Die Jagd
 - :id: 11878
-  :imdb_id: tt0055630
   :titles:
   - Yôjinbô
   - The Bodyguard
@@ -1670,12 +1565,7 @@
   - Livvagten
   - Bodyguard
   - El mercenario
-- :id: 103663
-  :imdb_id: tt2106476
-  :titles:
-  - Die Jagd
 - :id: 272
-  :imdb_id: tt0372784
   :titles:
   - Batman 1 - Batman Begins
   - Batman inicia
@@ -1700,26 +1590,8 @@
   - Batman Begins
   - Batman - O In├нcio
   - The Dark Knight 1 - Batman Begins
-- :id: 3090
-  :imdb_id: tt0040897
-  :titles:
-  - Blago Sijera Madre
-  - Altin Hazineleri
-  - Ο θησαυρός της Σιέρρα Μάντρε
-  - 碧血金沙
-  - 浴血金沙
-  - El tesoro de Sierra Madre
-  - El tesoro de la Sierra Madre
-  - Der Schatz der Sierra Madre
-  - De schat van de Sierra Madre
-  - Съкровището на Сиера Мадре
-  - O Tesouro da Sierra Madre
-  - Le trésor de la Sierra Madre
-  - Tre mand søger guld
 - :id: 489
-  :imdb_id: tt0119217
   :titles:
-  - Will Hunting
   - 心靈捕手
   - En busca del destino
   - Добрият Уил Хънтинг
@@ -1735,30 +1607,67 @@
   - Dobri Vil Hanting
   - Dobrý Will Hunting
   - Good Will Hunting - Der gute Will Hunting
-- :id: 239
-  :imdb_id: tt0053291
+- :id: 3090
   :titles:
-  - Дехто любить гарячіше
+  - Blago Sijera Madre
+  - Altin Hazineleri
+  - Ο θησαυρός της Σιέρρα Μάντρε
+  - 碧血金沙
+  - 浴血金沙
+  - El tesoro de Sierra Madre
+  - El tesoro de la Sierra Madre
+  - Der Schatz der Sierra Madre
+  - De schat van de Sierra Madre
+  - Съкровището на Сиера Мадре
+  - O Tesouro da Sierra Madre
+  - Le trésor de la Sierra Madre
+  - Tre mand søger guld
+- :id: 239
+  :titles:
+  - Quanto Mais Quente Melhor
+  - Van, aki forr├│n szereti
+  - Neki to vole vruce
+  - "╨Ф╨╡╤Е╤В╨╛ ╨╗╤О╨▒╨╕╤В╤М ╨│╨░╤А╤П╤З╤Ц╤И╨╡"
+  - "╨Э╨╡╨║╨╛╤В╨╛╤А╤Л╨╡ ╨╗╤О╨▒╤П╤В ╨┐╨╛╨│╨╛╤А╤П╤З╨╡╨╡"
+  - Neki to vole vru─Зe
+  - "╬Ь╬╡╧Б╬╣╬║╬┐╬п ╧Д╬┐ ╧А╧Б╬┐╧Д╬╣╬╝╬┐╧Н╬╜ ╬║╬▒╧Е╧Д╧М"
+  - Piukat paikat
+  - Una Eva y dos Adanes
+  - Una Eva y dos Adanes
+  - Certains l'aiment chaud
+  - Dziaze tik merginos
+  - Hamim V'Taeem
+  - O atsui no ga o suki
+  - "╨г ╨┤╨╢╨░╨╖i ╤Вi╨╗╤М╨║╨╕ ╨┤i╨▓╤З╨░╤В╨░"
+  - Bazilari Sicak Sever
+  - P├│l zartem, p├│l serio
+  - Unora le place jazz-ul
+  - Niekto to r├бd hor├║ce
+  - Nekateri so za vroce
+  - Una Eva y dos Adanes
+  - Una Eva y dos Adanes
+  - Una Eva y dos Adanes
   - A qualcuno piace caldo
   - Con Faldas y a lo Loco
   - Certains l'aiment chaud
-  - Pół żartem, pół serio
-  - 热情如火
+  - P├│┼В ┼╝artem, p├│┼В serio
+  - чГнцГЕхжВчБл
   - Una Eva y dos Adanes
-  - Manche mögen's heiß
-  - Някои го предпочитат горещо
+  - "╨Э╤П╨║╨╛╨╕ ╨│╨╛ ╨┐╤А╨╡╨┤╨┐╨╛╤З╨╕╤В╨░╤В ╨│╨╛╤А╨╡╤Й╨╛"
   - Quanto Mais Quente Melhor
-  - Nekdo to rád horké
+  - Nekdo to r├бd hork├й
   - Ingen er fuldkommen
+  - Some like it hot - Noen har det hett
+  - "╨Т ╨┤╨╢╨░╨╖╨╡ ╤В╨╛╨╗╤М╨║╨╛ ╨┤╨╡╨▓╤Г╤И╨║╨╕"
+  - I hetaste laget
 - :id: 14160
-  :imdb_id: tt1049413
   :titles:
-  - Vút Bay
   - Up - 3D
   - 'Up: Una aventura de altura'
   - Oben
+  - Vút Bay
+  - Kohti Korkeuksia
 - :id: 33
-  :imdb_id: tt0105695
   :titles:
   - Impitoyable
   - Nepomirljivi
@@ -1775,15 +1684,12 @@
   - Sin perdón
   - Erbarmungslos
 - :id: 1092
-  :imdb_id: tt0041959
   :titles:
   - El Tercer Hombre
 - :id: 21334
-  :imdb_id: tt0118849
   :titles:
   - Bacheha-Ye aseman
 - :id: 1578
-  :imdb_id: tt0081398
   :titles:
   - Dühöngő bika
   - Toro scatenato
@@ -1796,7 +1702,6 @@
   - Touro Indomável
   - Comme un taureau sauvage
 - :id: 613
-  :imdb_id: tt0363163
   :titles:
   - A Queda. As Últimas Horas de Hitler
   - 帝國毀滅
@@ -1809,13 +1714,16 @@
   - A Queda! As Últimas Horas de Hitler
   - Pád Tretí ríse
   - Allakäik
-- :id: 150540
-  :imdb_id: tt2096673
+- :id: 562
   :titles:
-  - Отвътре навън
+  - 虎胆龙威1
+  - Die Hard 1
+  - Duro de Matar
+  - Stirb Langsam 1
+  - 虎膽龍威
+- :id: 150540
+  :titles:
   - Alles steht Kopf
-  - Τα μυαλά που κουβαλάς
-  - W głowie się nie mieści
   - Tapmaca
   - 玩轉腦朋友
   - Intensamente
@@ -1823,42 +1731,22 @@
   - Inderst inde
   - V hlave
   - Ma-Hud-Sa-Jan-A-Rom-On-La-Weng
+  - 腦筋急轉彎
   - Sens dessus dessous
   - Pahupidi
-  - 腦筋急轉彎
   - インサイド・ヘッド
   - Innsiden Ut
-- :id: 562
-  :imdb_id: tt0095016
-  :titles:
-  - Stirb Langsam 1
-  - 終極警探
-  - 虎膽龍威
-  - Die Hard 1
-  - Piège de cristal
-  - Drágán add az életed
-  - Duro de Matar
-  - Крепкий орешек
-  - 虎胆龙威1
-  - Jungla de Cristal
-  - Szklana pułapka
-  - Zor Ölüm
-  - Stirb langsam
-  - Die Hard - Trappola di cristallo
-  - Duro de Matar
-  - Πολύ Σκληρός Για Να Πεθάνει
-  - Die Hard I
+  - Отвътре навън
+  - W głowie się nie mieści
+  - Τα μυαλά που κουβαλάς
 - :id: 5925
-  :imdb_id: tt0057115
   :titles:
   - 胜利大逃亡
   - Fugindo do inferno
 - :id: 829
-  :imdb_id: tt0071315
   :titles:
   - Čínská čtvrť
 - :id: 949
-  :imdb_id: tt0113277
   :titles:
   - Heat (1995)
   - Heat - La sfida
@@ -1874,17 +1762,12 @@
   - Vrućina
   - Goraczka
 - :id: 264644
-  :imdb_id: tt3170832
   :titles:
   - La habitación
   - Raum
   - 不存在的房間
 - :id: 1417
-  :imdb_id: tt0457430
   :titles:
-  - Лабиринтът на фавна
-  - Ο λαβύρινθος του Πάνα
-  - Ha'mavokh shel Pan
   - Pan's Labyrinth
   - Le labyrinthe de Pan
   - A faun labirintusa
@@ -1895,8 +1778,10 @@
   - 판의 미로 - 오필리아와 세 개의 열쇠
   - パンズ・ラビリンス
   - Paani labürint
+  - Лабиринтът на фавна
+  - Ο λαβύρινθος του Πάνα
+  - Ha'mavokh shel Pan
 - :id: 654
-  :imdb_id: tt0047296
   :titles:
   - Nido de ratas
   - Sur les quais
@@ -1908,7 +1793,6 @@
   - Sindicato de Ladrões
   - 在江边
 - :id: 8392
-  :imdb_id: tt0096283
   :titles:
   - 龍貓
   - Meu amigo Totoro
@@ -1916,7 +1800,6 @@
   - Tonari No Totoro
   - My Neighbour Totoro
 - :id: 3782
-  :imdb_id: tt0044741
   :titles:
   - Ikiru
   - Viver
@@ -1929,7 +1812,6 @@
   - 留芳颂
   - 活下去
 - :id: 11645
-  :imdb_id: tt0089881
   :titles:
   - 乱
   - RAN - Káosz
@@ -1938,7 +1820,6 @@
   - Revolt
   - Ran
 - :id: 962
-  :imdb_id: tt0015864
   :titles:
   - La ruée vers l'or
   - La febbre dell'oro
@@ -1952,7 +1833,6 @@
   - Kullapalavik
   - Ο χρυσοθήρας
 - :id: 3083
-  :imdb_id: tt0031679
   :titles:
   - Mr. Smith geht nach Washington
   - Caballero sin espada
@@ -1960,7 +1840,6 @@
   - Frank Capra's Mr. Smith Goes to Washington
   - A Mulher Faz o Homem
 - :id: 826
-  :imdb_id: tt0050212
   :titles:
   - El Puente Sobre el Río Kwai
   - Bron över floden Kwai
@@ -1969,7 +1848,6 @@
   - broen over floden kwai
   - 戦場にかける橋
 - :id: 25376
-  :imdb_id: tt1305806
   :titles:
   - The Secret in Their Eyes
   - Il segreto dei suoi occhi
@@ -1983,22 +1861,31 @@
   - Øjnenes hemmelighed
   - El secreto de sus ojos
 - :id: 78
-  :imdb_id: tt0083658
   :titles:
+  - "╨С╨╡╨│╤Г╤Й╨╕╨╣ ╨┐╨╛ ╨╗╨╡╨╖╨▓╨╕╤О"
+  - B─Чgantis skustuvo a┼бmenimis
+  - "├Ьlg├╝c├╝n ├╝z╔Щri il╔Щ qa├зan"
+  - B─▒├зak S─▒rt─▒
+  - "┼Бowca android├│w"
+  - Sz├бrnyas fejvad├бsz
+  - 2020х╣┤
   - Der Blade Runner
+  - Istrebljiva─Н
+  - "╨в╨╛╨╣, ╤Е╤В╨╛ ╨▒╤Ц╨╢╨╕╤В╤М ╨┐╨╛ ╨╗╨╡╨╖"
+  - Pa asmeni skrejo┼бais
   - Blade Runner - Der Final Cut
   - Blade Runner - The Final Cut
   - Blade Runner - TC
   - Blade Runner - FC
   - Blade Runner - DC
+  - сГбсГРсГЫсГРсГасГЧсГФсГСсГФсГЪсГЦсГФ сГЫсГЭсГасГСсГФсГЬсГРсГЪсГШ
   - Dangerous Days
-  - 叛狱追杀令
+  - щКАч┐╝цо║цЙЛ
   - Blade Runner (Director's Cut)
   - Blade Runner 30th Anniversary Edition
   - Bladerunner
   - Blade Runner (International Cut)
 - :id: 490
-  :imdb_id: tt0050976
   :titles:
   - Das Siebte Siegel
   - The Seventh Seal
@@ -2007,26 +1894,10 @@
   - El séptimo sello
   - 第七封印
 - :id: 100
-  :imdb_id: tt0120735
   :titles:
   - 两只老烟枪 / 够僵四小强 / 魔高一丈
   - Juegos, trampas y dos armas humeantes
-- :id: 631
-  :imdb_id: tt0018455
-  :titles:
-  - Sunrise - A Song of Two Humans
-  - Sunrise
-  - 日出:两个人的爱情之歌
-  - Aurora
-  - Amanecer
-  - Sonnenaufgang
-  - Litauische Geschichten
-  - 'Изгрев: Песен за две човешки души'
-  - Solopgang
-  - Päikesetõus
-  - Auringonnousu
 - :id: 4935
-  :imdb_id: tt0347149
   :titles:
   - Le Chateau Ambulant
   - El castillo ambulante
@@ -2043,14 +1914,33 @@
   - O Castelo Andante
   - El increíble castillo vagabundo
   - Det Levende Slottet
+- :id: 631
+  :titles:
+  - Sunrise - A Song of Two Humans
+  - Sunrise
+  - 日出:两个人的爱情之歌
+  - Aurora
+  - Amanecer
+  - Sonnenaufgang
+  - Litauische Geschichten
+  - 'Изгрев: Песен за две човешки души'
+  - Solopgang
+  - Päikesetõus
+  - Auringonnousu
 - :id: 524
-  :imdb_id: tt0112641
   :titles:
   - Casinò (1995)
   - Casino - Niemand bleibt für immer an der Spitze
   - Kasyno
+- :id: 614
+  :titles:
+  - Cuando huye el día
+  - Il posto delle fragole
+  - Wild Strawberries
+  - Wild Strawberries
+  - Fresas Salvajes
+  - 野草莓
 - :id: 961
-  :imdb_id: tt0017925
   :titles:
   - 将军
   - General
@@ -2063,42 +1953,7 @@
   - Ο στρατηγός
   - Come vinsi la guerra
   - A Glória de Pamplinas
-- :id: 140607
-  :imdb_id: tt2488496
-  :titles:
-  - The Force Awakens
-  - 'Star Wars: Sila se probouzi'
-  - El despertar de la Fuerza
-  - цШЯчРГхдзцИ░я╝ЪхОЯхКЫшж║щЖТ
-  - 'Star Wars: Episode VII'
-  - 'Star Wars: Epis├│dio VII - O Despertar da For├зa'
-  - 'Star Wars: Episodio VII'
-  - "╨Я╤А╨╛╨▒╤Г╨╢╨┤╨╡╨╜╨╕╨╡ ╤Б╨╕╨╗╤Л"
-  - 'Star Wars: Episode 7 - The Force Awakens'
-  - O Despertar da For├зa
-  - 'Star Wars: The Force Awakens'
-  - 'La guerra de las galaxias. Episodio VII: El despertar de la fuerza'
-  - Das Erwachen der Macht
-  - 'Star Wars: Le r├йveil de la Force'
-  - 'Star Wars: Episode VII - The Force Awakens'
-  - 'Star Wars: Episodio VII - Il risveglio della Forza'
-  - "╨Ч╨▓╤С╨╖╨┤╨╜╤Л╨╡ ╨▓╨╛╨╣╨╜╤Л: ╨Я╤А╨╛╨▒╤Г╨╢╨┤╨╡╨╜╨╕╨╡ ╨б╨╕╨╗╤Л"
-  - "╫Ю╫Ь╫Ч╫Ю╫к ╫Ф╫Ы╫Х╫Ы╫С╫Щ╫Э: ╫Ф╫Ы╫Х╫Ч ╫Ю╫к╫в╫Х╫и╫и"
-  - Star Wars - Episode 7 - Das Erwachen der Macht
-  - 'Star Wars: Episodio VII - El Despertar de la Fuerza'
-  - 'Star Wars: El despertar de la fuerza'
-  - уВ╣уВ┐уГ╝уГ╗уВжуВйуГ╝уВ║я╝ПуГХуВйуГ╝уВ╣уБошжЪщЖТ
-- :id: 614
-  :imdb_id: tt0050986
-  :titles:
-  - Cuando huye el día
-  - Il posto delle fragole
-  - Wild Strawberries
-  - Wild Strawberries
-  - Fresas Salvajes
-  - 野草莓
 - :id: 1955
-  :imdb_id: tt0080678
   :titles:
   - El hombre elefante
   - 象人
@@ -2111,7 +1966,6 @@
   - Elefanttimies
   - Ο άνθρωπος ελέφαντας
 - :id: 59440
-  :imdb_id: tt1291584
   :titles:
   - Guerreiro
   - 勇者無敵
@@ -2124,8 +1978,34 @@
   - Lohem
   - Kovotojai
   - Воин
+- :id: 821
+  :titles:
+  - Nürnbergin tuomio
+  - Yom Ha-Dean B'Nirenberg
+  - Julgamento em Nuremberg
+  - Judgement at Nuremberg
+  - Jugement à Nuremberg
+  - Ítélet Nürnbergben
+  - 纽伦堡大审判
+  - Dommen i Nürnberg
+  - Vencedores o vencidos
+  - El juicio de Nuremberg
+  - Das Urteil von Nürnberg
+  - Нюрнбергският процес
+  - Η δίκη της Νυρεμβέργης
+- :id: 453
+  :titles:
+  - Čudoviti um
+  - Ένας Υπέροχος Άνθρωπος
+  - Egy csodálatos elme
+  - Un homme d'exception
+  - Una mente maravillosa
+  - Una mente brillante
+  - 美麗心靈
+  - A beautiful Mind - Genie und Wahnsinn
+  - Un homme d'exception
+  - Игры разума
 - :id: 106646
-  :imdb_id: tt0993846
   :titles:
   - 华尔街狼人
   - Wilk z Wall Street
@@ -2140,51 +2020,31 @@
   - Volstryto vilkas
   - Para Avcisi
   - 華爾街之狼
-- :id: 821
-  :imdb_id: tt0055031
+- :id: 140607
   :titles:
-  - Julgamento em Nuremberg
-  - Judgement at Nuremberg
-  - Jugement à Nuremberg
-  - Ítélet Nürnbergben
-  - 纽伦堡大审判
-  - Dommen i Nürnberg
-  - Vencedores o vencidos
-  - El juicio de Nuremberg
-  - Das Urteil von Nürnberg
-  - Нюрнбергският процес
-  - Yom Ha-Dean B'Nirenberg
-  - Η δίκη της Νυρεμβέργης
-  - Nürnbergin tuomio
-- :id: 453
-  :imdb_id: tt0268978
-  :titles:
-  - Čudoviti um
-  - Ένας Υπέροχος Άνθρωπος
-  - Egy csodálatos elme
-  - Un homme d'exception
-  - Una mente maravillosa
-  - Una mente brillante
-  - 美麗心靈
-  - A beautiful Mind - Genie und Wahnsinn
-  - Un homme d'exception
-  - Игры разума
-- :id: 18148
-  :imdb_id: tt0046438
-  :titles:
-  - Tokyo Story
-  - Voyage à Tokyo
-  - Viaje a Tokyo
-  - Viaggio a Tokyo
-  - Tokijska opowiesc
-  - Cuentos de Tokio
-  - 东京故事
-  - Tōkyō monogatari
-  - Токийска история
-  - Era uma Vez em Tóquio
-  - Die Reise nach Tokio
+  - The Force Awakens
+  - 'Star Wars: Sila se probouzi'
+  - El despertar de la Fuerza
+  - цШЯчРГхдзцИ░я╝ЪхОЯхКЫшж║щЖТ
+  - 'Star Wars: Episode VII'
+  - 'Star Wars: Epis├│dio VII - O Despertar da For├зa'
+  - 'Star Wars: Episodio VII'
+  - "╨Я╤А╨╛╨▒╤Г╨╢╨┤╨╡╨╜╨╕╨╡ ╤Б╨╕╨╗╤Л"
+  - 'Star Wars: Episode 7 - The Force Awakens'
+  - O Despertar da For├зa
+  - 'Star Wars: The Force Awakens'
+  - 'La guerra de las galaxias. Episodio VII: El despertar de la fuerza'
+  - 'Star Wars: Le r├йveil de la Force'
+  - 'Star Wars: Episode VII - The Force Awakens'
+  - 'Star Wars: Episodio VII - Il risveglio della Forza'
+  - "╨Ч╨▓╤С╨╖╨┤╨╜╤Л╨╡ ╨▓╨╛╨╣╨╜╤Л: ╨Я╤А╨╛╨▒╤Г╨╢╨┤╨╡╨╜╨╕╨╡ ╨б╨╕╨╗╤Л"
+  - "╫Ю╫Ь╫Ч╫Ю╫к ╫Ф╫Ы╫Х╫Ы╫С╫Щ╫Э: ╫Ф╫Ы╫Х╫Ч ╫Ю╫к╫в╫Х╫и╫и"
+  - Star Wars - Episode 7 - Das Erwachen der Macht
+  - 'Star Wars: Episodio VII - El Despertar de la Fuerza'
+  - 'Star Wars: El despertar de la fuerza'
+  - уВ╣уВ┐уГ╝уГ╗уВжуВйуГ╝уВ║я╝ПуГХуВйуГ╝уВ╣уБошжЪщЖТ
+  - Star Wars 7 - Das Erwachen der Macht
 - :id: 752
-  :imdb_id: tt0434409
   :titles:
   - V for Vendetta
   - Vendetta üçün V
@@ -2198,8 +2058,20 @@
   - V字仇杀队
   - ונדטה
   - Vフォー・ヴェンデッタ
+- :id: 18148
+  :titles:
+  - Tokyo Story
+  - Voyage à Tokyo
+  - Viaje a Tokyo
+  - Viaggio a Tokyo
+  - Tokijska opowiesc
+  - Cuentos de Tokio
+  - 东京故事
+  - Tōkyō monogatari
+  - Токийска история
+  - Era uma Vez em Tóquio
+  - Die Reise nach Tokio
 - :id: 46738
-  :imdb_id: tt1255953
   :titles:
   - Die Frau die singt - Incendies
   - Incêndios
@@ -2216,13 +2088,11 @@
   - Pozáry
   - Nawals hemmelighed
 - :id: 13223
-  :imdb_id: tt1205489
   :titles:
   - 經典老爺車
   - Gran Torino
   - Gran Torino
 - :id: 115
-  :imdb_id: tt0118715
   :titles:
   - 谋杀绿脚趾
   - 謀殺綠腳趾
@@ -2236,21 +2106,8 @@
   - Identidad peligrosa
   - Marele Lebowski
   - Veliki Lebovski
-- :id: 26842
-  :imdb_id: tt0074896
-  :titles:
-  - Mahoma, el mensajero de Dios
-  - The Message
-  - 'The Message: The Story of Islam'
-  - Mohammad, Messenger of God
-  - الرسالة‎
-  - Mohammed - Der Gesandte Gottes
-  - Le Message
-  - The Message (History of Islam)
 - :id: 11778
-  :imdb_id: tt0077416
   :titles:
-  - Мисливець за оленями
   - A szarvasvadász
   - Il cacciatore
   - El Cazador
@@ -2258,17 +2115,11 @@
   - Охотник на оленей
   - O Franco Atirador
   - Die durch die Hölle gehen
-- :id: 271110
-  :imdb_id: tt3498820
-  :titles:
-  - 美國隊長3：英雄內戰
-  - 'Captain America: The Fallen Son'
-  - 'Captain America: Civil War 3D'
-  - Captain America 3
-  - 'Marvel''s Captain America: Civil War'
+  - Мисливець за оленями
+  - 獵鹿者
 - :id: 627
-  :imdb_id: tt0117951
   :titles:
+  - Trainspotting - Sem Limites
   - 迷幻列车
   - 定位的火车
   - Трейнспотинг
@@ -2277,9 +2128,27 @@
   - La vida en el abismo
   - Trainspotting - Din Viata Scapa Cine Poate
   - Trejnspoting
-  - Trainspotting - Sem Limites
+- :id: 275
+  :titles:
+  - Fargo
+  - Fargo - Blutiger Schnee
+  - 笨贼满天飞
+  - Fargo (Remastered)
+- :id: 521
+  :titles:
+  - Täydellinen rikos
+  - Gyilkosság telefonhívásra
+  - Alibi
+  - Le crime était presque parfait
+  - Τηλεφωνήσατε ασφάλεια άμεσου δράσεως
+  - Disque M Para Matar
+  - Crimen perfecto
+  - 电话情杀案
+  - La llamada fatal
+  - De moord was bijna volmaakt
+  - Набери М за убийство
+  - Telefonen ringer kl. 23
 - :id: 223
-  :imdb_id: tt0032976
   :titles:
   - Rebeka
   - Rebeca
@@ -2290,30 +2159,7 @@
   - Ребека
   - A Manderley-ház asszonya
   - Rebekka
-- :id: 275
-  :imdb_id: tt0116282
-  :titles:
-  - Fargo
-  - Fargo - Blutiger Schnee
-  - 笨贼满天飞
-  - Fargo (Remastered)
-- :id: 521
-  :imdb_id: tt0046912
-  :titles:
-  - Le crime était presque parfait
-  - Τηλεφωνήσατε ασφάλεια άμεσου δράσεως
-  - Disque M Para Matar
-  - Crimen perfecto
-  - 电话情杀案
-  - La llamada fatal
-  - De moord was bijna volmaakt
-  - Набери М за убийство
-  - Telefonen ringer kl. 23
-  - Täydellinen rikos
-  - Gyilkosság telefonhívásra
-  - Alibi
 - :id: 770
-  :imdb_id: tt0031381
   :titles:
   - Gone with the Wind
   - Унесённые ветром
@@ -2326,15 +2172,23 @@
   - Jih proti Severu
   - Odviate vetrom
   - بر باد رفته
+- :id: 26842
+  :titles:
+  - Mahoma, el mensajero de Dios
+  - The Message
+  - 'The Message: The Story of Islam'
+  - Mohammad, Messenger of God
+  - الرسالة‎
+  - Mohammed - Der Gesandte Gottes
+  - Le Message
+  - The Message (History of Islam)
 - :id: 903
-  :imdb_id: tt0061512
   :titles:
   - Luke la main froide
   - 冷手卢克
   - Der Unbeugsame
   - Rebeldia Indomável
 - :id: 10191
-  :imdb_id: tt0892769
   :titles:
   - 驯龙记
   - Como Treinar o Seu Dragão
@@ -2346,7 +2200,6 @@
   - Как приручить дракона 1
   - Draktränaren.1
 - :id: 12
-  :imdb_id: tt0266543
   :titles:
   - Findet Nemo 3D
   - Finding Nemo 3D
@@ -2354,7 +2207,6 @@
   - 海底奇兵
   - Disney Pixar Finding Nemo
 - :id: 745
-  :imdb_id: tt0167404
   :titles:
   - Sixieme sens
   - The Sixth Sense - Der sechste Sinn
@@ -2373,12 +2225,22 @@
   - Sesti cut
   - Giac Quan Thu Sau
 - :id: 1091
-  :imdb_id: tt0084787
   :titles:
   - John Carpenter's The Thing
   - A valami
+- :id: 25237
+  :titles:
+  - Go and Look
+  - Geh und sieh
+  - Komm und sieh'
+  - Gå och se
+  - Jöjj és lásd!
+  - Requiem pour un massacre
+  - Tule ja katso
+  - Idi i Smotri
+  - 'Masacre: ven y mira'
+  - Komm und siehe...
 - :id: 6977
-  :imdb_id: tt0477348
   :titles:
   - Sin lugar para los débiles
   - Sin lugar para los débiles
@@ -2386,7 +2248,6 @@
   - Sin lugar para los débiles
   - Sin lugar para los débiles
 - :id: 5915
-  :imdb_id: tt0758758
   :titles:
   - Erämaan armoille
   - Ind i vildmarken
@@ -2403,7 +2264,6 @@
   - Ταξίδι στην άγρια φύση
   - 荒野伴我心
 - :id: 24238
-  :imdb_id: tt0978762
   :titles:
   - Mary & Max - Uma Amizade Diferente
   - 巧克力情緣
@@ -2416,7 +2276,6 @@
   - Μαίρη και Μαξ
   - Mary y Max
 - :id: 210577
-  :imdb_id: tt2267998
   :titles:
   - Perdida
   - 失踪的女孩
@@ -2434,7 +2293,6 @@
   - Kvinden der forsvandt
   - Co Gai Mat Tich
 - :id: 24
-  :imdb_id: tt0266697
   :titles:
   - Kill Bill – Volume 1
   - Kill Bill, Volume 1
@@ -2454,32 +2312,34 @@
   - 'Kill Bill: Volumul 1'
   - Ubiti Bila, prvi deo
   - Ubila bom Billa 1
-- :id: 3078
-  :imdb_id: tt0025316
+- :id: 271110
   :titles:
+  - 美國隊長3：英雄內戰
+  - 'Captain America: The Fallen Son'
+  - 'Captain America: Civil War 3D'
+  - Captain America 3
+  - 'Marvel''s Captain America: Civil War'
+- :id: 3078
+  :titles:
+  - It Happened One Night - Es geschah in einer Nacht
   - Aconteceu Naquela Noite
   - Night Bus
   - Es geschah in einer Nacht
   - Uma Noite Aconteceu
   - Это случилось однажды ночью
-  - It Happened One Night - Es geschah in einer Nacht
-- :id: 19426
-  :imdb_id: tt0050783
-  :titles:
-  - Nights of Cabiria
-  - 花街春梦
-  - 卡比里亚之夜
-  - Noites de Cabíria
 - :id: 583
-  :imdb_id: tt0079470
   :titles:
-  - Brian of Nazareth
+  - Monty Python's Das Leben des Brian
+  - The Gospel According to St. Brian
   - 'Jesus Christ: Lust for Glory'
   - Monty Python's Life of Brian
-  - The Gospel According to St. Brian
-  - Monty Python's Das Leben des Brian
+  - Brian of Nazareth
+- :id: 7345
+  :titles:
+  - 黑金风云
+  - Il y aura du sang
+  - Sangue Negro
 - :id: 96721
-  :imdb_id: tt1979320
   :titles:
   - Тръпка
   - อัดเต็มสปีด
@@ -2493,29 +2353,19 @@
   - 決戰終點線
   - Rush 2013
   - Zafere Hücum
-- :id: 7345
-  :imdb_id: tt0469494
+- :id: 19426
   :titles:
-  - 黑金风云
-  - Il y aura du sang
-  - Sangue Negro
-- :id: 269149
-  :imdb_id: tt2948356
-  :titles:
-  - Zootropolis
-  - Zootropolis
-  - 動物方城市
-  - Zoopolis
-  - ズートピア
+  - Nights of Cabiria
+  - 花街春梦
+  - 卡比里亚之夜
+  - Noites de Cabíria
 - :id: 205
-  :imdb_id: tt0395169
   :titles:
   - Hotel Ruanda - Uma História Real
   - Hotel Ruanda
   - Hotel Rawanda
   - Hotel Ruanda
 - :id: 792
-  :imdb_id: tt0091763
   :titles:
   - A szakasz
   - Взвод
@@ -2529,8 +2379,11 @@
   - Os Bravos do Pelotão
   - Müfreze
 - :id: 963
-  :imdb_id: tt0033870
   :titles:
+  - Ridderfalken
+  - Το γεράκι της Μάλτας
+  - Soimul Maltez
+  - Riddarfalken från Malta
   - El halcón maltés
   - 马耳他之鹰
   - 枭巢喋血记
@@ -2540,16 +2393,7 @@
   - Le faucon maltais
   - Maltézský sokol
   - Der Malteser Falke
-  - Ridderfalken
-  - Το γεράκι της Μάλτας
-  - Soimul Maltez
-  - Riddarfalken från Malta
-- :id: 314365
-  :imdb_id: tt1895587
-  :titles:
-  - En primera plana
 - :id: 204
-  :imdb_id: tt0046268
   :titles:
   - Cena strachu
   - The Wages of Fear
@@ -2563,7 +2407,6 @@
   - Το μεροκάματο του τρόμου
   - A félelem bére
 - :id: 10774
-  :imdb_id: tt0074958
   :titles:
   - 荧光屏后
   - Poder que mata
@@ -2580,8 +2423,11 @@
   - Reshet Shidur
   - Quinto potere
   - Network, main basse sur la télévision
+- :id: 314365
+  :titles:
+  - En primera plana
+  - Spotlight - Die Wahrheit steckt zwischen den Lügen
 - :id: 76341
-  :imdb_id: tt1392190
   :titles:
   - Mad Max 4
   - 冲锋飞车队4
@@ -2598,10 +2444,9 @@
   - Mad Max 4
   - Mad Max 4 - Fury Road
   - Mad Max IV - Fury Road
-  - 瘋狂麥斯：憤怒道
   - Mad Max Fury Road
+  - 瘋狂麥斯：憤怒道
 - :id: 642
-  :imdb_id: tt0064115
   :titles:
   - Butch Cassidy
   - Butch Cassidy et le Kid
@@ -2611,8 +2456,15 @@
   - Butch Cassidy e Sundance Kid
   - 虎豹小霸王
   - 神枪手与智多星
+- :id: 269149
+  :titles:
+  - Zootropolis
+  - Zootropolis
+  - Zootropolis
+  - 動物方城市
+  - Zoopolis
+  - ズートピア
 - :id: 11324
-  :imdb_id: tt1130884
   :titles:
   - La isla siniestra
   - La isla siniestra
@@ -2625,7 +2477,6 @@
   - Prokletý ostrov
   - 셔터아일랜드
 - :id: 147
-  :imdb_id: tt0053198
   :titles:
   - Les quatre cents coups
   - I quattrocento colpi
@@ -2637,7 +2488,6 @@
   - 胡作非为
   - På vei mot livet
 - :id: 235
-  :imdb_id: tt0092005
   :titles:
   - Cuenta conmigo
   - Das Geheimnis eines Sommers
@@ -2649,7 +2499,6 @@
   - スタンド・バイ・ミー
   - Compte sur moi
 - :id: 7984
-  :imdb_id: tt0107207
   :titles:
   - Au Nom du Père
   - Em Nome do Pai
@@ -2662,16 +2511,7 @@
   - Isa nimel
   - Isän nimeen
   - Εις Το Όνομα Του Πατρός
-- :id: 76203
-  :imdb_id: tt2024544
-  :titles:
-  - Twelve Years A Slave
-  - 12 Years a Slave
-  - 12 Anos de Escravidão
-  - دوازده سال بردگی
-  - 自由之心
 - :id: 797
-  :imdb_id: tt0060827
   :titles:
   - 性格
   - 人物
@@ -2684,15 +2524,21 @@
   - Naisen naamio - Persona
   - Persona - sonate for to
   - Quando Duas Mulheres Pecam
+- :id: 76203
+  :titles:
+  - Twelve Years A Slave
+  - 12 Years a Slave
+  - 12 Anos de Escravidão
+  - دوازده سال بردگی
+  - 自由之心
+  - 노예 12년
 - :id: 120467
-  :imdb_id: tt2278388
   :titles:
   - 歡迎來到布達佩斯大飯店
   - El gran hotel Budapest
   - Malon Grand Budapest
   - Отель Гранд Будапешт
 - :id: 55
-  :imdb_id: tt0245712
   :titles:
   - Love's a Bitch
   - Korcs szerelmek
@@ -2717,7 +2563,6 @@
   - L├бska je kurva
   - Parampar├зa A┼Яklar K├╢pekler
 - :id: 70
-  :imdb_id: tt0405159
   :titles:
   - 百万宝贝
   - 登峰造擊
@@ -2730,15 +2575,7 @@
   - Million Dollar Baby - Sonhos Vencidos
   - Devojka od milion dolara
   - Puncka za milijon dolarjev
-- :id: 2493
-  :imdb_id: tt0093779
-  :titles:
-  - La Princesa Prometida
-  - Narzeczona dla księcia
-  - Princess Bride, The
-  - A herceg menyasszonya
 - :id: 265195
-  :imdb_id: tt3011894
   :titles:
   - Ιστορίες Για Αγρίους
   - Relatos salvajes
@@ -2746,10 +2583,14 @@
   - Les nouveaux sauvages
   - Divlje stvari
   - Wild Tales
-- :id: 665
-  :imdb_id: tt0052618
+- :id: 2493
   :titles:
-  - Ben Hur
+  - La Princesa Prometida
+  - Narzeczona dla księcia
+  - Princess Bride, The
+  - A herceg menyasszonya
+- :id: 665
+  :titles:
   - Ben Hur
   - 'Ben-Hur: A Tale of the Christ'
   - Бен-хур
@@ -2758,9 +2599,7 @@
   - 賓漢
   - בן חור
 - :id: 1480
-  :imdb_id: tt0052311
   :titles:
-  - Im Zeichen des Bösen
   - La Soif du Mal
   - 历劫佳人
   - 狂野生死恋
@@ -2771,7 +2610,6 @@
   - Pahan kosketus
   - Ο άρχων του τρόμου
 - :id: 28178
-  :imdb_id: tt1028532
   :titles:
   - Hachi - A Dog's Story
   - Hachi A Dog's Tale
@@ -2786,7 +2624,6 @@
   - 'Hachiko: Η ιστορία ενός σκύλου'
   - Hacsi, a leghűségesebb barát
 - :id: 329
-  :imdb_id: tt0107290
   :titles:
   - Jurassic Park 1
   - Zhuluoji gongyuan
@@ -2809,7 +2646,6 @@
   - Cong Vien Ky Jura
   - Τζουράσικ Παρκ
 - :id: 81
-  :imdb_id: tt0087544
   :titles:
   - Nausicaa e la valle del vento
   - Sternenkrieger - Warriors of the Wind
@@ -2840,8 +2676,19 @@
   - Nausica├д del Valle del Viento
   - Nausica├д del Valle del Viento
   - щвиуБош░╖уБоуГКуВжуВ╖уВл
+- :id: 596
+  :titles:
+  - Furore
+  - 怒火之花
+  - As Vinhas da Ira
+  - El raïm de la ira
+  - Las uvas de la ira
+  - Früchte des Zorns
+  - De druiven der gramschap
+  - Vredens druer
+  - Vihan hedelmät
+  - Les raisins de la colère
 - :id: 703
-  :imdb_id: tt0075686
   :titles:
   - Io e Annie
   - Der Stadtneurotiker
@@ -2855,81 +2702,20 @@
   - Mig og Annie
   - Νευρικός εραστής
   - Ha-Roman Sheli im Annie
-- :id: 596
-  :imdb_id: tt0032551
-  :titles:
-  - Furore
-  - 怒火之花
-  - As Vinhas da Ira
-  - El raïm de la ira
-  - Las uvas de la ira
-  - Früchte des Zorns
-  - De druiven der gramschap
-  - Vredens druer
-  - Vihan hedelmät
-  - Les raisins de la colère
-- :id: 293660
-  :imdb_id: tt1431045
-  :titles:
-  - Deadpool
-  - 惡棍英雄：死侍
-  - 死侍：不死现身
-  - X战警：死侍
-  - 'X-Men Origins: Deadpool'
-  - 'X-Men: Deadpool'
 - :id: 1398
-  :imdb_id: tt0079944
   :titles:
   - La zona
   - Сталкер
   - Stalker
   - Stalker
 - :id: 76
-  :imdb_id: tt0112471
   :titles:
   - До сходу сонця
   - Перед сходом сонця
   - 日出之前
   - 情留半天
   - 爱在黎明破晓时
-- :id: 783
-  :imdb_id: tt0083987
-  :titles:
-  - Ганди
-  - 'Richard Attenborough''s Film: Gandhi'
-  - Gandi
-  - Γκάντι
-- :id: 2503
-  :imdb_id: tt0440963
-  :titles: []
-- :id: 37165
-  :imdb_id: tt0120382
-  :titles:
-  - Truman show
-  - 楚門的世界
-  - El show de Truman (Una vida en directo)
-  - The Truman Show
-  - O Show de Truman
-  - Le show Truman
-  - El Show de Truman
-  - Ζωντανή Μετάδοση
-- :id: 827
-  :imdb_id: tt0046911
-  :titles:
-  - Les Diaboliques
-  - As Diabólicas
-  - De djävulska
-  - I Diabolici
-  - Las diabólicas
-  - Demoni
-  - Diabolique
-  - 恶魔
-  - 室情杀案
-  - 魔鬼双姝
-  - Die Teuflischen
-  - Diabolique
 - :id: 11423
-  :imdb_id: tt0353969
   :titles:
   - 殺人の追憶
   - Salinui chueok
@@ -2945,20 +2731,50 @@
   - Zagadka zbrodni
   - Sećanja na ubistvo
   - Cinayet Anilari
+- :id: 2503
+  :titles: []
+- :id: 783
+  :titles:
+  - Ганди
+  - 'Richard Attenborough''s Film: Gandhi'
+  - Gandi
+  - Γκάντι
+- :id: 37165
+  :titles:
+  - Truman show
+  - 楚門的世界
+  - El show de Truman (Una vida en directo)
+  - The Truman Show
+  - O Show de Truman
+  - Le show Truman
+  - El Show de Truman
+  - Ζωντανή Μετάδοση
+- :id: 827
+  :titles:
+  - Les Diaboliques
+  - As Diabólicas
+  - De djävulska
+  - I Diabolici
+  - Las diabólicas
+  - Demoni
+  - Diabolique
+  - 恶魔
+  - 室情杀案
+  - 魔鬼双姝
+  - Die Teuflischen
+  - Diabolique
+- :id: 293660
+  :titles:
+  - Deadpool
+  - 惡棍英雄：死侍
+  - 死侍：不死现身
+  - X战警：死侍
+  - 'X-Men Origins: Deadpool'
+  - 'X-Men: Deadpool'
 - :id: 141
-  :imdb_id: tt0246578
   :titles:
   - Donnie Darko (Director's Cut)
-- :id: 281957
-  :imdb_id: tt1663202
-  :titles:
-  - O Regresso
-  - 神鬼獵人
-  - El renacido
-  - 复仇勇者
-  - REVENANT Zmrtvýchvstání
 - :id: 1366
-  :imdb_id: tt0075148
   :titles:
   - Рокки
   - Rocky
@@ -2969,7 +2785,6 @@
   - Ρόκι, Τα Χρυσά Γάντια
   - Rocky (1976)
 - :id: 422
-  :imdb_id: tt0056801
   :titles:
   - 8 1_2
   - Вісім з половиною
@@ -2984,8 +2799,17 @@
   - Federico Fellini's 8 1/2
   - 八又二分之一
   - 8 és 1/2
+- :id: 585
+  :titles:
+  - 怪兽公司
+  - Hidden City
+  - Miflatzot, ba'am
+  - Monsters, Incorporated
+  - Cong Ty Quai Vat
+  - Monsters, Inc
+  - Kollide Kompanii
+  - Posasti iz omare
 - :id: 630
-  :imdb_id: tt0032138
   :titles:
   - Zauber von Oz
   - Das zauberhafte Land
@@ -3000,24 +2824,8 @@
   - 綠野仙蹤
   - The Wizard of Oz 1
   - オズの魔法使
-- :id: 585
-  :imdb_id: tt0198781
-  :titles:
-  - 怪兽公司
-  - Hidden City
-  - Miflatzot, ba'am
-  - Monsters, Incorporated
-  - Cong Ty Quai Vat
-  - Monsters, Inc
-  - Kollide Kompanii
-  - Posasti iz omare
 - :id: 12445
-  :imdb_id: tt1201607
   :titles:
-  - Harry Potter De Relieken van de Dood Deel 2
-  - Harry Potter 7 - und die Heiligt├╝mer des Todes - Teil 2
-  - Harry Potter and the Deathly Hallows Pt2
-  - хУИхИйц│вчЙ╣ 7я╝Ъцн╗чеЮчЪДшБЦчЙй тЕб
   - Harry Potter och d├╢dsrelikerna del 2
   - Harry Potter 7 - Die Heiligt├╝mer des Todes - Teil 2
   - Harry Potter 7 e as Rel├нquias da Morte Parte 2
@@ -3058,29 +2866,38 @@
   - Harry Potter y Las Reliquias de la Muerte Parte 2
   - "╬Я ╬з╬м╧Б╬╣ ╬а╧М╧Д╬╡╧Б ╬Ъ╬▒╬╣ ╬Я╬╣ ╬Ъ╬╗╬о╧Б╬┐╬╣ ╬д╬┐╧Е ╬Ш╬▒╬╜╬м╧Д╬┐╧Е: ╬Ь╬н╧Б╬┐╧В
     ╬Т"
+  - Harry Potter De Relieken van de Dood Deel 2
+  - Harry Potter 7 - und die Heiligt├╝mer des Todes - Teil 2
+  - Harry Potter and the Deathly Hallows Pt2
+  - хУИхИйц│вчЙ╣ 7я╝Ъцн╗чеЮчЪДшБЦчЙй тЕб
 - :id: 218
-  :imdb_id: tt0088247
   :titles:
-  - 未来戰士
+  - Der Terminator
   - Terminator (Remastered)
+  - 未来戰士
   - Terminator - Ungeschnittene Fassung
   - Terminator 1 - The Terminator
-  - Tamineta
+  - The Terminator
   - Terminator 1
   - De uitroeier
-  - Der Terminator
+  - Tamineta
+- :id: 281957
+  :titles:
+  - O Regresso
+  - 神鬼獵人
+  - El renacido
+  - 复仇勇者
+  - REVENANT Zmrtvýchvstání
+  - El renacido
 - :id: 63
-  :imdb_id: tt0114746
   :titles:
   - 12 Monkeys
 - :id: 887
-  :imdb_id: tt0036868
   :titles:
   - Os Melhores Anos de Nossas Vidas
   - 黄金年代
   - I migliori anni della nostra vita
 - :id: 137
-  :imdb_id: tt0107048
   :titles:
   - Dzień świstaka
   - Atrapado en el tiempo
@@ -3092,8 +2909,20 @@
   - Le jour de la marmotte
   - Hechizo del tiempo
   - Омагьосан ден
+- :id: 10775
+  :titles:
+  - Mou gaan dou
+  - Wu Jian Dao
+  - Infernal Affairs I
+  - 'Infernal affairs 1: Origines d''une saga'
+  - 无间道1
+  - Двойная рокировка
+  - 'Infernal Affairs: Piekielna gra'
+  - Wu jian dao
+  - 无间道 I
+  - 무간도
+  - Infernal Affairs - Die achte Hölle
 - :id: 845
-  :imdb_id: tt0044079
   :titles:
   - Verschwörung im Nordexpress
   - L'inconnu du Nord-Express
@@ -3106,8 +2935,11 @@
   - Estranys en un tren
   - Delitto per delitto - L'altro uomo
   - Delitto per delitto (L'altro uomo)
+- :id: 578
+  :titles:
+  - Stillness in the Water
+  - Der weisse Hai
 - :id: 187
-  :imdb_id: tt0401792
   :titles:
   - Sin City - Recut und Extended
   - Günah Şehri
@@ -3126,33 +2958,7 @@
   - Mesto greha
   - Sin City - mesto hriechu
   - Thanh Pho Toi Ac
-- :id: 10775
-  :imdb_id: tt0338564
-  :titles:
-  - Mou gaan dou
-  - Wu Jian Dao
-  - Infernal Affairs I
-  - 'Infernal affairs 1: Origines d''une saga'
-  - 无间道1
-  - Двойная рокировка
-  - 'Infernal Affairs: Piekielna gra'
-  - Wu jian dao
-  - 无间道 I
-  - 무간도
-  - Infernal Affairs - Die achte Hölle
-- :id: 11898
-  :imdb_id: tt0041546
-  :titles:
-  - 慈悲心肠
-  - 好心肠与王冠
-  - As Oito Vítimas
-- :id: 578
-  :imdb_id: tt0073195
-  :titles:
-  - Stillness in the Water
-  - Der weisse Hai
 - :id: 406
-  :imdb_id: tt0113247
   :titles:
   - El Odio
   - El Odio [La Haine]
@@ -3163,8 +2969,12 @@
   - 仇恨
   - Hass - La Haine
   - Hate
+- :id: 11898
+  :titles:
+  - 慈悲心肠
+  - 好心肠与王冠
+  - As Oito Vítimas
 - :id: 146233
-  :imdb_id: tt1392214
   :titles:
   - Fogságban
   - Os Suspeitos
@@ -3172,16 +2982,13 @@
   - คู่เดือดเชือดปมดิบ
   - 프리즈너스
 - :id: 3175
-  :imdb_id: tt0072684
   :titles:
   - 乱世儿女
   - 巴里林登
   - バリー・リンドン
   - بری لیندون
 - :id: 17295
-  :imdb_id: tt0058946
   :titles:
-  - Cezayir Savaşı
   - Schlacht um Algier
   - La bataille d'Alger
   - I mahi tou Algeriou
@@ -3189,8 +2996,8 @@
   - A Batalha de Argel
   - 阿尔及利亚的战争
   - The Battle of Algiers
+  - Cezayir Savaşı
 - :id: 968
-  :imdb_id: tt0072890
   :titles:
   - Lämbe pärastlõuna
   - Σκυλίσια μέρα
@@ -3204,18 +3011,7 @@
   - 炎热的下午
   - Een hondse namiddag
   - Кучешки следобед
-- :id: 286217
-  :imdb_id: tt3659388
-  :titles:
-  - A marsi
-  - 火星任务
-  - 火星人
-  - The Martian 3D
-  - Der Marsianer - Rettet Mark Watney 3D
-  - Misión Rescate
-  - 絕地救援
 - :id: 640
-  :imdb_id: tt0264464
   :titles:
   - Arrête-moi si tu peux
   - Kapj el, ha tudsz!
@@ -3230,8 +3026,16 @@
   - Atrápame Si Puedes
   - Atrapame si Puedes
   - Πιάσε Με Αν Μπορείς
+- :id: 286217
+  :titles:
+  - A marsi
+  - 火星任务
+  - 火星人
+  - The Martian 3D
+  - Der Marsianer - Rettet Mark Watney 3D
+  - Misión Rescate
+  - 絕地救援
 - :id: 14756
-  :imdb_id: tt1220719
   :titles:
   - 葉問
   - Yip Man
@@ -3241,7 +3045,6 @@
   - Yip Man
   - Yip Man 1
 - :id: 205596
-  :imdb_id: tt2084970
   :titles:
   - 模拟游戏
   - Імітаційна гра
@@ -3249,8 +3052,8 @@
   - El código Enigma
   - 模仿遊戲
 - :id: 22
-  :imdb_id: tt0325980
   :titles:
+  - 'Piratas das Cara├нbas: A Maldi├з├гo do P├йrola Negra'
   - чеЮщм╝хеЗшИкя╝Ъщм╝чЫЬшИ╣щнФхТТ
   - Pirati dei Caraibi - La maledizione della prima luna
   - Fluch der Karibik 1
@@ -3275,7 +3078,6 @@
   - 'Pirati s Karibov: Prekletstvo ├иrnega bisera'
   - Pir├бti z Karibiku
 - :id: 50014
-  :imdb_id: tt1454029
   :titles:
   - La couleur des sentiments
   - Niceville
@@ -3290,7 +3092,6 @@
   - 帮助
   - Tarnaitė
 - :id: 5961
-  :imdb_id: tt0083922
   :titles:
   - Fanny e Alexander
   - Fanny und Alexander
@@ -3298,8 +3099,17 @@
   - Fanny y Alexander
   - 芬妮和亚力山大
   - Fanny and Alexander
+- :id: 391
+  :titles:
+  - Por Um Punhado de Dólares
+  - Por Um Punhado de Dólares
+  - För en handfull dollar
+  - Man With No Name 1 - A Fistful Of Dollars
+  - Egy maréknyi dollárért
+  - בעבור חופן דולרים
+  - За пригоршню долларов
+  - A Fist Full of Dollars
 - :id: 118340
-  :imdb_id: tt2015381
   :titles:
   - 银河守卫者
   - 银河守护者
@@ -3310,36 +3120,10 @@
   - Guardians of the Galaxy 3D
   - نگهبانان کهکشان
   - Guardiões da Galáxia
-- :id: 24428
-  :imdb_id: tt0848228
-  :titles:
-  - Avengers Assemble
-  - Avengers 3D
-  - The Avengers 3D
-  - 復仇者聯盟
-  - Los Vengadores
-  - Mstiteli
-  - Tasujad
-  - The Avengers 1
-  - De Wrekers
-  - 'Les Avengers: le film'
-  - Marvel's The Avengers
-  - 'The Avengers: An IMAX 3D Experience'
-  - Marvel Avengers Assemble
-  - 'Marvel''s The Avengers: Os Vingadores'
-- :id: 391
-  :imdb_id: tt0058461
-  :titles:
-  - Por Um Punhado de Dólares
-  - Por Um Punhado de Dólares
-  - För en handfull dollar
-  - Man With No Name 1 - A Fistful Of Dollars
-  - Egy maréknyi dollárért
-  - בעבור חופן דולרים
-  - За пригоршню долларов
-  - A Fist Full of Dollars
+  - 2.4 Strażnicy galaktyki
+  - Marvel's Guardians of the Galaxy
+  - Guardianes de la galaxia
 - :id: 10515
-  :imdb_id: tt0092067
   :titles:
   - Das Schloss im Himmel
   - 천공의 성 라퓨타
@@ -3357,15 +3141,11 @@
   - 'Лапута: Замъкът в небето'
   - Το κάστρο στον ουρανό
   - Das Schloß im Himmel
-- :id: 45269
-  :imdb_id: tt1504320
-  :titles:
-  - 王者之聲：宣戰時刻
-  - The King's Speech - Die Rede des Königs
-  - O Discurso do Rei
 - :id: 804
-  :imdb_id: tt0046250
   :titles:
+  - Vacanze Romane
+  - 羅馬假期
+  - Prinsessa på vift
   - La princesa que quería vivir
   - Ein Herz und eine Krone
   - Vacantie te Rome
@@ -3373,11 +3153,32 @@
   - A Princesa e o Plebeu
   - Prinsessen holder fridag
   - Loma Roomassa
-  - Vacanze Romane
-  - 羅馬假期
-  - Prinsessa på vift
+- :id: 24428
+  :titles:
+  - Avengers Assemble
+  - Avengers 3D
+  - The Avengers 3D
+  - 復仇者聯盟
+  - Los Vengadores
+  - Mstiteli
+  - Tasujad
+  - The Avengers 1
+  - De Wrekers
+  - 'Les Avengers: le film'
+  - Marvel's The Avengers
+  - 'The Avengers: An IMAX 3D Experience'
+  - Marvel Avengers Assemble
+  - 'Marvel''s The Avengers: Os Vingadores'
+  - Os Vingadores (2012)
+  - 1.6 Avengers
+- :id: 117691
+  :titles: []
+- :id: 45269
+  :titles:
+  - 王者之聲：宣戰時刻
+  - The King's Speech - Die Rede des Königs
+  - O Discurso do Rei
 - :id: 3777
-  :imdb_id: tt0050613
   :titles:
   - Kumonosu-jō
   - Трон в крови
@@ -3385,7 +3186,6 @@
   - O thronos tou aimatos
   - Das Schloß im Spinnwebwald
 - :id: 288
-  :imdb_id: tt0044706
   :titles:
   - Точно по пладне
   - Matar ou Morrer
@@ -3401,8 +3201,18 @@
   - Solo ante el peligro
   - 日正当中
   - 龙城歼霸战
+- :id: 19666
+  :titles:
+  - 'Lagaan: Érase una vez en la India'
+  - 'Lagaan: Era uma Vez na Índia'
+  - Lagaan - Es war einmal in Indien
+  - Lagaan - olipa kerran Intiassa
+  - 'Lagaan: Dawno temu w Indiach'
+  - 'Lagan: Bilo jednom u Indiji'
+  - 'Лагаан: Однажды в Индии'
+  - Lagaan - Det var en gång i Indien
+  - Land Tax
 - :id: 10020
-  :imdb_id: tt0101414
   :titles:
   - Skönheten och odjuret
   - La belle et la bête
@@ -3415,29 +3225,3 @@
   - 美女與野獸
   - Skønheden og Udyret
   - Fríða og dýrið
-- :id: 117691
-  :imdb_id: tt1954470
-  :titles: []
-- :id: 843
-  :imdb_id: tt0118694
-  :titles:
-  - Deseando amar
-  - 花樣年華
-  - Stvořeni pro lásku
-  - Stvorení pre lásku
-  - 花樣年華
-  - 花样年华
-  - Hua yang nian hua
-  - Fa yeung nin wa
-- :id: 19666
-  :imdb_id: tt0169102
-  :titles:
-  - 'Lagaan: Érase una vez en la India'
-  - 'Lagaan: Era uma Vez na Índia'
-  - Lagaan - Es war einmal in Indien
-  - Lagaan - olipa kerran Intiassa
-  - 'Lagaan: Dawno temu w Indiach'
-  - 'Lagan: Bilo jednom u Indiji'
-  - 'Лагаан: Однажды в Индии'
-  - Lagaan - Det var en gång i Indien
-  - Land Tax
