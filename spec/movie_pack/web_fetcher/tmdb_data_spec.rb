@@ -1,5 +1,7 @@
 require_relative 'spec_helper'
 
+module MoviePack::WebFetcher
+
 describe TMDBData do
   describe '#make_id_list', :vcr => { :record => :new_episodes } do
     before(:all) do
@@ -55,12 +57,6 @@ describe TMDBData do
         end
       end
 
-      context 'when Api key is set' do
-        it 'does not reset Api key' do
-          expect(Tmdb::Api).to not_receive(:key)
-        end
-      end
-
       context 'when no id_file' do
         before(:example) { FileUtils.rm DEFAULT_ID_FILE, :force => true }
 
@@ -106,26 +102,5 @@ describe TMDBData do
       end
     end
   end
-
-
-=begin
-
-
-  describe '#fetch_posters' do
-    let(:dir) { TMDBData::POSTERS_PATH }
-
-    before(:example) { TMDBData.fetch_posters(dir) }
-
-    it { expect(Dir[File.join(dir, '**', '*')].count { |file| File.file?(file) } ).to eq(250) }
-  end
-
-  describe '#fetch_alt_titles' do
-    let(:file_name) { TMDBData::DEFAULT_TITLES_FILE }
-
-    before(:example) { TMDBData.fetch_alt_titles(file_name) }
-
-    it { expect(File.exists?(file_name)).to be true }
-  end
-=end
-
+end
 end

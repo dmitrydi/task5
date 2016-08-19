@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'nokogiri'
 require 'open-uri'
 require 'progress-bar'
@@ -24,5 +23,4 @@ module MoviePack::WebFetcher
       url.scan(/tt\d{7}/).first || url.gsub(DOMAIN, '').gsub(/\?.*/,'').gsub(/\//,'_')
   end
 
-  
 end

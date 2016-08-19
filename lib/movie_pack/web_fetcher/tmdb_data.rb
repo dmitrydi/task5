@@ -36,6 +36,8 @@ module MoviePack::WebFetcher
         FileUtils.mkdir_p posters_path
         FileUtils.mkdir_p File.dirname(alt_titles_file)
         TMDBData.set_api_key
+        Encoding.default_external = 'UTF-8'
+        Encoding.default_internal = 'UTF-8'
       end
 
       attr_accessor :id_file, :posters_path, :alt_titles_file

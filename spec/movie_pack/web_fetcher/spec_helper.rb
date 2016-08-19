@@ -12,4 +12,4 @@ VCR.configure do |c|
   c.configure_rspec_metadata!
 end
 
-include MoviePack::WebFetcher
+#include MoviePack::WebFetcher
