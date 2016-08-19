@@ -14,6 +14,7 @@ module MoviePack::WebFetcher
   POSTERS_PATH = File.join(DATA_PATH, 'posters')
   API_KEY_FILE = File.expand_path('../../../config/web_fetcher/tmdb.yml', __FILE__)
   DEFAULT_ID_FILE = File.join(DATA_PATH, 'id_list.yml')
+  DEFAULT_BUDGETS_FILE = File.join(DATA_PATH, 'budgets.yml')
   ALT_TITLES_FILE = File.join(DATA_PATH, 'alt_titles.yml')
   DOMAIN = 'http://www.imdb.com'
   TOP_250_URL = 'http://www.imdb.com/chart/top?ref_=nv_mv_250_6'

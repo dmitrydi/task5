@@ -1,8 +1,6 @@
 module MoviePack::WebFetcher
   module IMDBBudgets
   # module for gettimg film budgets from top-250 IMDB
-    DEFAULT_NAME = 'budgets.yml'
-
     class Nokogiri::HTML::Document
       def fetch_budget
         self
@@ -31,7 +29,7 @@ module MoviePack::WebFetcher
     end
 
     def self.to_file(top_chart_url, name = nil)
-      file_name = File.join(DATA_PATH, name || DEFAULT_NAME)
+      file_name = name || DEFAULT_BUDGETS_FILE
       contents = fetch(top_chart_url).to_yaml
       FileUtils.mkdir_p DATA_PATH
       File.write(file_name, contents)

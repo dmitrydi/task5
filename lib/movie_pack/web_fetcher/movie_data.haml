@@ -1,0 +1,31 @@
+- require 'yaml'
+- require_relative '../../movie_pack'
+- id_data = YAML.load_file(MoviePack::WebFetcher::DEFAULT_ID_FILE)
+- budgets_data = YAML.load_file(MoviePack::WebFetcher::DEFAULT_BUDGETS_FILE)
+- alt_titles_data = YAML.load_file(MoviePack::WebFetcher::ALT_TITLES_FILE)
+- Encoding.default_external = 'UTF-8'
+- Encoding.default_internal = 'UTF-8'
+%html
+  %head
+    %title Films Data
+  %body
+    %table{ :border => '1' }
+      %tr
+        %th Poster
+        %th Title
+        %th Budget
+        %th Alternative titles
+      - id_data.each do |id_hash|
+        - id = id_hash[:id]
+        - imdb_id = id_hash[:imdb_id]
+        - name = id_hash[:name]
+        - budget = begin budgets_data.find { |d| d[:imdb_id] == imdb_id } [:budget] rescue 'N/A' end
+        - alt_titles_ary = alt_titles_data.find { |d| d[:id] == id } [:titles]
+        %tr
+          %td
+            %img{ :src => (File.join(MoviePack::WebFetcher::POSTERS_PATH, id.to_s) + '.jpg') }
+          %td= name
+          %td= budget
+          %td
+            - alt_titles_ary.each do |title|
+              %p= title
