@@ -27,11 +27,13 @@ module MoviePack::WebFetcher
       def initialize(
         id_file: DEFAULT_ID_FILE,
         posters_path: POSTERS_PATH,
-        alt_titles_file: ALT_TITLES_FILE
+        alt_titles_file: ALT_TITLES_FILE,
+        budgets_file: DEFAULT_BUDGETS_FILE
       )
         @id_file = id_file
         @posters_path = posters_path
         @alt_titles_file = alt_titles_file
+        @budgets_file = budgets_file
         @ids = ids_from_file(id_file)
         FileUtils.mkdir_p posters_path
         FileUtils.mkdir_p File.dirname(alt_titles_file)
@@ -40,7 +42,7 @@ module MoviePack::WebFetcher
         Encoding.default_internal = 'UTF-8'
       end
 
-      attr_accessor :id_file, :posters_path, :alt_titles_file
+      attr_accessor :id_file, :posters_path, :alt_titles_file, :budgets_file
       attr_reader :ids
 
       def ids_from_file(id_file)
@@ -67,6 +69,58 @@ module MoviePack::WebFetcher
           end
           .to_yaml
         File.write(@alt_titles_file, alt_titles)
+      end
+
+      def data_to_html(
+        haml_template: DEFAULT_HAML_FILE,
+        output_html: DEFAULT_HTML_FILE
+      )
+        check_data_files(@budgets_file, @alt_titles_file)
+        id_data = YAML.load_file(@id_file)
+        budgets_data = YAML.load_file(@budgets_file)
+        alt_titles_data = YAML.load_file(@alt_titles_file)
+        data_string = string_for_haml(id_data, budgets_data, alt_titles_data)
+        template = File.read(haml_template)
+        template += data_string
+        output_haml = DEFAULT_HAML_TEMPLATE
+        File.write(output_haml, template)
+        html_data = Haml::Engine.new(template).render
+        File.write(output_html, html_data)
+      end
+
+      def check_data_files(budgets_file, alt_titles_file)
+        IMDBBudgets.to_file(file_name: budgets_file) unless File.file?(budgets_file)
+        fetch_alt_titles_to_file unless File.file?(alt_titles_file)
+      end
+
+      def string_for_haml(id_data, budgets_data, alt_titles_data)
+        str = ''
+        id_data.each do |id_hash|
+          data = data_from_id_hash(id_hash, budgets_data, alt_titles_data)
+          str += "      %tr\n"
+          str += "        %td\n"
+          str += "          %img{ :src => \"#{data.img_name}\" }\n"
+          str += "        %td= \"#{data.name}\"\n"
+          str += "        %td= \"#{data.budget}\"\n"
+          str += "        %td\n"
+          data.alt_titles_ary.each do |title|
+            str += "          %p= \"#{title}\"\n"
+          end
+        end
+        str
+      end
+
+      def data_from_id_hash(id_hash, budgets_data, alt_titles_data)
+        id = id_hash[:id]
+        imdb_id = id_hash[:imdb_id]
+        id = id_hash[:id]
+        imdb_id = id_hash[:imdb_id]
+        data = OpenStruct.new
+        data.name = id_hash[:name]
+        data.budget = budgets_data.find { |d| d[:imdb_id] == imdb_id } [:budget]
+        data.alt_titles_ary = alt_titles_data.find { |d| d[:id] == id } [:titles]
+        data.img_name = File.join(POSTERS_PATH, id.to_s) + '.jpg'
+        data
       end
     end
   end

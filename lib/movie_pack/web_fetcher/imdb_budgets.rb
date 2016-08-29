@@ -24,12 +24,11 @@ module MoviePack::WebFetcher
           film_page = Nokogiri::HTML(WebHelper.cached_get(film_url))
           budget = film_page.fetch_budget
           budget = 'N/A' if budget.empty?
-          {imdb_id: id_from(film_url), name: blok.text, budget: budget}
+          {imdb_id: MoviePack::WebFetcher.id_from(film_url), name: blok.text, budget: budget}
         end
     end
 
-    def self.to_file(top_chart_url, name = nil)
-      file_name = name || DEFAULT_BUDGETS_FILE
+    def self.to_file(top_chart_url: TOP_250_URL, file_name: DEFAULT_BUDGETS_FILE)
       contents = fetch(top_chart_url).to_yaml
       FileUtils.mkdir_p DATA_PATH
       File.write(file_name, contents)
