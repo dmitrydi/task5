@@ -102,7 +102,7 @@ describe TMDBData do
       end
     end
 
-    describe '#data_to_html' do
+    describe '#to_html' do
       it do
         expect(YAML).to receive(:load_file).with(tmdb_instance.id_file).and_call_original
         expect(YAML).to receive(:load_file).with(tmdb_instance.budgets_file).and_call_original
