@@ -8,3 +8,12 @@
         %th Title
         %th Budget
         %th Alternative titles
+      - movies.each do |movie|
+        %tr
+          %td
+            %img{ :src => "#{movie.img_name}" }
+          %td= movie.name
+          %td= movie.budget
+          %td
+            - movie.alt_titles_ary.each do |title|
+              %p= title

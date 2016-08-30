@@ -22,7 +22,6 @@ module MoviePack::WebFetcher
   BASE_IMAGE_URL = 'http://image.tmdb.org/t/p/w185'
   DEFAULT_HAML_FILE = File.join(DATA_PATH, 'data_template.haml')
   DEFAULT_HTML_FILE = File.join(DATA_PATH, 'movie_data.html')
-  DEFAULT_HAML_TEMPLATE = File.join(DATA_PATH, 'output_template.haml')
 
   def self.id_from(url)
       url.scan(/tt\d{7}/).first || url.gsub(DOMAIN, '').gsub(/\?.*/,'').gsub(/\//,'_')

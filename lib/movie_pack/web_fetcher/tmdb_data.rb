@@ -71,7 +71,7 @@ module MoviePack::WebFetcher
         File.write(@alt_titles_file, alt_titles)
       end
 
-      def data_to_html(
+      def to_html(
         haml_template: DEFAULT_HAML_FILE,
         output_html: DEFAULT_HTML_FILE
       )
@@ -79,35 +79,15 @@ module MoviePack::WebFetcher
         id_data = YAML.load_file(@id_file)
         budgets_data = YAML.load_file(@budgets_file)
         alt_titles_data = YAML.load_file(@alt_titles_file)
-        data_string = string_for_haml(id_data, budgets_data, alt_titles_data)
+        movies = id_data.map { |id_hash| data_from_id_hash(id_hash, budgets_data, alt_titles_data) }
         template = File.read(haml_template)
-        template += data_string
-        output_haml = DEFAULT_HAML_TEMPLATE
-        File.write(output_haml, template)
-        html_data = Haml::Engine.new(template).render
+        html_data = Haml::Engine.new(template).render(Object.new, movies: movies)
         File.write(output_html, html_data)
       end
 
       def check_data_files(budgets_file, alt_titles_file)
         IMDBBudgets.to_file(file_name: budgets_file) unless File.file?(budgets_file)
         fetch_alt_titles_to_file unless File.file?(alt_titles_file)
-      end
-
-      def string_for_haml(id_data, budgets_data, alt_titles_data)
-        str = ''
-        id_data.each do |id_hash|
-          data = data_from_id_hash(id_hash, budgets_data, alt_titles_data)
-          str += "      %tr\n"
-          str += "        %td\n"
-          str += "          %img{ :src => \"#{data.img_name}\" }\n"
-          str += "        %td= \"#{data.name}\"\n"
-          str += "        %td= \"#{data.budget}\"\n"
-          str += "        %td\n"
-          data.alt_titles_ary.each do |title|
-            str += "          %p= \"#{title}\"\n"
-          end
-        end
-        str
       end
 
       def data_from_id_hash(id_hash, budgets_data, alt_titles_data)

@@ -108,10 +108,9 @@ describe TMDBData do
         expect(YAML).to receive(:load_file).with(tmdb_instance.budgets_file).and_call_original
         expect(YAML).to receive(:load_file).with(tmdb_instance.alt_titles_file).and_call_original
         expect(File).to receive(:read).with(DEFAULT_HAML_FILE).and_call_original
-        expect(File).to receive(:write).with(DEFAULT_HAML_TEMPLATE, an_instance_of(String)).and_call_original
         expect(Haml::Engine).to receive(:new).with(an_instance_of(String)).and_call_original
         expect(File).to receive(:write).with(DEFAULT_HTML_FILE, an_instance_of(String)).and_call_original
-        tmdb_instance.data_to_html
+        tmdb_instance.to_html
       end
     end
   end
