@@ -2,6 +2,9 @@ module MoviePack::WebFetcher
   module TMDBData
   # module for fetching data using TMDB API
     def self.make_id_list(top_chart_url, file_name = DEFAULT_ID_FILE)
+      Encoding.default_external = 'UTF-8'
+      Encoding.default_internal = 'UTF-8'
+      
       main_page = Nokogiri.HTML(WebHelper.cached_get(top_chart_url), nil, 'UTF-8')
 
       id_list =
@@ -69,38 +72,6 @@ module MoviePack::WebFetcher
           end
           .to_yaml
         File.write(@alt_titles_file, alt_titles)
-      end
-
-      def to_html(
-        haml_template: DEFAULT_HAML_FILE,
-        output_html: DEFAULT_HTML_FILE
-      )
-        check_data_files(@budgets_file, @alt_titles_file)
-        id_data = YAML.load_file(@id_file)
-        budgets_data = YAML.load_file(@budgets_file)
-        alt_titles_data = YAML.load_file(@alt_titles_file)
-        movies = id_data.map { |id_hash| data_from_id_hash(id_hash, budgets_data, alt_titles_data) }
-        template = File.read(haml_template)
-        html_data = Haml::Engine.new(template).render(Object.new, movies: movies)
-        File.write(output_html, html_data)
-      end
-
-      def check_data_files(budgets_file, alt_titles_file)
-        IMDBBudgets.to_file(file_name: budgets_file) unless File.file?(budgets_file)
-        fetch_alt_titles_to_file unless File.file?(alt_titles_file)
-      end
-
-      def data_from_id_hash(id_hash, budgets_data, alt_titles_data)
-        id = id_hash[:id]
-        imdb_id = id_hash[:imdb_id]
-        id = id_hash[:id]
-        imdb_id = id_hash[:imdb_id]
-        data = OpenStruct.new
-        data.name = id_hash[:name]
-        data.budget = budgets_data.find { |d| d[:imdb_id] == imdb_id } [:budget]
-        data.alt_titles_ary = alt_titles_data.find { |d| d[:id] == id } [:titles]
-        data.img_name = File.join(POSTERS_PATH, id.to_s) + '.jpg'
-        data
       end
     end
   end

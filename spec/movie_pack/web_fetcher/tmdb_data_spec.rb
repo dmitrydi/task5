@@ -101,7 +101,7 @@ describe TMDBData do
         tmdb_instance.fetch_alt_titles_to_file
       end
     end
-
+=begin
     describe '#to_html' do
       it do
         expect(YAML).to receive(:load_file).with(tmdb_instance.id_file).and_call_original
@@ -113,6 +113,7 @@ describe TMDBData do
         tmdb_instance.to_html
       end
     end
+=end
   end
 end
 end

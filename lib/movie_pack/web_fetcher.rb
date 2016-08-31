@@ -8,6 +8,7 @@ require 'haml'
 require_relative 'web_fetcher/imdb_budgets'
 require_relative 'web_fetcher/tmdb_data'
 require_relative 'web_fetcher/web_helper'
+require_relative 'web_fetcher/html_builder'
 
 module MoviePack::WebFetcher
   DATA_PATH = File.expand_path('../../../data/movie_pack/web_fetcher', __FILE__)
@@ -26,5 +27,4 @@ module MoviePack::WebFetcher
   def self.id_from(url)
       url.scan(/tt\d{7}/).first || url.gsub(DOMAIN, '').gsub(/\?.*/,'').gsub(/\//,'_')
   end
-
 end

@@ -206,8 +206,8 @@
   - Der Herr der Ringe 3 - Die Rückkehr des Königs
 - :id: 429
   :titles:
-  - The Good, the Ugly, the Bad
   - 獨行俠決鬥地獄門
+  - The Good, the Ugly, the Bad
   - A Jó, a Rossz és a Csúf
   - Den gode, den onde og den grusomme
   - Geras, blogas ir bjaurus
@@ -223,11 +223,11 @@
 - :id: 550
   :titles:
   - Clube da Luta
+  - 鬥陣俱樂部
   - El club de la pelea
   - Mo'adon Krav
   - Borilački klub
   - Harcosok Klubbja
-  - 鬥陣俱樂部
 - :id: 120
   :titles:
   - The Lord of the Rings - The Fellowship of the Ring
@@ -303,6 +303,7 @@
   - Империя наносит ответный удар
   - L'empire contre-attaque
   - 'Star Wars: The Empire Strikes Back'
+  - Star Wars 5
 - :id: 13
   :titles:
   - 阿甘正傳
@@ -418,12 +419,13 @@
   - Os Sete Samurais
 - :id: 11
   :titles:
-  - 'Star Wars: Episode IV - A New Hope'
+  - Star Wars 4
   - 'Star Wars: Episode IV - A New Hope'
   - 'Star Wars: Episode 4 - Una nuova speranza'
   - 'Star Wars: Episodio 4 - Una Nuova Speranza'
   - Stjärnornas krig
   - Star Wars Episode IV - Eine neue Hoffnung
+  - 'Star Wars: Episode IV - A New Hope'
   - 'Star Wars: Episode IV - A New Hope'
 - :id: 598
   :titles:
@@ -442,7 +444,6 @@
   - Mesto bohu
 - :id: 807
   :titles:
-  - 火線追緝令
   - Seven
   - The Seven Deadly Sins
   - Seven - Os Sete Crimes Capitais
@@ -456,6 +457,7 @@
   - Sete Pecados Mortais
   - Seven
   - هفت
+  - 火線追緝令
 - :id: 274
   :titles:
   - De schreeuw van het lam
@@ -472,9 +474,6 @@
   - Mlcení jehnátek
 - :id: 1585
   :titles:
-  - Frank Capra's It's a Wonderful Life
-  - Wat een mooi leven
-  - Ihmeellinen on elämä
   - Эта прекрасная жизнь
   - Qué bello es vivir
   - Ist das Leben nicht schön?
@@ -485,6 +484,9 @@
   - Az élet csodaszép
   - Subarashiki kana, jinsei!
   - Tai nuostabus gyvenimas
+  - Frank Capra's It's a Wonderful Life
+  - Wat een mooi leven
+  - Ihmeellinen on elämä
 - :id: 629
   :titles:
   - Підозрілі особи
@@ -521,8 +523,6 @@
   - León El Profesional
 - :id: 335
   :titles:
-  - Spiel mir das Lied vom Tod
-  - Once upon a Time in the West
   - Érase una vez en el Oeste
   - Il était une fois dans l'Ouest
   - Era Uma Vez no Oeste
@@ -530,7 +530,6 @@
   - 狂沙十万里
   - 狂沙十萬里
   - Odnazhdy na Dikom Zapade.
-  - Once Upon a Time in the West
   - Vestens hårde halse
 - :id: 129
   :titles:
@@ -554,7 +553,6 @@
   - Chihiro og heksene
 - :id: 857
   :titles:
-  - 搶救雷恩大兵
   - 雷霆救兵
   - Rescatando al soldado Ryan
   - Reamees Ryani päästmine
@@ -566,6 +564,7 @@
   - Giai Cuu Binh Nhì Ryan
   - نجات سرباز رایان
   - Il faut sauver le soldat Ryan
+  - 搶救雷恩大兵
 - :id: 73
   :titles:
   - American History X
@@ -592,14 +591,15 @@
   - Kazablanka
 - :id: 157336
   :titles:
+  - 星際效應
   - Interestelar
   - 星际启示录
   - Xing Ji Chuan Yue
   - Bein kokhavim
   - Интерстеллар
-  - 星際效應
 - :id: 539
   :titles:
+  - Psicosi
   - Psicosis
   - Psychose
   - Психо
@@ -609,7 +609,6 @@
   - Psychoza
   - Sapik
   - Psico
-  - Psicosi
 - :id: 901
   :titles:
   - Les lumières de la ville
@@ -661,6 +660,7 @@
   - Ο Ιντιάνα Τζόουνς Και Οι Κυνηγοί Της Χαμένης Κιβωτού
 - :id: 3082
   :titles:
+  - Нові часи
   - Les Temps modernes
   - Tempos Modernos
   - Moderne tider
@@ -672,7 +672,6 @@
   - Moderne tijden
   - Модерни времена
   - Tempi moderni (1936)
-  - Нові часи
 - :id: 77338
   :titles:
   - 无法触碰
@@ -770,6 +769,9 @@
   - 'Εξολοθρευτής 2: Μέρα Κρίσης'
 - :id: 1422
   :titles:
+  - A tégla
+  - Departed - Unter Feinden
+  - Infiltrados
   - The Departed - Entre Inimigos
   - От другата страна
   - Skrytá identita
@@ -780,9 +782,6 @@
   - Dipâteddo
   - Infiltruoti
   - Parakit hoad faengtua koan chaopho
-  - A tégla
-  - Departed - Unter Feinden
-  - Infiltrados
   - 无间行者
 - :id: 423
   :titles:
@@ -873,13 +872,7 @@
   :titles:
   - Dr. Fantástico
   - Il Dottor Stranamore
-  - Доктор Стрейнджлав, або Як я перестав хвилюватись i полюбив бомбу
   - Dr. Folamour
-  - Dr Folamour
-  - Docteur Folamour
-  - 'Docteur Folamour ou : comment j''ai appris à ne plus m''en faire et à aimer la
-    bombe'
-  - 'Dr. Insólito o: Como aprendí a dejar de preocuparme y amar la bomba'
   - Dr. Strangelove
   - Il dottor Stranamore, ovvero come imparai a non preoccuparmi e ad amare la bomba
   - Dr Strangelove
@@ -897,6 +890,12 @@
   - 'Hakase no ijô na aijô: Matawa watashi wa ikani shite shinpai suru no wo yamete
     suibaku wo aisuru you ni natta ka'
   - Garip Doktor
+  - Доктор Стрейнджлав, або Як я перестав хвилюватись i полюбив бомбу
+  - Dr Folamour
+  - Docteur Folamour
+  - 'Docteur Folamour ou : comment j''ai appris à ne plus m''en faire et à aimer la
+    bombe'
+  - 'Dr. Insólito o: Como aprendí a dejar de preocuparme y amar la bomba'
 - :id: 599
   :titles:
   - Sunset Blvd.
@@ -913,8 +912,6 @@
   - 'Alien: The Director''s Cut'
 - :id: 914
   :titles:
-  - Ο μεγάλος δικτάτωρ
-  - Ha-Dictator Ha-Gadol
   - Dokusaisha
   - Charlie Chaplin - The Great Dictator
   - Diktatoren
@@ -925,6 +922,8 @@
   - O Grande Ditador
   - Le dictateur
   - Diktátor
+  - Ο μεγάλος δικτάτωρ
+  - Ha-Dictator Ha-Gadol
 - :id: 582
   :titles:
   - 竊聽風暴
@@ -940,7 +939,6 @@
   - Das Leben der Anderen - Die Sonate vom guten Menschen
 - :id: 11216
   :titles:
-  - 星光伴我心
   - 新天堂樂園
   - Mine aftener i paradis
   - Ново кино Парадизо
@@ -951,6 +949,7 @@
   - Новый кинотеатр Парадизо
   - Cennet Sinemasi
   - Le Cinema Paradis
+  - 星光伴我心
 - :id: 975
   :titles:
   - Orizzonti di gloria
@@ -973,21 +972,20 @@
   - Django
   - Django Livre
   - Django, Ο Τιμωρός
-  - Zincirsiz
   - Джанго освобожденный
   - Nespoutaný Django
   - Hành Trình Django
   - Đangova osveta
   - 決殺令
+  - Zincirsiz
 - :id: 694
   :titles:
-  - 'The Shining: US Cut'
-  - 'The Shining: Director''s Cut'
   - The Shining - Stephen King
   - Stanley Kubrick's 'The Shining'
+  - 'The Shining: US Cut'
+  - 'The Shining: Director''s Cut'
 - :id: 12477
   :titles:
-  - 再見螢火蟲
   - Hotaru no haka
   - Die letzten Glühwürmchen
   - Le tombeau des lucioles
@@ -999,16 +997,17 @@
   - 반딧불의 묘
   - 반딧불이의 묘
   - La tomba delle lucciole
+  - 再見螢火蟲
 - :id: 10681
   :titles:
-  - Wall-E
-  - WALL•E
-  - WALL·E. Batallón de limpieza
   - 瓦力
   - Wall.E
   - 월-E
   - ВАЛЛ-И
   - 太空奇兵
+  - Wall-E
+  - WALL•E
+  - WALL·E. Batallón de limpieza
 - :id: 49026
   :titles:
   - Batman The Dark Knight Rises
@@ -1042,6 +1041,15 @@
   - Lepota po amerisko
   - Americká krása
   - Ve Dep My
+- :id: 679
+  :titles:
+  - 'Aliens: Director''s Cut'
+  - 'Aliens: Special Edition'
+  - Alien 2
+  - 'Alien 2: Aliens'
+  - Aliens, O Resgate
+  - Alien II
+  - 異形2
 - :id: 128
   :titles:
   - La princesa Mononoke
@@ -1054,15 +1062,6 @@
   - 魔法公主
   - Mononoke Hime
   - 원령공주
-- :id: 679
-  :titles:
-  - Alien 2
-  - 'Alien 2: Aliens'
-  - Aliens, O Resgate
-  - Alien II
-  - 異形2
-  - 'Aliens: Director''s Cut'
-  - 'Aliens: Special Edition'
 - :id: 670
   :titles:
   - Old Boy
@@ -1093,7 +1092,6 @@
   - C'era una volta in America (1984)
 - :id: 387
   :titles:
-  - El submarino
   - The Boat
   - Подводницата U-96
   - El barco
@@ -1122,6 +1120,7 @@
   - Ubåten
   - Mukaddes Vazife
   - Пiдводний човен
+  - El submarino
   - U-Boot 96
   - Le bateau
   - Подводная лодка
@@ -1219,6 +1218,7 @@
   - Повернення Джедая
   - El retorno del Jedi
   - 'Star Wars: Episode VI - Return of the Jedi'
+  - Star Wars 6
   - Revenge of the Jedi
   - 'Star Wars: Episode 6 - Return of the Jedi'
   - Star Wars Episódio VI - O Retorno de Jedi
@@ -1235,7 +1235,6 @@
   - M el vampiro de Düsseldorf
 - :id: 500
   :titles:
-  - 霸道橫行
   - Le iene - Cani da rapina
   - Perros de la calle
   - Rengli Itler
@@ -1249,6 +1248,7 @@
   - Profesionistii crimei
   - Ulični psi
   - Stekli psi
+  - 霸道橫行
 - :id: 197
   :titles:
   - Храброе сердце
@@ -1376,7 +1376,6 @@
   - Amadeus - Director's Cut
 - :id: 600
   :titles:
-  - Пълно бойно снаряжение
   - Nascido Para Matar
   - 金甲部隊
   - Acéllövedék
@@ -1389,6 +1388,7 @@
   - Olovni kovčeg
   - Stanley Kubrick's Full Metal Jacket
   - Glonţ cu cămaşă metalică
+  - Пълно бойно снаряжение
 - :id: 9277
   :titles:
   - Blåsningen
@@ -1418,6 +1418,12 @@
   - 偷自行车的人
   - Bicycle Thieves
   - The Bicycle Thief
+- :id: 872
+  :titles:
+  - Singin in the Rain
+  - 雨に唄えば
+  - Singin in the Rain
+  - Singing in the Rain
 - :id: 862
   :titles:
   - Toy Story - leluelämää
@@ -1448,12 +1454,6 @@
   - Iсторiя iграшок
   - Cau Chuyen Do Choi
   - Toy Story 1
-- :id: 872
-  :titles:
-  - Singin in the Rain
-  - 雨に唄えば
-  - Singin in the Rain
-  - Singing in the Rain
 - :id: 107
   :titles:
   - Diamonds
@@ -1462,6 +1462,9 @@
   - Cerdos y Diamantes
 - :id: 16869
   :titles:
+  - Безславнi виродки
+  - besslavnyye ublyudki
+  - Bastardos sin gloria
   - Malditos Bastardos
   - 恶棍特工
   - 希魔撞正杀人狂
@@ -1477,9 +1480,13 @@
   - Maleïts Malparits
   - پست فطرت های لعنتی
   - Άδωξοι Μπάσταρδη
-  - Безславнi виродки
-  - besslavnyye ublyudki
-  - Bastardos sin gloria
+- :id: 762
+  :titles:
+  - Monty Python's The Holy Grail
+  - 圣杯传奇
+  - Die Ritter der Kokosnuss
+  - Monty Python Die Ritter der Kokosnuss
+  - Los caballeros de la mesa cuadrada y sus locos seguidores
 - :id: 10098
   :titles:
   - Charlie Chaplin - Der Vagabund und das Kind
@@ -1497,13 +1504,6 @@
   - Chaplinin poika
   - Το χαμίνι
   - Mališan
-- :id: 762
-  :titles:
-  - Monty Python's The Holy Grail
-  - 圣杯传奇
-  - Die Ritter der Kokosnuss
-  - Monty Python Die Ritter der Kokosnuss
-  - Los caballeros de la mesa cuadrada y sus locos seguidores
 - :id: 2118
   :titles:
   - L.A. Confidential
@@ -1558,6 +1558,8 @@
   - Por unos pocos dólares más
 - :id: 548
   :titles:
+  - Rashômon
+  - Рашомон
   - Demonenes port
   - Sari Irkin Sehveti
   - Η γκέισα και ο σαμουράι
@@ -1566,8 +1568,6 @@
   - Lã Sinh Môn
   - Das Lustwäldchen
   - El bosque ensangrentado
-  - Rashômon
-  - Рашомон
 - :id: 284
   :titles:
   - Das Appartement
@@ -1618,6 +1618,14 @@
   - A Separation (2011)
   - جدایی نادر از سیمین
   - Jodái-e Náder az Simin
+- :id: 19
+  :titles:
+  - Metropolis - restaurierte Fassung
+  - 大都會
+  - 大都会
+  - Metoroporisu
+  - The Complete Metropolis
+  - Μητρόπολις
 - :id: 20453
   :titles:
   - 3 Idiots
@@ -1635,17 +1643,6 @@
   - Trzej idioci
   - Tri budale
   - 3 Ahmak
-- :id: 19
-  :titles:
-  - Metropolis - restaurierte Fassung
-  - 大都會
-  - 大都会
-  - Metoroporisu
-  - The Complete Metropolis
-  - Μητρόπολις
-- :id: 103663
-  :titles:
-  - Die Jagd
 - :id: 705
   :titles:
   - La malvada
@@ -1661,6 +1658,9 @@
   - Alles über Eva
   - Всичко за Ева
   - Alt om Eva
+- :id: 103663
+  :titles:
+  - Die Jagd
 - :id: 11878
   :titles:
   - Yôjinbô
@@ -1672,24 +1672,6 @@
   - Yojimbo - Livvakten
   - Livvagten
   - El mercenario
-- :id: 489
-  :titles:
-  - 心灵捕手
-  - 心靈捕手
-  - En busca del destino
-  - Добрият Уил Хънтинг
-  - Le destin de Will Hunting
-  - O xehoristos Will Hunting
-  - Ο Ξεχωριστός Γουίλ Χάντινγκ
-  - Dobri Will Hunting
-  - Sippuro Shel Will Hunting
-  - Gerasis Vilas Hantingas
-  - Mente indomable
-  - Den enestående Will Hunting
-  - En busca del destino
-  - Dobri Vil Hanting
-  - Dobrý Will Hunting
-  - Good Will Hunting - Der gute Will Hunting
 - :id: 272
   :titles:
   - Batman 1 - Batman Begins
@@ -1715,12 +1697,26 @@
   - Batman Begins
   - Batman - O Início
   - The Dark Knight 1 - Batman Begins
+- :id: 489
+  :titles:
+  - 心灵捕手
+  - 心靈捕手
+  - En busca del destino
+  - Добрият Уил Хънтинг
+  - Le destin de Will Hunting
+  - O xehoristos Will Hunting
+  - Ο Ξεχωριστός Γουίλ Χάντινγκ
+  - Dobri Will Hunting
+  - Sippuro Shel Will Hunting
+  - Gerasis Vilas Hantingas
+  - Mente indomable
+  - Den enestående Will Hunting
+  - En busca del destino
+  - Dobri Vil Hanting
+  - Dobrý Will Hunting
+  - Good Will Hunting - Der gute Will Hunting
 - :id: 3090
   :titles:
-  - Blago Sijera Madre
-  - Altin Hazineleri
-  - Ο θησαυρός της Σιέρρα Μάντρε
-  - O Tesouro de Sierra Madre
   - 碧血金沙
   - 浴血金沙
   - El tesoro de Sierra Madre
@@ -1731,30 +1727,35 @@
   - O Tesouro da Sierra Madre
   - Le trésor de la Sierra Madre
   - Tre mand søger guld
+  - Blago Sijera Madre
+  - Altin Hazineleri
+  - Ο θησαυρός της Σιέρρα Μάντρε
+  - O Tesouro de Sierra Madre
 - :id: 239
   :titles:
   - Quanto Mais Quente Melhor
-  - Neki to vole vruće
-  - Dziaze tik merginos
   - Van, aki forrón szereti
-  - O atsui no ga o suki
-  - Una Eva y dos Adanes
-  - Bazilari Sicak Sever
-  - Pól zartem, pól serio
-  - Unora le place jazz-ul
   - Neki to vole vruce
-  - Piukat paikat
-  - Niekto to rád horúce
-  - Hamim V'Taeem
-  - Nekateri so za vroce
-  - Una Eva y dos Adanes
-  - Una Eva y dos Adanes
   - Дехто любить гарячіше
   - Некоторые любят погорячее
+  - Neki to vole vruće
   - Μερικοί το προτιμούν καυτό
+  - Piukat paikat
   - Una Eva y dos Adanes
   - Una Eva y dos Adanes
   - Certains l'aiment chaud
+  - Dziaze tik merginos
+  - Hamim V'Taeem
+  - O atsui no ga o suki
+  - У джазi тiльки дiвчата
+  - Bazilari Sicak Sever
+  - Pól zartem, pól serio
+  - Unora le place jazz-ul
+  - Niekto to rád horúce
+  - Nekateri so za vroce
+  - Una Eva y dos Adanes
+  - Una Eva y dos Adanes
+  - Una Eva y dos Adanes
   - A qualcuno piace caldo
   - Con Faldas y a lo Loco
   - Certains l'aiment chaud
@@ -1768,14 +1769,13 @@
   - Some like it hot - Noen har det hett
   - В джазе только девушки
   - I hetaste laget
-  - У джазi тiльки дiвчата
 - :id: 14160
   :titles:
-  - Kohti Korkeuksia
-  - Vút Bay
   - Up - 3D
   - 'Up: Una aventura de altura'
   - Oben
+  - Vút Bay
+  - Kohti Korkeuksia
 - :id: 33
   :titles:
   - Impitoyable
@@ -1795,6 +1795,21 @@
 - :id: 1092
   :titles:
   - El Tercer Hombre
+- :id: 21334
+  :titles:
+  - Bacheha-Ye aseman
+- :id: 1578
+  :titles:
+  - Dühöngő bika
+  - Toro scatenato
+  - 蠻牛
+  - 愤怒的公牛
+  - Tjuren från Bronx
+  - Toro salvaje
+  - Wie ein wilder Stier
+  - Разяреният бик
+  - Touro Indomável
+  - Comme un taureau sauvage
 - :id: 613
   :titles:
   - A Queda. As Últimas Horas de Hitler
@@ -1808,31 +1823,19 @@
   - A Queda! As Últimas Horas de Hitler
   - Pád Tretí ríse
   - Allakäik
-- :id: 1578
-  :titles:
-  - Dühöngő bika
-  - Toro scatenato
-  - 蠻牛
-  - 愤怒的公牛
-  - Tjuren från Bronx
-  - Toro salvaje
-  - Wie ein wilder Stier
-  - Разяреният бик
-  - Touro Indomável
-  - Comme un taureau sauvage
-- :id: 21334
-  :titles:
-  - Bacheha-Ye aseman
 - :id: 562
   :titles:
+  - Stirb Langsam 1
+  - 虎膽龍威
   - 虎胆龙威1
   - Die Hard 1
   - Duro de Matar
-  - Stirb Langsam 1
-  - 虎膽龍威
 - :id: 150540
   :titles:
+  - Отвътре навън
   - Alles steht Kopf
+  - Τα μυαλά που κουβαλάς
+  - W głowie się nie mieści
   - Tapmaca
   - 玩轉腦朋友
   - Intensamente
@@ -1840,14 +1843,11 @@
   - Inderst inde
   - V hlave
   - Ma-Hud-Sa-Jan-A-Rom-On-La-Weng
-  - 腦筋急轉彎
   - Sens dessus dessous
   - Pahupidi
+  - 腦筋急轉彎
   - インサイド・ヘッド
   - Innsiden Ut
-  - Отвътре навън
-  - W głowie się nie mieści
-  - Τα μυαλά που κουβαλάς
 - :id: 5925
   :titles:
   - 胜利大逃亡
@@ -1857,19 +1857,24 @@
   - Čínská čtvrť
 - :id: 949
   :titles:
+  - Жега
+  - Tension
+  - Fuego contra fuego
+  - Heat - ajojahti
+  - Nelítostný souboj
+  - Ένταση
+  - Vrućina
+  - Goraczka
   - Heat (1995)
   - Heat - La sfida
   - Fogo Contra Fogo
   - 烈火悍將
   - Szemtől szemben
-  - Tension
-  - Fuego contra fuego
-  - Heat - ajojahti
-  - Nelítostný souboj
-  - Жега
-  - Ένταση
-  - Vrućina
-  - Goraczka
+- :id: 264644
+  :titles:
+  - La habitación
+  - Raum
+  - 不存在的房間
 - :id: 1417
   :titles:
   - Лабиринтът на фавна
@@ -1886,17 +1891,6 @@
   - 판의 미로 - 오필리아와 세 개의 열쇠
   - パンズ・ラビリンス
   - Paani labürint
-- :id: 264644
-  :titles:
-  - La habitación
-  - Raum
-  - 不存在的房間
-- :id: 780
-  :titles:
-  - La Passion de Jeanne d'Arc
-  - Die Passion der Jungfrau von Orléans
-  - Die Passion Johanna  von Orléans
-  - O Martírio de Joana d'Arc
 - :id: 654
   :titles:
   - Nido de ratas
@@ -1978,12 +1972,6 @@
   - El secreto de sus ojos
 - :id: 78
   :titles:
-  - Blade Runner - Der Final Cut
-  - Blade Runner - The Final Cut
-  - Blade Runner - TC
-  - Blade Runner - FC
-  - Blade Runner - DC
-  - სამართებელზე მორბენალი
   - Бегущий по лезвию
   - Bėgantis skustuvo ašmenimis
   - Ülgücün üzəri ilə qaçan
@@ -1995,6 +1983,12 @@
   - Istrebljivač
   - Той, хто біжить по лез
   - Pa asmeni skrejošais
+  - Blade Runner - Der Final Cut
+  - Blade Runner - The Final Cut
+  - Blade Runner - TC
+  - Blade Runner - FC
+  - Blade Runner - DC
+  - სამართებელზე მორბენალი
   - Dangerous Days
   - 銀翼殺手
   - Blade Runner (Director's Cut)
@@ -2030,11 +2024,6 @@
   - O Castelo Andante
   - El increíble castillo vagabundo
   - Det Levende Slottet
-- :id: 524
-  :titles:
-  - Kasyno
-  - Casinò (1995)
-  - Casino - Niemand bleibt für immer an der Spitze
 - :id: 631
   :titles:
   - Sunrise - A Song of Two Humans
@@ -2048,6 +2037,19 @@
   - Solopgang
   - Päikesetõus
   - Auringonnousu
+- :id: 524
+  :titles:
+  - Kasyno
+  - Casinò (1995)
+  - Casino - Niemand bleibt für immer an der Spitze
+- :id: 614
+  :titles:
+  - Cuando huye el día
+  - Il posto delle fragole
+  - Wild Strawberries
+  - Wild Strawberries
+  - Fresas Salvajes
+  - 野草莓
 - :id: 961
   :titles:
   - 将军
@@ -2061,27 +2063,6 @@
   - Ο στρατηγός
   - Come vinsi la guerra
   - A Glória de Pamplinas
-- :id: 614
-  :titles:
-  - Cuando huye el día
-  - Il posto delle fragole
-  - Wild Strawberries
-  - Wild Strawberries
-  - Fresas Salvajes
-  - 野草莓
-- :id: 821
-  :titles:
-  - Julgamento em Nuremberg
-  - Jugement à Nuremberg
-  - Ítélet Nürnbergben
-  - 纽伦堡大审判
-  - Dommen i Nürnberg
-  - Vencedores o vencidos
-  - El juicio de Nuremberg
-  - Нюрнбергският процес
-  - Yom Ha-Dean B'Nirenberg
-  - Η δίκη της Νυρεμβέργης
-  - Nürnbergin tuomio
 - :id: 1955
   :titles:
   - El hombre elefante
@@ -2107,6 +2088,19 @@
   - Lohem
   - Kovotojai
   - Воин
+- :id: 821
+  :titles:
+  - Julgamento em Nuremberg
+  - Jugement à Nuremberg
+  - Ítélet Nürnbergben
+  - 纽伦堡大审判
+  - Dommen i Nürnberg
+  - Vencedores o vencidos
+  - El juicio de Nuremberg
+  - Нюрнбергският процес
+  - Yom Ha-Dean B'Nirenberg
+  - Η δίκη της Νυρεμβέργης
+  - Nürnbergin tuomio
 - :id: 453
   :titles:
   - Čudoviti um
@@ -2134,9 +2128,38 @@
   - Volstryto vilkas
   - Para Avcisi
   - 華爾街之狼
+- :id: 140607
+  :titles:
+  - The Force Awakens
+  - 'Star Wars: Sila se probouzi'
+  - El despertar de la Fuerza
+  - 星球大戰：原力覺醒
+  - 'Star Wars: Episode VII'
+  - Star Wars 7
+  - 'Star Wars: Episódio VII - O Despertar da Força'
+  - 'Star Wars: Episodio VII'
+  - Пробуждение силы
+  - 'Star Wars: Episode 7 - The Force Awakens'
+  - O Despertar da Força
+  - 'Star Wars: The Force Awakens'
+  - 'La guerra de las galaxias. Episodio VII: El despertar de la fuerza'
+  - 'Star Wars: Le réveil de la Force'
+  - 'Star Wars: Episode VII - The Force Awakens'
+  - 'Star Wars: Episodio VII - Il risveglio della Forza'
+  - 'Звёздные войны: Пробуждение Силы'
+  - 'מלחמת הכוכבים: הכוח מתעורר'
+  - Star Wars - Episode 7 - Das Erwachen der Macht
+  - 'Star Wars: Episodio VII - El Despertar de la Fuerza'
+  - 'Star Wars: El despertar de la fuerza'
+  - スター・ウォーズ／フォースの覚醒
+  - Star Wars 7 - Das Erwachen der Macht
 - :id: 752
   :titles:
   - V for Vendetta
+  - V de Venganza
+  - V字仇杀队
+  - ונדטה
+  - Vフォー・ヴェンデッタ
   - Vendetta üçün V
   - V като Вендета
   - V niin kuin verikosto
@@ -2144,10 +2167,19 @@
   - V mint vérbosszú
   - V kot vroce mascevanje
   - В значит Вендетта
-  - V de Venganza
-  - V字仇杀队
-  - ונדטה
-  - Vフォー・ヴェンデッタ
+- :id: 18148
+  :titles:
+  - Tokyo Story
+  - Voyage à Tokyo
+  - Viaje a Tokyo
+  - Viaggio a Tokyo
+  - Tokijska opowiesc
+  - Cuentos de Tokio
+  - 东京故事
+  - Tōkyō monogatari
+  - Токийска история
+  - Era uma Vez em Tóquio
+  - Die Reise nach Tokio
 - :id: 46738
   :titles:
   - Die Frau die singt - Incendies
@@ -2164,43 +2196,6 @@
   - Изпепелени
   - Pozáry
   - Nawals hemmelighed
-- :id: 18148
-  :titles:
-  - Tokyo Story
-  - Voyage à Tokyo
-  - Viaje a Tokyo
-  - Viaggio a Tokyo
-  - Tokijska opowiesc
-  - Cuentos de Tokio
-  - 东京故事
-  - Tōkyō monogatari
-  - Токийска история
-  - Era uma Vez em Tóquio
-  - Die Reise nach Tokio
-- :id: 140607
-  :titles:
-  - The Force Awakens
-  - El despertar de la Fuerza
-  - 星球大戰：原力覺醒
-  - 'Star Wars: Episode VII'
-  - O Despertar da Força
-  - 'Star Wars: Episódio VII - O Despertar da Força'
-  - 'Star Wars: Episodio VII'
-  - Пробуждение силы
-  - 'Star Wars: The Force Awakens'
-  - 'La guerra de las galaxias. Episodio VII: El despertar de la fuerza'
-  - 'מלחמת הכוכבים: הכוח מתעורר'
-  - 'Star Wars: Le réveil de la Force'
-  - 'Star Wars: Episode VII - The Force Awakens'
-  - 'Star Wars: Episodio VII - Il risveglio della Forza'
-  - 'Звёздные войны: Пробуждение Силы'
-  - Star Wars - Episode 7 - Das Erwachen der Macht
-  - 'Star Wars: Episodio VII - El Despertar de la Fuerza'
-  - スター・ウォーズ／フォースの覚醒
-  - Star Wars 7 - Das Erwachen der Macht
-  - 'Star Wars: El despertar de la fuerza'
-  - 'Star Wars: Episode 7 - The Force Awakens'
-  - 'Star Wars: Sila se probouzi'
 - :id: 13223
   :titles:
   - 經典老爺車
@@ -2225,20 +2220,6 @@
   - The Man Who Came to Play
   - 獵鹿者
   - O Franco Atirador
-- :id: 521
-  :titles:
-  - Täydellinen rikos
-  - Gyilkosság telefonhívásra
-  - Alibi
-  - Le crime était presque parfait
-  - Τηλεφωνήσατε ασφάλεια άμεσου δράσεως
-  - Disque M Para Matar
-  - Crimen perfecto
-  - 电话情杀案
-  - La llamada fatal
-  - De moord was bijna volmaakt
-  - Набери М за убийство
-  - Telefonen ringer kl. 23
 - :id: 627
   :titles:
   - Trainspotting - Sem Limites
@@ -2256,6 +2237,31 @@
   - Fargo - Blutiger Schnee
   - 笨贼满天飞
   - Fargo (Remastered)
+- :id: 521
+  :titles:
+  - Täydellinen rikos
+  - Gyilkosság telefonhívásra
+  - Alibi
+  - Le crime était presque parfait
+  - Τηλεφωνήσατε ασφάλεια άμεσου δράσεως
+  - Disque M Para Matar
+  - Crimen perfecto
+  - 电话情杀案
+  - La llamada fatal
+  - De moord was bijna volmaakt
+  - Набери М за убийство
+  - Telefonen ringer kl. 23
+- :id: 223
+  :titles:
+  - Rebeka
+  - Rebeca
+  - Rebecca, la prima moglie
+  - Ρεβέκκα
+  - Rebecca, A Mulher Inesquecível
+  - Rebeca, una mujer inolvidable
+  - Ребека
+  - A Manderley-ház asszonya
+  - Rebekka
 - :id: 770
   :titles:
   - Gone with the Wind
@@ -2269,17 +2275,16 @@
   - Jih proti Severu
   - Odviate vetrom
   - بر باد رفته
-- :id: 223
+- :id: 26842
   :titles:
-  - Rebeka
-  - Rebeca
-  - Rebecca, la prima moglie
-  - Ρεβέκκα
-  - Rebecca, A Mulher Inesquecível
-  - Rebeca, una mujer inolvidable
-  - Ребека
-  - A Manderley-ház asszonya
-  - Rebekka
+  - Mahoma, el mensajero de Dios
+  - The Message
+  - 'The Message: The Story of Islam'
+  - Mohammad, Messenger of God
+  - الرسالة‎
+  - Mohammed - Der Gesandte Gottes
+  - Le Message
+  - The Message (History of Islam)
 - :id: 903
   :titles:
   - Luke la main froide
@@ -2322,27 +2327,10 @@
   - Šesto čulo
   - Sesti cut
   - Giac Quan Thu Sau
-- :id: 26842
-  :titles:
-  - Mahoma, el mensajero de Dios
-  - The Message
-  - 'The Message: The Story of Islam'
-  - Mohammad, Messenger of God
-  - الرسالة‎
-  - Mohammed - Der Gesandte Gottes
-  - Le Message
-  - The Message (History of Islam)
 - :id: 1091
   :titles:
   - John Carpenter's The Thing
   - A valami
-- :id: 6977
-  :titles:
-  - Sin lugar para los débiles
-  - Sin lugar para los débiles
-  - Sin lugar para los débiles
-  - Sin lugar para los débiles
-  - Sin lugar para los débiles
 - :id: 25237
   :titles:
   - Go and Look
@@ -2355,6 +2343,13 @@
   - Idi i Smotri
   - 'Masacre: ven y mira'
   - Komm und siehe...
+- :id: 6977
+  :titles:
+  - Sin lugar para los débiles
+  - Sin lugar para los débiles
+  - Sin lugar para los débiles
+  - Sin lugar para los débiles
+  - Sin lugar para los débiles
 - :id: 5915
   :titles:
   - Erämaan armoille
@@ -2385,7 +2380,6 @@
   - Mary y Max
 - :id: 210577
   :titles:
-  - Perdida
   - 失踪的女孩
   - 失踪女孩
   - 失踪罪
@@ -2395,6 +2389,7 @@
   - Perdida
   - Zmizelá
   - Το Κορίτσι Που Εξαφανίστηκε
+  - Perdida
   - เล่นซ่อนหาย
   - Не казвай сбогом
   - Das perfekte Opfer
@@ -2420,6 +2415,12 @@
   - 'Kill Bill: Volumul 1'
   - Ubiti Bila, prvi deo
   - Ubila bom Billa 1
+- :id: 271110
+  :titles:
+  - 'Captain America: The Fallen Son'
+  - 'Captain America: Civil War 3D'
+  - Captain America 3
+  - 'Marvel''s Captain America: Civil War'
 - :id: 3078
   :titles:
   - It Happened One Night - Es geschah in einer Nacht
@@ -2428,11 +2429,6 @@
   - Es geschah in einer Nacht
   - Uma Noite Aconteceu
   - Это случилось однажды ночью
-- :id: 7345
-  :titles:
-  - 黑金风云
-  - Il y aura du sang
-  - Sangue Negro
 - :id: 583
   :titles:
   - Monty Python's Das Leben des Brian
@@ -2440,6 +2436,11 @@
   - 'Jesus Christ: Lust for Glory'
   - Monty Python's Life of Brian
   - Brian of Nazareth
+- :id: 7345
+  :titles:
+  - 黑金风云
+  - Il y aura du sang
+  - Sangue Negro
 - :id: 96721
   :titles:
   - Тръпка
@@ -2468,10 +2469,6 @@
   - Hotel Ruanda
 - :id: 792
   :titles:
-  - A szakasz
-  - Взвод
-  - プラトーン
-  - Pelotón
   - Ceta
   - Kamp-patruljen
   - Nuoret sotilaat
@@ -2479,26 +2476,10 @@
   - Burys
   - Os Bravos do Pelotão
   - Müfreze
-- :id: 271110
-  :titles:
-  - 美國隊長3：英雄內戰
-  - 'Captain America: The Fallen Son'
-  - 'Captain America: Civil War 3D'
-  - Captain America 3
-  - 'Marvel''s Captain America: Civil War'
-- :id: 204
-  :titles:
-  - Cena strachu
-  - The Wages of Fear
-  - El salario del miedo
-  - Lohn der Angst
-  - Възнаграждение за страха
-  - O Salário do Medo
-  - Mzda strachu
-  - Frygtens pris
-  - Pelon palkka
-  - Το μεροκάματο του τρόμου
-  - A félelem bére
+  - A szakasz
+  - Взвод
+  - プラトーン
+  - Pelotón
 - :id: 963
   :titles:
   - Ridderfalken
@@ -2514,6 +2495,19 @@
   - Le faucon maltais
   - Maltézský sokol
   - Der Malteser Falke
+- :id: 204
+  :titles:
+  - Cena strachu
+  - The Wages of Fear
+  - El salario del miedo
+  - Lohn der Angst
+  - Възнаграждение за страха
+  - O Salário do Medo
+  - Mzda strachu
+  - Frygtens pris
+  - Pelon palkka
+  - Το μεροκάματο του τρόμου
+  - A félelem bére
 - :id: 10774
   :titles:
   - 荧光屏后
@@ -2535,16 +2529,6 @@
   :titles:
   - En primera plana
   - Spotlight - Die Wahrheit steckt zwischen den Lügen
-- :id: 642
-  :titles:
-  - Butch Cassidy
-  - Butch Cassidy et le Kid
-  - Dos hombres y un destino
-  - Zwei Banditen
-  - Butch Cassidy
-  - Butch Cassidy e Sundance Kid
-  - 虎豹小霸王
-  - 神枪手与智多星
 - :id: 76341
   :titles:
   - 'Pobesneli Maks: Autoput besa'
@@ -2561,9 +2545,28 @@
   - 疯狂的麦克斯4：狂暴之路
   - 'Mad Max 4: Fury Road'
   - Mad Max IV - Fury Road
-  - 瘋狂麥斯：憤怒道
   - 'Mad Max: Fury Road 3D'
   - 'Mad Max: Black & Chrome'
+  - 瘋狂麥斯：憤怒道
+- :id: 642
+  :titles:
+  - Butch Cassidy
+  - Butch Cassidy et le Kid
+  - Dos hombres y un destino
+  - Zwei Banditen
+  - Butch Cassidy
+  - Butch Cassidy e Sundance Kid
+  - 虎豹小霸王
+  - 神枪手与智多星
+- :id: 269149
+  :titles:
+  - Zootropolis
+  - Zootropolis
+  - Zootropolis
+  - 動物方城市
+  - Zoopolis
+  - ズートピア
+  - Zootopie
 - :id: 11324
   :titles:
   - La isla siniestra
@@ -2610,23 +2613,6 @@
   - Isa nimel
   - Isän nimeen
   - Εις Το Όνομα Του Πατρός
-- :id: 269149
-  :titles:
-  - Zootropolis
-  - Zootropolis
-  - Zootropolis
-  - 動物方城市
-  - Zoopolis
-  - ズートピア
-  - Zootopie
-- :id: 76203
-  :titles:
-  - Twelve Years A Slave
-  - 12 Years a Slave
-  - 12 Anos de Escravidão
-  - دوازده سال بردگی
-  - 노예 12년
-  - 自由之心
 - :id: 797
   :titles:
   - 性格
@@ -2640,6 +2626,14 @@
   - Naisen naamio - Persona
   - Persona - sonate for to
   - Quando Duas Mulheres Pecam
+- :id: 76203
+  :titles:
+  - Twelve Years A Slave
+  - 12 Years a Slave
+  - 12 Anos de Escravidão
+  - دوازده سال بردگی
+  - 自由之心
+  - 노예 12년
 - :id: 120467
   :titles:
   - 歡迎來到布達佩斯大飯店
@@ -2670,14 +2664,6 @@
   - Älskade hundar
   - Láska je kurva
   - Paramparça Aşklar Köpekler
-- :id: 265195
-  :titles:
-  - Ιστορίες Για Αγρίους
-  - Relatos salvajes
-  - Wild Tales
-  - Les nouveaux sauvages
-  - Divlje stvari
-  - Wild Tales
 - :id: 70
   :titles:
   - 百万宝贝
@@ -2691,6 +2677,20 @@
   - Million Dollar Baby - Sonhos Vencidos
   - Devojka od milion dolara
   - Puncka za milijon dolarjev
+- :id: 265195
+  :titles:
+  - Ιστορίες Για Αγρίους
+  - Relatos salvajes
+  - Wild Tales
+  - Les nouveaux sauvages
+  - Divlje stvari
+  - Wild Tales
+- :id: 2493
+  :titles:
+  - La Princesa Prometida
+  - Narzeczona dla księcia
+  - Princess Bride, The
+  - A herceg menyasszonya
 - :id: 665
   :titles:
   - בן חור
@@ -2700,12 +2700,6 @@
   - Μπεν Χουρ
   - Бен-Гур
   - 賓漢
-- :id: 2493
-  :titles:
-  - La Princesa Prometida
-  - Narzeczona dla księcia
-  - Princess Bride, The
-  - A herceg menyasszonya
 - :id: 1480
   :titles:
   - La Soif du Mal
@@ -2717,6 +2711,20 @@
   - Politiets blinde øje
   - Pahan kosketus
   - Ο άρχων του τρόμου
+- :id: 28178
+  :titles:
+  - Hachi - A Dog's Story
+  - Hachi A Dog's Tale
+  - Hachi
+  - Hachiko - A Dog's Story
+  - Sempre ao Seu Lado
+  - Siempre a tu lado (Hachiko)
+  - Hachiko - Eine wunderbare Freundschaft
+  - 忠犬小八
+  - Hachiko - en ven for livet
+  - Hachiko - Tarina uskollisuudesta
+  - 'Hachiko: Η ιστορία ενός σκύλου'
+  - Hacsi, a leghűségesebb barát
 - :id: 329
   :titles:
   - Jurassic Park 1
@@ -2739,20 +2747,6 @@
   - Парк Юрського перiоду
   - Cong Vien Ky Jura
   - Τζουράσικ Παρκ
-- :id: 28178
-  :titles:
-  - Hachi - A Dog's Story
-  - Hachi A Dog's Tale
-  - Hachi
-  - Hachiko - A Dog's Story
-  - Sempre ao Seu Lado
-  - Siempre a tu lado (Hachiko)
-  - Hachiko - Eine wunderbare Freundschaft
-  - 忠犬小八
-  - Hachiko - en ven for livet
-  - Hachiko - Tarina uskollisuudesta
-  - 'Hachiko: Η ιστορία ενός σκύλου'
-  - Hacsi, a leghűségesebb barát
 - :id: 81
   :titles:
   - Nausicaa e la valle del vento
@@ -2818,6 +2812,13 @@
   - Stalker
   - Stalker
   - La zona
+- :id: 76
+  :titles:
+  - До сходу сонця
+  - Перед сходом сонця
+  - 日出之前
+  - 情留半天
+  - 爱在黎明破晓时
 - :id: 11423
   :titles:
   - 殺人の追憶
@@ -2834,13 +2835,14 @@
   - Zagadka zbrodni
   - Sećanja na ubistvo
   - Cinayet Anilari
-- :id: 76
+- :id: 2503
+  :titles: []
+- :id: 783
   :titles:
-  - До сходу сонця
-  - Перед сходом сонця
-  - 日出之前
-  - 情留半天
-  - 爱在黎明破晓时
+  - Ганди
+  - 'Richard Attenborough''s Film: Gandhi'
+  - Gandi
+  - Γκάντι
 - :id: 37165
   :titles:
   - Truman show
@@ -2851,14 +2853,6 @@
   - Le show Truman
   - El Show de Truman
   - Ζωντανή Μετάδοση
-- :id: 2503
-  :titles: []
-- :id: 783
-  :titles:
-  - Ганди
-  - 'Richard Attenborough''s Film: Gandhi'
-  - Gandi
-  - Γκάντι
 - :id: 827
   :titles:
   - Les Diaboliques
@@ -2872,6 +2866,14 @@
   - 室情杀案
   - 魔鬼双姝
   - Diabolique
+- :id: 293660
+  :titles:
+  - Deadpool
+  - X战警：死侍
+  - 'X-Men Origins: Deadpool'
+  - 'X-Men: Deadpool'
+  - 惡棍英雄：死侍
+  - 死侍：不死现身
 - :id: 141
   :titles:
   - Donnie Darko (Director's Cut)
@@ -2899,6 +2901,32 @@
   - Federico Fellini's 8 1/2
   - 八又二分之一
   - 8 és 1/2
+- :id: 585
+  :titles:
+  - شركة الوحوش
+  - Monsters, Inc
+  - Kollide Kompanii
+  - Posasti iz omare
+  - 怪兽公司
+  - Hidden City
+  - Miflatzot, ba'am
+  - Monsters, Incorporated
+  - Cong Ty Quai Vat
+- :id: 630
+  :titles:
+  - Zauber von Oz
+  - Das zauberhafte Land
+  - Der Zauberer von Oz
+  - Vrajitorul din Oz
+  - Волшебник страны Оз
+  - Le magicien d'Oz
+  - Der Hexer von Oz
+  - Ihmemaa Oz
+  - Il mago di Oz
+  - O Mágico de Oz
+  - 綠野仙蹤
+  - The Wizard of Oz 1
+  - オズの魔法使
 - :id: 12445
   :titles:
   - Harry Potter De Relieken van de Dood Deel 2
@@ -2941,66 +2969,28 @@
   - Harry Potter és a Halál ereklyéi 2. rész
   - Harry Potter y Las Reliquias de la Muerte Parte 2
   - 'Ο Χάρι Πότερ Και Οι Κλήροι Του Θανάτου: Μέρος Β'
-- :id: 585
-  :titles:
-  - شركة الوحوش
-  - Monsters, Inc
-  - Kollide Kompanii
-  - Posasti iz omare
-  - 怪兽公司
-  - Hidden City
-  - Miflatzot, ba'am
-  - Monsters, Incorporated
-  - Cong Ty Quai Vat
-- :id: 630
-  :titles:
-  - Zauber von Oz
-  - Das zauberhafte Land
-  - Der Zauberer von Oz
-  - Vrajitorul din Oz
-  - Волшебник страны Оз
-  - Le magicien d'Oz
-  - Der Hexer von Oz
-  - Ihmemaa Oz
-  - Il mago di Oz
-  - O Mágico de Oz
-  - 綠野仙蹤
-  - The Wizard of Oz 1
-  - オズの魔法使
 - :id: 218
   :titles:
-  - 未来戰士
-  - The Terminator
+  - Der Terminator
   - Terminator (Remastered)
+  - 未来戰士
   - Terminator - Ungeschnittene Fassung
   - Terminator 1 - The Terminator
-  - Tamineta
+  - The Terminator
   - Terminator 1
   - De uitroeier
-  - Der Terminator
-- :id: 293660
+  - Tamineta
+- :id: 281957
   :titles:
-  - Deadpool
-  - 惡棍英雄：死侍
-  - 死侍：不死现身
-  - X战警：死侍
-  - 'X-Men Origins: Deadpool'
-  - 'X-Men: Deadpool'
+  - O Regresso
+  - 神鬼獵人
+  - El renacido
+  - 复仇勇者
+  - REVENANT Zmrtvýchvstání
+  - El renacido
 - :id: 63
   :titles:
   - 12 Monkeys
-- :id: 137
-  :titles:
-  - Dzień świstaka
-  - Atrapado en el tiempo
-  - 今天暫時停止
-  - 土拨鼠之日
-  - 偷天情缘
-  - День сурка
-  - Und taeglich gruesst das Murmeltier
-  - Le jour de la marmotte
-  - Hechizo del tiempo
-  - Омагьосан ден
 - :id: 887
   :titles:
   - Najbolje godine
@@ -3037,14 +3027,18 @@
   - Lo mejor de nuestra vida
   - The Best Years of Our Lives
   - De bedste år
-- :id: 281957
+- :id: 137
   :titles:
-  - 复仇勇者
-  - O Regresso
-  - REVENANT Zmrtvýchvstání
-  - El renacido
-  - 神鬼獵人
-  - El renacido
+  - Dzień świstaka
+  - Atrapado en el tiempo
+  - 今天暫時停止
+  - 土拨鼠之日
+  - 偷天情缘
+  - День сурка
+  - Und taeglich gruesst das Murmeltier
+  - Le jour de la marmotte
+  - Hechizo del tiempo
+  - Омагьосан ден
 - :id: 10775
   :titles:
   - Wu Jian Dao
@@ -3058,10 +3052,6 @@
   - 무간도
   - Infernal Affairs - Die achte Hölle
   - Mou gaan dou
-- :id: 578
-  :titles:
-  - Stillness in the Water
-  - Der weisse Hai
 - :id: 845
   :titles:
   - Verschwörung im Nordexpress
@@ -3075,17 +3065,10 @@
   - Estranys en un tren
   - Delitto per delitto - L'altro uomo
   - Delitto per delitto (L'altro uomo)
-- :id: 406
+- :id: 578
   :titles:
-  - El Odio
-  - El Odio [La Haine]
-  - L'odio
-  - La Haine
-  - O Odio
-  - De haat
-  - 仇恨
-  - Hass - La Haine
-  - Hate
+  - Der weisse Hai
+  - Stillness in the Water
 - :id: 187
   :titles:
   - Sin City - Recut und Extended
@@ -3105,6 +3088,22 @@
   - Mesto greha
   - Sin City - mesto hriechu
   - Thanh Pho Toi Ac
+- :id: 406
+  :titles:
+  - El Odio
+  - El Odio [La Haine]
+  - L'odio
+  - La Haine
+  - O Odio
+  - De haat
+  - 仇恨
+  - Hass - La Haine
+  - Hate
+- :id: 11898
+  :titles:
+  - 慈悲心肠
+  - 好心肠与王冠
+  - As Oito Vítimas
 - :id: 146233
   :titles:
   - Fogságban
@@ -3118,20 +3117,29 @@
   - 巴里林登
   - バリー・リンドン
   - بری لیندون
-- :id: 11898
-  :titles:
-  - 慈悲心肠
-  - 好心肠与王冠
-  - As Oito Vítimas
 - :id: 17295
   :titles:
-  - Cezayir Savaşı
   - La bataille d'Alger
   - I mahi tou Algeriou
   - La batalla de Argel
   - A Batalha de Argel
   - 阿尔及利亚的战争
   - The Battle of Algiers
+  - Cezayir Savaşı
+- :id: 968
+  :titles:
+  - Quel pomeriggio di un giorno da cani
+  - Dog Day Afternoon – Hundstage
+  - Tarde de perros
+  - Un après-midi de chien
+  - 熱天午後
+  - Собачий полдень
+  - 黄金万两
+  - 炎热的下午
+  - Een hondse namiddag
+  - Кучешки следобед
+  - Lämbe pärastlõuna
+  - Σκυλίσια μέρα
 - :id: 640
   :titles:
   - Arrête-moi si tu peux
@@ -3147,20 +3155,6 @@
   - Atrápame Si Puedes
   - Atrapame si Puedes
   - Πιάσε Με Αν Μπορείς
-- :id: 968
-  :titles:
-  - Lämbe pärastlõuna
-  - Σκυλίσια μέρα
-  - Quel pomeriggio di un giorno da cani
-  - Dog Day Afternoon – Hundstage
-  - Tarde de perros
-  - Un après-midi de chien
-  - 熱天午後
-  - Собачий полдень
-  - 黄金万两
-  - 炎热的下午
-  - Een hondse namiddag
-  - Кучешки следобед
 - :id: 286217
   :titles:
   - A marsi
@@ -3179,6 +3173,13 @@
   - Ip Man 1
   - Yip Man
   - Yip Man 1
+- :id: 205596
+  :titles:
+  - 模拟游戏
+  - Імітаційна гра
+  - Descifrando Enigma
+  - El código Enigma
+  - 模仿遊戲
 - :id: 22
   :titles:
   - 'Piratas das Caraíbas: A Maldição do Pérola Negra'
@@ -3205,13 +3206,6 @@
   - Pirati sa Kariba - Prokletstvo Crnog bisera
   - 'Pirati s Karibov: Prekletstvo èrnega bisera'
   - Piráti z Karibiku
-- :id: 205596
-  :titles:
-  - 模拟游戏
-  - Імітаційна гра
-  - Descifrando Enigma
-  - El código Enigma
-  - 模仿遊戲
 - :id: 50014
   :titles:
   - La couleur des sentiments
@@ -3234,27 +3228,6 @@
   - Fanny y Alexander
   - 芬妮和亚力山大
   - Fanny and Alexander
-- :id: 117691
-  :titles: []
-- :id: 10515
-  :titles:
-  - 'Лапута: Замъкът в небето'
-  - Το κάστρο στον ουρανό
-  - Небесный замок Лапута
-  - Das Schloss im Himmel
-  - 천공의 성 라퓨타
-  - Gökteki kale
-  - Laputa - linna taivaalla
-  - O Castelo no Céu
-  - El Castillo en el Cielo
-  - Tenkū no shiro Rapyuta
-  - Castle in the Sky
-  - 'Laputa: Castle in the Sky'
-  - Le château dans le ciel
-  - 天空之城
-  - Laputa - Il castello nel cielo
-  - Laputa - Slottet i himlen
-  - Das Schloß im Himmel
 - :id: 391
   :titles:
   - Por Um Punhado de Dólares
@@ -3279,6 +3252,25 @@
   - 2.4 Strażnicy galaktyki
   - Marvel's Guardians of the Galaxy
   - Guardianes de la galaxia
+- :id: 10515
+  :titles:
+  - Das Schloss im Himmel
+  - 천공의 성 라퓨타
+  - Gökteki kale
+  - Laputa - linna taivaalla
+  - O Castelo no Céu
+  - El Castillo en el Cielo
+  - Tenkū no shiro Rapyuta
+  - Castle in the Sky
+  - 'Laputa: Castle in the Sky'
+  - Le château dans le ciel
+  - 天空之城
+  - Laputa - Il castello nel cielo
+  - Laputa - Slottet i himlen
+  - 'Лапута: Замъкът в небето'
+  - Το κάστρο στον ουρανό
+  - Небесный замок Лапута
+  - Das Schloß im Himmel
 - :id: 804
   :titles:
   - Vacanze Romane
@@ -3309,17 +3301,13 @@
   - 'Marvel''s The Avengers: Os Vingadores'
   - Os Vingadores (2012)
   - 1.6 Avengers
+- :id: 117691
+  :titles: []
 - :id: 45269
   :titles:
   - 王者之聲：宣戰時刻
   - The King's Speech - Die Rede des Königs
   - O Discurso do Rei
-- :id: 265169
-  :titles:
-  - Il regno d’inverno
-  - 冬日苏醒
-  - Sono de Inverno
-  - Winter Sleep
 - :id: 3777
   :titles:
   - Kumonosu-jō
@@ -3329,17 +3317,41 @@
   - Das Schloß im Spinnwebwald
 - :id: 288
   :titles:
+  - Sheriffen
   - Точно по пладне
   - Matar ou Morrer
   - V pravé poledne
   - B'Tzohoray Ha-Yom
+  - 12 Uhr mittags
   - A la hora señalada
-  - Sheriffen
   - Mezzogiorno di fuoco (1952)
   - De trein zal drie maal fluiten
   - Le train sifflera trois fois
   - Το τραίνο θα σφυρίξει τρεις φορές
-  - 12 Uhr mittags
   - Solo ante el peligro
   - 日正当中
   - 龙城歼霸战
+- :id: 19666
+  :titles:
+  - 'Lagaan: Érase una vez en la India'
+  - 'Lagaan: Era uma Vez na Índia'
+  - Lagaan - Es war einmal in Indien
+  - Lagaan - olipa kerran Intiassa
+  - 'Lagaan: Dawno temu w Indiach'
+  - 'Lagan: Bilo jednom u Indiji'
+  - 'Лагаан: Однажды в Индии'
+  - Lagaan - Det var en gång i Indien
+  - Land Tax
+- :id: 10020
+  :titles:
+  - Skönheten och odjuret
+  - La belle et la bête
+  - Belle en het beest
+  - A Bela e o Monstro
+  - Walt Disney's Beauty and the Beast
+  - Beauty & the Beast
+  - Die Schoene und das Biest
+  - Beauty and the Beast 3D
+  - 美女與野獸
+  - Skønheden og Udyret
+  - Fríða og dýrið
