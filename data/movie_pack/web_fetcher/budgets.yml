@@ -1,0 +1,751 @@
+---
+- :imdb_id: tt0111161
+  :name: Побег из Шоушенка
+  :budget: "$25,000,000"
+- :imdb_id: tt0068646
+  :name: Крёстный отец
+  :budget: "$6,000,000"
+- :imdb_id: tt0071562
+  :name: Крёстный отец 2
+  :budget: "$13,000,000"
+- :imdb_id: tt0468569
+  :name: Тёмный рыцарь
+  :budget: "$185,000,000"
+- :imdb_id: tt0108052
+  :name: Список Шиндлера
+  :budget: "$22,000,000"
+- :imdb_id: tt0050083
+  :name: 12 рaзгневанных мужчин
+  :budget: "$350,000"
+- :imdb_id: tt0110912
+  :name: Криминальное чтиво
+  :budget: "$8,000,000"
+- :imdb_id: tt0167260
+  :name: 'Властелин колец: Возвращение короля'
+  :budget: "$94,000,000"
+- :imdb_id: tt0060196
+  :name: Хороший, плохой, злой
+  :budget: "$1,200,000"
+- :imdb_id: tt0137523
+  :name: Бойцовский клуб
+  :budget: "$63,000,000"
+- :imdb_id: tt0120737
+  :name: 'Властелин колец: Братство кольца'
+  :budget: "$93,000,000"
+- :imdb_id: tt0080684
+  :name: 'Звёздные войны. Эпизод 5: Империя наносит ответный удар'
+  :budget: "$18,000,000"
+- :imdb_id: tt0109830
+  :name: Форрест Гамп
+  :budget: "$55,000,000"
+- :imdb_id: tt1375666
+  :name: Начало
+  :budget: "$160,000,000"
+- :imdb_id: tt0167261
+  :name: 'Властелин колец: Две крепости'
+  :budget: "$94,000,000"
+- :imdb_id: tt0073486
+  :name: Пролетая над гнездом кукушки
+  :budget: "$4,400,000"
+- :imdb_id: tt0099685
+  :name: Славные парни
+  :budget: "$25,000,000"
+- :imdb_id: tt0133093
+  :name: Матрица
+  :budget: "$63,000,000"
+- :imdb_id: tt0047478
+  :name: Семь самураев
+  :budget: "$2,000,000"
+- :imdb_id: tt0076759
+  :name: 'Звёздные войны. Эпизод 4: Новая надежда'
+  :budget: "$11,000,000"
+- :imdb_id: tt0317248
+  :name: Город Бога
+  :budget: "$3,300,000"
+- :imdb_id: tt0114369
+  :name: Семь
+  :budget: "$33,000,000"
+- :imdb_id: tt0102926
+  :name: Молчание ягнят
+  :budget: "$19,000,000"
+- :imdb_id: tt0038650
+  :name: Эта замечательная жизнь
+  :budget: "$3,180,000"
+- :imdb_id: tt0114814
+  :name: Подозрительные лица
+  :budget: "$6,000,000"
+- :imdb_id: tt0118799
+  :name: Жизнь прекрасна
+  :budget: "$20,000,000"
+- :imdb_id: tt0110413
+  :name: Леон
+  :budget: FRF 115,000,000
+- :imdb_id: tt0064116
+  :name: Однажды на Диком Западе
+  :budget: "$5,000,000"
+- :imdb_id: tt0245429
+  :name: Унесённые призраками
+  :budget: "$19,000,000"
+- :imdb_id: tt0120815
+  :name: Спасти рядового Райана
+  :budget: "$70,000,000"
+- :imdb_id: tt0120586
+  :name: Американская история Икс
+  :budget: "$7,500,000"
+- :imdb_id: tt0034583
+  :name: Касабланка
+  :budget: "$950,000"
+- :imdb_id: tt0816692
+  :name: Интерстеллар
+  :budget: "$165,000,000"
+- :imdb_id: tt0054215
+  :name: Психо
+  :budget: "$806,947"
+- :imdb_id: tt0021749
+  :name: Огни большого города
+  :budget: "$1,500,000"
+- :imdb_id: tt0082971
+  :name: 'Индиана Джонс: В поисках утраченного ковчега'
+  :budget: "$18,000,000"
+- :imdb_id: tt0027977
+  :name: Modern Times
+  :budget: "$1,500,000"
+- :imdb_id: tt1675434
+  :name: 1+1
+  :budget: "€9,500,000"
+- :imdb_id: tt0120689
+  :name: Зелёная миля
+  :budget: "$60,000,000"
+- :imdb_id: tt0047396
+  :name: Окно во двор
+  :budget: "$1,000,000"
+- :imdb_id: tt0103064
+  :name: 'Терминатор 2: Судный день'
+  :budget: "$102,000,000"
+- :imdb_id: tt0407887
+  :name: Отступники
+  :budget: "$90,000,000"
+- :imdb_id: tt0253474
+  :name: Пианист
+  :budget: "$35,000,000"
+- :imdb_id: tt0088763
+  :name: Назад в будущее
+  :budget: "$19,000,000"
+- :imdb_id: tt2582802
+  :name: Одержимость
+  :budget: "$3,300,000"
+- :imdb_id: tt0172495
+  :name: Гладиатор
+  :budget: "$103,000,000"
+- :imdb_id: tt0209144
+  :name: Помни
+  :budget: "$9,000,000"
+- :imdb_id: tt0078788
+  :name: Апокалипсис сегодня
+  :budget: "$31,500,000"
+- :imdb_id: tt0482571
+  :name: Престиж
+  :budget: "$40,000,000"
+- :imdb_id: tt0110357
+  :name: Король Лев
+  :budget: "$45,000,000"
+- :imdb_id: tt0057012
+  :name: Доктор Стрейнджлав, или Как я научился не волноваться и полюбил атомную бомбу
+  :budget: "$1,800,000"
+- :imdb_id: tt0043014
+  :name: Sunset Blvd.
+  :budget: "$1,752,000"
+- :imdb_id: tt0078748
+  :name: Чужoй
+  :budget: "$11,000,000"
+- :imdb_id: tt0032553
+  :name: Великий диктатор
+  :budget: "$2,000,000"
+- :imdb_id: tt0405094
+  :name: Жизнь других
+  :budget: "$2,000,000"
+- :imdb_id: tt0095765
+  :name: Nuovo Cinema Paradiso
+  :budget: "$5,000,000"
+- :imdb_id: tt0050825
+  :name: Тропы славы
+  :budget: "$935,000"
+- :imdb_id: tt1853728
+  :name: Джанго освобожденный
+  :budget: "$100,000,000"
+- :imdb_id: tt0081505
+  :name: Сияние
+  :budget: "$19,000,000"
+- :imdb_id: tt0095327
+  :name: Могила светлячков
+  :budget: "$3,700,000"
+- :imdb_id: tt0910970
+  :name: ВАЛЛ-И
+  :budget: "$180,000,000"
+- :imdb_id: tt1345836
+  :name: 'Темный рыцарь: Возрождение легенды'
+  :budget: "$250,000,000"
+- :imdb_id: tt0169547
+  :name: Красота по-американски
+  :budget: "$15,000,000"
+- :imdb_id: tt0090605
+  :name: Чужиe
+  :budget: "$18,500,000"
+- :imdb_id: tt0119698
+  :name: Принцесса Мононокэ
+  :budget: JPY 2,400,000,000
+- :imdb_id: tt0364569
+  :name: Олдбой
+  :budget: "$3,000,000"
+- :imdb_id: tt0033467
+  :name: Гражданин Кейн
+  :budget: "$686,033"
+- :imdb_id: tt0087843
+  :name: Однажды в Америке
+  :budget: "$30,000,000"
+- :imdb_id: tt0082096
+  :name: Подводная лодка
+  :budget: "$14,000,000"
+- :imdb_id: tt0053125
+  :name: North by Northwest
+  :budget: "$3,101,000"
+- :imdb_id: tt0052357
+  :name: Головокружение
+  :budget: "$2,479,000"
+- :imdb_id: tt0051201
+  :name: Свидетель обвинения
+  :budget: "$3,000,000"
+- :imdb_id: tt0086190
+  :name: 'Звёздные войны. Эпизод 6: Возвращение Джедая'
+  :budget: "$32,500,000"
+- :imdb_id: tt0022100
+  :name: М
+  :budget: N/A
+- :imdb_id: tt0105236
+  :name: Бешеные псы
+  :budget: "$1,200,000"
+- :imdb_id: tt0112573
+  :name: Храброе сердце
+  :budget: "$72,000,000"
+- :imdb_id: tt0211915
+  :name: Амели
+  :budget: FRF 77,000,000
+- :imdb_id: tt0180093
+  :name: Реквием по мечте
+  :budget: "$4,500,000"
+- :imdb_id: tt0066921
+  :name: Заводной апельсин
+  :budget: "$2,200,000"
+- :imdb_id: tt0075314
+  :name: Таксист
+  :budget: "$1,300,000"
+- :imdb_id: tt0036775
+  :name: Двойная страховка
+  :budget: "$927,262"
+- :imdb_id: tt0056172
+  :name: Лоуренс Аравийский
+  :budget: "$15,000,000"
+- :imdb_id: tt0435761
+  :name: 'История игрушек: Большой побег'
+  :budget: "$200,000,000"
+- :imdb_id: tt0056592
+  :name: Убить пересмешника
+  :budget: "$2,000,000"
+- :imdb_id: tt0338013
+  :name: Вечное сияние чистого разума
+  :budget: "$20,000,000"
+- :imdb_id: tt0086879
+  :name: Амадей
+  :budget: "$18,000,000"
+- :imdb_id: tt0093058
+  :name: Цельнометаллическая оболочка
+  :budget: "$30,000,000"
+- :imdb_id: tt0070735
+  :name: Афера
+  :budget: "$5,500,000"
+- :imdb_id: tt0062622
+  :name: '2001 год: Космическая одиссея'
+  :budget: "$12,000,000"
+- :imdb_id: tt0040522
+  :name: Похитители велосипедов
+  :budget: "$133,000"
+- :imdb_id: tt0045152
+  :name: Поющие под дождём
+  :budget: "$2,540,800"
+- :imdb_id: tt0114709
+  :name: История игрушек
+  :budget: "$30,000,000"
+- :imdb_id: tt0208092
+  :name: Большой куш
+  :budget: "£6,000,000"
+- :imdb_id: tt0361748
+  :name: Бесславные ублюдки
+  :budget: "$75,000,000"
+- :imdb_id: tt0071853
+  :name: Монти Пайтон и священный Грааль
+  :budget: "£229,575"
+- :imdb_id: tt0012349
+  :name: Малыш
+  :budget: "$250,000"
+- :imdb_id: tt0119488
+  :name: Секреты Лос-Анджелеса
+  :budget: "$35,000,000"
+- :imdb_id: tt0059578
+  :name: Per qualche dollaro in più
+  :budget: "$750,000"
+- :imdb_id: tt0042876
+  :name: Расёмон
+  :budget: "$250,000"
+- :imdb_id: tt0053604
+  :name: The Apartment
+  :budget: "$3,000,000"
+- :imdb_id: tt0086250
+  :name: Лицо со шрамом
+  :budget: "$25,000,000"
+- :imdb_id: tt0097576
+  :name: Индиана Джонс и последний крестовый поход
+  :budget: "$48,000,000"
+- :imdb_id: tt1832382
+  :name: Развод Надера и Симин
+  :budget: "$500,000"
+- :imdb_id: tt0017136
+  :name: Metropolis
+  :budget: DEM 6,000,000
+- :imdb_id: tt1187043
+  :name: Три идиота
+  :budget: INR 550,000,000
+- :imdb_id: tt0042192
+  :name: Всё о Еве
+  :budget: "$1,400,000"
+- :imdb_id: tt2106476
+  :name: Охота
+  :budget: "$3,800,000"
+- :imdb_id: tt0055630
+  :name: Yôjinbô
+  :budget: N/A
+- :imdb_id: tt0372784
+  :name: 'Бэтмен: Начало'
+  :budget: "$150,000,000"
+- :imdb_id: tt0119217
+  :name: Умница Уилл Хантинг
+  :budget: "$10,000,000"
+- :imdb_id: tt0040897
+  :name: Сокровища Сьерра-Мадре
+  :budget: "$3,000,000"
+- :imdb_id: tt0053291
+  :name: В джазе только девушки
+  :budget: "$2,883,848"
+- :imdb_id: tt1049413
+  :name: Вверх
+  :budget: "$175,000,000"
+- :imdb_id: tt0105695
+  :name: Непрощённый
+  :budget: "$14,400,000"
+- :imdb_id: tt0041959
+  :name: The Third Man
+  :budget: N/A
+- :imdb_id: tt0118849
+  :name: Дети небес
+  :budget: "$180,000"
+- :imdb_id: tt0081398
+  :name: Бешеный бык
+  :budget: "$18,000,000"
+- :imdb_id: tt0363163
+  :name: Бункер
+  :budget: "€13,500,000"
+- :imdb_id: tt0095016
+  :name: Крепкий орешек
+  :budget: "$28,000,000"
+- :imdb_id: tt2096673
+  :name: Головоломка
+  :budget: "$175,000,000"
+- :imdb_id: tt0057115
+  :name: The Great Escape
+  :budget: "$4,000,000"
+- :imdb_id: tt0071315
+  :name: Chinatown
+  :budget: "$6,000,000"
+- :imdb_id: tt0113277
+  :name: Схватка
+  :budget: "$60,000,000"
+- :imdb_id: tt3170832
+  :name: Комната
+  :budget: "$13,000,000"
+- :imdb_id: tt0457430
+  :name: Лабиринт Фавна
+  :budget: "€13,500,000"
+- :imdb_id: tt0047296
+  :name: On the Waterfront
+  :budget: "$910,000"
+- :imdb_id: tt0096283
+  :name: Мой сосед Тоторо
+  :budget: "$3,700,000"
+- :imdb_id: tt0044741
+  :name: Ikiru
+  :budget: N/A
+- :imdb_id: tt0089881
+  :name: Ran
+  :budget: "$11,500,000"
+- :imdb_id: tt0015864
+  :name: The Gold Rush
+  :budget: "$923,000"
+- :imdb_id: tt0031679
+  :name: Mr. Smith Goes to Washington
+  :budget: "$1,500,000"
+- :imdb_id: tt0050212
+  :name: The Bridge on the River Kwai
+  :budget: "$3,000,000"
+- :imdb_id: tt1305806
+  :name: Тайна в его глазах
+  :budget: "$2,000,000"
+- :imdb_id: tt0083658
+  :name: Бегущий по лезвию
+  :budget: "$28,000,000"
+- :imdb_id: tt0050976
+  :name: Седьмая печать
+  :budget: "$150,000"
+- :imdb_id: tt0120735
+  :name: Карты, деньги, два ствола
+  :budget: "£960,000"
+- :imdb_id: tt0347149
+  :name: Ходячий замок
+  :budget: "$24,000,000"
+- :imdb_id: tt0018455
+  :name: 'Sunrise: A Song of Two Humans'
+  :budget: N/A
+- :imdb_id: tt0112641
+  :name: Казино
+  :budget: "$52,000,000"
+- :imdb_id: tt0050986
+  :name: Земляничная поляна
+  :budget: N/A
+- :imdb_id: tt0017925
+  :name: The General
+  :budget: "$750,000"
+- :imdb_id: tt0080678
+  :name: The Elephant Man
+  :budget: "$5,000,000"
+- :imdb_id: tt1291584
+  :name: Воин
+  :budget: "$25,000,000"
+- :imdb_id: tt0055031
+  :name: Judgment at Nuremberg
+  :budget: "$3,000,000"
+- :imdb_id: tt0268978
+  :name: Игры разума
+  :budget: "$58,000,000"
+- :imdb_id: tt0993846
+  :name: Волк с Уолл-стрит
+  :budget: "$100,000,000"
+- :imdb_id: tt2488496
+  :name: 'Звёздные войны: Пробуждение Силы'
+  :budget: "$245,000,000"
+- :imdb_id: tt0434409
+  :name: В значит Вендетта
+  :budget: "$54,000,000"
+- :imdb_id: tt0046438
+  :name: Tôkyô monogatari
+  :budget: N/A
+- :imdb_id: tt1255953
+  :name: Пожары
+  :budget: "$6,800,000"
+- :imdb_id: tt1205489
+  :name: Гран Торино
+  :budget: "$33,000,000"
+- :imdb_id: tt0118715
+  :name: Большой Лебовски
+  :budget: "$15,000,000"
+- :imdb_id: tt0077416
+  :name: The Deer Hunter
+  :budget: "$15,000,000"
+- :imdb_id: tt0117951
+  :name: На игле
+  :budget: "$3,500,000"
+- :imdb_id: tt0116282
+  :name: Фарго
+  :budget: "$7,000,000"
+- :imdb_id: tt0046912
+  :name: Dial M for Murder
+  :budget: "$1,400,000"
+- :imdb_id: tt0032976
+  :name: Rebecca
+  :budget: "$1,288,000"
+- :imdb_id: tt0031381
+  :name: Унесённые ветром
+  :budget: "$3,977,000"
+- :imdb_id: tt0074896
+  :name: The Message
+  :budget: "$10,000,000"
+- :imdb_id: tt0061512
+  :name: Хладнокровный Люк
+  :budget: "$3,000,000"
+- :imdb_id: tt0892769
+  :name: Как приручить дракона
+  :budget: "$165,000,000"
+- :imdb_id: tt0266543
+  :name: В поисках Немо
+  :budget: "$94,000,000"
+- :imdb_id: tt0167404
+  :name: Шестое чувство
+  :budget: "$40,000,000"
+- :imdb_id: tt0084787
+  :name: The Thing
+  :budget: "$15,000,000"
+- :imdb_id: tt0091251
+  :name: Idi i smotri
+  :budget: N/A
+- :imdb_id: tt0477348
+  :name: Старикам тут не место
+  :budget: "$25,000,000"
+- :imdb_id: tt0758758
+  :name: В диких условиях
+  :budget: "$15,000,000"
+- :imdb_id: tt0978762
+  :name: Мэри и Макс
+  :budget: AUD 8,240,000
+- :imdb_id: tt2267998
+  :name: Исчезнувшая
+  :budget: "$61,000,000"
+- :imdb_id: tt0266697
+  :name: Убить Билла
+  :budget: "$30,000,000"
+- :imdb_id: tt3498820
+  :name: 'Первый мститель: Противостояние'
+  :budget: "$250,000,000"
+- :imdb_id: tt0025316
+  :name: It Happened One Night
+  :budget: "$325,000"
+- :imdb_id: tt0079470
+  :name: Life of Brian
+  :budget: "$4,000,000"
+- :imdb_id: tt0469494
+  :name: И будет кровь
+  :budget: "$25,000,000"
+- :imdb_id: tt1979320
+  :name: Гонка
+  :budget: "$38,000,000"
+- :imdb_id: tt0050783
+  :name: Ночи Кабирии
+  :budget: N/A
+- :imdb_id: tt0395169
+  :name: Отель Руанда
+  :budget: "$17,500,000"
+- :imdb_id: tt0091763
+  :name: Platoon
+  :budget: "$6,000,000"
+- :imdb_id: tt0033870
+  :name: The Maltese Falcon
+  :budget: "$375,000"
+- :imdb_id: tt0046268
+  :name: Le salaire de la peur
+  :budget: N/A
+- :imdb_id: tt0074958
+  :name: Network
+  :budget: "$3,800,000"
+- :imdb_id: tt1895587
+  :name: В центре внимания
+  :budget: "$20,000,000"
+- :imdb_id: tt1392190
+  :name: 'Безумный Макс: Дорога ярости'
+  :budget: "$150,000,000"
+- :imdb_id: tt0064115
+  :name: Бутч Кэссиди и Санденс Кид
+  :budget: "$6,000,000"
+- :imdb_id: tt2948356
+  :name: Зверополис
+  :budget: "$150,000,000"
+- :imdb_id: tt1130884
+  :name: Остров проклятых
+  :budget: "$80,000,000"
+- :imdb_id: tt0053198
+  :name: Les quatre cents coups
+  :budget: N/A
+- :imdb_id: tt0092005
+  :name: Останься со мной
+  :budget: "$8,000,000"
+- :imdb_id: tt0107207
+  :name: Во имя отца
+  :budget: "$13,000,000"
+- :imdb_id: tt0060827
+  :name: Персона
+  :budget: N/A
+- :imdb_id: tt2024544
+  :name: 12 лет рабства
+  :budget: "$20,000,000"
+- :imdb_id: tt2278388
+  :name: Отель Гранд Будапешт
+  :budget: "$25,000,000"
+- :imdb_id: tt0245712
+  :name: Сука любовь
+  :budget: "$2,000,000"
+- :imdb_id: tt0405159
+  :name: Малышка на миллион
+  :budget: "$30,000,000"
+- :imdb_id: tt3011894
+  :name: Дикие истории
+  :budget: "$3,300,000"
+- :imdb_id: tt0093779
+  :name: The Princess Bride
+  :budget: "$16,000,000"
+- :imdb_id: tt0052618
+  :name: Ben-Hur
+  :budget: "$15,900,000"
+- :imdb_id: tt0052311
+  :name: Touch of Evil
+  :budget: "$829,000"
+- :imdb_id: tt1028532
+  :name: 'Хатико: самый верный друг'
+  :budget: "$16,000,000"
+- :imdb_id: tt0107290
+  :name: Парк юрского периода
+  :budget: "$63,000,000"
+- :imdb_id: tt0087544
+  :name: Навсикая из Долины ветров
+  :budget: "$1,000,000"
+- :imdb_id: tt0032551
+  :name: The Grapes of Wrath
+  :budget: "$800,000"
+- :imdb_id: tt0075686
+  :name: Annie Hall
+  :budget: "$4,000,000"
+- :imdb_id: tt0079944
+  :name: Stalker
+  :budget: RUR 6,000,000
+- :imdb_id: tt0112471
+  :name: Перед рассветом
+  :budget: "$2,500,000"
+- :imdb_id: tt0353969
+  :name: Воспоминания об убийстве
+  :budget: "$2,800,000"
+- :imdb_id: tt0440963
+  :name: Ультиматум Борна
+  :budget: "$110,000,000"
+- :imdb_id: tt0083987
+  :name: Ганди
+  :budget: "$22,000,000"
+- :imdb_id: tt0120382
+  :name: Шоу Трумана
+  :budget: "$60,000,000"
+- :imdb_id: tt0046911
+  :name: Les diaboliques
+  :budget: N/A
+- :imdb_id: tt1431045
+  :name: Дэдпул
+  :budget: "$58,000,000"
+- :imdb_id: tt0246578
+  :name: Донни Дарко
+  :budget: "$4,500,000"
+- :imdb_id: tt0075148
+  :name: Рокки
+  :budget: "$960,000"
+- :imdb_id: tt0056801
+  :name: 8½
+  :budget: N/A
+- :imdb_id: tt0198781
+  :name: Корпорация монстров
+  :budget: "$115,000,000"
+- :imdb_id: tt0032138
+  :name: Волшебник страны Оз
+  :budget: "$2,800,000"
+- :imdb_id: tt1201607
+  :name: 'Гарри Поттер и Дары смерти: Часть II'
+  :budget: "$125,000,000"
+- :imdb_id: tt0088247
+  :name: Терминатор
+  :budget: "$6,500,000"
+- :imdb_id: tt1663202
+  :name: Выживший
+  :budget: "$135,000,000"
+- :imdb_id: tt0114746
+  :name: Двенадцать обезьян
+  :budget: "$29,000,001"
+- :imdb_id: tt0036868
+  :name: The Best Years of Our Lives
+  :budget: "$2,100,000"
+- :imdb_id: tt0107048
+  :name: День сурка
+  :budget: "$14,600,000"
+- :imdb_id: tt0338564
+  :name: Двойная рокировка
+  :budget: "$6,428,966"
+- :imdb_id: tt0044079
+  :name: Strangers on a Train
+  :budget: "$1,200,000"
+- :imdb_id: tt0073195
+  :name: Jaws
+  :budget: "$8,000,000"
+- :imdb_id: tt0401792
+  :name: Город грехов
+  :budget: "$40,000,000"
+- :imdb_id: tt0113247
+  :name: Ненависть
+  :budget: "€2,590,000"
+- :imdb_id: tt0041546
+  :name: Kind Hearts and Coronets
+  :budget: N/A
+- :imdb_id: tt1392214
+  :name: Пленницы
+  :budget: "$46,000,000"
+- :imdb_id: tt0072684
+  :name: Barry Lyndon
+  :budget: "$11,000,000"
+- :imdb_id: tt0058946
+  :name: La battaglia di Algeri
+  :budget: "$800,000"
+- :imdb_id: tt0072890
+  :name: Собачий полдень
+  :budget: "$1,800,000"
+- :imdb_id: tt0264464
+  :name: Поймай меня, если сможешь
+  :budget: "$52,000,000"
+- :imdb_id: tt3659388
+  :name: Марсианин
+  :budget: "$108,000,000"
+- :imdb_id: tt1220719
+  :name: Ип Ман
+  :budget: "$11,715,578"
+- :imdb_id: tt2084970
+  :name: Игра в имитацию
+  :budget: "$14,000,000"
+- :imdb_id: tt0325980
+  :name: 'Пираты Карибского моря: Проклятие черной жемчужины'
+  :budget: "$140,000,000"
+- :imdb_id: tt1454029
+  :name: Прислуга
+  :budget: "$25,000,000"
+- :imdb_id: tt0083922
+  :name: Fanny och Alexander
+  :budget: "$6,000,000"
+- :imdb_id: tt0058461
+  :name: Per un pugno di dollari
+  :budget: "$200,000"
+- :imdb_id: tt2015381
+  :name: Стражи Галактики
+  :budget: "$170,000,000"
+- :imdb_id: tt0092067
+  :name: Небесный замок Лапута
+  :budget: N/A
+- :imdb_id: tt0046250
+  :name: Римские каникулы
+  :budget: "$1,500,000"
+- :imdb_id: tt0848228
+  :name: Мстители
+  :budget: "$220,000,000"
+- :imdb_id: tt1954470
+  :name: Банды Вассейпура
+  :budget: INR 184,000,000
+- :imdb_id: tt1504320
+  :name: Король говорит!
+  :budget: "$15,000,000"
+- :imdb_id: tt0050613
+  :name: Kumonosu-jô
+  :budget: N/A
+- :imdb_id: tt0044706
+  :name: High Noon
+  :budget: "$750,000"
+- :imdb_id: tt0169102
+  :name: 'Лагаан: Однажды в Индии'
+  :budget: "$6,000,000"
+- :imdb_id: tt0101414
+  :name: Красавица и чудовище
+  :budget: "$25,000,000"
