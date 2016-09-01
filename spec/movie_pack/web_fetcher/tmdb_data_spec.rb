@@ -101,19 +101,6 @@ describe TMDBData do
         tmdb_instance.fetch_alt_titles_to_file
       end
     end
-=begin
-    describe '#to_html' do
-      it do
-        expect(YAML).to receive(:load_file).with(tmdb_instance.id_file).and_call_original
-        expect(YAML).to receive(:load_file).with(tmdb_instance.budgets_file).and_call_original
-        expect(YAML).to receive(:load_file).with(tmdb_instance.alt_titles_file).and_call_original
-        expect(File).to receive(:read).with(DEFAULT_HAML_FILE).and_call_original
-        expect(Haml::Engine).to receive(:new).with(an_instance_of(String)).and_call_original
-        expect(File).to receive(:write).with(DEFAULT_HTML_FILE, an_instance_of(String)).and_call_original
-        tmdb_instance.to_html
-      end
-    end
-=end
   end
 end
 end
