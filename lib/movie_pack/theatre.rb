@@ -14,13 +14,27 @@ module MoviePack
     NIGHT = '00:00'..'02:00'
 
     class Period
-      def initialize(interv, filters)
+      def initialize(
+        interv,
+        filters,
+        hall = [DEFAULT_SYM],
+        price = DEFAULT_PRICE,
+        description = DEFAULT_DESCRIPTION
+      )
         @interv = interv
+        @description = description
         @filters = filters
+        @price = price
+        @hall = hall
       end
 
-      attr_reader :interv, :filters
+      attr_reader :interv, :filters, :hall, :price, :description
     end
+
+    DEFAULT_SYM = :main_hall
+    DEFAULT_HALL = Struct.new(:name, :title, :places).new(DEFAULT_SYM, 'Main Hall', 100).freeze
+    DEFAULT_PRICE = 10
+    DEFAULT_DESCRIPTION = 'Famous cinema hall'
 
     DEFAULT_PERIODS = [
       Period.new(MORNING, { period: 'ancient' } ),
@@ -44,6 +58,10 @@ module MoviePack
       @periods || DEFAULT_PERIODS
     end
 
+    def halls
+      @halls || [DEFAULT_HALL]
+    end
+
     def check_schedule
       @halls.each do |hall|
         periods
@@ -59,8 +77,6 @@ module MoviePack
       end
       true
     end
-
-    attr_reader :halls 
 
     def select_movie(time)
       f = periods.find { |p| p.interv.include?(time) }
@@ -84,10 +100,17 @@ module MoviePack
       puts 'Now showing: ' + select_movie(time).to_s
     end
 
+    def select_hall(halls_ary)
+      hall_sym = halls_ary[rand(0..(halls_ary.length - 1))]
+      halls.find { |h| h.name == hall_sym } .title
+    end
+
     def buy_ticket(time)
       movie = select_movie(time)
-      puts "You've bought a ticket on #{movie}"
-      put_cash(movie.price)
+      shown_period = periods.find { |p| p.interv.include?(time) }
+      hall = select_hall(shown_period.hall)
+      puts "You've bought a ticket on #{movie}, hall: #{hall}"
+      put_cash(shown_period.price)
     end
   end
 end

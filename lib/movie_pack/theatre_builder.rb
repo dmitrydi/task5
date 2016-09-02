@@ -23,9 +23,9 @@ module MoviePack
     class Period
       def initialize(interv, &block)
         @interv = interv
-        @description = ''
+        @description = MoviePack::Theatre::DEFAULT_DESCRIPTION
         @filters = {}
-        @price = 0
+        @price = MoviePack::Theatre::DEFAULT_PRICE
         @hall = []
         instance_eval(&block) if block_given?
       end
@@ -51,7 +51,9 @@ module MoviePack
       end
 
       def hall(*list)
-        return @hall if list.empty?
+        if list.empty?
+          return (@hall.empty? ? DEFAULT_HALL : @hall)
+        end
         list.each { |val| @hall << val }
         self
       end

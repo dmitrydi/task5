@@ -98,8 +98,29 @@ describe Theatre do
   it { expect(theatre.cash).to eq 0 }
 
   describe '#buy_ticket' do
-    it { expect{theatre.buy_ticket("09:30")}.to change{theatre.cash}.by(AncientMovie::PRICE) }
-    it { expect{Theatre.read.buy_ticket("09:30")}.not_to change{theatre.cash} }
+    context '#when initialized with default values' do
+      let(:theatre) { Theatre.read }
+      it { expect{ theatre.buy_ticket("09:30") }.to change{theatre.cash}.by(Theatre::DEFAULT_PRICE) }
+      it { expect{ theatre.buy_ticket("09:30") }.to output(/.*old movie.*hall: Main Hall/).to_stdout }
+    end
+
+    context '#when initialized with block' do
+      let(:theatre) do
+        Theatre.new do
+          hall :red, title: 'Red Hall', places: 100
+          hall :blue, title: 'Blue Hall', places: 50
+
+          period '09:00'..'11:00' do
+            description 'Morning'
+            filters genre: 'Comedy', year: 1900..1980
+            price 20
+            hall :red, :blue
+          end
+        end
+      end
+
+      it { expect { theatre.buy_ticket("09:30") }.to change { theatre.cash }.by(20) }
+    end
   end
 
   describe 'Range#intersect?' do
