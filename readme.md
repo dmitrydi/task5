@@ -16,7 +16,7 @@ The Movie Pack library consists of two main parts:
 
 ## USE
 
- ###Theatre class
+###Theatre class
 
  To use `Theatre` class it is nessessary to create an instance.
   ```ruby
