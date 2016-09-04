@@ -54,7 +54,6 @@ The Movie Pack library consists of two main parts:
   `#filters` method sets filters for movies that may be shown during the period
   `#price` method sets the price for tickets for the period
   `#hall` method specifies halls that work for the period. Halls used in `#periods` must be defined first with `#hall` method, as shown in the example.
-  In this case 
 
   Theatre class provides some useful methods for work with the theatre.
 
