@@ -23,26 +23,18 @@ The Movie Pack library consists of two main parts:
   ```ruby
     require 'movie_pack'
 
-    # initialize
+    # initialize in ruby module
       theatre = Theatre.new( [[movie_array]], [&block] )
 
-    #default initialize
-      theatre = Theatre.read => #initialized instance with default parameters
+    # default initialize for use
+      theatre = Theatre.read => #initialized from 'data\movie_pack\movies.txt' with default parameters
   ```
- where `[movie_array]` is an array of instances of `Movie` class which is internal utility class of the lib.
- As manual definition of `[movie_array]` is impracical, for simple use this argument may be omitted. In this
- case `[movie_array]` is automatically created from file 'data\movie_pack\movies.txt'.
+ where `[movie_array]` is an array of instances of `Movie` class which is internal utility class of the lib. When omitted initialization is made from 'data\movie_pack\movies.txt' file.
 
- `[movie_array]` is stored in `@collection` variable available for read.
-
- `theatre` instance has internal variables - `@halls` and `@periods` that are available for read
- using `#halls` and `#periods` methods. `@periods` stores the periods of working time of the theatre
- with specified parameters: halls, ticket price, filters for movies shown in this period and description.
- Halls for periods are stored in `@halls` variable.
  The instance created has its cash desk for money storage and safe encashment operations.
 
-  Proc `&block` is used for specifying `@halls` and `@periods` variables.
-  Example use:
+  User can specify the schedule of the theatre using proc `&block`:
+
   ```ruby
     theatre =
       Theatre.new do
@@ -62,6 +54,7 @@ The Movie Pack library consists of two main parts:
   `#filters` method sets filters for movies that may be shown during the period
   `#price` method sets the price for tickets for the period
   `#hall` method specifies halls that work for the period. Halls used in `#periods` must be defined first with `#hall` method, as shown in the example.
+  In this case 
 
   Theatre class provides some useful methods for work with the theatre.
 
