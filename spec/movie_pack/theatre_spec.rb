@@ -78,11 +78,6 @@ describe Theatre do
     it { expect(Theatre.new {}.periods).to eq([]) }
   end
 
-  describe '#show' do
-    it{ expect{theatre.show}.to raise_error(ArgumentError) }
-    it{ expect{theatre.show('08:30')}.to output(/Now showing.*old movie/).to_stdout } 
-  end
-
   describe '#time_for' do
     let(:ancient_title) { theatre.filter(period: 'ancient').collection.first.title }
     let(:comedy_title) { theatre.filter(genre: 'Comedy').collection.first.title }
@@ -120,6 +115,7 @@ describe Theatre do
       end
 
       it { expect { theatre.buy_ticket("09:30") }.to change { theatre.cash }.by(20) }
+      it { expect { theatre.buy_ticket("09:30") }.to output(/.*hall:.*Hall/).to_stdout }
     end
   end
 
