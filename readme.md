@@ -140,6 +140,102 @@ The Movie Pack library consists of two main parts:
  netflix.by_country.usa #=> an array of movies produced in the USA
  ```
 
+###MoviePack::WebFetcher module
+ Module designed for fetching data for movies in TOP-250 IMDB rating.
+ Includes several modules for fetching different types of movie data.
+
+####IMDBBudgets module
+
+Module designed for fetching data from IMDB TOP-250 movie chart.
+
+`#self.fetch(top_chart_url)`
+Fetching budgets of movies listed in [IMDB Top-250 chart](http://www.imdb.com/chart/top?ref_=nv_mv_250_6). Returnes an array of data.
+Top-250 chart web-address is stored in `MoviePack::WebFetcher::TOP_250_URL`
+Example use:
+```ruby
+url = MoviePack::WebFetcher::TOP_250_URL
+MoviePack::WebFetcher::IMDBBudgets.fetch(url) #=> [ {:imdb_id => ..., :name => ..., :budget => ...}, ...]
+```
+
+`#self.to_file(top_chart_url: TOP_250_URL, file_name: DEFAULT_BUDGETS_FILE)
+Fetching budgets of movies listed in _top_chart_url_ and saving to yaml-file _file_name_ .
+default file path `movie_pack\data\movie_pack\web_fetcher\budgets.yml`
+Example use:
+```ruby
+MoviePack::WebFetcher::IMDBBudgets.to_file #=> movie_pack\data\movie_pack\web_fetcher\budgets.yml
+```
+
+####TMDBData module
+
+Module designed for fetching data for movies in IMDB TOP-250 movie chart from [TMDB](https://www.themoviedb.org/) using its free API.
+Before using this module API key should be received and placed to `movie_pack\config\web_fetcher\tmdb.yml` file.
+
+`#self.make_id_list(top_chart_url, file_name = DEFAULT_ID_FILE)`
+
+Method for fetching TMDB ids and movie names from *themoviedb.org* corresponding to movies listed in IMDB Top-250 chart and saving to file _file_name_ . Default file path is `movie_pack\data\movie_pack\web_fetcher\id_list.yml`
+Example use:
+```ruby
+url = MoviePack::WebFetcher::TOP_250_URL
+MoviePack::WebFetcher::TMDBData.set_api_key
+MoviePack::WebFetcher::TMDBData.make_id_list(url) #=> movie_pack\data\movie_pack\web_fetcher\id_list.yml
+```
+
+#####TMDBFetcher class
+
+Class designd for fetching posters and alternative titles for movies from top-250 chart. 
+
+`#initialize(id_file: DEFAULT_ID_FILE, posters_path: POSTERS_PATH, alt_titles_file: ALT_TITLES_FILE, budgets_file: DEFAULT_BUDGETS_FILE)
+
+Creates an instance of TMDBFetcher. Default parameters are as follows:
+ - _DEFAULT_ID_FILE_ = movie_pack\data\movie_pack\web_fetcher\id_list.yml
+ - _POSTERS_PATH_ = movie_pack\data\movie_pack\web_fetcher\posters\
+ - _ALT_TITLES_FILE_ = movie_pack\data\movie_pack\web_fetcher\alt_titles.yml
+ - _DEFAULT_BUDGETS_FILE_ = movie_pack\data\movie_pack\web_fetcher\budgets.yml
+
+Does not require pre-setting API key with `TMDBData.set_api_key` as setting is performed automatically with initialization.
+
+`#ids_from_file(id_file)`
+Parses _id_file_ created with `TMDBData.make_id_list` to get TMDB ids. Returnes an array of ids.
+```ruby
+id_file = MoviePack::WebFetcher::DEFAULT_ID_FILE
+MoviePack::WebFetcher::TMDBData::TMDBFetcher.new.ids_from_file(id_file) #=> ary
+```
+
+`#fetch_posters_to_dir`
+Fetches posters to dir specified in _posters_path_ parameter:
+```ruby
+MoviePack::WebFetcher::TMDBData::TMDBFetcher.new.fetch_posters_to_dir
+```
+
+`#fetch_alt_titles_to_file`
+Fetches alternative titles specified in _alt_titles_file_ parameter:
+```ruby
+MoviePack::WebFetcher::TMDBData::TMDBFetcher.new.fetch_alt_titles_to_file
+```
+
+####HTMLBuilder module
+
+Designed for formatting data of movie titles, posters, budgets and alternative titles into html-file.
+
+`self.build(
+      top_chart_url: TOP_250_URL,
+      output_html: DEFAULT_HTML_FILE,
+      id_file: DEFAULT_ID_FILE,
+      budgets_file: DEFAULT_BUDGETS_FILE,
+      alt_titles_file: ALT_TITLES_FILE,
+      posters_path: POSTERS_PATH
+    )`
+Makes an html-file from data files. Data is read from _id_file_, _budgets_file_, _alt_titles_file_, posters are taken from _posters_path_. Output HTML-file is _output_html_. If any data files are missing, `#build` automatically creates them. API key file `tmdb.yml` and HAML template `haml_template.haml` must be in dirs `movie_pack\config\web_fetcher\` and `movie_pack\data\movie_pack\web_fetcher\` respectively. To view API key and HAML template paths check `MoviePack::WebFetcher::API_KEY_FILE` and `MoviePack::WebFetcher::DEFAULT_HAML_FILE` constants.
+
+```ruby
+MoviePack::WebFetcher::HTMLBuilder.build #=> an HTML-file movie_data.html
+```
+
+
+
+
+
+
 
 
 

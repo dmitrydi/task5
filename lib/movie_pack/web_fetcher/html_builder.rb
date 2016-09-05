@@ -3,7 +3,6 @@ module MoviePack::WebFetcher
   # module for building HTML  file from data files
     def self.build(
       top_chart_url: TOP_250_URL,
-      haml_template: DEFAULT_HAML_FILE,
       output_html: DEFAULT_HTML_FILE,
       id_file: DEFAULT_ID_FILE,
       budgets_file: DEFAULT_BUDGETS_FILE,
@@ -15,7 +14,7 @@ module MoviePack::WebFetcher
       budgets_data = YAML.load_file(budgets_file)
       alt_titles_data = YAML.load_file(alt_titles_file)
       movies = id_data.map { |id_hash| data_from_id_hash(id_hash, budgets_data, alt_titles_data) }
-      template = File.read(haml_template)
+      template = File.read(DEFAULT_HAML_FILE)
       html_data = Haml::Engine.new(template).render(Object.new, movies: movies)
       File.write(output_html, html_data)
     end
