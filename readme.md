@@ -184,7 +184,7 @@ MoviePack::WebFetcher::TMDBData.make_id_list(url) #=> movie_pack\data\movie_pack
 
 Class designd for fetching posters and alternative titles for movies from top-250 chart. 
 
-`#initialize(id_file: DEFAULT_ID_FILE, posters_path: POSTERS_PATH, alt_titles_file: ALT_TITLES_FILE, budgets_file: DEFAULT_BUDGETS_FILE)
+`#initialize(id_file: DEFAULT_ID_FILE, posters_path: POSTERS_PATH, alt_titles_file: ALT_TITLES_FILE, budgets_file: DEFAULT_BUDGETS_FILE)`
 
 Creates an instance of TMDBFetcher. Default parameters are as follows:
  - _DEFAULT_ID_FILE_ = movie_pack\data\movie_pack\web_fetcher\id_list.yml
