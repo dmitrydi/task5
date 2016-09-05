@@ -225,6 +225,7 @@ Designed for formatting data of movie titles, posters, budgets and alternative t
       alt_titles_file: ALT_TITLES_FILE,
       posters_path: POSTERS_PATH
     )`
+
 Makes an html-file from data files. Data is read from _id_file_, _budgets_file_, _alt_titles_file_, posters are taken from _posters_path_. Output HTML-file is _output_html_. If any data files are missing, `#build` automatically creates them. API key file `tmdb.yml` and HAML template `haml_template.haml` must be in dirs `movie_pack\config\web_fetcher\` and `movie_pack\data\movie_pack\web_fetcher\` respectively. To view API key and HAML template paths check `MoviePack::WebFetcher::API_KEY_FILE` and `MoviePack::WebFetcher::DEFAULT_HAML_FILE` constants.
 
 ```ruby
