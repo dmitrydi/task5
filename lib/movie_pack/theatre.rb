@@ -8,12 +8,22 @@ module MoviePack
   class Theatre < Cinema
     include CashDesk
 
+    # default periods of time for schduling
     MORNING = '08:00'...'11:00'
     NOON = '12:00'...'17:00'
     EVENING = '18:00'..'23:00'
     NIGHT = '00:00'..'02:00'
 
+    # class for storing a period of time parameters in a single instance
     class Period
+      # Creates a new instance
+      # @param interv [Range<String>] time range described
+      # @param filters [Hash{ :attr => desired_value }] filters for movie collection for the time range described.
+      #   :attr and desired_value are attributes of instances of Movie class.
+      #   @see MoviePack::Movie
+      # @param hall [Array<Symbol>] names of the halls for that the period of schedule is described
+      # @param price [Fixnum] price of the ticket during the period
+      # @param description [String] arbitrary description
       def initialize(
         interv,
         filters,
@@ -35,7 +45,6 @@ module MoviePack
     DEFAULT_HALL = Struct.new(:name, :title, :places).new(DEFAULT_SYM, 'Main Hall', 100).freeze
     DEFAULT_PRICE = 10
     DEFAULT_DESCRIPTION = 'Famous cinema hall'
-
     DEFAULT_PERIODS = [
       Period.new(MORNING, { period: 'ancient' } ),
       Period.new(NOON, { genre: %w(Comedy Adventure) } ),
@@ -43,6 +52,12 @@ module MoviePack
       Period.new(NIGHT, { genre: %w(Drama Horror) } )
       ].freeze
 
+    # creates an instance of Theare class
+    # @param movie_array [Array<Movie>] collection of movies.
+    #   @see MoviePack::Movie
+    # @param block [Proc] code block for setting halls and periods.
+    #   @see MoviePack::TheatreBuilder#hall
+    #   @see MoviePack::TheatreBuilder#period
     def initialize(movie_array = nil, &block)
       super(movie_array)
       if block_given?
@@ -54,6 +69,7 @@ module MoviePack
       end
     end
 
+    # @return periods defined for [Teatre] instance
     def periods
       @periods || DEFAULT_PERIODS
     end

@@ -52,7 +52,7 @@ module MoviePack
 
       def hall(*list)
         if list.empty?
-          return (@hall.empty? ? DEFAULT_HALL : @hall)
+          return (@hall.empty? ? MoviePack::Theatre::DEFAULT_HALL : @hall)
         end
         list.each { |val| @hall << val }
         self

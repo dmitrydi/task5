@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: MoviePack::Netflix
+  
+    &mdash; Documentation by YARD 0.9.5
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "MoviePack::Netflix";
+  relpath = '../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../class_list.html"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../_index.html">Index (N)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../MoviePack.html" title="MoviePack (module)">MoviePack</a></span></span>
+     &raquo; 
+    <span class="title">Netflix</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <iframe id="search_frame" src="../class_list.html"></iframe>
+
+      <div id="content"><h1>Class: MoviePack::Netflix
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName"><span class='object_link'><a href="Cinema.html" title="MoviePack::Cinema (class)">Cinema</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="MovieCollection.html" title="MoviePack::MovieCollection (class)">MovieCollection</a></span></li>
+          
+            <li class="next"><span class='object_link'><a href="Cinema.html" title="MoviePack::Cinema (class)">Cinema</a></span></li>
+          
+            <li class="next">MoviePack::Netflix</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  <dl>
+      <dt>Extended by:</dt>
+      <dd><span class='object_link'><a href="CashDesk.html" title="MoviePack::CashDesk (module)">CashDesk</a></span></dd>
+  </dl>
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/movie_pack/netflix.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>class describing on-line cinema theatre</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+  
+    
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="Netflix/CountryContainer.html" title="MoviePack::Netflix::CountryContainer (class)">CountryContainer</a></span>, <span class='object_link'><a href="Netflix/GenreContainer.html" title="MoviePack::Netflix::GenreContainer (class)">GenreContainer</a></span>
+    
+  
+</p>
+
+
+
+
+  <h2>Instance Attribute Summary <small><a href="#" class="summary_toggle">collapse</a></small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#filter_store-instance_method" title="#filter_store (instance method)">#<strong>filter_store</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute filter_store.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#money-instance_method" title="#money (instance method)">#<strong>money</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute money.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+  
+  
+  <h3 class="inherited">Attributes inherited from <span class='object_link'><a href="MovieCollection.html" title="MoviePack::MovieCollection (class)">MovieCollection</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="MovieCollection.html#collection-instance_method" title="MoviePack::MovieCollection#collection (method)">#collection</a></span></p>
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#by_country-instance_method" title="#by_country (instance method)">#<strong>by_country</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#by_genre-instance_method" title="#by_genre (instance method)">#<strong>by_genre</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#define_filter-instance_method" title="#define_filter (instance method)">#<strong>define_filter</strong>(name, from: nil, arg: nil, &amp;block)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(movie_array = nil)  &#x21d2; Netflix </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of Netflix.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#pay-instance_method" title="#pay (instance method)">#<strong>pay</strong>(amount)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#price_for-instance_method" title="#price_for (instance method)">#<strong>price_for</strong>(name)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#select_movie-instance_method" title="#select_movie (instance method)">#<strong>select_movie</strong>(filters = {}, &amp;block)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#show-instance_method" title="#show (instance method)">#<strong>show</strong>(filter = {}, &amp;block)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="CashDesk.html" title="MoviePack::CashDesk (module)">CashDesk</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="CashDesk.html#cash-instance_method" title="MoviePack::CashDesk#cash (method)">cash</a></span>, <span class='object_link'><a href="CashDesk.html#put_cash-instance_method" title="MoviePack::CashDesk#put_cash (method)">put_cash</a></span>, <span class='object_link'><a href="CashDesk.html#take-instance_method" title="MoviePack::CashDesk#take (method)">take</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="Cinema.html" title="MoviePack::Cinema (class)">Cinema</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Cinema.html#create_movie-instance_method" title="MoviePack::Cinema#create_movie (method)">#create_movie</a></span>, <span class='object_link'><a href="Cinema.html#inspect-instance_method" title="MoviePack::Cinema#inspect (method)">#inspect</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="MovieCollection.html" title="MoviePack::MovieCollection (class)">MovieCollection</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="MovieCollection.html#%5B%5D-instance_method" title="MoviePack::MovieCollection#[] (method)">#[]</a></span>, <span class='object_link'><a href="MovieCollection.html#create_movie-instance_method" title="MoviePack::MovieCollection#create_movie (method)">#create_movie</a></span>, <span class='object_link'><a href="MovieCollection.html#each-instance_method" title="MoviePack::MovieCollection#each (method)">#each</a></span>, <span class='object_link'><a href="MovieCollection.html#existing_genres-instance_method" title="MoviePack::MovieCollection#existing_genres (method)">#existing_genres</a></span>, <span class='object_link'><a href="MovieCollection.html#films_by_producers-instance_method" title="MoviePack::MovieCollection#films_by_producers (method)">#films_by_producers</a></span>, <span class='object_link'><a href="MovieCollection.html#filter-instance_method" title="MoviePack::MovieCollection#filter (method)">#filter</a></span>, <span class='object_link'><a href="MovieCollection.html#first-instance_method" title="MoviePack::MovieCollection#first (method)">#first</a></span>, <span class='object_link'><a href="MovieCollection.html#genre_exists%3F-instance_method" title="MoviePack::MovieCollection#genre_exists? (method)">#genre_exists?</a></span>, <span class='object_link'><a href="MovieCollection.html#read-class_method" title="MoviePack::MovieCollection.read (method)">read</a></span>, <span class='object_link'><a href="MovieCollection.html#read-instance_method" title="MoviePack::MovieCollection#read (method)">#read</a></span>, <span class='object_link'><a href="MovieCollection.html#sort_by-instance_method" title="MoviePack::MovieCollection#sort_by (method)">#sort_by</a></span>, <span class='object_link'><a href="MovieCollection.html#stats-instance_method" title="MoviePack::MovieCollection#stats (method)">#stats</a></span>, <span class='object_link'><a href="MovieCollection.html#to_s-instance_method" title="MoviePack::MovieCollection#to_s (method)">#to_s</a></span></p>
+
+  <div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    #<strong>initialize</strong>(movie_array = nil)  &#x21d2; <tt><span class='object_link'><a href="" title="MoviePack::Netflix (class)">Netflix</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a new instance of Netflix</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9
+10
+11
+12
+13</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/netflix.rb', line 9</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_movie_array'>movie_array</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='kw'>super</span>
+  <span class='ivar'>@money</span> <span class='op'>=</span> <span class='int'>0</span>
+  <span class='ivar'>@filter_store</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id=""></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="filter_store-instance_method">
+  
+    #<strong>filter_store</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute filter_store</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/netflix.rb', line 15</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_filter_store'>filter_store</span>
+  <span class='ivar'>@filter_store</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="money-instance_method">
+  
+    #<strong>money</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute money</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/netflix.rb', line 15</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_money'>money</span>
+  <span class='ivar'>@money</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="by_country-instance_method">
+  
+    #<strong>by_country</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+87
+88
+89</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/netflix.rb', line 87</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_by_country'>by_country</span>
+  <span class='const'>CountryContainer</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='kw'>self</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="by_genre-instance_method">
+  
+    #<strong>by_genre</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+83
+84
+85</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/netflix.rb', line 83</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_by_genre'>by_genre</span>
+  <span class='const'>GenreContainer</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='kw'>self</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="define_filter-instance_method">
+  
+    #<strong>define_filter</strong>(name, from: nil, arg: nil, &amp;block)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/netflix.rb', line 47</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_define_filter'>define_filter</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='comma'>,</span> <span class='label'>from:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='label'>arg:</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='kw'>unless</span> <span class='id identifier rubyid_block'>block</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span>
+          <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>No filter </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_from'>from</span><span class='embexpr_end'>}</span><span class='tstring_content'> to define a filter from</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span>
+          <span class='ivar'>@filter_store</span><span class='period'>.</span><span class='id identifier rubyid_key?'>key?</span><span class='lparen'>(</span><span class='id identifier rubyid_from'>from</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_block'>block</span> <span class='op'>=</span> <span class='ivar'>@filter_store</span><span class='lbracket'>[</span><span class='id identifier rubyid_from'>from</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_curry'>curry</span><span class='lbracket'>[</span><span class='id identifier rubyid_arg'>arg</span><span class='rbracket'>]</span>
+  <span class='kw'>end</span>
+  <span class='ivar'>@filter_store</span><span class='lbracket'>[</span><span class='id identifier rubyid_name'>name</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_block'>block</span>
+  <span class='kw'>self</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="pay-instance_method">
+  
+    #<strong>pay</strong>(amount)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17
+18
+19
+20
+21
+22</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/netflix.rb', line 17</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_pay'>pay</span><span class='lparen'>(</span><span class='id identifier rubyid_amount'>amount</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>argument should be &gt;=0</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_amount'>amount</span> <span class='op'>&lt;</span> <span class='int'>0</span>
+  <span class='ivar'>@money</span> <span class='op'>+=</span> <span class='id identifier rubyid_amount'>amount</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='period'>.</span><span class='id identifier rubyid_put_cash'>put_cash</span><span class='lparen'>(</span><span class='id identifier rubyid_amount'>amount</span><span class='rparen'>)</span>
+  <span class='kw'>self</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="price_for-instance_method">
+  
+    #<strong>price_for</strong>(name)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+24
+25
+26
+27
+28</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/netflix.rb', line 24</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_price_for'>price_for</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_movie'>movie</span> <span class='op'>=</span> <span class='ivar'>@collection</span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_a'>a</span><span class='op'>|</span> <span class='id identifier rubyid_a'>a</span><span class='period'>.</span><span class='id identifier rubyid_title'>title</span> <span class='op'>==</span> <span class='id identifier rubyid_name'>name</span> <span class='rbrace'>}</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Movie </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_name'>name</span><span class='embexpr_end'>}</span><span class='tstring_content'> not found</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_movie'>movie</span>
+  <span class='id identifier rubyid_movie'>movie</span><span class='period'>.</span><span class='id identifier rubyid_price'>price</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="select_movie-instance_method">
+  
+    #<strong>select_movie</strong>(filters = {}, &amp;block)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/netflix.rb', line 36</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_select_movie'>select_movie</span><span class='lparen'>(</span><span class='id identifier rubyid_filters'>filters</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_filtered_collection'>filtered_collection</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_block_given?'>block_given?</span>
+                          <span class='ivar'>@collection</span><span class='period'>.</span><span class='id identifier rubyid_select'>select</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+                        <span class='kw'>else</span>
+                          <span class='id identifier rubyid_filter'>filter</span><span class='lparen'>(</span><span class='id identifier rubyid_filters'>filters</span><span class='comma'>,</span> <span class='ivar'>@filter_store</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_collection'>collection</span>
+                        <span class='kw'>end</span>
+  <span class='id identifier rubyid_filtered_collection'>filtered_collection</span><span class='period'>.</span><span class='id identifier rubyid_select!'>select!</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span> <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_price'>price</span> <span class='op'>&lt;=</span> <span class='ivar'>@money</span> <span class='rbrace'>}</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>You don&#39;t have enough money</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_filtered_collection'>filtered_collection</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+  <span class='id identifier rubyid_filtered_collection'>filtered_collection</span><span class='period'>.</span><span class='id identifier rubyid_max_by'>max_by</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_a'>a</span><span class='op'>|</span> <span class='id identifier rubyid_rand'>rand</span> <span class='op'>*</span> <span class='id identifier rubyid_a'>a</span><span class='period'>.</span><span class='id identifier rubyid_rating'>rating</span> <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="show-instance_method">
+  
+    #<strong>show</strong>(filter = {}, &amp;block)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+30
+31
+32
+33
+34</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/netflix.rb', line 30</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_show'>show</span><span class='lparen'>(</span><span class='id identifier rubyid_filter'>filter</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_movie'>movie</span> <span class='op'>=</span> <span class='id identifier rubyid_select_movie'>select_movie</span><span class='lparen'>(</span><span class='id identifier rubyid_filter'>filter</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='ivar'>@money</span> <span class='op'>-=</span> <span class='id identifier rubyid_movie'>movie</span><span class='period'>.</span><span class='id identifier rubyid_price'>price</span>
+  <span class='id identifier rubyid_puts'>puts</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Now showing: </span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='id identifier rubyid_movie'>movie</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Tue Sep  6 18:53:17 2016 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.5 (ruby-2.3.0).
+</div>
+
+    </div>
+  </body>
+</html>
