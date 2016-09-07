@@ -139,7 +139,7 @@
         <div class="docstring">
   <div class="discussion">
     
-<p>default periods of time for schduling</p>
+<p>default periods of time for scheduling</p>
 
 
   </div>
@@ -219,7 +219,7 @@ Period.new(NIGHT, { genre: %w(Drama Horror) } )
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#buy_ticket-instance_method" title="#buy_ticket (instance method)">#<strong>buy_ticket</strong>(time)  &#x21d2; Object </a>
+      <a href="#buy_ticket-instance_method" title="#buy_ticket (instance method)">#<strong>buy_ticket</strong>(time)  &#x21d2; void </a>
     
 
     
@@ -233,7 +233,12 @@ Period.new(NIGHT, { genre: %w(Drama Horror) } )
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>prints a message “You&#39;ve bought a ticket on #movie, hall: #hall”
+where movie and hall - movie and hall titles, respectively puts in cash
+desk amount of money equal to ticket price for the period which includes
+<em>time</em>.</p>
+</div></span>
   
 </li>
 
@@ -241,7 +246,7 @@ Period.new(NIGHT, { genre: %w(Drama Horror) } )
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#check_schedule-instance_method" title="#check_schedule (instance method)">#<strong>check_schedule</strong>  &#x21d2; Object </a>
+      <a href="#check_schedule-instance_method" title="#check_schedule (instance method)">#<strong>check_schedule</strong>  &#x21d2; Boolean </a>
     
 
     
@@ -255,7 +260,9 @@ Period.new(NIGHT, { genre: %w(Drama Horror) } )
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>True if no crossings in schedule.</p>
+</div></span>
   
 </li>
 
@@ -277,7 +284,9 @@ Period.new(NIGHT, { genre: %w(Drama Horror) } )
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Halls defined for [Teatre] instance.</p>
+</div></span>
   
 </li>
 
@@ -357,7 +366,7 @@ Period.new(NIGHT, { genre: %w(Drama Horror) } )
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#select_movie-instance_method" title="#select_movie (instance method)">#<strong>select_movie</strong>(time)  &#x21d2; Object </a>
+      <a href="#select_movie-instance_method" title="#select_movie (instance method)">#<strong>select_movie</strong>(time)  &#x21d2; MoviePack::Movie </a>
     
 
     
@@ -371,7 +380,10 @@ Period.new(NIGHT, { genre: %w(Drama Horror) } )
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>A movie with attributes filtered with filter  defined for period which
+includes time.</p>
+</div></span>
   
 </li>
 
@@ -401,7 +413,7 @@ Period.new(NIGHT, { genre: %w(Drama Horror) } )
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#time_for-instance_method" title="#time_for (instance method)">#<strong>time_for</strong>(title)  &#x21d2; Object </a>
+      <a href="#time_for-instance_method" title="#time_for (instance method)">#<strong>time_for</strong>(title)  &#x21d2; String </a>
     
 
     
@@ -415,7 +427,9 @@ Period.new(NIGHT, { genre: %w(Drama Horror) } )
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Time in format &#39;hh:mm&#39; for movie.</p>
+</div></span>
   
 </li>
 
@@ -494,7 +508,7 @@ Period.new(NIGHT, { genre: %w(Drama Horror) } )
       
         &mdash;
         <div class='inline'>
-<p>collection of movies. @see MoviePack::Movie</p>
+<p>collection of Movie instances.</p>
 </div>
       
     </li>
@@ -510,14 +524,24 @@ Period.new(NIGHT, { genre: %w(Drama Horror) } )
       
         &mdash;
         <div class='inline'>
-<p>code block for setting halls and periods. @see
-MoviePack::TheatreBuilder#hall @see MoviePack::TheatreBuilder#period</p>
+<p>code block for setting halls and periods.</p>
 </div>
       
     </li>
   
 </ul>
 
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="Movie.html" title="MoviePack::Movie (class)">Movie</a></span></li>
+    
+      <li><span class='object_link'><a href="TheatreBuilder.html#hall-instance_method" title="MoviePack::TheatreBuilder#hall (method)">MoviePack::TheatreBuilder#hall</a></span></li>
+    
+      <li><span class='object_link'><a href="TheatreBuilder.html#period-instance_method" title="MoviePack::TheatreBuilder#period (method)">MoviePack::TheatreBuilder#period</a></span></li>
+    
+  </ul>
 
 </div><table class="source_code">
   <tr>
@@ -564,28 +588,81 @@ MoviePack::TheatreBuilder#hall @see MoviePack::TheatreBuilder#period</p>
       <div class="method_details first">
   <h3 class="signature first" id="buy_ticket-instance_method">
   
-    #<strong>buy_ticket</strong>(time)  &#x21d2; <tt>Object</tt> 
+    #<strong>buy_ticket</strong>(time)  &#x21d2; <tt>void</tt> 
   
 
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    <p class="note returns_void">This method returns an undefined value.</p>
+<p>prints a message “You&#39;ve bought a ticket on #movie, hall: #hall”
+where movie and hall - movie and hall titles, respectively puts in cash
+desk amount of money equal to ticket price for the period which includes
+<em>time</em>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>time</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>desirable time to watch movie in &#39;hh:mm&#39; format</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>when time does not correspond to any  periods of instance defined in
+#initialize block</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-124
-125
-126
-127
-128
-129
-130</pre>
+144
+145
+146
+147
+148
+149
+150</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre.rb', line 124</span>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre.rb', line 144</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_buy_ticket'>buy_ticket</span><span class='lparen'>(</span><span class='id identifier rubyid_time'>time</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_movie'>movie</span> <span class='op'>=</span> <span class='id identifier rubyid_select_movie'>select_movie</span><span class='lparen'>(</span><span class='id identifier rubyid_time'>time</span><span class='rparen'>)</span>
@@ -602,21 +679,65 @@ MoviePack::TheatreBuilder#hall @see MoviePack::TheatreBuilder#period</p>
       <div class="method_details ">
   <h3 class="signature " id="check_schedule-instance_method">
   
-    #<strong>check_schedule</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>check_schedule</strong>  &#x21d2; <tt>Boolean</tt> 
   
 
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns true if no crossings in schedule</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>true if no crossings in schedule</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ScheduleError.html" title="MoviePack::ScheduleError (class)">ScheduleError</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>if any crossings in schedule</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-81
-82
-83
 84
 85
 86
@@ -628,10 +749,13 @@ MoviePack::TheatreBuilder#hall @see MoviePack::TheatreBuilder#period</p>
 92
 93
 94
-95</pre>
+95
+96
+97
+98</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre.rb', line 81</span>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre.rb', line 84</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_check_schedule'>check_schedule</span>
   <span class='ivar'>@halls</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_hall'>hall</span><span class='op'>|</span>
@@ -662,18 +786,47 @@ MoviePack::TheatreBuilder#hall @see MoviePack::TheatreBuilder#period</p>
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns halls defined for [Teatre] instance</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'>
+<p>halls defined for [Teatre] instance</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-77
 78
-79</pre>
+79
+80</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre.rb', line 77</span>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre.rb', line 78</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_halls'>halls</span>
   <span class='ivar'>@halls</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='const'>DEFAULT_HALL</span><span class='rbracket'>]</span>
@@ -757,13 +910,13 @@ MoviePack::TheatreBuilder#hall @see MoviePack::TheatreBuilder#period</p>
       <pre class="lines">
 
 
-119
-120
-121
-122</pre>
+130
+131
+132
+133</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre.rb', line 119</span>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre.rb', line 130</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_select_hall'>select_hall</span><span class='lparen'>(</span><span class='id identifier rubyid_halls_ary'>halls_ary</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_hall_sym'>hall_sym</span> <span class='op'>=</span> <span class='id identifier rubyid_halls_ary'>halls_ary</span><span class='lbracket'>[</span><span class='id identifier rubyid_rand'>rand</span><span class='lparen'>(</span><span class='int'>0</span><span class='op'>..</span><span class='lparen'>(</span><span class='id identifier rubyid_halls_ary'>halls_ary</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span> <span class='op'>-</span> <span class='int'>1</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='rbracket'>]</span>
@@ -777,7 +930,7 @@ MoviePack::TheatreBuilder#hall @see MoviePack::TheatreBuilder#period</p>
       <div class="method_details ">
   <h3 class="signature " id="select_movie-instance_method">
   
-    #<strong>select_movie</strong>(time)  &#x21d2; <tt>Object</tt> 
+    #<strong>select_movie</strong>(time)  &#x21d2; <tt><span class='object_link'><a href="Movie.html" title="MoviePack::Movie (class)">MoviePack::Movie</a></span></tt> 
   
 
   
@@ -786,11 +939,53 @@ MoviePack::TheatreBuilder#hall @see MoviePack::TheatreBuilder#period</p>
 </h3><div class="docstring">
   <div class="discussion">
     
+<p>Returns a movie with attributes filtered with filter  defined for period
+which includes time</p>
+
 
   </div>
 </div>
 <div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
+    <li>
+      
+        <span class='name'>time</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>time in format &#39;hh:mm&#39;</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Movie.html" title="MoviePack::Movie (class)">MoviePack::Movie</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a movie with attributes filtered with filter  defined for period which
+includes time</p>
+</div>
+      
+    </li>
+  
+</ul>
 <p class="tag_title">Raises:</p>
 <ul class="raise">
   
@@ -800,6 +995,11 @@ MoviePack::TheatreBuilder#hall @see MoviePack::TheatreBuilder#period</p>
         <span class='type'>(<tt><span class='object_link'><a href="ScheduleError.html" title="MoviePack::ScheduleError (class)">ScheduleError</a></span></tt>)</span>
       
       
+      
+        &mdash;
+        <div class='inline'>
+<p>if no periods defined that include time</p>
+</div>
       
     </li>
   
@@ -811,15 +1011,15 @@ MoviePack::TheatreBuilder#hall @see MoviePack::TheatreBuilder#period</p>
       <pre class="lines">
 
 
-97
-98
-99
-100
-101
-102</pre>
+104
+105
+106
+107
+108
+109</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre.rb', line 97</span>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre.rb', line 104</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_select_movie'>select_movie</span><span class='lparen'>(</span><span class='id identifier rubyid_time'>time</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_f'>f</span> <span class='op'>=</span> <span class='id identifier rubyid_periods'>periods</span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_p'>p</span><span class='op'>|</span> <span class='id identifier rubyid_p'>p</span><span class='period'>.</span><span class='id identifier rubyid_interv'>interv</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='id identifier rubyid_time'>time</span><span class='rparen'>)</span> <span class='rbrace'>}</span>
@@ -847,12 +1047,12 @@ MoviePack::TheatreBuilder#hall @see MoviePack::TheatreBuilder#period</p>
       <pre class="lines">
 
 
-115
-116
-117</pre>
+126
+127
+128</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre.rb', line 115</span>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre.rb', line 126</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_show'>show</span><span class='lparen'>(</span><span class='id identifier rubyid_time'>time</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Now showing: </span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='id identifier rubyid_select_movie'>select_movie</span><span class='lparen'>(</span><span class='id identifier rubyid_time'>time</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span>
@@ -865,7 +1065,7 @@ MoviePack::TheatreBuilder#hall @see MoviePack::TheatreBuilder#period</p>
       <div class="method_details ">
   <h3 class="signature " id="time_for-instance_method">
   
-    #<strong>time_for</strong>(title)  &#x21d2; <tt>Object</tt> 
+    #<strong>time_for</strong>(title)  &#x21d2; <tt>String</tt> 
   
 
   
@@ -874,11 +1074,51 @@ MoviePack::TheatreBuilder#hall @see MoviePack::TheatreBuilder#period</p>
 </h3><div class="docstring">
   <div class="discussion">
     
+<p>Returns time in format &#39;hh:mm&#39; for movie</p>
+
 
   </div>
 </div>
 <div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
+    <li>
+      
+        <span class='name'>title</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>title of the movie</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>time in format &#39;hh:mm&#39; for movie</p>
+</div>
+      
+    </li>
+  
+</ul>
 <p class="tag_title">Raises:</p>
 <ul class="raise">
   
@@ -888,6 +1128,11 @@ MoviePack::TheatreBuilder#hall @see MoviePack::TheatreBuilder#period</p>
         <span class='type'>(<tt>ArgumentError</tt>)</span>
       
       
+      
+        &mdash;
+        <div class='inline'>
+<p>if movie does not correspond to any filters defined in periods</p>
+</div>
       
     </li>
   
@@ -899,19 +1144,19 @@ MoviePack::TheatreBuilder#hall @see MoviePack::TheatreBuilder#period</p>
       <pre class="lines">
 
 
-104
-105
-106
-107
-108
-109
-110
-111
-112
-113</pre>
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre.rb', line 104</span>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre.rb', line 115</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_time_for'>time_for</span><span class='lparen'>(</span><span class='id identifier rubyid_title'>title</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_movie'>movie</span> <span class='op'>=</span> <span class='id identifier rubyid_filter'>filter</span><span class='lparen'>(</span><span class='label'>title:</span> <span class='id identifier rubyid_title'>title</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_collection'>collection</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span>
@@ -933,7 +1178,7 @@ MoviePack::TheatreBuilder#hall @see MoviePack::TheatreBuilder#period</p>
 </div>
 
       <div id="footer">
-  Generated on Tue Sep  6 18:56:04 2016 by
+  Generated on Wed Sep  7 14:05:45 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.5 (ruby-2.3.0).
 </div>

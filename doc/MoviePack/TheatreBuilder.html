@@ -104,7 +104,7 @@
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
     
-<p>class for building a theatre</p>
+<p>class for building a theatre with DSL</p>
 
 
   </div>
@@ -132,7 +132,7 @@
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#host-instance_method" title="#host (instance method)">#<strong>host</strong>  &#x21d2; Object </a>
+      <a href="#host-instance_method" title="#host (instance method)">#<strong>host</strong>  &#x21d2; Theatre </a>
     
 
     
@@ -152,7 +152,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Returns the value of attribute host.</p>
+<p>Returnes the <em>Theatre</em> instance that called <em>TheatreBuilder</em>.</p>
 </div></span>
   
 </li>
@@ -174,7 +174,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#hall-instance_method" title="#hall (instance method)">#<strong>hall</strong>(name, places:, title:)  &#x21d2; Object </a>
+      <a href="#hall-instance_method" title="#hall (instance method)">#<strong>hall</strong>(name, places:, title:)  &#x21d2; void </a>
     
 
     
@@ -188,7 +188,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Method for initializing halls of the <em>Theatre</em> instance.</p>
+</div></span>
   
 </li>
 
@@ -196,7 +198,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(host, &amp;block)  &#x21d2; TheatreBuilder </a>
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(host, &amp;block)  &#x21d2; Theatre </a>
     
 
     
@@ -213,7 +215,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>A new instance of TheatreBuilder.</p>
+<p>Returnes an instance of <em>Theatre</em> class.</p>
 </div></span>
   
 </li>
@@ -222,7 +224,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#period-instance_method" title="#period (instance method)">#<strong>period</strong>(name, &amp;block)  &#x21d2; Object </a>
+      <a href="#period-instance_method" title="#period (instance method)">#<strong>period</strong>(name, &amp;block)  &#x21d2; void </a>
     
 
     
@@ -236,7 +238,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Method for initializing periods of the <em>Theatre</em> instance.</p>
+</div></span>
   
 </li>
 
@@ -250,7 +254,7 @@
     <div class="method_details first">
   <h3 class="signature first" id="initialize-instance_method">
   
-    #<strong>initialize</strong>(host, &amp;block)  &#x21d2; <tt><span class='object_link'><a href="" title="MoviePack::TheatreBuilder (class)">TheatreBuilder</a></span></tt> 
+    #<strong>initialize</strong>(host, &amp;block)  &#x21d2; <tt><span class='object_link'><a href="Theatre.html" title="MoviePack::Theatre (class)">Theatre</a></span></tt> 
   
 
   
@@ -259,13 +263,49 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Returns a new instance of TheatreBuilder</p>
+<p>Returnes an instance of <em>Theatre</em> class</p>
 
 
   </div>
 </div>
 <div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
+    <li>
+      
+        <span class='name'>host</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Theatre.html" title="MoviePack::Theatre (class)">Theatre</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>an instance of theatre to be initialized</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>block</span>
+      
+      
+        <span class='type'>(<tt>Proc</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>block for specifying periods and halls</p>
+</div>
+      
+    </li>
+  
+</ul>
+
 
 </div><table class="source_code">
   <tr>
@@ -273,14 +313,14 @@
       <pre class="lines">
 
 
-4
-5
-6
 7
-8</pre>
+8
+9
+10
+11</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre_builder.rb', line 4</span>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre_builder.rb', line 7</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_host'>host</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
   <span class='ivar'>@host</span> <span class='op'>=</span> <span class='id identifier rubyid_host'>host</span>
@@ -302,7 +342,7 @@
       <div class="method_details first">
   <h3 class="signature first" id="host-instance_method">
   
-    #<strong>host</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+    #<strong>host</strong>  &#x21d2; <tt><span class='object_link'><a href="Theatre.html" title="MoviePack::Theatre (class)">Theatre</a></span></tt>  <span class="extras">(readonly)</span>
   
 
   
@@ -311,13 +351,26 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Returns the value of attribute host</p>
+<p>Returnes the <em>Theatre</em> instance that called <em>TheatreBuilder</em></p>
 
 
   </div>
 </div>
 <div class="tags">
   
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Theatre.html" title="MoviePack::Theatre (class)">Theatre</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
 
 </div><table class="source_code">
   <tr>
@@ -325,12 +378,12 @@
       <pre class="lines">
 
 
-10
-11
-12</pre>
+16
+17
+18</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre_builder.rb', line 10</span>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre_builder.rb', line 16</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_host'>host</span>
   <span class='ivar'>@host</span>
@@ -350,25 +403,88 @@
       <div class="method_details first">
   <h3 class="signature first" id="hall-instance_method">
   
-    #<strong>hall</strong>(name, places:, title:)  &#x21d2; <tt>Object</tt> 
+    #<strong>hall</strong>(name, places:, title:)  &#x21d2; <tt>void</tt> 
   
 
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    <p class="note returns_void">This method returns an undefined value.</p>
+<p>Method for initializing halls of the <em>Theatre</em> instance</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>name</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>idetifier of the hall</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>places</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>number of places in the hall</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>title</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>title of the hall to be shown in schedule</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-12
-13
-14
-15</pre>
+23
+24
+25
+26</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre_builder.rb', line 12</span>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre_builder.rb', line 23</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_hall'>hall</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='comma'>,</span> <span class='label'>places:</span><span class='comma'>,</span> <span class='label'>title:</span><span class='rparen'>)</span>
   <span class='ivar'>@host</span><span class='period'>.</span><span class='id identifier rubyid_halls'>halls</span> <span class='op'>&lt;&lt;</span> <span class='const'>Hall</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='comma'>,</span> <span class='id identifier rubyid_title'>title</span><span class='comma'>,</span> <span class='id identifier rubyid_places'>places</span><span class='rparen'>)</span>
@@ -382,24 +498,85 @@
       <div class="method_details ">
   <h3 class="signature " id="period-instance_method">
   
-    #<strong>period</strong>(name, &amp;block)  &#x21d2; <tt>Object</tt> 
+    #<strong>period</strong>(name, &amp;block)  &#x21d2; <tt>void</tt> 
   
 
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    <p class="note returns_void">This method returns an undefined value.</p>
+<p>Method for initializing periods of the <em>Theatre</em> instance</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>name</span>
+      
+      
+        <span class='type'>(<tt>Range&lt;String&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>period of time to which properties are define</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>block</span>
+      
+      
+        <span class='type'>(<tt>Proc</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>block for defining description, filters, price and block properties for the
+period</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="TheatreBuilder/Period.html#description-instance_method" title="MoviePack::TheatreBuilder::Period#description (method)">MoviePack::TheatreBuilder::Period#description</a></span></li>
+    
+      <li><span class='object_link'><a href="TheatreBuilder/Period.html#filters-instance_method" title="MoviePack::TheatreBuilder::Period#filters (method)">MoviePack::TheatreBuilder::Period#filters</a></span></li>
+    
+      <li><span class='object_link'><a href="TheatreBuilder/Period.html#price-instance_method" title="MoviePack::TheatreBuilder::Period#price (method)">MoviePack::TheatreBuilder::Period#price</a></span></li>
+    
+      <li><span class='object_link'><a href="TheatreBuilder/Period.html#hall-instance_method" title="MoviePack::TheatreBuilder::Period#hall (method)">MoviePack::TheatreBuilder::Period#hall</a></span></li>
+    
+  </ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-17
-18
-19</pre>
+38
+39
+40</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre_builder.rb', line 17</span>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre_builder.rb', line 38</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_period'>period</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
   <span class='ivar'>@host</span><span class='period'>.</span><span class='id identifier rubyid_periods'>periods</span> <span class='op'>&lt;&lt;</span> <span class='const'>Period</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
@@ -414,7 +591,7 @@
 </div>
 
       <div id="footer">
-  Generated on Tue Sep  6 18:56:04 2016 by
+  Generated on Wed Sep  7 14:05:45 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.5 (ruby-2.3.0).
 </div>

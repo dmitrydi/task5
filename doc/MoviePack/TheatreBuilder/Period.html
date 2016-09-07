@@ -101,7 +101,18 @@
   
 </div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Utility class for initializing and storing period properties</p>
 
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -111,7 +122,7 @@
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#description-instance_method" title="#description (instance method)">#<strong>description</strong>(a_description = nil)  &#x21d2; Object </a>
+      <a href="#description-instance_method" title="#description (instance method)">#<strong>description</strong>(a_description = nil)  &#x21d2; self, Period#description </a>
     
 
     
@@ -131,7 +142,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Returns the value of attribute description.</p>
+<p>Method for setting or getting the period description.</p>
 </div></span>
   
 </li>
@@ -140,7 +151,7 @@
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#filters-instance_method" title="#filters (instance method)">#<strong>filters</strong>(*some_filters)  &#x21d2; Object </a>
+      <a href="#filters-instance_method" title="#filters (instance method)">#<strong>filters</strong>(*some_filters)  &#x21d2; self, Period#filters </a>
     
 
     
@@ -160,7 +171,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Returns the value of attribute filters.</p>
+<p>Method for setting or getting the period filters.</p>
 </div></span>
   
 </li>
@@ -169,7 +180,7 @@
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#hall-instance_method" title="#hall (instance method)">#<strong>hall</strong>(*list)  &#x21d2; Object </a>
+      <a href="#hall-instance_method" title="#hall (instance method)">#<strong>hall</strong>(*list)  &#x21d2; self, Period#hall </a>
     
 
     
@@ -189,7 +200,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Returns the value of attribute hall.</p>
+<p>Method for setting or getting the hall ids that work for the period.</p>
 </div></span>
   
 </li>
@@ -227,7 +238,7 @@
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#price-instance_method" title="#price (instance method)">#<strong>price</strong>(amount = nil)  &#x21d2; Object </a>
+      <a href="#price-instance_method" title="#price (instance method)">#<strong>price</strong>(amount = nil)  &#x21d2; self, Period#price </a>
     
 
     
@@ -247,7 +258,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Returns the value of attribute price.</p>
+<p>Method for setting or getting the price of tickets of the period.</p>
 </div></span>
   
 </li>
@@ -309,7 +320,10 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Method for checking whether a hall with id <em>hall_name</em> is working
+during the period.</p>
+</div></span>
   
 </li>
 
@@ -338,7 +352,44 @@
   </div>
 </div>
 <div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
+    <li>
+      
+        <span class='name'>interv</span>
+      
+      
+        <span class='type'>(<tt>Range&lt;String&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>time interval in format &#39;hh:mm&#39;..&#39;hh:mm&#39;</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>block</span>
+      
+      
+        <span class='type'>(<tt>Proc</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>block for definition of description, filters, price and hall attributes of
+the period</p>
+</div>
+      
+    </li>
+  
+</ul>
+
 
 </div><table class="source_code">
   <tr>
@@ -346,17 +397,17 @@
       <pre class="lines">
 
 
-24
-25
-26
-27
-28
-29
-30
-31</pre>
+50
+51
+52
+53
+54
+55
+56
+57</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre_builder.rb', line 24</span>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre_builder.rb', line 50</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_interv'>interv</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
   <span class='ivar'>@interv</span> <span class='op'>=</span> <span class='id identifier rubyid_interv'>interv</span>
@@ -381,7 +432,7 @@
       <div class="method_details first">
   <h3 class="signature first" id="description-instance_method">
   
-    #<strong>description</strong>(a_description = nil)  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+    #<strong>description</strong>(a_description = nil)  &#x21d2; <tt>self</tt>, <tt><span class='object_link'><a href="" title="MoviePack::TheatreBuilder::Period (class)">Period</a></span>#<span class='object_link'><a href="#description-instance_method" title="MoviePack::TheatreBuilder::Period#description (method)">description</a></span></tt>  <span class="extras">(readonly)</span>
   
 
   
@@ -390,13 +441,62 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Returns the value of attribute description</p>
+<p>Method for setting or getting the period description</p>
 
 
   </div>
 </div>
 <div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
+    <li>
+      
+        <span class='name'>a_description</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>self</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>if <em>a_description</em> is provided</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="MoviePack::TheatreBuilder::Period (class)">Period</a></span>#<span class='object_link'><a href="#description-instance_method" title="MoviePack::TheatreBuilder::Period#description (method)">description</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>if used with no args</p>
+</div>
+      
+    </li>
+  
+</ul>
 
 </div><table class="source_code">
   <tr>
@@ -404,12 +504,12 @@
       <pre class="lines">
 
 
-33
-34
-35</pre>
+65
+66
+67</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre_builder.rb', line 33</span>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre_builder.rb', line 65</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_description'>description</span>
   <span class='ivar'>@description</span>
@@ -424,7 +524,7 @@
       <div class="method_details ">
   <h3 class="signature " id="filters-instance_method">
   
-    #<strong>filters</strong>(*some_filters)  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+    #<strong>filters</strong>(*some_filters)  &#x21d2; <tt>self</tt>, <tt><span class='object_link'><a href="" title="MoviePack::TheatreBuilder::Period (class)">Period</a></span>#<span class='object_link'><a href="#filters-instance_method" title="MoviePack::TheatreBuilder::Period#filters (method)">filters</a></span></tt>  <span class="extras">(readonly)</span>
   
 
   
@@ -433,13 +533,60 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Returns the value of attribute filters</p>
+<p>Method for setting or getting the period filters</p>
 
 
   </div>
 </div>
 <div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
+    <li>
+      
+        <span class='name'>some_filters</span>
+      
+      
+        <span class='type'>(<tt>Hash&lt;:movie_attribute =&gt; value&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>self</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>if <em>some_filters</em> are provided</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="MoviePack::TheatreBuilder::Period (class)">Period</a></span>#<span class='object_link'><a href="#filters-instance_method" title="MoviePack::TheatreBuilder::Period#filters (method)">filters</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>if used with no args</p>
+</div>
+      
+    </li>
+  
+</ul>
 
 </div><table class="source_code">
   <tr>
@@ -447,12 +594,12 @@
       <pre class="lines">
 
 
-33
-34
-35</pre>
+75
+76
+77</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre_builder.rb', line 33</span>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre_builder.rb', line 75</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_filters'>filters</span>
   <span class='ivar'>@filters</span>
@@ -467,7 +614,7 @@
       <div class="method_details ">
   <h3 class="signature " id="hall-instance_method">
   
-    #<strong>hall</strong>(*list)  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+    #<strong>hall</strong>(*list)  &#x21d2; <tt>self</tt>, <tt><span class='object_link'><a href="" title="MoviePack::TheatreBuilder::Period (class)">Period</a></span>#<span class='object_link'><a href="#hall-instance_method" title="MoviePack::TheatreBuilder::Period#hall (method)">hall</a></span></tt>  <span class="extras">(readonly)</span>
   
 
   
@@ -476,13 +623,65 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Returns the value of attribute hall</p>
+<p>Method for setting or getting the hall ids that work for the period</p>
 
 
   </div>
 </div>
 <div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
+    <li>
+      
+        <span class='name'>list</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;Symbol&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>list of hall that work during the period</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>self</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>if <em>list</em> is provided</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="MoviePack::TheatreBuilder::Period (class)">Period</a></span>#<span class='object_link'><a href="#hall-instance_method" title="MoviePack::TheatreBuilder::Period#hall (method)">hall</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>if used with no args</p>
+</div>
+      
+    </li>
+  
+</ul>
 
 </div><table class="source_code">
   <tr>
@@ -490,12 +689,12 @@
       <pre class="lines">
 
 
-33
-34
-35</pre>
+95
+96
+97</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre_builder.rb', line 33</span>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre_builder.rb', line 95</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_hall'>hall</span>
   <span class='ivar'>@hall</span>
@@ -533,12 +732,12 @@
       <pre class="lines">
 
 
-33
-34
-35</pre>
+59
+60
+61</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre_builder.rb', line 33</span>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre_builder.rb', line 59</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_interv'>interv</span>
   <span class='ivar'>@interv</span>
@@ -553,7 +752,7 @@
       <div class="method_details ">
   <h3 class="signature " id="price-instance_method">
   
-    #<strong>price</strong>(amount = nil)  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+    #<strong>price</strong>(amount = nil)  &#x21d2; <tt>self</tt>, <tt><span class='object_link'><a href="" title="MoviePack::TheatreBuilder::Period (class)">Period</a></span>#<span class='object_link'><a href="#price-instance_method" title="MoviePack::TheatreBuilder::Period#price (method)">price</a></span></tt>  <span class="extras">(readonly)</span>
   
 
   
@@ -562,13 +761,67 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Returns the value of attribute price</p>
+<p>Method for setting or getting the price of tickets of the period</p>
 
 
   </div>
 </div>
 <div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
+    <li>
+      
+        <span class='name'>amount</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>price of tickets</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>self</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>if <em>amount</em> is provided</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="MoviePack::TheatreBuilder::Period (class)">Period</a></span>#<span class='object_link'><a href="#price-instance_method" title="MoviePack::TheatreBuilder::Period#price (method)">price</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>if used with no args</p>
+</div>
+      
+    </li>
+  
+</ul>
 
 </div><table class="source_code">
   <tr>
@@ -576,12 +829,12 @@
       <pre class="lines">
 
 
-33
-34
-35</pre>
+85
+86
+87</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre_builder.rb', line 33</span>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre_builder.rb', line 85</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_price'>price</span>
   <span class='ivar'>@price</span>
@@ -610,11 +863,34 @@
 </h3><div class="docstring">
   <div class="discussion">
     
+<p>Method for checking whether a hall with id <em>hall_name</em> is working
+during the period</p>
+
 
   </div>
 </div>
 <div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
+    <li>
+      
+        <span class='name'>hall_name</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>hall id</p>
+</div>
+      
+    </li>
+  
+</ul>
+
 <p class="tag_title">Returns:</p>
 <ul class="return">
   
@@ -624,6 +900,11 @@
         <span class='type'>(<tt>Boolean</tt>)</span>
       
       
+      
+        &mdash;
+        <div class='inline'>
+<p>true if the hall work during the period</p>
+</div>
       
     </li>
   
@@ -635,12 +916,12 @@
       <pre class="lines">
 
 
-61
-62
-63</pre>
+107
+108
+109</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre_builder.rb', line 61</span>
+      <pre class="code"><span class="info file"># File 'lib/movie_pack/theatre_builder.rb', line 107</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_shown_at?'>shown_at?</span><span class='lparen'>(</span><span class='id identifier rubyid_hall_name'>hall_name</span><span class='rparen'>)</span>
   <span class='ivar'>@hall</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='id identifier rubyid_hall_name'>hall_name</span><span class='rparen'>)</span>
@@ -655,7 +936,7 @@
 </div>
 
       <div id="footer">
-  Generated on Tue Sep  6 18:56:04 2016 by
+  Generated on Wed Sep  7 14:05:46 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.5 (ruby-2.3.0).
 </div>
