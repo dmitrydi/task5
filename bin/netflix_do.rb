@@ -10,8 +10,7 @@ module Slop
           { f1.to_sym => f2 }
         end
         .reduce(:merge)
-      p dummy_hash
-      self.value = FilterParser.new(dummy_hash).to_h
+      self.value = FilterParser.new(dummy_hash).to_filters
     end
 
     class FilterParser
@@ -20,7 +19,7 @@ module Slop
       class SplitString < Virtus::Attribute
       # (see Virtus::Attribute#coerce)
         def coerce(str)
-          str.split(',')
+          str.split(',') if str
         end
       end
 
@@ -45,6 +44,11 @@ module Slop
 
       def initialize(hash)
         super(hash)
+      end
+
+      def to_filters
+        hash = self.to_h
+        hash.reject { |k, v| v.nil? || v == 0 || v == 0.0 }
       end
     end
   end
