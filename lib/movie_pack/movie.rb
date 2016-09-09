@@ -31,7 +31,7 @@ module MoviePack
     #     @return [$2]
     attribute :webaddr, String
     attribute :title, String
-    attribute :year, Integer
+    attribute :year, ForcedInt
     attribute :country, String
     attribute :date, String
     attribute :genre, SplitString
