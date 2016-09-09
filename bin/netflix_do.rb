@@ -2,39 +2,49 @@ require_relative '../lib/movie_pack'
 require 'slop'
 
 module Slop
-  class ArrayOption < Option
+  class FiltersOption < ArrayOption
     def finish(params)
-      ary = self.value
-      dummy_filter = 
-      ary.map do |f|
-        f1,f2 = f.split(':')
-        { f1.to_sym => f2 }
+      dummy_hash =
+        self.value.map do |f|
+          f1,f2 = f.split(':')
+          { f1.to_sym => f2 }
+        end
+        .reduce(:merge)
+      p dummy_hash
+      self.value = FilterParser.new(dummy_hash).to_h
+    end
+
+    class FilterParser
+      include Virtus.model
+
+      class SplitString < Virtus::Attribute
+      # (see Virtus::Attribute#coerce)
+        def coerce(str)
+          str.split(',')
+        end
       end
-      .reduce(:merge)
-      self.value = convert_types(dummy_filter)
-    end
 
-    def convert_types(hash)
-      attr_keys = MoviePack::REC_HEADERS
-      movie = MoviePack::Movie.new(attr_keys.map { |k| [k, ''] }.to_h)
-      ans = hash.inject({}) do |memo, (k, v)|
-              val = convert_to(v, movie.send(k))
-              memo.merge({k => val})
-            end
-    end
+    # utilty class for storing duration of the movie in Fixnum format
+      class ForcedInt < Virtus::Attribute
+      # (see Virtus::Attribute#coerce)
+        def coerce(val)
+          val.to_i
+        end
+      end
 
-    def convert_to(val, example)
-      case example
-      when Fixnum
-        val.to_i
-      when Float
-        val.to_f
-      when String
-        val.to_s
-      when Array
-        val.split(',')
-      else
-        nil
+      attribute :webaddr, String
+      attribute :title, String
+      attribute :year, ForcedInt
+      attribute :country, String
+      attribute :date, String
+      attribute :genre, SplitString
+      attribute :duration, ForcedInt
+      attribute :rating, Float
+      attribute :producer, String
+      attribute :actors, SplitString
+
+      def initialize(hash)
+        super(hash)
       end
     end
   end
@@ -42,7 +52,7 @@ end
 
 opts = Slop.parse do |o|
   o.integer '--pay', default: 0
-  o.array '--filters', delimiter: ';'
+  o.filters '--filters', delimiter: ';'
 end
 
 puts opts[:filters]
