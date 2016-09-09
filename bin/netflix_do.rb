@@ -31,7 +31,6 @@ module Slop
         end
       end
 
-      attribute :webaddr, String
       attribute :title, String
       attribute :year, ForcedInt
       attribute :country, String
@@ -59,4 +58,6 @@ opts = Slop.parse do |o|
   o.filters '--filters', delimiter: ';'
 end
 
-puts opts[:filters]
+netflix = MoviePack::Netflix.read
+netflix.pay(opts[:pay])
+netflix.show(opts[:filters])
