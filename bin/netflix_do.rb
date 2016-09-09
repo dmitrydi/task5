@@ -3,7 +3,7 @@ require 'slop'
 
 opts = Slop.parse do |o|
   o.integer '--pay', default: 0
-  o.array '--filters', delimiter: ','
+  o.array '--filters', delimiter: ';'
 end
 
 
@@ -37,7 +37,7 @@ module MovieFilters
     when String
       val.to_s
     when Array
-      [val]
+      val.split(',')
     else
       nil
     end
