@@ -1,5 +1,4 @@
 require_relative '../lib/movie_pack'
-require_relative '../lib/slop'
 
 opts = Slop.parse do |o|
   o.integer '--pay', default: 0
