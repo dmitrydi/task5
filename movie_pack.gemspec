@@ -11,8 +11,7 @@ Gem::Specification.new do |s|
   s.files       = Dir['lib/*.rb'] + Dir['lib/**/*.rb'] + 
                   Dir['bin/*'] + Dir['data/**/*.txt'] +
                   Dir['data/**/*.haml'] + Dir['spec/*.rb'] +
-                  Dir['spec/**/*.rb'] + Dir['doc/*'] + Dir['doc/**/*'] + 
-                  ['.gitignore']
+                  Dir['spec/**/*.rb'] + ['.gitignore']
   s.add_runtime_dependency 'nokogiri'
   s.add_runtime_dependency 'progress-bar'
   s.add_runtime_dependency 'rspec'
