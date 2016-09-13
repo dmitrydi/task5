@@ -7,3 +7,4 @@ spec/movie_pack/web_fetcher/vcr_cassettes
 .yardoc/
 movie_pack/data/movie_pack/web_fetcher/*.yml
 movie_pack/data/movie_pack/web_fetcher/*.html
+doc/*
