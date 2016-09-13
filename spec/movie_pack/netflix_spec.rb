@@ -73,11 +73,21 @@ describe Netflix do
   end
 
   describe '#show' do
-    it {expect{netflix.show(period: 'ancient')}.to change{netflix.money}.by(- AncientMovie::PRICE) }
-    it {expect{netflix.show(period: 'ancient')}.to output(/Now showing.*old movie/).to_stdout }
+    it {expect{netflix.show(period: 'ancient', genre: 'Comedy')}.to change{netflix.money}.by(- AncientMovie::PRICE) }
+    it {expect{netflix.show(period: 'ancient', genre: 'Comedy')}.to output(/Now showing.*old movie/).to_stdout }
 
     context 'it works with blocks' do
       it { expect{ netflix.show { |m| m.period == 'ancient' } }.to output(/Now showing.*old movie/).to_stdout }
+    end
+
+    context 'it works with pre-defined filters' do
+      before(:example) do
+        netflix.define_filter(:new_sci_fi_2) { |year, movie| movie.year > year && movie.genre.include?('Sci-Fi') }
+        netflix.define_filter(:newest_sci_fi, from: :new_sci_fi_2, arg: 2010)
+      end
+
+      it { expect { netflix.show(new_sci_fi_2: 2005) }.to output(/.*new film.*/).to_stdout }
+      it { expect { netflix.show(newest_sci_fi: true) }.to output(/.*new film.*/).to_stdout }
     end
   end
 

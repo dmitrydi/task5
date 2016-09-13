@@ -32,7 +32,7 @@ describe TheatreBuilder do
   describe '#initialize' do
     it { expect { TheatreBuilder.new(theatre, &hall_block) }.to change{ theatre.halls.length }.from(0).to(1) }
     it { expect { TheatreBuilder.new(theatre, &period_block) }.to change{ theatre.periods.length }.from(0).to(1) }
-    it { expect { TheatreBuilder.new(no_block_theatre, &block) }.to raise_error(NoMethodError) }
+    it { expect { TheatreBuilder.new(no_block_theatre, &block) }.to raise_error(RuntimeError) }
     it { expect(TheatreBuilder.new(no_block_theatre).host).to be_instance_of(Theatre) }
   end
 
@@ -96,10 +96,10 @@ describe TheatreBuilder do
       expect(period)
       .to have_attributes(
                           :interv => '09:00'..'11:00',
-                          :description => '',
+                          :description => MoviePack::Theatre::DEFAULT_DESCRIPTION,
                           :filters => {},
-                          :price => 0,
-                          :hall => []
+                          :price => MoviePack::Theatre::DEFAULT_PRICE,
+                          :hall => MoviePack::Theatre::DEFAULT_HALL
                           )
     end
 
@@ -116,7 +116,7 @@ describe TheatreBuilder do
 
     describe '#description' do
       it { expect(period_with_block.description).to eq('Morning') }
-      it { expect { period.description('Morning') }.to change{ period.description }.from('').to('Morning') }
+      it { expect { period.description('Morning') }.to change{ period.description }.to('Morning') }
     end
 
     describe '#filters' do
@@ -125,11 +125,11 @@ describe TheatreBuilder do
     end
 
     describe '#price' do
-      it { expect { period.price(10) }.to change { period.price }.from(0).to(10) }
+      it { expect { period.price(100) }.to change { period.price }.to(100) }
     end
 
     describe '#hall' do
-      it { expect { period.hall(:red) }.to change { period.hall }.from([]).to([:red]) }
+      it { expect { period.hall(:red) }.to change { period.hall }.to([:red]) }
     end
 
     describe '#shown_at?' do
